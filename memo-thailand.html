@@ -40,24 +40,37 @@
         }
         
         /* Стили навигации как в Google Docs */
+        /* Исправление для содержания */
+        #quick-links {
+            max-height: calc(100vh - 220px); /* Ограничиваем высоту */
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        #quick-links::-webkit-scrollbar {
+            display: none;
+        }
+
         .nav-link {
-            position: relative;
-            padding-left: 1.5rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            display: block;
+            padding: 0.6rem 1.5rem;
+            border-left: 2px solid transparent;
+            font-size: 0.85rem;
+            line-height: 1.3;
             color: #4b4b4b;
             transition: all 0.2s ease;
-            font-size: 0.875rem;
-            line-height: 1.25;
-            border-left: 2px solid transparent;
         }
+
         .nav-link:hover {
             color: #000;
+            background: rgba(245, 226, 161, 0.1);
         }
+
         .nav-link.active {
             color: #000;
             font-weight: 700;
-            border-left-color: #f5e2a1; /* Цвет акцента Emoji Tours */
+            border-left-color: #f5e2a1;
+            background: rgba(245, 226, 161, 0.2);
         }
     </style>
 </head>
@@ -83,52 +96,11 @@
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
-                <div class="sticky top-32 space-y-8">
+                <div class="sticky top-24 h-fit max-h-screen pb-10">
                     <div>
-                        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant/50 mb-6 px-6">Содержание</p>
-                        <nav id="quick-links" class="flex flex-col">
-                            <a href="#section-0" class="nav-link">Туристам, выезжающим в таиланд</a>
-<a href="#section-1" class="nav-link">Перед отъездом</a>
-<a href="#section-2" class="nav-link">Беременным женщинам</a>
-<a href="#section-3" class="nav-link">В российском аэропорту вылета/прилета</a>
-<a href="#section-4" class="nav-link">Таможенный контроль до начала путешествия</a>
-<a href="#section-5" class="nav-link">Таможенный контроль по окончанию путешествия</a>
-<a href="#section-6" class="nav-link">Регистрация на рейс и оформление багажа</a>
-<a href="#section-8" class="nav-link">Паспортный контроль</a>
-<a href="#section-9" class="nav-link">Санитарный контроль</a>
-<a href="#section-10" class="nav-link">Ветеринарный контроль</a>
-<a href="#section-11" class="nav-link">В аэропорту прилета/вылета тайланда</a>
-<a href="#section-12" class="nav-link">Таможенный контроль в тайланде</a>
-<a href="#section-13" class="nav-link">Правила ввоза электронных сигарет</a>
-<a href="#section-14" class="nav-link">Правила ввоза дронов в таиланд</a>
-<a href="#section-15" class="nav-link">Королевство таиланд</a>
-<a href="#section-16" class="nav-link">Время</a>
-<a href="#section-17" class="nav-link">Климат</a>
-<a href="#section-18" class="nav-link">Валюта</a>
-<a href="#section-20" class="nav-link">Чаевые</a>
-<a href="#section-21" class="nav-link">Язык</a>
-<a href="#section-22" class="nav-link">Население</a>
-<a href="#section-23" class="nav-link">Религия</a>
-<a href="#section-24" class="nav-link">Обычаи</a>
-<a href="#section-25" class="nav-link">Правила поведения в общественных местах</a>
-<a href="#section-26" class="nav-link">Праздники и нерабочие дни</a>
-<a href="#section-27" class="nav-link">10 декабря — день конституции</a>
-<a href="#section-28" class="nav-link">Транспорт</a>
-<a href="#section-29" class="nav-link">Телефон</a>
-<a href="#section-30" class="nav-link">Экстренные телефоны</a>
-<a href="#section-31" class="nav-link">В отеле</a>
-<a href="#section-32" class="nav-link">Гиды</a>
-<a href="#section-33" class="nav-link">Напряжение электросети</a>
-<a href="#section-34" class="nav-link">Пляжи</a>
-<a href="#section-35" class="nav-link">Экскурсии</a>
-<a href="#section-37" class="nav-link">Магазины</a>
-<a href="#section-38" class="nav-link">Правила личной гигиены и безопасности:</a>
-<a href="#section-39" class="nav-link">В случае потери паспорта</a>
-<a href="#section-40" class="nav-link">Желаем вам приятного путешествия!</a>
-<a href="#section-41" class="nav-link">Соцсети: вконтакте |telegram</a>
-<a href="#section-42" class="nav-link">Индивидуальный предприниматель трохин евгений альбертович</a>
-<a href="#section-43" class="nav-link">/</a>
-
+                        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/40 mb-6 px-6">Содержание</p>       
+                        <nav id="quick-links" class="flex flex-col border-l border-black/5">
+                             <!-- Сюда вставим ссылки скриптом -->
                         </nav>
                     </div>
                 </div>
@@ -542,6 +514,20 @@
                 link.classList.remove('active');
                 if (link.getAttribute('href') === "#" + current) {
                     link.classList.add('active');
+                    
+                    const parent = document.getElementById('quick-links');
+                    if (parent) {
+                        const linkTop = link.offsetTop;
+                        const parentHeight = parent.offsetHeight;
+                        const parentScroll = parent.scrollTop;
+                        
+                        if (linkTop > (parentScroll + parentHeight - 50) || linkTop < parentScroll) {
+                            parent.scrollTo({
+                                top: linkTop - 100,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
                 }
             });
         });
