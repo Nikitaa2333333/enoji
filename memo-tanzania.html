@@ -120,13 +120,26 @@
 <body class="bg-background text-on-surface">
     <!-- Premium Mobile Elements (Pro Max) -->
     <div id="scroll-progress"></div>
-    
-    
+    <!-- ═══ ФИКСИРОВАННАЯ ШАПКА ═══ -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
+            <a href="index.html"
+                class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent md:px-0 md:py-0">
+                <span class="material-symbols-outlined text-[18px] md:text-[24px]">arrow_back</span>
+                Все страны
+            </a>
+            <a href="index.html" class="flex-shrink-0 mx-auto md:mx-0">
+                <img src="LogoB_300x.png" alt="Emoji Tours" class="h-8 md:h-10">
+            </a>
+            <div class="w-24 md:hidden"></div>
+        </div>
     </nav>
+
 
     <main>
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-32">
+        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -177,16 +190,16 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-12">Памятка: <span class="text-primary">Танзания</span></h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Памятка: <span class="text-primary">Танзания</span></h1>
                 
-                <div class="flex flex-wrap gap-4 mb-24">
+                <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#booking-form" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-██slug██.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-32" id="memo-content-area">
-                     <section class="pt-24 border-t border-black/5"><h2 id="section-turistam-vyezzhayuschim-v-tanzaniyu" class="text-6xl font-black mb-16 tracking-tight">Туристам, выезжающим в Танзанию</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-6xl font-black mb-16 tracking-tight">Перед отъездом</h2><div class="space-y-8">
+                <div class="space-y-16" id="memo-content-area">
+                     <section class="pt-12 border-t border-black/5"><h2 id="section-turistam-vyezzhayuschim-v-tanzaniyu" class="text-6xl font-black mb-8 tracking-tight">Туристам, выезжающим в Танзанию</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-6xl font-black mb-8 tracking-tight">Перед отъездом</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Проверьте наличие необходимых для поездки документов:</p>
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
@@ -224,7 +237,7 @@
     <p class="text-xl leading-relaxed text-on-surface-variant font-light pt-1">страховой медицинский полис.</p>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pravila-vezda-i-prebyvaniya-na-mavrikii" class="text-6xl font-black mb-16 tracking-tight">Правила въезда и пребывания на маврикии</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pravila-vezda-i-prebyvaniya-na-mavrikii" class="text-6xl font-black mb-8 tracking-tight">Правила въезда и пребывания на маврикии</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед вылетом необходимо заполнить онлайн-форму «Mauritius All-In-One Travel Form» на сайте https://safemauritius.govmu.org/. В течение одной или двух минут вы получите электронное письмо от noreply@mauritiustravelform.com с заполненным PDF-документом.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Пожалуйста, распечатайте документ на отдельном листе и подпишите. Предъявите этот документ вместе с любыми другими обязательными проездными документами в органы пограничного контроля и здравоохранения по прибытии на Маврикий, а также в вашу авиакомпанию, если это потребуется.</p>
 <img src="tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
@@ -235,7 +248,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Выезд из РФ несовершеннолетних детей, сведения о которых внесены в паспорта сопровождающих их родителей, оформленные по старому образцу, осуществляется по срокам действия паспортов. На заграничные паспорта, оформленные по новому образцу (биометрический), распространяются нормы Постановления Правительства РФ №13 от 19 января 2010 года о том, что внесение сведений о детях в паспорт, удостоверяющий личность родителя, не дает права ребенку на выезд за пределы территории РФ без документа, удостоверяющего личность гражданина РФ за пределами территории РФ.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При следовании несовершеннолетнего российского гражданина через государственную границу РФ совместно с одним из родителей предъявлять письменное согласие второго родителя не нужно, если только от него ранее в пограничные органы не поступало заявление о несогласии на выезд из РФ своих детей. Если у несовершеннолетнего ребенка и выезжающего с ним родителя разные фамилии, то рекомендуем взять с собой нотариально заверенную копию свидетельства о рождении для подтверждения родства. На практике отсутствие такого подтверждения служило основанием для отказа ребенку в пересечении границы.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-16 tracking-tight">Беременным женщинам</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-8 tracking-tight">Беременным женщинам</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления письменного согласия врача на полет, а также иных документов для осуществления авиаперелета. Сотрудники авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.</p>
 <img src="tild6234-6362-4539-b665-323137643933__komfortnyi-otdykh-s-.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Собирая багаж:</p>
@@ -243,11 +256,11 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не забывайте собрать и взять с собой аптечку первой помощи, которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.</p>
 <img src="tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-6xl font-black mb-16 tracking-tight">В российском аэропорту вылета/прилета</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-6xl font-black mb-8 tracking-tight">В российском аэропорту вылета/прилета</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль до начала путешествия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль до начала путешествия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
 
 <div class="bg-primary/5 border-l-8 border-primary p-10 rounded-r-[3rem] my-16 shadow-inner">
@@ -298,7 +311,7 @@
     <p class="text-xl leading-relaxed text-on-surface-variant font-light pt-1">принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</p>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль по окончанию путешествия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль по окончанию путешествия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
 
@@ -314,19 +327,19 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
 <img src="tild6364-3637-4261-b761-386566643134__ria_6136134hr_a91.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-6xl font-black mb-16 tracking-tight">Регистрация на рейс и оформление багажа</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-6xl font-black mb-8 tracking-tight">Регистрация на рейс и оформление багажа</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">До начала поездки настоятельно рекомендуем уточнить время начала и окончания регистрации на рейс, а также время посадки на борт. Указанную информацию вы можете посмотреть на официальном сайте авиакомпании. Помните, что у разных авиакомпаний могут быть свои правила. Регистрация пассажиров и оформление багажа производятся на основании именного авиабилета или распечатанных на бумажном носителе маршрута и/или квитанции электронного билета, а также заграничного паспорта пассажира. При регистрации пассажиру выдается посадочный талон, который необходимо сохранять до момента возможного предъявления авиакомпании претензий по качеству предоставленных услуг авиаперевозки.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед посадкой на рейс рекомендуем проверить номер выхода и время начала посадки на рейс на информационном табло в аэропорту. Пассажиру, опоздавшему ко времени окончания регистрации пассажиров и оформления багажа или посадки в воздушное судно, может быть отказано в перевозке.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Каждый авиаперевозчик устанавливает свои нормы провоза багажа, а также габариты и вес ручной клади, провозимой в салоне самолета. Уточняйте данную информацию перед вылетом. За провоз багажа сверх установленной нормы бесплатного провоза багажа взимается дополнительная плата по тарифу, установленному перевозчиком. Перевозчик имеет право отказать туристу в перевозе багажа, вес или объем которого не соответствуют установленным нормам.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Паспортный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Паспортный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для прохождения пограничного контроля необходимо предъявить заграничный/внутренний российский паспорт. Пограничные органы ФСБ РФ при осуществлении пограничного контроля имеют право запрашивать у туристов дополнительные документы (авиабилет, посадочный талон, ваучер и т. п.), а также проводить опрос лиц, следующих через границу.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Санитарный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Санитарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристам сертификат о прививках не требуется. В летний период (с ноября по май) существует определенный риск заражения тропическими заболеваниями, передаваемыми через укусы комаров, — лихорадкой Денге и чикунгуньей — перед поездкой на Маврикий желательно сделать прививки против этих болезней.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Сырая вода для питья непригодна и требует очистки через фильтр с последующим кипячением.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Ветеринарный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Ветеринарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Животные подвергаются ветеринарному осмотру.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы вывозите животных, то необходимо иметь комплект документов, подтверждающих, что они здоровы. Как правило, следует иметь:</p>
 
@@ -361,7 +374,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Запрещен ввоз на территорию РФ любых грузов животного происхождения, в том числе в ручной клади и багаже, при отсутствии письменного разрешения Главного государственного ветеринарного инспектора РФ. Без разрешения уполномоченных органов РФ запрещено ввозить и вывозить объекты дикой фауны и флоры, находящиеся под угрозой исчезновения.</p>
 <img src="tild6164-3539-4236-a536-653666633263__919255ebe5775d87ea2b.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-aeroportu-prileta-vyleta-tanzanii" class="text-6xl font-black mb-16 tracking-tight">В аэропорту прилета/вылета танзании</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-aeroportu-prileta-vyleta-tanzanii" class="text-6xl font-black mb-8 tracking-tight">В аэропорту прилета/вылета танзании</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">По прибытии в аэропорт Танзании нужно последовательно:</p>
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
@@ -431,7 +444,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">С 1 октября 2026 г. все иностранные граждане, прибывающие на Занзибар, обязаны приобрести страховку от Zanzibar Insurance Corporation. Данная страховка будет покрывать экстренные медицинские расходы, несчастные случаи, задержку багажа, кражу, юридические расходы, расходы на репатриацию и прочее при пребывании до 92 дней.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Страхование является обязательным требованием для всех путешественников, независимо от их существующих медицинских или туристических страховых покрытий. Стоимость страховки — 44 USD на человека, оплата наличными. Несоблюдение этого обязательного требования может привести к отказу во въезде на иммиграционных контрольно-пропускных пунктах.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-v-tanzanii" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль в танзании</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-v-tanzanii" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль в танзании</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Импортировать или экспортировать национальную валюту Танзании нелегально.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристы могут ввозить сколько угодно валюты, ее не нужно декларировать.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Обменять валюту можно в уполномоченных банках, пунктах обмена валют и гостиницах. Кредитные карты (Access, Master Card, Visa, American Express, Euro card, Diners) принимаются в наиболее известных отелях по всей стране.</p>
@@ -466,29 +479,29 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Правительством Танзании запрещен ввоз пластиковых пакетов как в багаже, так и в ручной клади (как на Занзибар, так и на материковую часть Танзании). Это распространяется и на упаковку багажа, и провоз одежды, косметики и прочих вещей персонального пользования в пластиковых пакетах. За ввоз пластиковых пакетов нарушители облагаются штрафом. Разрешается упаковка в пакеты ziplock (на замке).</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В Танзании и на Занзибаре нет запрета на ввоз и курение электронных сигарет.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tanzaniya" class="text-6xl font-black mb-16 tracking-tight">Танзания</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-vremya" class="text-6xl font-black mb-16 tracking-tight">Время</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tanzaniya" class="text-6xl font-black mb-8 tracking-tight">Танзания</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-vremya" class="text-6xl font-black mb-8 tracking-tight">Время</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разницы во времени с Москвой нет.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-klimat" class="text-6xl font-black mb-16 tracking-tight">Климат</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-klimat" class="text-6xl font-black mb-8 tracking-tight">Климат</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Субэкваториальный. На севере два сезона дождей (март — май и сентябрь — ноябрь), на юге — один (ноябрь — апрель). Температура воздуха очень комфортная и в среднем составляет +26…+27 °C.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-valyuta" class="text-6xl font-black mb-16 tracking-tight">Валюта</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-valyuta" class="text-6xl font-black mb-8 tracking-tight">Валюта</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Танзанийский шиллинг.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-chaevye" class="text-6xl font-black mb-16 tracking-tight">Чаевые</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-chaevye" class="text-6xl font-black mb-8 tracking-tight">Чаевые</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В Танзании принято давать чаевые. Обычно в ресторане это 5-10 % от суммы счета.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-yazyk" class="text-6xl font-black mb-16 tracking-tight">Язык</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-yazyk" class="text-6xl font-black mb-8 tracking-tight">Язык</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Суахили, английский. На Занзибаре распространен арабский, в материковой части — множество местных языков группы банту.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-naselenie" class="text-6xl font-black mb-16 tracking-tight">Население</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-naselenie" class="text-6xl font-black mb-8 tracking-tight">Население</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Примерная численность населения — 61 млн человек. 99 % населения — народы, относящиеся к восточному банту (130 племен), 1 % — индийцы, пакистанцы, европейцы, арабы.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-religiya" class="text-6xl font-black mb-16 tracking-tight">Религия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-religiya" class="text-6xl font-black mb-8 tracking-tight">Религия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">На материковой части около 12 % населения придерживается местных традиционных верований, 30 % — мусульмане, 55 %-60 % — христиане, на Занзибаре почти 99 % населения исповедуют ислам.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-obychai" class="text-6xl font-black mb-16 tracking-tight">Обычаи</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-obychai" class="text-6xl font-black mb-8 tracking-tight">Обычаи</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не рекомендуется производить фото- и видеосъемку аборигенов без их разрешения, тем более самостоятельно посещать дома местных жителей.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Экологическое законодательство Танзании запрещает использовать любые пластиковые пакеты.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В стране случаи мошенничества и воровства не редкость.</p>
@@ -505,7 +518,7 @@
 </div>
 <img src="tild6339-3934-4431-a564-333732333764__1683325577_1zoom-clu.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-16 tracking-tight">Праздники и нерабочие дни</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-8 tracking-tight">Праздники и нерабочие дни</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">25 декабря — Рождество;</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">9 декабря — День независимости;</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">8 августа — День крестьянина;</p>
@@ -513,27 +526,27 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">26 декабря — День бокса.</p>
 <img src="tild3265-3662-4431-b261-666266613831__maxresdefault_2.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-transport" class="text-6xl font-black mb-16 tracking-tight">Транспорт</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-transport" class="text-6xl font-black mb-8 tracking-tight">Транспорт</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Городской транспорт есть в крупных городах, он представлен обычными старыми городскими автобусами и микроавтобусами. В других населенных пунктах городской транспорт представляет собой хаотично передвигающиеся по городу и пригородам пикапы, маршрутные такси и рикши. Также вдали от больших городов ходит транспорт попроще — автобусы на шасси грузового автомобиля — «Дала-Дала». «Дала-Дала» связывают все города страны, они очень дешевы, часто лишены минимального комфорта. Постоянное расписание отправлений и прибытий транспорта отсутствует.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-ekstrennye-telefony" class="text-6xl font-black mb-16 tracking-tight">Экстренные телефоны</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-ekstrennye-telefony" class="text-6xl font-black mb-8 tracking-tight">Экстренные телефоны</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Единый телефон служб спасения: 112,</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">скорая помощь: 133, 122,</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">полиция: 995,</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">пожарная служба: 999.</p>
 <img src="tild3337-3934-4532-a536-386363633935__phone_old_year_built.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-otele" class="text-6xl font-black mb-16 tracking-tight">В отеле</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-otele" class="text-6xl font-black mb-8 tracking-tight">В отеле</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день приезда расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная с 14:00 по местному времени. Просим ознакомиться на месте с условиями предоставления услуг в отеле и придерживаться установленных отелем правил.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день выезда до наступления расчетного часа (как правило, 12:00) необходимо освободить свой номер и оплатить дополнительные услуги: телефонные переговоры, мини-бар, заказ питания и напитков в номер, массаж и др. Свой багаж можно оставить в камере хранения отеля и оставаться на территории отеля до прибытия трансфера.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы не сдали номер до 12:00, стоимость комнаты оплачивается полностью за следующие сутки.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-vnimanie-nalog-za-infrastrukturu" class="text-6xl font-black mb-16 tracking-tight">Внимание! налог за инфраструктуру</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-vnimanie-nalog-za-infrastrukturu" class="text-6xl font-black mb-8 tracking-tight">Внимание! налог за инфраструктуру</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Цены на проживание не включают «INFRUSRUCTURE TAX» (Налог за инфраструктуру). Данный налог оплачивается на месте в отеле.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">С 01.07.2026 налог будет взиматься с человека за ночь в размере:</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-5-usd-dlya-gostej-prozhivayuschih-v-otelyah-5-i-4" class="text-6xl font-black mb-16 tracking-tight">● 5 usd для гостей, проживающих в отелях 5* и 4*</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-4-usd-dlya-gostej-prozhivayuschih-v-otelyah-3-i-2" class="text-6xl font-black mb-16 tracking-tight">● 4 usd для гостей, проживающих в отелях 3* и 2*</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-5-usd-dlya-gostej-prozhivayuschih-v-otelyah-5-i-4" class="text-6xl font-black mb-8 tracking-tight">● 5 usd для гостей, проживающих в отелях 5* и 4*</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-4-usd-dlya-gostej-prozhivayuschih-v-otelyah-3-i-2" class="text-6xl font-black mb-8 tracking-tight">● 4 usd для гостей, проживающих в отелях 3* и 2*</h2><div class="space-y-6">
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
     <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-colors">
@@ -543,10 +556,10 @@
 </div>
 <img src="tild6465-3230-4966-b466-643466646533__56141597321098.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-16 tracking-tight">Напряжение электросети</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-8 tracking-tight">Напряжение электросети</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Напряжение в сети: 220-240 В, частота 50 Гц В Танзании распространены розетки британского образца (трехконтактные), поэтому россиянам необходимо заранее приобрести адаптер.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-6xl font-black mb-16 tracking-tight">Правила личной гигиены и безопасности:</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-6xl font-black mb-8 tracking-tight">Правила личной гигиены и безопасности:</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед путешествием мы советуем ознакомиться с «Полезными советами российским гражданам, выезжающим за рубеж», размещенными на сайте МИД РФ: https://www.kdmid.ru/info-for-traveling-abroad/useful-tips-for-russian-citizens-traveling-abroad/, а также с памяткой МИД РФ «Каждому, кто направляется за границу», и памяткой Роспотребнадзора выезжающим за рубеж.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не нарушайте правила безопасности, установленные авиакомпаниями, транспортными организациями, гостиницами, местными органами власти.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Категорически не рекомендуем приобретать экскурсии и дополнительные туристские услуги в неизвестных туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, вам не будет гарантирована безопасность предоставленных услуг и исправность используемого оборудования, тем самым можно подвергнуть себя серьезной опасности.</p>
@@ -561,14 +574,14 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если в номере стоит мини-бар, то все напитки и закуски, взятые из него, как правило, должны быть оплачены.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5">
-    <div class="flex items-center gap-4 mb-12">
+<section class="pt-12 border-t border-black/5">
+    <div class="flex items-center gap-4 mb-8">
         <div class="w-2 h-12 bg-primary rounded-full"></div>
         <h2 id="section-v-sluchae-poteri-pasporta" class="text-5xl font-black">В случае потери паспорта</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-            <section class="pt-24 border-t border-black/5"><div class="space-y-8">
+            <section class="pt-12 border-t border-black/5"><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Незамедлительно обращайтесь в дипломатическое представительство, в консульское учреждение или в представительство МИД РФ, которое находится в пределах приграничной территории.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Вам необходимо получить свидетельство на въезд в РФ (REENTRY CERTIFICATE TO THE RUSSIAN FEDERATION), которое называется временным загранпаспортом. Выдается на срок до 15 дней для того, чтобы турист успел купить обратный билет и улететь на родину.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Для того чтобы вам выдали свидетельство на возвращение в РФ, необходимо представить следующие документы:</p>
@@ -609,16 +622,16 @@
     </div>
 </section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-e-mail-embrusstanz-mid-ru" class="text-6xl font-black mb-16 tracking-tight">E-mail: embrusstanz@mid.ru</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-e-mail-embrusstanz-mid-ru" class="text-6xl font-black mb-8 tracking-tight">E-mail: embrusstanz@mid.ru</h2></section>
 
-<section class="pt-24 border-t border-black/5">
-    <div class="flex items-center gap-4 mb-12">
+<section class="pt-12 border-t border-black/5">
+    <div class="flex items-center gap-4 mb-8">
         <div class="w-2 h-12 bg-primary rounded-full"></div>
         <h2 id="section-posolstvo-tanzanii-v-rf" class="text-5xl font-black">Посольство танзании в рф</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-            <section class="pt-24 border-t border-black/5"><div class="space-y-8">
+            <section class="pt-12 border-t border-black/5"><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Адрес: Россия, Москва, ул. Большая Никитская, 51.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Тел.: +7 (495) 6902521,6902517.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Факс: +7 (495) 6902251.</p>
@@ -630,7 +643,7 @@
     </div>
 </section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-e-mail-info-tanzania-ru-http-www-tanzania-ru" class="text-6xl font-black mb-16 tracking-tight">E-mail: info@tanzania.ru http://www.tanzania.ru</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-e-mail-info-tanzania-ru-http-www-tanzania-ru" class="text-6xl font-black mb-8 tracking-tight">E-mail: info@tanzania.ru http://www.tanzania.ru</h2></section>
 
                     </div>
                 </div>
@@ -643,7 +656,7 @@
         <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
-                <div class="text-center mb-10 md:mb-16 space-y-4 px-2">
+                <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
                     <h2 class="text-4xl md:text-5xl font-headline font-black text-on-surface tracking-tight leading-none">Ваша новая история...</h2>
                     <p class="text-on-surface-variant text-base md:text-lg font-medium leading-relaxed">Мы подберем идеальный тур, исходя из ваших желаний и эмоционального настроя.</p>
                 </div>

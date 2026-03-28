@@ -123,9 +123,22 @@
 <body class="bg-background text-on-surface">
     <!-- Premium Mobile Elements (Pro Max) -->
     <div id="scroll-progress"></div>
-    
-    
+    <!-- ═══ ФИКСИРОВАННАЯ ШАПКА ═══ -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
+            <a href="index.html"
+                class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent md:px-0 md:py-0">
+                <span class="material-symbols-outlined text-[18px] md:text-[24px]">arrow_back</span>
+                Все страны
+            </a>
+            <a href="index.html" class="flex-shrink-0 mx-auto md:mx-0">
+                <img src="LogoB_300x.png" alt="Emoji Tours" class="h-8 md:h-10">
+            </a>
+            <div class="w-24 md:hidden"></div>
+        </div>
     </nav>
+
 
     <main>
         <!-- ═══ HERO PHOTO (100VH) ═══ -->
@@ -161,10 +174,10 @@
 
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-10">
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-12">Мальдивы
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Мальдивы
                 </h1>
 
-                <div class="flex flex-wrap gap-4 mb-24">
+                <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#booking-form"
                         class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Выбрать
                         направление</a>
@@ -173,14 +186,14 @@
                         туристу</a>
                 </div>
 
-                <div class="space-y-32" id="memo-content-area">
-                    <section class="pt-24 border-t border-black/5">
+                <div class="space-y-16" id="memo-content-area">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-все-о-путешествии-на-райские-мальдивы"
-                            class="text-6xl font-black mb-16 tracking-tight">Все о путешествии на райские Мальдивы</h2>
+                            class="text-6xl font-black mb-8 tracking-tight">Все о путешествии на райские Мальдивы</h2>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-о-стране" id="section-о-стране" class="text-6xl font-black mb-16 tracking-tight">О стране</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-о-стране" id="section-о-стране" class="text-6xl font-black mb-8 tracking-tight">О стране</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Общая информация
                             </p>
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Живописные
@@ -200,10 +213,10 @@
                                 реалиями для туристов, которые предпочли отдых на Мальдивах.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-атолл-северный-мале" class="text-6xl font-black mb-16 tracking-tight">Атолл
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-атолл-северный-мале" class="text-6xl font-black mb-8 tracking-tight">Атолл
                             Северный Мале</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <img src="tild3739-3336-4131-a166-623838346636__i_1.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристы чаще
@@ -213,10 +226,10 @@
                                 также все необходимые условия для сноркелинга и серфинга.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-атолл-южный-мале" class="text-6xl font-black mb-16 tracking-tight">Атолл Южный
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-атолл-южный-мале" class="text-6xl font-black mb-8 tracking-tight">Атолл Южный
                             Мале</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <img src="tild3038-3438-4564-a234-663266653436__8q1a7167.webp"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Более 20
@@ -227,9 +240,9 @@
                                 серфингистов курорт Кандума, у берегов которого нередко бывают хорошие волны.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-атолл-ари" class="text-6xl font-black mb-16 tracking-tight">Атолл Ари</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-атолл-ари" class="text-6xl font-black mb-8 tracking-tight">Атолл Ари</h2>
+                        <div class="space-y-6">
                             <img src="tild6630-6538-4330-b464-393463393134__yv9ruhd5mvt7khn3uw60.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В составе атолла
@@ -238,9 +251,9 @@
                                 Считается, здесь находится лучшее место для наблюдения за китовыми акулами.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-атолл-баа" class="text-6xl font-black mb-16 tracking-tight">Атолл Баа</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-атолл-баа" class="text-6xl font-black mb-8 tracking-tight">Атолл Баа</h2>
+                        <div class="space-y-6">
                             <img src="tild6331-3531-4436-a431-353735636630__anantara_kihavah_-_a.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Особо охраняемый
@@ -250,9 +263,9 @@
                                 паломничества дайверов со всего мира.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-атолл-даалу" class="text-6xl font-black mb-16 tracking-tight">Атолл Даалу</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-атолл-даалу" class="text-6xl font-black mb-8 tracking-tight">Атолл Даалу</h2>
+                        <div class="space-y-6">
                             <img src="tild6139-6437-4131-b637-363137333330__photo.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Первозданный
@@ -264,9 +277,9 @@
                                 местами подводного погружения.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-атолл-раа" class="text-6xl font-black mb-16 tracking-tight">Атолл Раа</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-атолл-раа" class="text-6xl font-black mb-8 tracking-tight">Атолл Раа</h2>
+                        <div class="space-y-6">
                             <img src="tild6263-3564-4536-b135-396134623436__hbr-maldives-excursi.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Несмотря на
@@ -276,10 +289,10 @@
                                 непременно поведают местные жители.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-атолл-лавияни" class="text-6xl font-black mb-16 tracking-tight">Атолл Лавияни
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-атолл-лавияни" class="text-6xl font-black mb-8 tracking-tight">Атолл Лавияни
                         </h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <img src="tild6463-6337-4131-a432-626631353861__i_2.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Отличительной
@@ -313,7 +326,7 @@
         <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
-                <div class="text-center mb-10 md:mb-16 space-y-4 px-2">
+                <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
                     <h2 class="text-4xl md:text-5xl font-headline font-black text-on-surface tracking-tight leading-none">Ваша новая история...</h2>
                     <p class="text-on-surface-variant text-base md:text-lg font-medium leading-relaxed">Мы подберем идеальный тур, исходя из ваших желаний и эмоционального настроя.</p>
                 </div>

@@ -120,13 +120,26 @@
 <body class="bg-background text-on-surface">
     <!-- Premium Mobile Elements (Pro Max) -->
     <div id="scroll-progress"></div>
-    
-    
+    <!-- ═══ ФИКСИРОВАННАЯ ШАПКА ═══ -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
+            <a href="index.html"
+                class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent md:px-0 md:py-0">
+                <span class="material-symbols-outlined text-[18px] md:text-[24px]">arrow_back</span>
+                Все страны
+            </a>
+            <a href="index.html" class="flex-shrink-0 mx-auto md:mx-0">
+                <img src="LogoB_300x.png" alt="Emoji Tours" class="h-8 md:h-10">
+            </a>
+            <div class="w-24 md:hidden"></div>
+        </div>
     </nav>
+
 
     <main>
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-32">
+        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -190,16 +203,16 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-12">Памятка: <span class="text-primary">Мексика</span></h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Памятка: <span class="text-primary">Мексика</span></h1>
                 
-                <div class="flex flex-wrap gap-4 mb-24">
+                <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#booking-form" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-██slug██.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-32" id="memo-content-area">
-                     <section class="pt-24 border-t border-black/5"><h2 id="section-turistam-vyezzhayuschim-v-meksiku" class="text-6xl font-black mb-16 tracking-tight">Туристам, выезжающим в мексику</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-6xl font-black mb-16 tracking-tight">Перед отъездом</h2><div class="space-y-8">
+                <div class="space-y-16" id="memo-content-area">
+                     <section class="pt-12 border-t border-black/5"><h2 id="section-turistam-vyezzhayuschim-v-meksiku" class="text-6xl font-black mb-8 tracking-tight">Туристам, выезжающим в мексику</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-6xl font-black mb-8 tracking-tight">Перед отъездом</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Проверьте наличие необходимых для поездки документов:</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Заграничный паспорт (паспорт должен быть действителен в течение не менее ШЕСТИ месяцев после даты окончания поездки, и иметь не менее двух свободных страниц для проставления визы); ксерокопию загранпаспортов (могут пригодиться при утрате загранпаспорта и в случае иных непредвиденных обстоятельств); авиабилеты или маршрут/квитанции электронного билета; ваучер; страховой медицинский полис; разрешение на въезд в Мексику - виза.</p>
 <img src="tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
@@ -217,11 +230,11 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не забывайте собрать и взять с собой аптечку первой помощи, которая поможет Вам при легких недомоганиях, сэкономит Ваше время на поиски лекарственных средств и избавит от проблем общения на иностранном языке.</p>
 <img src="tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-6xl font-black mb-16 tracking-tight">В российском аэропорту вылета/прилета</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-6xl font-black mb-8 tracking-tight">В российском аэропорту вылета/прилета</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед выездом в аэропорт рекомендуем получить дополнительную информацию о возможно произошедших изменениях в условиях вылета Вашего рейса, используя возможности сайта авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем заблаговременно, не позднее, чем за три часа до вылета рейса, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль до начала путешествия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль до начала путешествия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если Вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то Вам следует проходить зону таможенного контроля по «Зеленому коридору».</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Без предъявления документов и без внесения сведений о валюте в пассажирскую таможенную декларацию туристы имеют право вывезти наличную иностранную валюту и/или валюту Российской Федерации, а также дорожные чеки на сумму не более 10.000 долларов США. При вывозе физическими лицами иностранной валюты и/или валюты Российской Федерации в эквиваленте до 10.000 долларов США, либо дорожных чеков в сумме, превышающей 10.000 долларов США, эти суммы средств должны быть задекларированы в пассажирской таможенной декларации.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">На денежные средства, вывозимые с помощью банковской карты, ограничений нет. Банковскую карту декларировать не требуется.</p>
@@ -265,13 +278,13 @@
 </div>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль по окончанию путешествия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль по окончанию путешествия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если Вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то Вам следует проходить зону таможенного контроля по «Зеленому коридору».</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Без уплаты таможенных пошлин можно ввозить в Российскую Федерацию товары для личного пользования на сумму не более 65 тысяч рублей, общим весом – не более 50 килограммов.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Физическое лицо не моложе 17 лет может ввозить без уплаты таможенных пошлин: до 3-х литров алкогольных напитков; 50 шт. сигар, 100 шт. сигарилл, 200 шт. сигарет, 0,25 кг табака; 250 граммов икры осетровых рыб в заводской упаковке.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При единовременном ввозе в Россию физическими лицами наличной иностранной валюты и/или валюты Российской Федерации, а также дорожных чеков, внешних и/или внутренних ценных бумаг в документарной форме в сумме, в эквиваленте превышающей 10.000 долларов США, сведения о ней необходимо внести в пассажирскую таможенную декларацию. Декларации также подлежат: вывозимые драгоценные металлы, камни, культурные ценности, государственные награды РФ, редкие животные и растения, наркотические, психотропные, сильнодействующие, ядовитые, радиоактивные вещества, химикаты, высокочастотные устройства, радиоэлектронные, транспортные средства, ядерные материалы, информация, связанная с НТП для изготовления оружия массового поражения, продукция военного характера.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-6xl font-black mb-16 tracking-tight">Регистрация на рейс и оформление багажа</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-6xl font-black mb-8 tracking-tight">Регистрация на рейс и оформление багажа</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Регистрация пассажиров и оформление багажа производятся на основании именного авиабилета или распечатанной на бумажном носителе маршрут/квитанции электронного билета, а также заграничного паспорта пассажира.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При регистрации пассажиру выдается посадочный талон, в который необходимо сохранять до момента возможного предъявления авиакомпании претензий по качеству предоставленных услуг авиаперевозки.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Помните, что регистрация на рейс заканчивается за 40 минут до времени вылета рейса, указанного в билете по местному времени. Пассажиру, опоздавшему ко времени окончания регистрации пассажиров и оформления багажа или посадки в воздушное судно, может быть отказано в перевозке.</p>
@@ -279,24 +292,24 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">За провоз багажа сверх установленной нормы бесплатного провоза багажа, взимается дополнительная плата по тарифу, установленному перевозчиком.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перевозчик имеет право отказать туристу в перевозе багажа, вес или объем которого не соответствуют установленным нормам.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Паспортный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Паспортный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для прохождения пограничного контроля необходимо предъявить заграничный паспорт. Пограничным органам ФСБ России при осуществлении пограничного контроля предоставлено право запрашивать у туристов дополнительные документы (авиабилет, посадочный талон, ваучер и т.п.), а также проводить опрос лиц, следующих через границу.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Санитарный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Санитарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристам сертификат о прививках не требуется.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Ветеринарный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Ветеринарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если Вы вывозите животных, то Вам необходимо иметь комплект документов, подтверждающих, что они здоровы. Как правило, следует иметь: Ветеринарный паспорт, Справку о состоянии здоровья (выдается любой государственной ветеринарной клиникой, в справке указываются сведения о прививках по возрасту, последняя прививка от бешенства должна быть сделана не ранее, чем за год и не позднее, чем за два месяца до выезда), Справку из клуба СКОР или РКФ (в справке указывается, что собака не представляет племенной ценности, справки из других клубов вызывают вопросы на таможне). При ввозе домашних животных в Мексику необходимо предъявить ветеринарное свидетельство с указанием о прививке от бешенства. Животные подвергаются ветеринарному осмотру. Свидетельство не требуется при ввозе котят и щенков в возрасте до трех месяцев.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При ввозе в РФ животных и птиц Вам необходимо иметь сопровождающее ветеринарное свидетельство, полученное в Государственной ветеринарной службе страны, где приобретено животное.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Запрещен ввоз на территорию Российской Федерации любых грузов животного происхождения, в том числе в ручной клади и багаже, при отсутствии письменного разрешения Главного государственного ветеринарного инспектора Российской Федерации.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Без разрешения уполномоченных органов РФ запрещено ввозить и вывозить объекты дикой фауны и флоры, находящиеся под угрозой исчезновения.</p>
 <img src="tild6263-3236-4164-b132-313762653661__34944474314_b12b5af4.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-meksikanskom-aeroportu-prileta-vyleta" class="text-6xl font-black mb-16 tracking-tight">В мексиканском аэропорту прилета/вылета</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-meksikanskom-aeroportu-prileta-vyleta" class="text-6xl font-black mb-8 tracking-tight">В мексиканском аэропорту прилета/вылета</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">По прилету необходимо заполнить миграционную карточку латинскими буквами. Одна часть забирается на пограничном контроле, вторую необходимо сохранить на обратный вылет (важно: при утере взимается штраф).</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Паспортный контроль</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-viza" class="text-6xl font-black mb-16 tracking-tight">Виза.</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Паспортный контроль</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-viza" class="text-6xl font-black mb-8 tracking-tight">Виза.</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">С 1 января 2017 все граждане России, вне зависимости от места рождения, имеют право получить Электронное разрешение, позволяющее получить разрешение на поездку в Мексику без получения мексиканской визы. Это разрешение, позволяет въехать в Мексику авиационным транспортом и находиться на территории Мексики с целью туризма, транзита и для некоторых типов деловых поездок.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Оформление электронного разрешения на въезд в Мексику для граждан РФ оформляется туроператором или самостоятельно клиентом. Электронное разрешение действительно для однократного въезда в течение 30 дней с момента регистрации. Срок пребывания на территории Мексики по электронному разрешению – не более 180 дней с момента въезда.</p>
 
@@ -310,96 +323,96 @@
     <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8 text-black font-medium leading-relaxed">Для граждан, не имеющих гражданства Российской Федерации, могут быть установлены иные правила въезда на территорию Мексики. Получить информацию по этому вопросу следует в посольстве Мексики по месту гражданства.</p>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При единовременном ввозе в Мексику или вывозе из Мексики физическими лицами наличной иностранной валюты и/или валюты Мексики, а также дорожных чеков, иных платежных документов в сумме, в эквиваленте превышающей 10.000 долларов США, сведения о ней необходимо внести в пассажирскую таможенную декларацию.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разрешен беспошлинный ввоз лицам старше 18 лет (на 1 человека): 10 пачек сигарет, 25 сигар или 200 грамм табака; до 3 л спиртных напитков и 6 литров вина.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">ЗАПРЕЩЕН ввоз наркотиков, некоторых лекарств, содержащих большую дозу наркотических, психотропных веществ, оружия, фото, видеоматериалы, печатная продукция предосудительного или фривольного содержания.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Санитарный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Санитарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристам сертификат о прививках не требуется.</p>
 <img src="tild6164-3539-4236-a536-653666633263__919255ebe5775d87ea2b.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-meksikanskie-soedinennye-shtaty" class="text-6xl font-black mb-16 tracking-tight">Мексиканские соединенные штаты</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-meksikanskie-soedinennye-shtaty" class="text-6xl font-black mb-8 tracking-tight">Мексиканские соединенные штаты</h2><div class="space-y-6">
 <img src="tild3565-6533-4266-b366-613939663431__c510086bb4faf4c7ed64.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Мексиканские Соединенные Штаты - государство в Северной Америке, граничит с США на севере, с Белизом и Гватемалой на юго-востоке. Западная часть Мексики омывается водами Тихого океана и Калифорнийского залива, а восточная – Карибским морем и Мексиканским заливом. Государство состоит из 31 штата и одного федерального округа. Столица государства - г. Мехико. Территория страны составляет 1 972 550 км², в том числе около 6 тыс. км² островов в Тихом океане (включая остров Гуадалупе и архипелаг Ревилья-Хихедо), Мексиканском заливе, Карибском море и Калифорнийском заливе. По площади территории Мексика занимает 13 место в мире.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-vremya" class="text-6xl font-black mb-16 tracking-tight">Время</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-vremya" class="text-6xl font-black mb-8 tracking-tight">Время</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разница во времени с Москвой - 8 часов.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-klimat" class="text-6xl font-black mb-16 tracking-tight">Климат</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-klimat" class="text-6xl font-black mb-8 tracking-tight">Климат</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Мексика относится к странам со значительными региональными климатическими различиями. Климат большей части государства — тропический, а на севере — субтропический, он очень изменчив в зависимости от характера рельефа. Мексика находится в поясе ураганов, поэтому прибрежные районы подвержены их воздействию в период с июня по ноябрь.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Наилучший сезон – с ноября по май.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-valyuta" class="text-6xl font-black mb-16 tracking-tight">Валюта</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-valyuta" class="text-6xl font-black mb-8 tracking-tight">Валюта</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Денежные единица: Мексиканское песо. Мексиканский песо обозначают знаком $ с одной линией, американский доллар – с двумя. Цены в ресторанах и магазинах обычно стоят в песо. Везде можно расплачиваться долларами, большинство магазинов принимают кредитные карты Visa, Master Card, American Express.</p>
 <img src="tild6366-6339-4262-a538-386133616635__studying-foreign-exc.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-yazyk" class="text-6xl font-black mb-16 tracking-tight">Язык</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-yazyk" class="text-6xl font-black mb-8 tracking-tight">Язык</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Официальный язык – испанский. В курортных зонах широко распространен английский, французский и немецкий языки. А местные этнические группы говорят на своих родных языках (науатл, майя, отоми, сапотека, микштека, тотонак, тараскос, пурепеча и др.).</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-naselenie" class="text-6xl font-black mb-16 tracking-tight">Население</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-naselenie" class="text-6xl font-black mb-8 tracking-tight">Население</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Около 112 миллионов человек. 88% горожане. Современный этнический состав состоит из представителей европейцев, местных индейцев и африканцев. Метисы составляют 60 %, индейцы 30 %, белые 9 % и 1 % остальные группы.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-religiya" class="text-6xl font-black mb-16 tracking-tight">Религия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-religiya" class="text-6xl font-black mb-8 tracking-tight">Религия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Официальная религия – христианство, 97% мексиканцев - католики.</p>
 <img src="tild3534-6639-4636-b432-313437336161__pope-francis-mexico1.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-obychai" class="text-6xl font-black mb-16 tracking-tight">Обычаи</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-obychai" class="text-6xl font-black mb-8 tracking-tight">Обычаи</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В мексиканских обычаях смешалась целая гамма традиций и особенностей разных стран и цивилизаций. Прежде всего, мексиканцы – народ очень веселый и подвижный, гостеприимный и жизнерадостный. Мелодичность голоса и умение красиво двигаться младенцы впитывают, как говорится с молоком матери. Праздники, на которых гуляют всем районом, сопровождаются массовыми танцами - здесь обычное дело. А музыку вы можете услышать из каждого открытого окна. Добродушность и открытость местных жителей бросится вам в глаза сразу, мексиканцы любят улыбаться и любят когда улыбаются им в ответ. Стоит отметить, что в Мексике существует особый «культ семьи». Дети – это самое святое, что только может быть в жизни, поэтому вы редко увидите семью, в которой детей меньше трех. Уважение к женщинам имеет не малое значение: придержать дверь, подать руку, сделать красноречивый комплемент, обращение «сеньора» к замужней женщине и «сеньорита» к незамужней, все это в порядке вещей. Темпераментные скандалы и ссоры стоит оставить для приватного разговора в номере отеля.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не смотря на то, что Мексика – родина текилы, находиться в общественном месте в нетрезвом виде непринято и будет сопровождаться осуждающими взглядами. К туристам отношение, конечно более снисходительно, но, тем не менее, не стоит выходить за принятые в стране рамки приличия.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Мексика – страна шаманских обычаев, тайн, легенд и древних преданий, которые будут особенно интересны из уст местных жителей, которые с радостью поделятся ими, если у вас не возникнет трудностей с языком. (Многие мексиканцы говорят по-английски, по-французски и по-немецки.)</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-16 tracking-tight">Праздники и нерабочие дни</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-8 tracking-tight">Праздники и нерабочие дни</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Мексиканцы очень любят шумные праздники и отмечания, и далеко не всегда для этого необходим особый повод. Здесь вы можете увидеть красочные костюмированные шествия и гуляния на всю деревню. Очень чтятся «День матери» и «День детей». Самым удивительным и необычным праздником Мексики является «День мертвых», такого вы нигде больше не увидите. В этом дне выразилось присущее только мексиканцам легкое отношение к смерти, которое досталось им от древних ацтеков. В этом празднике раскрывается сама суть мексиканской философии – единство жизни и смерти, гибель и обновление. После печальной трапезы на кладбище – поминовения усопших, взрослые веселятся с танцами и песнями, а дети кушают всякие сладости в виде черепов, гробиков и скелетов.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Официальные праздники и нерабочие дни: 1 января — Новый Год; 5 февраля — День Конституции; 24 февраля — День Национального Флага; 21 марта — День Бенито Хуареса; Март-апрель — Пасха; 30 апреля — День Детей; 1 мая — День Труда; 16 сентября — День Независимости; 12 октября — День Открытия Америки; 20 ноября — День Революции; 12 декабря — День Девы Марии Гваделупе; 25 декабря — Рождество.</p>
 <img src="tild6230-3131-4166-b262-363761613665__44444444444448d44723.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-transport" class="text-6xl font-black mb-16 tracking-tight">Транспорт</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-transport" class="text-6xl font-black mb-8 tracking-tight">Транспорт</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Городской транспорт в Мексике развит хорошо. Автобусы ходят во всех крупных населённых пунктах и представляют собой достаточно удобный, но порой переполненный вид транспорта. Билеты можно приобрести в киосках на остановках или у водителя. Также добраться до нужного места можно на маршрутном такси «песеро» и на машинах-такси. При заказе машины стоит сразу уточнить цену, поскольку не во всех есть счетчики.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-arenda-avtomobilya" class="text-6xl font-black mb-16 tracking-tight">Аренда автомобиля</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-arenda-avtomobilya" class="text-6xl font-black mb-8 tracking-tight">Аренда автомобиля</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Чтобы взять автомобиль напрокат, вам необходимо предъявить действующие права международного образца на английском языке и быть не моложе 21 года. С учетом страховки, стоимость аренды на длительный срок (от 3 недель) снижается почти вдвое.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Ограничение скорости варьируется от 20 км/ч до 110 км/ч на скоростных платных трассах. Стоит учитывать, что бесплатные дороги не самого лучшего качества, однако большинство автомагистралей и шоссе находятся в отличном состоянии.</p>
 <img src="tild3439-6236-4138-b638-333537303265__1544809712_66.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-telefon" class="text-6xl font-black mb-16 tracking-tight">Телефон</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-telefon" class="text-6xl font-black mb-8 tracking-tight">Телефон</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Выгоднее звонить из телефона-автомата на улице, оплатить звонок можно с помощью телефонной карты LADATEL.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Чтобы позвонить в Россию надо набрать: 00 (выход на международную связь) + 7 (код России) + код города + номер абонента.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Чтобы позвонить из России в Мексику набирайте 8 + 10 + (52 – код Мексики) + (код города) + номер городского телефона (код Канкуна - 998, код Ривьера-Майя – 984)</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Экстренные телефоны. Экстренная помощь (полиция, скорая помощь, пожарная охрана): 06</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pomosch-na-dorogah-903-00-92" class="text-6xl font-black mb-16 tracking-tight">Помощь на дорогах: 903-00-92</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-turisticheskaya-goryachaya-liniya-5-250-01-23-250-04-93" class="text-6xl font-black mb-16 tracking-tight">Туристическая «горячая линия»: (5) 250-01-23, 250-04-93</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pomosch-na-dorogah-903-00-92" class="text-6xl font-black mb-8 tracking-tight">Помощь на дорогах: 903-00-92</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-turisticheskaya-goryachaya-liniya-5-250-01-23-250-04-93" class="text-6xl font-black mb-8 tracking-tight">Туристическая «горячая линия»: (5) 250-01-23, 250-04-93</h2><div class="space-y-6">
 <img src="tild3337-3934-4532-a536-386363633935__phone_old_year_built.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-otele" class="text-6xl font-black mb-16 tracking-tight">В отеле</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-otele" class="text-6xl font-black mb-8 tracking-tight">В отеле</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день приезда расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная с 14-00 местного времени. Расчетный час, как правило, 12-00. Просим ознакомиться на месте с условиями предоставления услуг в отеле и придерживаться установленных отелем правил.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день выезда до наступления расчетного часа (как правило, 12-00) необходимо освободить свой номер и оплатить дополнительные услуги: телефонные переговоры, мини-бар, заказ питания и напитков в номер, массаж и др. Свой багаж Вы можете оставить в камере хранения отеля и оставаться на территории отеля до прибытия трансфера. Если Вы не сдали номер до 12-00, стоимость комнаты оплачивается полностью за следующие сутки.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристам также следует иметь в виду, что в Мексике взимается туристический налог на проживание в отелях.</p>
 <img src="tild6561-6363-4130-b865-333362636133__all-inclusive-resort.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-chaevye" class="text-6xl font-black mb-16 tracking-tight">Чаевые</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-chaevye" class="text-6xl font-black mb-8 tracking-tight">Чаевые</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В отелях, как правило, чаевые частично уже включены в стоимость обслуживания. В ресторанах принято оставлять официанту около 10% от суммы, указанной в счете.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-16 tracking-tight">Напряжение электросети</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-8 tracking-tight">Напряжение электросети</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Напряжение составляет 110 Вольт, для электроприборов требуется специальный адаптер, который можно купить в отелях. Частота – 60 Гц. Вилки американского типа, розетки плоские.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-ekskursii" class="text-6xl font-black mb-16 tracking-tight">Экскурсии</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-ekskursii" class="text-6xl font-black mb-8 tracking-tight">Экскурсии</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Гид принимающей Вас в Мексике во время встречи в отеле сообщит Вам перечень предлагаемых экскурсий, их содержание, график проведения и их стоимость. Не рекомендуем Вам приобретать экскурсии или прочие услуги в неизвестных вам туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, а также о качестве транспорта для ее организации. Вам может быть предоставлено для использования несертифицированное, неисправное или не соответствующее санитарно-гигиеническим нормам оборудование, в том числе зараженный паразитарными, грибковыми, инфекционными заболеваниями инвентарь, включая сжатый воздух в баллонах для погружения.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-kuhnya" class="text-6xl font-black mb-16 tracking-tight">Кухня</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-kuhnya" class="text-6xl font-black mb-8 tracking-tight">Кухня</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Мексиканская кухня славится своими кулинарными традициями во всем мире, благодаря своей специфике. Мексиканцы любят острую еду, они добавляют специи и во время приготовления блюда, и при подаче. Обычно, блюда национальной кухни не обходятся без острого перца чили, фасоли или тортильяс. Но не пугайтесь, если вы не любите перец и остроту, в отелях, да и в местных ресторанах вам всегда предложат блюда европейской кухни. Стоит отметить одну особенность мексиканской кухни: все блюда имеют очень красивый вид, это настоящие произведения искусства, где учитываются даже сочетания цветов и форм. Традиционными цветами национальной кухни считаются красный, зеленый, а также черный и желтый.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-magaziny" class="text-6xl font-black mb-16 tracking-tight">Магазины</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-magaziny" class="text-6xl font-black mb-8 tracking-tight">Магазины</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Магазины работают с 10:00 до 20:00. Однако с 13:00 до 16:00 практически всё в городе закрывается на сиесту. Из Мексики обычно привозят текилу, изделия из серебра, керамику, тканые покрывала, сладости из кактусов. Стоит обратить внимание на поделки индейцев: вышивку, резьбу по дереву, картины в духе «развитого примитивизма» и ритуальные маски.</p>
 <img src="tild3536-3533-4563-b533-393230306266__mexican-market.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-6xl font-black mb-16 tracking-tight">Правила личной гигиены и безопасности:</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-6xl font-black mb-8 tracking-tight">Правила личной гигиены и безопасности:</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед путешествием мы советуем ознакомиться с «Полезными советами российским гражданам, выезжающим за рубеж», размещенными на сайте МИД России: http://www.mid.ru/dks.nsf/advinf</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не нарушайте правила безопасности, установленные авиакомпаниями, транспортными организациями, гостиницами, местными органами власти.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Категорически не рекомендуем Вам приобретать экскурсии и дополнительные туристские услуги в неизвестных Вам туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, Вам не будет гарантирована безопасность предоставленных услуг и исправность используемого оборудования, тем самым Вы можете подвергнуть себя серьезной опасности.</p>
@@ -420,14 +433,14 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если в номере имеется мини бар, то все напитки и закуски, взятые из него, как правило, должны быть оплачены.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5">
-    <div class="flex items-center gap-4 mb-12">
+<section class="pt-12 border-t border-black/5">
+    <div class="flex items-center gap-4 mb-8">
         <div class="w-2 h-12 bg-primary rounded-full"></div>
         <h2 id="section-v-sluchae-poteri-pasporta" class="text-5xl font-black">В случае потери паспорта</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-            <section class="pt-24 border-t border-black/5"><div class="space-y-8">
+            <section class="pt-12 border-t border-black/5"><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Как только Вы поняли, что загранпаспорт потерялся, или его украли, то незамедлительно обращайтесь в дипломатическое представительство, в консульское учреждение или в представительство МИД России, которое находится в пределах приграничной территории.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Вам необходимо получить свидетельство на въезд в РФ (REENTRY CERTIFICATE TO THE RUSSIAN FEDERATION), которое еще называется временным загранпаспортом. Выдается на срок до 15 дней, для того, чтобы Вы успели купить обратный билет и улететь на родину.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Для того, чтобы Вам выдали свидетельство на возвращение в РФ, необходимо представить следующие документы:</p>
@@ -448,20 +461,20 @@
     </div>
 </section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-tel-52-5-273-1305-516-0870" class="text-6xl font-black mb-16 tracking-tight">Тел.: (+52-5)273-1305, 516-0870</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-faks-52-5-273-1545" class="text-6xl font-black mb-16 tracking-tight">Факс: (+52-5)273-1545</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tel-52-5-273-1305-516-0870" class="text-6xl font-black mb-8 tracking-tight">Тел.: (+52-5)273-1305, 516-0870</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-faks-52-5-273-1545" class="text-6xl font-black mb-8 tracking-tight">Факс: (+52-5)273-1545</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">(52 - код Мексики, 5 - код Мехико)</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-e-mail-embrumex-hotmail-com" class="text-6xl font-black mb-16 tracking-tight">E-mail: embrumex@hotmail.com</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-e-mail-embrumex-hotmail-com" class="text-6xl font-black mb-8 tracking-tight">E-mail: embrumex@hotmail.com</h2></section>
 
-<section class="pt-24 border-t border-black/5">
-    <div class="flex items-center gap-4 mb-12">
+<section class="pt-12 border-t border-black/5">
+    <div class="flex items-center gap-4 mb-8">
         <div class="w-2 h-12 bg-primary rounded-full"></div>
         <h2 id="section-posolstvo-meksiki-v-rossijskoj-federacii" class="text-5xl font-black">Посольство мексики в российской федерации</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-            <section class="pt-24 border-t border-black/5"></section>
+            <section class="pt-12 border-t border-black/5"></section>
         </div>
         <div class="relative overflow-hidden rounded-[2.5rem] bg-primary/10 flex items-center justify-center group">
             <span class="material-symbols-outlined text-8xl text-primary/20 group-hover:scale-110 transition-transform duration-700">account_balance</span>
@@ -469,15 +482,15 @@
     </div>
 </section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-adres-119034-g-moskva-kalashnyj-pereulok-dom-12" class="text-6xl font-black mb-16 tracking-tight">Адрес: 119034, г. москва, калашный переулок, дом 12</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-telefon-495-969-28-79-495-637-48-48" class="text-6xl font-black mb-16 tracking-tight">Телефон: (495) 969-28-79; (495) 637-48-48</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-faks-7-495-969-28-77" class="text-6xl font-black mb-16 tracking-tight">Факс: +7 (495) 969 28 77</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-sajt-http-embamex-sre-gob-mx" class="text-6xl font-black mb-16 tracking-tight">Сайт: http://embamex.sre.gob.mx</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-adres-119034-g-moskva-kalashnyj-pereulok-dom-12" class="text-6xl font-black mb-8 tracking-tight">Адрес: 119034, г. москва, калашный переулок, дом 12</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-telefon-495-969-28-79-495-637-48-48" class="text-6xl font-black mb-8 tracking-tight">Телефон: (495) 969-28-79; (495) 637-48-48</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-faks-7-495-969-28-77" class="text-6xl font-black mb-8 tracking-tight">Факс: +7 (495) 969 28 77</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-sajt-http-embamex-sre-gob-mx" class="text-6xl font-black mb-8 tracking-tight">Сайт: http://embamex.sre.gob.mx</h2></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-telefon-7-977-730-95-22" class="text-6xl font-black mb-16 tracking-tight">Телефон: +7 (977) 730 95 22</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-socseti-vkontakte-instagram-telegram" class="text-6xl font-black mb-16 tracking-tight">Соцсети: вконтакте | instagram | telegram</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-telefon-7-977-730-95-22" class="text-6xl font-black mb-8 tracking-tight">Телефон: +7 (977) 730 95 22</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-socseti-vkontakte-instagram-telegram" class="text-6xl font-black mb-8 tracking-tight">Соцсети: вконтакте | instagram | telegram</h2></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-gorod-moskva-scherbinka-ul-yubilejnaya-d-3a" class="text-6xl font-black mb-16 tracking-tight">Город москва, щербинка ул. юбилейная д.3а</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-gorod-moskva-scherbinka-ul-yubilejnaya-d-3a" class="text-6xl font-black mb-8 tracking-tight">Город москва, щербинка ул. юбилейная д.3а</h2></section>
 
                     </div>
                 </div>
@@ -490,7 +503,7 @@
         <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
-                <div class="text-center mb-10 md:mb-16 space-y-4 px-2">
+                <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
                     <h2 class="text-4xl md:text-5xl font-headline font-black text-on-surface tracking-tight leading-none">Ваша новая история...</h2>
                     <p class="text-on-surface-variant text-base md:text-lg font-medium leading-relaxed">Мы подберем идеальный тур, исходя из ваших желаний и эмоционального настроя.</p>
                 </div>

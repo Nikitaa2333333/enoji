@@ -123,13 +123,26 @@
 <body class="bg-background text-on-surface">
     <!-- Premium Mobile Elements (Pro Max) -->
     <div id="scroll-progress"></div>
-    
-    
+    <!-- ═══ ФИКСИРОВАННАЯ ШАПКА ═══ -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
+            <a href="index.html"
+                class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent md:px-0 md:py-0">
+                <span class="material-symbols-outlined text-[18px] md:text-[24px]">arrow_back</span>
+                Все страны
+            </a>
+            <a href="index.html" class="flex-shrink-0 mx-auto md:mx-0">
+                <img src="LogoB_300x.png" alt="Emoji Tours" class="h-8 md:h-10">
+            </a>
+            <div class="w-24 md:hidden"></div>
+        </div>
     </nav>
+
 
     <main>
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-32">
+        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
 
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -194,10 +207,10 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-12">Памятка:
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Памятка:
                     <span class="text-primary">Египет</span></h1>
 
-                <div class="flex flex-wrap gap-4 mb-24">
+                <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#booking-form"
                         class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
                         туда</a>
@@ -206,15 +219,15 @@
                         туристу</a>
                 </div>
 
-                <div class="space-y-32" id="memo-content-area">
-                    <section class="pt-24 border-t border-black/5">
+                <div class="space-y-16" id="memo-content-area">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-turistam-vyezzhayuschim-v-egipet"
-                            class="text-6xl font-black mb-16 tracking-tight">Туристам, выезжающим в египет</h2>
+                            class="text-6xl font-black mb-8 tracking-tight">Туристам, выезжающим в египет</h2>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-pered-otezdom" class="text-6xl font-black mb-16 tracking-tight">Перед отъездом
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-pered-otezdom" class="text-6xl font-black mb-8 tracking-tight">Перед отъездом
                         </h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Проверьте
                                 наличие необходимых для поездки документов:</p>
 
@@ -367,10 +380,10 @@
                             </div>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-16 tracking-tight">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-8 tracking-tight">
                             Беременным женщинам</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом мы
                                 рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления
                                 письменного согласия врача на полет, а также иных документов для осуществления
@@ -395,10 +408,10 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-v-rossijskom-aeroportu-vyleta-prileta"
-                            class="text-6xl font-black mb-16 tracking-tight">В российском аэропорту вылета/прилета</h2>
-                        <div class="space-y-8">
+                            class="text-6xl font-black mb-8 tracking-tight">В российском аэропорту вылета/прилета</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед выездом в
                                 аэропорт получите дополнительную информацию о возможно произошедших изменениях в
                                 условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее
@@ -410,11 +423,11 @@
                                 другими видами контроля, установленными законодательством РФ.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya"
-                            class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль до начала путешествия
+                            class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль до начала путешествия
                         </h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом
                                 рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной
                                 валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы
@@ -494,11 +507,11 @@
                             </div>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya"
-                            class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль по окончанию
+                            class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль по окончанию
                             путешествия</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы не
                                 перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам
                                 следует проходить зону таможенного контроля по «Зелёному коридору».</p>
@@ -529,11 +542,11 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha"
-                            class="text-6xl font-black mb-16 tracking-tight">Регистрация на рейс и оформление багажа
+                            class="text-6xl font-black mb-8 tracking-tight">Регистрация на рейс и оформление багажа
                         </h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">До начала
                                 поездки настоятельно рекомендуем уточнить время начала и окончания регистрации на рейс,
                                 а также время посадки на борт. Указанную информацию вы можете посмотреть на официальном
@@ -558,10 +571,10 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Паспортный
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Паспортный
                             контроль</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для прохождения
                                 пограничного контроля необходимо предъявить заграничный/внутренний российский паспорт.
                                 Пограничные органы ФСБ РФ при осуществлении пограничного контроля имеют право
@@ -569,20 +582,20 @@
                                 т. п.), а также проводить опрос лиц, следующих через границу.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Санитарный
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Санитарный
                             контроль</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При совершении
                                 путешествия по Египту риска заражения особо опасными инфекционными заболеваниями нет,
                                 делать прививки официально не требуются. Можно рекомендовать в профилактических целях
                                 сделать противостолбнячные инъекции и прививку против гепатита А и В.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">
                             Ветеринарный контроль</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Животные
                                 подвергаются ветеринарному осмотру. Если вы вывозите животных, то необходимо иметь
                                 комплект документов, подтверждающих, что они здоровы.</p>
@@ -653,10 +666,10 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-v-aeroportu-prileta-vyleta-egipta"
-                            class="text-6xl font-black mb-16 tracking-tight">В аэропорту прилета/вылета египта</h2>
-                        <div class="space-y-8">
+                            class="text-6xl font-black mb-8 tracking-tight">В аэропорту прилета/вылета египта</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">По прибытии в
                                 аэропорт Египта нужно последовательно:</p>
 
@@ -776,10 +789,10 @@
                                 14 дней, можно приобрести в аэропорту Шарм-эль-Шейха.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-tamozhennyj-kontrol-v-egipte" class="text-6xl font-black mb-16 tracking-tight">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-tamozhennyj-kontrol-v-egipte" class="text-6xl font-black mb-8 tracking-tight">
                             Таможенный контроль в египте</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Ввоз иностранной
                                 валюты не ограничен.</p>
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разрешен
@@ -899,11 +912,11 @@
                             </div>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-egipet" class="text-6xl font-black mb-16 tracking-tight">Египет</h2>
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-egipet" class="text-6xl font-black mb-8 tracking-tight">Египет</h2>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Египет —
                                 государство на стыке двух континентов — Азии и Африки, на востоке омывается водами
                                 Красного моря, на севере — Средиземного. Граничит с Израилем, Палестиной (сектор Газа),
@@ -914,16 +927,16 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-vremya" class="text-6xl font-black mb-16 tracking-tight">Время</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-vremya" class="text-6xl font-black mb-8 tracking-tight">Время</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разница во
                                 времени с Москвой — минус 1 час.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-klimat" class="text-6xl font-black mb-16 tracking-tight">Климат</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-klimat" class="text-6xl font-black mb-8 tracking-tight">Климат</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Климат сухой,
                                 переходный от тропического к субтропическому, континентальному. Дожди бывают очень
                                 редко. Благодаря сухому климату интенсивность солнечных лучей, особенно в первые дни
@@ -931,9 +944,9 @@
                                 пользоваться защитными кремами.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-valyuta" class="text-6xl font-black mb-16 tracking-tight">Валюта</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-valyuta" class="text-6xl font-black mb-8 tracking-tight">Валюта</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Египетский фунт.
                                 Обмен валюты можно произвести в банке, в аэропорту, а также в обменных пунктах отелей.
                                 Имеет смысл обменять небольшую сумму на фунты, т.к. многое в Египте стоит меньше доллара
@@ -942,43 +955,43 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-chaevye" class="text-6xl font-black mb-16 tracking-tight">Чаевые</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-chaevye" class="text-6xl font-black mb-8 tracking-tight">Чаевые</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Принято
                                 оставлять чаевые (бакшиш) носильщикам и официантам. Считается, что заслуживают поощрения
                                 водители автобусов, горничные в гостинице, экскурсоводы, если клиент остался доволен
                                 обслуживанием.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-yazyk" class="text-6xl font-black mb-16 tracking-tight">Язык</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-yazyk" class="text-6xl font-black mb-8 tracking-tight">Язык</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Арабский
                                 (египетский диалект арабского языка). Языки делового общения — английский и французский.
                                 В отелях, ресторанах и магазинах можно говорить по-русски.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-naselenie" class="text-6xl font-black mb-16 tracking-tight">Население</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-naselenie" class="text-6xl font-black mb-8 tracking-tight">Население</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Примерная
                                 численность населения — 101,4 млн человек. Этнический состав однородный: 98 % населения
                                 — арабы.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-religiya" class="text-6xl font-black mb-16 tracking-tight">Религия</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-religiya" class="text-6xl font-black mb-8 tracking-tight">Религия</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Официальной
                                 религией Египта является ислам. 90 % жителей страны — мусульмане (сунниты), около 8 % —
                                 христиане (копты). Коран налагает на правоверных ряд строгих запретов, которые должны
                                 неукоснительно соблюдаться.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-obychai" class="text-6xl font-black mb-16 tracking-tight">Обычаи</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-obychai" class="text-6xl font-black mb-8 tracking-tight">Обычаи</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Нельзя
                                 фотографировать женщин в черных накидках. Если вы хотите сфотографировать мужчину,
                                 непременно спросите разрешения.</p>
@@ -1011,10 +1024,10 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-16 tracking-tight">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-8 tracking-tight">
                             Праздники и нерабочие дни</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">1 января – Новый
                                 год,</p>
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">7 января –
@@ -1042,9 +1055,9 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-transport" class="text-6xl font-black mb-16 tracking-tight">Транспорт</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-transport" class="text-6xl font-black mb-8 tracking-tight">Транспорт</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Общественный
                                 транспорт в Египте не развит. Такси — самый недорогой и удобный для туристов вариант, но
                                 о цене необходимо договариваться заранее, даже если есть таксометр. На курортах можно
@@ -1053,10 +1066,10 @@
                                 некоторых отелях бесплатно).</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-arenda-avtomobilya" class="text-6xl font-black mb-16 tracking-tight">Аренда
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-arenda-avtomobilya" class="text-6xl font-black mb-8 tracking-tight">Аренда
                             автомобиля</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В аэропорту,
                                 крупных отелях можно оформить аренду автомобиля. Машину рекомендуется заказывать
                                 заранее. Основные условия: наличие международных водительских прав, страховка и наличие
@@ -1064,9 +1077,9 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-telefon" class="text-6xl font-black mb-16 tracking-tight">Телефон</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-telefon" class="text-6xl font-black mb-8 tracking-tight">Телефон</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для телефонных
                                 переговоров необходимо приобрести SIM-карту в офисах продаж мобильных операторов.
                                 SIM-карты продаются только при наличии паспорта. Переговорных пунктов нет.</p>
@@ -1080,10 +1093,10 @@
                                 города + номер абонента.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-ekstrennye-telefony" class="text-6xl font-black mb-16 tracking-tight">Экстренные
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-ekstrennye-telefony" class="text-6xl font-black mb-8 tracking-tight">Экстренные
                             телефоны</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
 
                             <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
                                 <div
@@ -1133,9 +1146,9 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-v-otele" class="text-6xl font-black mb-16 tracking-tight">В отеле</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-v-otele" class="text-6xl font-black mb-8 tracking-tight">В отеле</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день приезда
                                 расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная
                                 с 14:00 по местному времени. Просим ознакомиться на месте с условиями предоставления
@@ -1187,17 +1200,17 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-16 tracking-tight">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-8 tracking-tight">
                             Напряжение электросети</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Напряжение может
                                 быть 220 В и 110 В. Частота тока — 50 Гц.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-ekskursii" class="text-6xl font-black mb-16 tracking-tight">Экскурсии</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-ekskursii" class="text-6xl font-black mb-8 tracking-tight">Экскурсии</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Гид компании,
                                 принимающий вас в Египте, во время встречи в отеле сообщит перечень предлагаемых
                                 экскурсий, их содержание, график проведения и стоимость. Не рекомендуем приобретать
@@ -1209,9 +1222,9 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-kuhnya" class="text-6xl font-black mb-16 tracking-tight">Кухня</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-kuhnya" class="text-6xl font-black mb-8 tracking-tight">Кухня</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Национальная
                                 история Египта включает в себя периоды оккупации французами, британцами и турками, и
                                 кухня формировалась под их влиянием, а также много привнесли туда соседи Египта — Ливан
@@ -1220,9 +1233,9 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-magaziny" class="text-6xl font-black mb-16 tracking-tight">Магазины</h2>
-                        <div class="space-y-8">
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-magaziny" class="text-6xl font-black mb-8 tracking-tight">Магазины</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Во многих
                                 магазинах нет часового графика работы, в туристический сезон они открыты до глубокой
                                 ночи. В небольших магазинах и на рынках принято торговаться. Выходной день — пятница. В
@@ -1234,10 +1247,10 @@
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti"
-                            class="text-6xl font-black mb-16 tracking-tight">Правила личной гигиены и безопасности:</h2>
-                        <div class="space-y-8">
+                            class="text-6xl font-black mb-8 tracking-tight">Правила личной гигиены и безопасности:</h2>
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед
                                 путешествием мы советуем ознакомиться с «Полезными советами российским гражданам,
                                 выезжающим за рубеж», размещенными на сайте МИД РФ:
@@ -1392,11 +1405,11 @@
                                 отеля.</p>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
+                    <section class="pt-12 border-t border-black/5">
                         <h2 id="section-pravila-povedeniya-pri-vstreche-i-napadenii-akuly"
-                            class="text-6xl font-black mb-16 tracking-tight">Правила поведения при встрече и нападении
+                            class="text-6xl font-black mb-8 tracking-tight">Правила поведения при встрече и нападении
                             акулы</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Меры
                                 предосторожности:</p>
 
@@ -1555,10 +1568,10 @@
                             </div>
                         </div>
                     </section>
-                    <section class="pt-24 border-t border-black/5">
-                        <h2 id="section-v-sluchae-poteri-pasporta" class="text-6xl font-black mb-16 tracking-tight">В
+                    <section class="pt-12 border-t border-black/5">
+                        <h2 id="section-v-sluchae-poteri-pasporta" class="text-6xl font-black mb-8 tracking-tight">В
                             случае потери паспорта</h2>
-                        <div class="space-y-8">
+                        <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Незамедлительно
                                 обращайтесь в дипломатическое представительство, в консульское учреждение или в
                                 представительство МИД РФ, которое находится в пределах приграничной территории.</p>
@@ -1611,8 +1624,8 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <div class="flex items-center gap-4 mb-12">
+                    <section class="pt-12 border-t border-black/5">
+                        <div class="flex items-center gap-4 mb-8">
                             <div class="w-2 h-12 bg-primary rounded-full"></div>
                             <h2 id="section-posolstvo-arabskoj-respubliki-egipet-v-rf" class="text-5xl font-black">
                                 Посольство арабской республики египет в рф</h2>
@@ -1620,8 +1633,8 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div
                                 class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-                                <section class="pt-24 border-t border-black/5">
-                                    <div class="space-y-8">
+                                <section class="pt-12 border-t border-black/5">
+                                    <div class="space-y-6">
                                         <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">
                                             Адрес: г. Москва, Кропоткинский пер., 12.</p>
                                         <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">
@@ -1639,8 +1652,8 @@
                         </div>
                     </section>
 
-                    <section class="pt-24 border-t border-black/5">
-                        <div class="flex items-center gap-4 mb-12">
+                    <section class="pt-12 border-t border-black/5">
+                        <div class="flex items-center gap-4 mb-8">
                             <div class="w-2 h-12 bg-primary rounded-full"></div>
                             <h2 id="section-posolstvo-rossii-v-arabskoj-respublike-egipet" class="text-5xl font-black">
                                 Посольство россии в арабской республике египет</h2>
@@ -1648,8 +1661,8 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div
                                 class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-                                <section class="pt-24 border-t border-black/5">
-                                    <div class="space-y-8">
+                                <section class="pt-12 border-t border-black/5">
+                                    <div class="space-y-6">
                                         <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">
                                             Адрес: Giza st. 95, Dokki, Cairo, Egypt.</p>
                                         <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">
@@ -1681,7 +1694,7 @@
         <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
-                <div class="text-center mb-10 md:mb-16 space-y-4 px-2">
+                <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
                     <h2 class="text-4xl md:text-5xl font-headline font-black text-on-surface tracking-tight leading-none">Ваша новая история...</h2>
                     <p class="text-on-surface-variant text-base md:text-lg font-medium leading-relaxed">Мы подберем идеальный тур, исходя из ваших желаний и эмоционального настроя.</p>
                 </div>

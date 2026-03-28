@@ -127,6 +127,22 @@
 <body class="text-on-surface h-screen overflow-hidden flex">
     <!-- Premium Mobile Elements (Pro Max) -->
     <div id="scroll-progress"></div>
+    <!-- ═══ ФИКСИРОВАННАЯ ШАПКА ═══ -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
+            <a href="index.html"
+                class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent md:px-0 md:py-0">
+                <span class="material-symbols-outlined text-[18px] md:text-[24px]">arrow_back</span>
+                Все страны
+            </a>
+            <a href="index.html" class="flex-shrink-0 mx-auto md:mx-0">
+                <img src="LogoB_300x.png" alt="Emoji Tours" class="h-8 md:h-10">
+            </a>
+            <div class="w-24 md:hidden"></div>
+        </div>
+    </nav>
+
     
     
             </div>
@@ -158,10 +174,10 @@
 
         <!-- Dynamic Content Tabs -->
         <div class="flex-1 overflow-y-auto p-10">
-            <div class="max-w-5xl mx-auto space-y-8">
+            <div class="max-w-5xl mx-auto space-y-6">
                 
                 <!-- TAB: MAIN -->
-                <div id="tab-main" class="tab-content active space-y-8">
+                <div id="tab-main" class="tab-content active space-y-6">
                     <div class="bg-surface rounded-3xl p-8 shadow-sm border border-black/5">
                         <div class="flex items-center gap-3 mb-6">
                             <span class="material-symbols-outlined text-primary text-3xl">view_carousel</span>
@@ -209,7 +225,7 @@
                 </div>
 
                 <!-- TAB: COUNTRIES -->
-                <div id="tab-countries" class="tab-content space-y-8">
+                <div id="tab-countries" class="tab-content space-y-6">
                     <div class="flex justify-between items-center bg-surface p-6 rounded-3xl shadow-sm border border-black/5">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
@@ -270,7 +286,7 @@
                 </div>
 
                 <!-- TAB: CALENDAR -->
-                <div id="tab-calendar" class="tab-content space-y-8">
+                <div id="tab-calendar" class="tab-content space-y-6">
                     <div class="flex justify-between items-center bg-surface p-6 rounded-3xl shadow-sm border border-black/5">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
@@ -333,7 +349,7 @@
                 </div>
 
                 <!-- TAB: REVIEWS -->
-                <div id="tab-reviews" class="tab-content space-y-8">
+                <div id="tab-reviews" class="tab-content space-y-6">
                     <div class="flex justify-between items-center bg-surface p-6 rounded-3xl shadow-sm border border-black/5">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
@@ -390,7 +406,7 @@
                 </div>
 
                 <!-- TAB: SETTINGS -->
-                <div id="tab-settings" class="tab-content space-y-8">
+                <div id="tab-settings" class="tab-content space-y-6">
                     <div class="bg-surface rounded-3xl p-8 shadow-sm border border-black/5">
                         <div class="flex items-center gap-3 mb-6">
                             <span class="material-symbols-outlined text-primary text-3xl">settings</span>

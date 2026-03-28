@@ -120,13 +120,26 @@
 <body class="bg-background text-on-surface">
     <!-- Premium Mobile Elements (Pro Max) -->
     <div id="scroll-progress"></div>
-    
-    
+    <!-- ═══ ФИКСИРОВАННАЯ ШАПКА ═══ -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
+            <a href="index.html"
+                class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent md:px-0 md:py-0">
+                <span class="material-symbols-outlined text-[18px] md:text-[24px]">arrow_back</span>
+                Все страны
+            </a>
+            <a href="index.html" class="flex-shrink-0 mx-auto md:mx-0">
+                <img src="LogoB_300x.png" alt="Emoji Tours" class="h-8 md:h-10">
+            </a>
+            <div class="w-24 md:hidden"></div>
+        </div>
     </nav>
+
 
     <main>
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-32">
+        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -181,16 +194,16 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-12">Памятка: <span class="text-primary">Сейшелы</span></h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Памятка: <span class="text-primary">Сейшелы</span></h1>
                 
-                <div class="flex flex-wrap gap-4 mb-24">
+                <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#booking-form" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-██slug██.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-32" id="memo-content-area">
-                     <section class="pt-24 border-t border-black/5"><h2 id="section-turistam-vyezzhayuschim-na-sejshely" class="text-6xl font-black mb-16 tracking-tight">Туристам, выезжающим на сейшелы</h2></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-6xl font-black mb-16 tracking-tight">Перед отъездом</h2><div class="space-y-8">
+                <div class="space-y-16" id="memo-content-area">
+                     <section class="pt-12 border-t border-black/5"><h2 id="section-turistam-vyezzhayuschim-na-sejshely" class="text-6xl font-black mb-8 tracking-tight">Туристам, выезжающим на сейшелы</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-6xl font-black mb-8 tracking-tight">Перед отъездом</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Проверьте наличие необходимых для поездки документов:</p>
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
@@ -228,11 +241,11 @@
     <p class="text-xl leading-relaxed text-on-surface-variant font-light pt-1">страховой медицинский полис.</p>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pravila-vezda-na-sejshely" class="text-6xl font-black mb-16 tracking-tight">Правила въезда на сейшелы</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pravila-vezda-na-sejshely" class="text-6xl font-black mb-8 tracking-tight">Правила въезда на сейшелы</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед поездкой нужно заполнить декларацию о путешествии.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разрешение Health Travel Authorization для въезда на Сейшелы подается онлайн на специальной платформе https://seychelles.govtas.com/.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-ekologicheskij-sbor" class="text-6xl font-black mb-16 tracking-tight">Экологический сбор</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-ekologicheskij-sbor" class="text-6xl font-black mb-8 tracking-tight">Экологический сбор</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">С 1 апреля 2026 года в отелях Сейшельских островов вводится обязательный экологический сбор, который оплачивается туристами на месте при выезде из отеля. Стоимость зависит от объёма номерного фонда отеля и будет рассчитываться по следующему принципу:</p>
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
@@ -295,7 +308,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При следовании несовершеннолетнего российского гражданина через государственную границу РФ совместно с одним из родителей предъявлять письменное согласие второго родителя не нужно, если только от него ранее в пограничные органы не поступало заявление о несогласии на выезд из РФ своих детей.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если у несовершеннолетнего ребенка и выезжающего с ним родителя разные фамилии, то рекомендуем взять с собой нотариально заверенную копию свидетельства о рождении для подтверждения родства. На практике отсутствие такого подтверждения служило основанием для отказа ребенку в пересечении границы.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-16 tracking-tight">Беременным женщинам</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-8 tracking-tight">Беременным женщинам</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления письменного согласия врача на полет, а также иных документов для осуществления авиаперелета. Сотрудники авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.</p>
 <img src="tild6234-6362-4539-b665-323137643933__komfortnyi-otdykh-s-.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Собирая багаж:</p>
@@ -303,11 +316,11 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не забывайте собрать и взять с собой аптечку первой помощи, которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.</p>
 <img src="tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-6xl font-black mb-16 tracking-tight">В российском аэропорту вылета/прилета</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-6xl font-black mb-8 tracking-tight">В российском аэропорту вылета/прилета</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль до начала путешествия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль до начала путешествия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
 
 <div class="bg-primary/5 border-l-8 border-primary p-10 rounded-r-[3rem] my-16 shadow-inner">
@@ -358,7 +371,7 @@
     <p class="text-xl leading-relaxed text-on-surface-variant font-light pt-1">принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</p>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль по окончанию путешествия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль по окончанию путешествия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
 
@@ -374,19 +387,19 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
 <img src="tild6364-3637-4261-b761-386566643134__ria_6136134hr_a91.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-6xl font-black mb-16 tracking-tight">Регистрация на рейс и оформление багажа</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-6xl font-black mb-8 tracking-tight">Регистрация на рейс и оформление багажа</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">До начала поездки настоятельно рекомендуем уточнить время начала и окончания регистрации на рейс, а также время посадки на борт. Указанную информацию вы можете посмотреть на официальном сайте авиакомпании. Помните, что у разных авиакомпаний могут быть свои правила. Регистрация пассажиров и оформление багажа производятся на основании именного авиабилета или распечатанных на бумажном носителе маршрута и/или квитанции электронного билета, а также заграничного паспорта пассажира. При регистрации пассажиру выдается посадочный талон, который необходимо сохранять до момента возможного предъявления авиакомпании претензий по качеству предоставленных услуг авиаперевозки.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед посадкой на рейс рекомендуем проверить номер выхода и время начала посадки на рейс на информационном табло в аэропорту. Пассажиру, опоздавшему ко времени окончания регистрации пассажиров и оформления багажа или посадки в воздушное судно, может быть отказано в перевозке.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Каждый авиаперевозчик устанавливает свои нормы провоза багажа, а также габариты и вес ручной клади, провозимой в салоне самолета. Уточняйте данную информацию перед вылетом. За провоз багажа сверх установленной нормы бесплатного провоза багажа взимается дополнительная плата по тарифу, установленному перевозчиком. Перевозчик имеет право отказать туристу в перевозе багажа, вес или объем которого не соответствуют установленным нормам.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Паспортный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Паспортный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для прохождения пограничного контроля необходимо предъявить заграничный/внутренний российский паспорт. Пограничные органы ФСБ РФ при осуществлении пограничного контроля имеют право запрашивать у туристов дополнительные документы (авиабилет, посадочный талон, ваучер и т. п.), а также проводить опрос лиц, следующих через границу.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Санитарный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Санитарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристам сертификат о прививках не требуется.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-16 tracking-tight">Ветеринарный контроль</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Ветеринарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы вывозите животных, то вам необходимо иметь комплект документов, подтверждающих, что они здоровы. Как правило, следует иметь:</p>
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
@@ -421,7 +434,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Запрещен ввоз на территорию РФ любых грузов животного происхождения, в том числе в ручной клади и багаже, при отсутствии письменного разрешения Главного государственного ветеринарного инспектора РФ. Без разрешения уполномоченных органов РФ запрещено ввозить и вывозить объекты дикой фауны и флоры, находящиеся под угрозой исчезновения.</p>
 <img src="tild6164-3539-4236-a536-653666633263__919255ebe5775d87ea2b.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-aeroportu-prileta-vyleta-sejshel" class="text-6xl font-black mb-16 tracking-tight">В аэропорту прилета/вылета сейшел</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-aeroportu-prileta-vyleta-sejshel" class="text-6xl font-black mb-8 tracking-tight">В аэропорту прилета/вылета сейшел</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">По прибытии в аэропорт Сейшел нужно последовательно:</p>
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
@@ -482,7 +495,7 @@
     <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8 text-black font-medium leading-relaxed">Для граждан, не имеющих гражданства РФ, могут быть установлены иные правила въезда на территорию Республики Сейшельские Острова. Получить информацию по этому вопросу следует в посольстве по месту гражданства.</p>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-na-sejshelah" class="text-6xl font-black mb-16 tracking-tight">Таможенный контроль на сейшелах</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-na-sejshelah" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль на сейшелах</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разрешается беспошлинно ввозить:</p>
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
@@ -550,39 +563,39 @@
     <p class="text-xl leading-relaxed text-on-surface-variant font-light pt-1">порнографических или подобных им материалов и т. п.</p>
 </div>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-respublika-sejshelskie-ostrova" class="text-6xl font-black mb-16 tracking-tight">Республика сейшельские острова</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-respublika-sejshelskie-ostrova" class="text-6xl font-black mb-8 tracking-tight">Республика сейшельские острова</h2><div class="space-y-6">
 <img src="tild3163-6135-4635-b566-326666643262__6825af095fa043486833.webp" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Сейшелы — в переводе со старопортугальского «сешел» означает «семь сестер». Сейшельский архипелаг состоит из 115 гранитных и коралловых островов и располагается всего на 4° южнее экватора в Индийском океане. Наиболее крупные острова — Маэ, Праслин.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-vremya" class="text-6xl font-black mb-16 tracking-tight">Время</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-vremya" class="text-6xl font-black mb-8 tracking-tight">Время</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Часовой пояс: UTC+4. Разница во времени между Сейшелами и Москвой +1 час.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-klimat" class="text-6xl font-black mb-16 tracking-tight">Климат</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-klimat" class="text-6xl font-black mb-8 tracking-tight">Климат</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Ярко выраженный жаркий тропический, морской; влажность воздуха — 80 %. Грозовые тропические дожди идут круглый год (реже летом), особенно сильно — в сезон дождей с декабря по февраль (до 4 000 мм). Температура в течение года колеблется в пределах +24 … +32 °С. Сейшелы расположены вне зоны циклонов.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-valyuta" class="text-6xl font-black mb-16 tracking-tight">Валюта</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-valyuta" class="text-6xl font-black mb-8 tracking-tight">Валюта</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Сейшельская рупия. К оплате в крупных магазинах и гостиницах принимаются банковские пластиковые карты основных международных платежных систем. Имеются банкоматы для снятия наличных средств. Наиболее распространенным способом платежа являются наличные деньги.</p>
 <img src="tild6265-3764-4063-b431-396365663231__1526234350186814051.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-chaevye" class="text-6xl font-black mb-16 tracking-tight">Чаевые</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-chaevye" class="text-6xl font-black mb-8 tracking-tight">Чаевые</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Давать чаевые не обязательно, т. к. обычно стоимость обслуживания включена в счет. Однако обслуживающий персонал в отеле и ресторане всегда рад дополнительным рупиям.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-yazyk" class="text-6xl font-black mb-16 tracking-tight">Язык</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-yazyk" class="text-6xl font-black mb-8 tracking-tight">Язык</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Креольский, французский, английский.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-naselenie" class="text-6xl font-black mb-16 tracking-tight">Население</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-naselenie" class="text-6xl font-black mb-8 tracking-tight">Население</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Примерная численность населения 98 000 человек. Население островов представляют в основном метисы европейского, китайского и индийского происхождения.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-religiya" class="text-6xl font-black mb-16 tracking-tight">Религия</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-religiya" class="text-6xl font-black mb-8 tracking-tight">Религия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Основная религия на островах — христианство (90 % населения — католики), буддизм, ислам.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-obychai" class="text-6xl font-black mb-16 tracking-tight">Обычаи</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-obychai" class="text-6xl font-black mb-8 tracking-tight">Обычаи</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Жители островов — приветливые и доброжелательные люди, ожидающими от туриста встречного уважительного отношения. Улыбчивость, легкость общения и жизнерадостность, а также близость к природе часто называют в ряду качеств типичных сейшельцев.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Сейшельцы больше ценят консерватизм, например, странное поведение или публичное проявление любви положительно оценены не будут. Сейшельцы очень бережно относятся к своей культуре, их патриотические чувства необходимо уважать.</p>
 <img src="tild3739-3362-4037-b437-323664613962__visit-seychelles-cul.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-16 tracking-tight">Праздники и нерабочие дни</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-8 tracking-tight">Праздники и нерабочие дни</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">1 и 2 января — Новый год;</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">1 мая — День Труда;</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">5 июня — День освобождения;</p>
@@ -593,27 +606,27 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">25, 26 декабря — Рождество.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-transport" class="text-6xl font-black mb-16 tracking-tight">Транспорт</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-transport" class="text-6xl font-black mb-8 tracking-tight">Транспорт</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Самолеты авиалинии AIR SEYCHELLES совершают регулярные рейсы между островами Сейшельского архипелага. На острове Маэ работает около 200 такси. Все автомобили оборудованы счетчиками. Тариф в любое время суток одинаков. Стоянка такси работает круглые сутки. Регулярное автобусное сообщение охватывает всю территорию острова Маэ.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-arenda-avtomobilya" class="text-6xl font-black mb-16 tracking-tight">Аренда автомобиля</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-arenda-avtomobilya" class="text-6xl font-black mb-8 tracking-tight">Аренда автомобиля</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">На островах Маэ и Праслен имеются компании, оказывающие услуги по прокату машин. Среднесуточная стоимость проката малолитражного автомобиля с механической коробкой передач — 40 евро, с автоматической коробкой передач — 55 евро, джипа — 50 евро. Условия страховки обговариваются при аренде автомобиля.</p>
 <img src="tild3763-3531-4036-b537-303161373336__seychelles-island-re.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-telefon" class="text-6xl font-black mb-16 tracking-tight">Телефон</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-telefon" class="text-6xl font-black mb-8 tracking-tight">Телефон</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Имеются уличные телефонные аппараты с возможностью международной связи.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для звонка в Россию необходимо опустить монеты в аппарат и набрать: 007 + код региона + номер телефона.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Действуют два оператора мобильной связи: компании Cable&Wireless и Airtel, предоставляющие интернет-услуги в формате 3G.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5">
-    <div class="flex items-center gap-4 mb-12">
+<section class="pt-12 border-t border-black/5">
+    <div class="flex items-center gap-4 mb-8">
         <div class="w-2 h-12 bg-primary rounded-full"></div>
         <h2 id="section-ekstrennyj-telefon" class="text-5xl font-black">Экстренный телефон</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-            <section class="pt-24 border-t border-black/5"><div class="space-y-8">
+            <section class="pt-12 border-t border-black/5"><div class="space-y-6">
 
 <div class="group flex items-start gap-5 mb-6 transition-all hover:translate-x-2">
     <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-colors">
@@ -650,37 +663,37 @@
     </div>
 </section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-policiya-pozharnye-stancii-skoraya-pomosch-999" class="text-6xl font-black mb-16 tracking-tight">● полиция, пожарные станции, скорая помощь: 999</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-policiya-pozharnye-stancii-skoraya-pomosch-999" class="text-6xl font-black mb-8 tracking-tight">● полиция, пожарные станции, скорая помощь: 999</h2><div class="space-y-6">
 <img src="tild3337-3934-4532-a536-386363633935__phone_old_year_built.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-otele" class="text-6xl font-black mb-16 tracking-tight">В отеле</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-otele" class="text-6xl font-black mb-8 tracking-tight">В отеле</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день приезда расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная с 14:00 по местному времени. Просим ознакомиться на месте с условиями предоставления услуг в отеле и придерживаться установленных отелем правил.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день выезда до наступления расчетного часа (как правило, 12:00) необходимо освободить свой номер и оплатить дополнительные услуги: телефонные переговоры, мини-бар, заказ питания и напитков в номер, массаж и др.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Свой багаж можно оставить в камере хранения отеля и оставаться на территории отеля до прибытия трансфера. Если вы не сдали номер до 12:00, стоимость комнаты оплачивается полностью за следующие сутки.</p>
 </div></section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-16 tracking-tight">Напряжение электросети</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-8 tracking-tight">Напряжение электросети</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Напряжение сети: 220 В. Розетки приспособлены под британский стандарт штепселей (для использования отечественных электроприборов необходимо приобрести переходник).</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-ekskursii" class="text-6xl font-black mb-16 tracking-tight">Экскурсии</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-ekskursii" class="text-6xl font-black mb-8 tracking-tight">Экскурсии</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Гид компании, принимающий вас на Сейшелах, во время встречи в отеле сообщит перечень предлагаемых экскурсий, их содержание, график проведения и стоимость.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не рекомендуем приобретать экскурсии или прочие услуги в неизвестных вам туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, а также о качестве транспорта для ее организации. Вам может быть предоставлено для использования не сертифицированное, неисправное или не соответствующее санитарно-гигиеническим нормам оборудование.</p>
 <img src="tild3861-6636-4763-b934-626565663635__north-islands-seyche.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-kuhnya" class="text-6xl font-black mb-16 tracking-tight">Кухня</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-kuhnya" class="text-6xl font-black mb-8 tracking-tight">Кухня</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Сейшельская кухня по своей природе креольская.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Главный пищевой продукт на Сейшелах — рис. Самое популярное кушанье — pwason ek diri — рыба с рисом, а наиболее распространенные блюда — суп из тектека, осьминог, банановый кат-кат, рыба во всех видах, тушеный плод хлебного дерева, рагу из летучей мыши, пюре из жирамона, шатини из акулы, вареная маниока, кокосовая нуга, засахаренный билимби, тушеный банан.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Европейская кухня также распространена.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Местные напитки: настойка лимонной мяты, местное пиво, перебродивший кокосовый сок, напоминающий молодое вино. Для любителей хорошего вина, рекомендуем попробовать южно-африканские вина.</p>
 <img src="tild6431-3866-4738-a133-623464663161__756582394772544.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-magaziny" class="text-6xl font-black mb-16 tracking-tight">Магазины</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-magaziny" class="text-6xl font-black mb-8 tracking-tight">Магазины</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Большинство закрываются в 17:00 или в 17:30 в субботу, но некоторые небольшие лавки, работают до позднего вечера.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При покупке сувениров, торг, как правило, не уместен.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Покупки: в качестве сувениров приобретают мужские соломенные шляпы и другие изделия из соломы, местные произведения искусства (популярны работы живописца Майкла Адамса), специи (креольское карри и чили), чай с островов, диски с местной музыкой.</p>
 <img src="tild3830-3331-4064-b131-323231343835__746278e6-b0a7-4425-8.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-6xl font-black mb-16 tracking-tight">Правила личной гигиены и безопасности:</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-6xl font-black mb-8 tracking-tight">Правила личной гигиены и безопасности:</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед путешествием мы советуем ознакомиться с «Полезными советами российским гражданам, выезжающим за рубеж», размещенными на сайте МИД РФ: https://www.kdmid.ru/info-for-traveling-abroad/useful-tips-for-russian-citizens-traveling-abroad/, а также с памяткой МИД РФ «Каждому, кто направляется за границу», и памяткой Роспотребнадзора выезжающим за рубеж.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не нарушайте правила безопасности, установленные авиакомпаниями, транспортными организациями, гостиницами, местными органами власти.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Категорически не рекомендуем приобретать экскурсии и дополнительные туристские услуги в неизвестных туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, вам не будет гарантирована безопасность предоставленных услуг и исправность используемого оборудования, тем самым можно подвергнуть себя серьезной опасности.</p>
@@ -694,7 +707,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Во многих отелях запрещается выносить из номера полотенца на пляж или к бассейну. Не приносите на пляж полотенца или инвентарь из номера без разрешения персонала.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если в номере стоит мини-бар, то все напитки и закуски, взятые из него, как правило, должны быть оплачены.</p>
 </div></section>
-<section class="pt-24 border-t border-black/5"><h2 id="section-v-sluchae-poteri-pasporta" class="text-6xl font-black mb-16 tracking-tight">В случае потери паспорта</h2><div class="space-y-8">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-sluchae-poteri-pasporta" class="text-6xl font-black mb-8 tracking-tight">В случае потери паспорта</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Незамедлительно обращайтесь в дипломатическое представительство, в консульское учреждение или в представительство МИД РФ, которое находится в пределах приграничной территории.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Вам необходимо получить свидетельство на въезд в РФ (REENTRY CERTIFICATE TO THE RUSSIAN FEDERATION), которое называется временным загранпаспортом. Выдается на срок до 15 дней для того, чтобы турист успел купить обратный билет и улететь на родину.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для того чтобы вам выдали свидетельство на возвращение в РФ, необходимо представить следующие документы:</p>
@@ -724,14 +737,14 @@
 <img src="tild6461-3537-4165-b365-363961373965__598c6e030ca3f598c6e0.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
 
-<section class="pt-24 border-t border-black/5">
-    <div class="flex items-center gap-4 mb-12">
+<section class="pt-12 border-t border-black/5">
+    <div class="flex items-center gap-4 mb-8">
         <div class="w-2 h-12 bg-primary rounded-full"></div>
         <h2 id="section-posolstvo-rf-v-rsa" class="text-5xl font-black">Посольство рф в рса</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-            <section class="pt-24 border-t border-black/5"><div class="space-y-8">
+            <section class="pt-12 border-t border-black/5"><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Адрес: Сейшелы, о. Маэ, р-н Ле Ниоль, п/я 632 (P.O. Box 632, Le Niole, Mahé, Seychelles). Телефон: (8-10-248) 426-65-90, 426-61-22. Факс: (8-10-248) 426-66-53.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Сайт: www.seychelles.mid.ru . E-mail: rusemb.seychelles@mid.ru, 266590@mail.ru</p>
 </div></section>
@@ -742,14 +755,14 @@
     </div>
 </section>
 
-<section class="pt-24 border-t border-black/5">
-    <div class="flex items-center gap-4 mb-12">
+<section class="pt-12 border-t border-black/5">
+    <div class="flex items-center gap-4 mb-8">
         <div class="w-2 h-12 bg-primary rounded-full"></div>
         <h2 id="section-posolstvo-rsa-v-rf" class="text-5xl font-black">Посольство рса в рф</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white/50 backdrop-blur-sm p-10 rounded-[2.5rem] border border-black/5 shadow-sm hover:shadow-xl transition-all duration-500">
-            <section class="pt-24 border-t border-black/5"><div class="space-y-8">
+            <section class="pt-12 border-t border-black/5"><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Адрес: 199016, г. Санкт-Петербург, Детская ул., 30.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-normal mb-8">Телефон: (812) 322-3811, 322-3816, 322-3807.</p>
 </div></section>
@@ -760,7 +773,7 @@
     </div>
 </section>
 
-<section class="pt-24 border-t border-black/5"><h2 id="section-e-mail-headoffice-seychelles-consular-sp-ru" class="text-6xl font-black mb-16 tracking-tight">E-mail: headoffice@seychelles-consular.sp.ru</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-e-mail-headoffice-seychelles-consular-sp-ru" class="text-6xl font-black mb-8 tracking-tight">E-mail: headoffice@seychelles-consular.sp.ru</h2></section>
 
                     </div>
                 </div>
@@ -773,7 +786,7 @@
         <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
-                <div class="text-center mb-10 md:mb-16 space-y-4 px-2">
+                <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
                     <h2 class="text-4xl md:text-5xl font-headline font-black text-on-surface tracking-tight leading-none">Ваша новая история...</h2>
                     <p class="text-on-surface-variant text-base md:text-lg font-medium leading-relaxed">Мы подберем идеальный тур, исходя из ваших желаний и эмоционального настроя.</p>
                 </div>
