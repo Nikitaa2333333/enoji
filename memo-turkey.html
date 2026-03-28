@@ -114,6 +114,24 @@
         }
         .drawer-link::after { content: 'arrow_forward'; font-family: 'Material Symbols Outlined'; font-size: 20px; opacity: 0.2; }
     }
+
+ 
+}
+
+/* Hide Mobile Navigation on Desktop */
+@media (min-width: 1024px) { 
+    #nav-navigation-trigger, 
+    #nav-navigation-container, 
+    #nav-overlay, 
+    #nav-bottom-sheet, 
+    #mobile-toc-button,
+    #mobile-drawer,
+    #drawer-overlay,
+    @media (max-width: 1023px) {
+        #scroll-progress { 
+        display: none !important; 
+    } 
+}
 </style>
 </head>
 
@@ -139,7 +157,7 @@
 
     <main>
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -193,18 +211,18 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Памятка: <span class="text-primary">Турция</span></h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-[1.1] md:leading-none pt-4 md:pt-0 mb-8 md:mb-10">Памятка: <span class="text-primary">Турция</span></h1>
                 
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#booking-form" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-██slug██.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-16" id="memo-content-area">
-                    <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-pamyatka-turistam-vyezzhayuschim-v-turciyu" class="text-6xl font-black mb-8 tracking-tight">Памятка туристам, выезжающим в Турцию</h2>
+                <div class="space-y-8 md:space-y-12" id="memo-content-area">
+                    <section class="pt-4 border-t border-black/5">
+                        <h2 id="section-pamyatka-turistam-vyezzhayuschim-v-turciyu" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Памятка туристам, выезжающим в Турцию</h2>
                     </section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-6xl font-black mb-8 tracking-tight">Перед отъездом</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pered-otezdom" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Перед отъездом</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Проверьте наличие необходимых для поездки документов:</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Заграничный паспорт (при пересечениях границы Турции с туристической целью в рамках безвизового режима достаточно иметь действительный заграничный паспорт с минимальным сроком действия 4 месяца); ксерокопию загранпаспортов (могут пригодиться при утрате загранпаспорта и в случае иных непредвиденных обстоятельств); авиабилеты или маршрут/квитанции электронного билета; ваучер; страховой медицинский полис.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В связи с тем, что в правила въезда в страну временного пребывания часто вносятся изменения, рекомендуем заблаговременно уточнять данную информацию на официальном сайте Посольства Турецкой республики в Москве.</p>
@@ -216,7 +234,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При следовании несовершеннолетнего российского гражданина через государственную границу РФ совместно с одним из родителей предъявлять письменное согласие второго родителя не нужно, если только от него ранее в пограничные органы не поступало заявление о несогласии на выезд из РФ своих детей.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если у несовершеннолетнего ребенка и выезжающего с ним родителя разные фамилии, то рекомендуем взять с собой нотариально заверенную копию свидетельства о рождении для подтверждения родства. На практике отсутствие такого подтверждения служило основанием для отказа ребенку в пересечении границы.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-8 tracking-tight">Беременным женщинам</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-beremennym-zhenschinam" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Беременным женщинам</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления письменного согласия врача на полет, а также иных документов для осуществления авиаперелета. Сотрудники авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.</p>
 <img src="tild6234-6362-4539-b665-323137643933__komfortnyi-otdykh-s-.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Собирая багаж:</p>
@@ -226,11 +244,11 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем получить дополнительную информацию о возможно произошедших изменениях в условиях вылета Вашего рейса, используя возможности сайта авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
 <img src="tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-6xl font-black mb-8 tracking-tight">В российском аэропорту вылета/прилета</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-rossijskom-aeroportu-vyleta-prileta" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В российском аэропорту вылета/прилета</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-6xl font-black mb-8 tracking-tight">Регистрация на рейс и оформление багажа</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Регистрация на рейс и оформление багажа</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">До начала поездки настоятельно рекомендуем уточнить время начала и окончания регистрации на рейс, а также время посадки на борт. Указанную информацию вы можете посмотреть на официальном сайте авиакомпании. Помните, что у разных авиакомпаний могут быть свои правила.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Регистрация пассажиров и оформление багажа производятся на основании именного авиабилета или распечатанных на бумажном носителе маршрута и/или квитанции электронного билета, а также заграничного паспорта пассажира.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При регистрации пассажиру выдается посадочный талон, который необходимо сохранять до момента возможного предъявления авиакомпании претензий по качеству предоставленных услуг авиаперевозки.</p>
@@ -238,7 +256,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Каждый авиаперевозчик устанавливает свои нормы провоза багажа, а также габариты и вес ручной клади, провозимой в салоне самолета. Уточняйте данную информацию перед вылетом.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">За провоз багажа сверх установленной нормы бесплатного провоза багажа взимается дополнительная плата по тарифу, установленному перевозчиком. Перевозчик имеет право отказать туристу в перевозе багажа, вес или объем которого не соответствуют установленным нормам.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-na-vylete-iz-rf" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль на вылете из рф</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-na-vylete-iz-rf" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Таможенный контроль на вылете из рф</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
 
 <div class="bg-primary/5 border-l-8 border-primary p-10 rounded-r-[3rem] my-16 shadow-inner">
@@ -318,7 +336,7 @@
     <p class="text-xl leading-relaxed text-on-surface-variant font-light pt-1">принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</p>
 </div>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-na-prilete-v-rf" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль на прилете в рф</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-na-prilete-v-rf" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Таможенный контроль на прилете в рф</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
 
@@ -332,13 +350,13 @@
     <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8 text-black font-medium leading-relaxed">Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
 </div>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-pogranichnyj-kontrol-v-aeroportu-rf" class="text-6xl font-black mb-8 tracking-tight">Пограничный контроль в аэропорту рф</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pogranichnyj-kontrol-v-aeroportu-rf" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Пограничный контроль в аэропорту рф</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для прохождения пограничного контроля необходимо предъявить заграничный паспорт и посадочный талон. При осуществлении пограничного контроля пограничники имеют право запрашивать у туристов дополнительные документы и проводить их устный опрос.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Санитарный контроль</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Санитарный контроль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При совершении путешествия по Турции риска заражения особо опасными инфекционными заболеваниями нет, делать прививки официально не требуются. Можно рекомендовать в профилактических целях сделать противостолбнячные инъекции и прививку против гепатита А и В.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-veterinarnyj-i-fito-kontrol-v-aeroportah-rf" class="text-6xl font-black mb-8 tracking-tight">Ветеринарный и фито контроль в аэропортах рф</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-veterinarnyj-i-fito-kontrol-v-aeroportah-rf" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Ветеринарный и фито контроль в аэропортах рф</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если Вы вывозите животных, то Вам необходимо иметь комплект документов, подтверждающих, что они здоровы. Как правило, следует иметь: Ветеринарный паспорт, Справку о состоянии здоровья (выдается любой государственной ветеринарной клиникой), Справку из клуба СКОР или РКФ (в справке указывается, что собака не представляет племенной ценности, справки из других клубов вызывают вопросы на таможне).</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">По таможенным правилам Турецкой Республики ветеринарные справки на ввозимых в Турцию домашних животных должны быть заверены в турецком посольстве или консульстве. Следует знать, что отели Турции размещения с домашними животными, как правило, не предоставляют.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При ввозе в РФ животных и птиц Вам необходимо иметь сопровождающее ветеринарное свидетельство, полученное в Государственной ветеринарной службе страны, где приобретено животное.</p>
@@ -366,8 +384,8 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">ПОМНИТЕ! Незаконное перемещение товаров или валюты через таможенную границу Российской Федерации или их недекларирование либо недостоверное декларирование влечет за собой административную или уголовную ответственность.</p>
 <img src="tild6263-3236-4164-b132-313762653661__34944474314_b12b5af4.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-v-tureckom-aeroportu-prileta-vyleta" class="text-6xl font-black mb-8 tracking-tight">В турецком аэропорту прилета/вылета</h2></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-pasportnyj-kontrol-v-aeroportu-turcii" class="text-6xl font-black mb-8 tracking-tight">Паспортный контроль в аэропорту турции</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-tureckom-aeroportu-prileta-vyleta" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В турецком аэропорту прилета/вылета</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-pasportnyj-kontrol-v-aeroportu-turcii" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Паспортный контроль в аэропорту турции</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При прохождении паспортного контроля необходимо предъявить загранпаспорт. У Вас могут потребовать предъявить туристский ваучер и обратный авиабилет. В случае, если турист планирует поехать в Турцию и остаться на срок более 60 дней, он должен ознакомиться с процедурой продления визы в разделе «ПОЛУЧЕНИЕ ВИЗ В ТУРЦИЮ ДЛЯ ГРАЖДАН РФ».</p>
 
 <div class="bg-primary/5 border-l-8 border-primary p-10 rounded-r-[3rem] my-16 shadow-inner">
@@ -380,7 +398,7 @@
     <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8 text-black font-medium leading-relaxed">Для граждан, не имеющих гражданства Российской Федерации, могут быть установлены иные правила въезда на территорию Турецкой Республики. Получить информацию по этому вопросу следует в посольстве Турецкой Республики по месту гражданства.</p>
 </div>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-v-aeroportu-turcii" class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль в аэропорту турции</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-tamozhennyj-kontrol-v-aeroportu-turcii" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Таможенный контроль в аэропорту турции</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Ввоз любой валюты в Турцию свободный. Суммы валюты более 5 000 долларов США необходимо указывать в таможенной декларации.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Запрещен ввоз:</p>
 
@@ -437,36 +455,36 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Турецкие лиры можно вывозить в сумме, эквивалентной 1 000 долларов США. Ценные личные изделия (ценностью более 15 000 долларов США) могут быть вывезены из Турции, если они были зарегистрированы в таможенной декларации на въезде в страну, или если они сопровождаются документами, подтверждающими их покупку на законно ввезенную валюту.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Вывоз антиквариата из Турции запрещен. Для вывоза нового ковра требуются документы, подтверждающие его покупку. Старинные изделия можно вывозить при наличии разрешения уполномоченного национального органа. Жидкости, гели и аэрозоли не следует вывозить в ручной клади, их надо упаковать в багаж. Жидкости, приобретенные в магазинах беспошлинной торговли в аэропорту вылета, должны быть упакованы в запечатанный пластиковый пакет</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol-v-aeroportu-turcii" class="text-6xl font-black mb-8 tracking-tight">Санитарный контроль в аэропорту турции</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-sanitarnyj-kontrol-v-aeroportu-turcii" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Санитарный контроль в аэропорту турции</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристам сертификат о прививках не требуется.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol-v-aeroportu-turcii" class="text-6xl font-black mb-8 tracking-tight">Ветеринарный контроль в аэропорту турции</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-veterinarnyj-kontrol-v-aeroportu-turcii" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Ветеринарный контроль в аэропорту турции</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При ввозе домашних животных необходимо предъявить заверенные в турецком посольстве или консульстве ветеринарные документы.</p>
 <img src="tild6466-6366-4635-b035-653663346530__turkish_airlines_air.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-o-tureckoj-respublike" class="text-6xl font-black mb-8 tracking-tight">О турецкой республике</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-o-tureckoj-respublike" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">О турецкой республике</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Турецкая Республика располагается одновременно и в азиатской части и в европейской части материка, омывается водами четырех морей: (Черного, Средиземного, Эгейского и Мраморного). Страна граничит с Арменией, Болгарией, Грецией, Грузией, Ираном, Ираком и Сирией. Столица – Анкара.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-vremya" class="text-6xl font-black mb-8 tracking-tight">Время</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-vremya" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Время</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разницы во времени с Москвой нет.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-klimat" class="text-6xl font-black mb-8 tracking-tight">Климат</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-klimat" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Климат</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Субтропический средиземноморский климат. На побережье Эгейского, Средиземного и Мраморного морей лето очень жаркое и сухое, а зима дождливая. Купальный сезон здесь с апреля по октябрь. Черноморское побережье тоже отличается мягкой зимой и теплым летом, но уровень влажности гораздо выше и осадков выпадает больше. В юго-восточной Анатолии (европейская часть Турции) весной дуют сирокко, несущие пыль из Сирийской пустыни.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-valyuta" class="text-6xl font-black mb-8 tracking-tight">Валюта</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-valyuta" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Валюта</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Турецкая лира (TL) - национальная денежная единица. Обмен валюты можно произвести в банке, в аэропорту, на почте, в обменных пунктах отелей. Практически свободное хождение имеют доллары США, фунты стерлингов и евро, однако в провинции расплатиться ими бывает затруднительно.</p>
 <img src="tild6638-6538-4466-a635-636461313362__valuta_turciya.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-yazyk" class="text-6xl font-black mb-8 tracking-tight">Язык</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-yazyk" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Язык</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Государственный язык– турецкий. Языки делового общения – английский, немецкий, французский.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-naselenie" class="text-6xl font-black mb-8 tracking-tight">Население</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-naselenie" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Население</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Турцию населяют порядка 70 миллионов человек, из них около 80% турки, около 10 млн. курдов, 1 млн. арабов, несколько десятков тысяч греков и армян.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-religiya" class="text-6xl font-black mb-8 tracking-tight">Религия</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-religiya" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Религия</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Большинство населения – мусульмане (сунниты). Турция весьма религиозная страна, в которой соблюдаются законы ислама.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-obychai-i-pravila" class="text-6xl font-black mb-8 tracking-tight">Обычаи и правила</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-obychai-i-pravila" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Обычаи и правила</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Нельзя фотографировать женщин в черных накидках. Если Вы хотите сфотографировать мужчину, непременно спросите разрешения.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Употребление алкоголя на улицах общественным мнением не одобряется, и может привести к задержанию полицией. Во многих городских кафе и ресторанах спиртные напитки не подаются.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Нельзя курить в торговых центрах, школах, больницах, государственных и других общественных учреждениях. Во многих отелях также действует запрет на курение в закрытых помещениях. Во многих ресторанах, барах и кафе также запрещается курить.</p>
@@ -476,43 +494,43 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">1 января – Новый год; 23 апреля – день Национальной Независимости; 19 мая - День молодежи и спорта; 30 августа – День Победы;</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">29 октября — День Республики, главный государственный праздник; 10 ноября — День смерти Ататюрка – первого президента Турецкой Республики Мустафы Кемаля (1881-1938г.г.); Рамадан (Рамазан, Ураза) – девятый месяц по мусульманскому (лунному) календарю, в течение которого правоверные мусульмане должны держать пост (не принимать пищу) в период с утреннего до вечернего намаза; Курбан-байрам - мусульманский праздник, наступает через 2 месяца и 10 дней после Рамадана.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-transport" class="text-6xl font-black mb-8 tracking-tight">Транспорт</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-transport" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Транспорт</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Автобус наиболее распространенный вид транспорта в Турции. В дневное время работают долмуши - маршрутные такси с фиксированной стоимостью проезда. В небольших городах движение заканчивается примерно в 20:00. Если Вы находитесь не на остановке, то достаточно поднять руку, чтобы автобус или долмуш остановились.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Такси, как правило, оборудованы таксометрами, ночной тариф дороже в полтора-два раза.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-arenda-mashiny" class="text-6xl font-black mb-8 tracking-tight">Аренда машины</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-arenda-mashiny" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Аренда машины</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Автомобиль выдается напрокат только при наличии международного водительского удостоверения. Убедитесь, что автомобиль полностью застрахован. Бензин покупается самостоятельно. В случае ДТП нельзя передвигать машину до приезда полиции.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-telefon" class="text-6xl font-black mb-8 tracking-tight">Телефон</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-telefon" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Телефон</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Звонить из автомата Вам обойдется дешевле, чем из отеля. Для телефонных переговоров удобно использовать карточки, которые продаются в лавках, табачных киосках, на почте.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Чтобы позвонить в Россию: надо набрать: 00 (выход на международную связь) + 7 (код России) + код российского города + номер абонента.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Чтобы позвонить из России в Турцию: 8-10-90 + код турецкого города + номер абонента. Телефонный код Турции – 90, Анкары – 312, Стамбула 212 (европейская часть), 216 (азиатская часть), Анталья - 242.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Примите во внимание, что если Вы набрали необходимый номер, но Ваш абонент не отвечает или связь оборвалась, и Ваш разговор не состоялся, то телефонная компания Турции в любом случае начисляет оплату (3 минуты) за пользование телефоном.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-ekstrennye-telefony" class="text-6xl font-black mb-8 tracking-tight">Экстренные телефоны</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-ekstrennye-telefony" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Экстренные телефоны</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Полиция – 115, дорожная полиция – 156, жандармерия – 158, скорая помощь – 112, пожарная служба – 110, справочная – 118.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-v-otele" class="text-6xl font-black mb-8 tracking-tight">В отеле</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-otele" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В отеле</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день приезда расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная с 14-00 местного времени. Расчетный час, как правило, 12-00. Просим ознакомиться на месте с условиями предоставления услуг в отеле и придерживаться установленных отелем правил.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день выезда до наступления расчетного часа (как правило, 12-00) необходимо освободить свой номер и оплатить дополнительные услуги: телефонные переговоры, мини-бар, заказ питания и напитков в номер, массаж и др. Свой багаж Вы можете оставить в камере хранения отеля и оставаться на территории отеля до прибытия трансфера. Если Вы не сдали номер до 12-00, стоимость комнаты оплачивается полностью за следующие сутки.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Просим принять к сведению:</p>
 <p class="text-xl leading-relaxed text-on-surface-variant font-light mb-2">- В каждом турецком отеле концепция «all inclusive» («все включено») имеет свою особенность. Всю необходимую информацию можно получить у отельного гида.</p>
 <p class="text-xl leading-relaxed text-on-surface-variant font-light mb-2">- Для посещения ресторанов системы «A-La Carte» требуется предварительное резервирование мест и дополнительная оплата (включая многие отели с системой питания «все включено»).</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-ekskursii" class="text-6xl font-black mb-8 tracking-tight">Экскурсии</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-ekskursii" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Экскурсии</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Гид принимающей Вас в Турции туроператорской компании во время встречи в отеле сообщит Вам перечень предлагаемых экскурсий, их содержание, график проведения и их стоимость. Не рекомендуем Вам приобретать экскурсии или прочие услуги в неизвестных Вам туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, а также о качестве транспорта для ее организации. Вам может быть предоставлено для использования несертифицированное, неисправное или не соответствующее санитарно-гигиеническим нормам оборудование, в том числе зараженный паразитарными, грибковыми, инфекционными заболеваниями инвентарь, включая сжатый воздух в баллонах для погружения.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-8 tracking-tight">Напряжение электросети</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-napryazhenie-elektroseti" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Напряжение электросети</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Напряжение может быть 220 V и 110 V. Частота тока 50 Hz. В Турции используются европейские двухштырьковые круглые вилки.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-chaevye" class="text-6xl font-black mb-8 tracking-tight">Чаевые</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-chaevye" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Чаевые</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Принято оставлять чаевые носильщикам, горничным в гостинице, официантам (5-10 % от суммы счета). Считается, что заслуживают поощрения водители автобусов, гиды, если клиент остался доволен обслуживанием.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-pokupki" class="text-6xl font-black mb-8 tracking-tight">Покупки</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pokupki" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Покупки</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Выбор сувениров огромен, цены, как правило, дешевле, чем в любой другой стране средиземноморья. Вы можете купить практически все: кожу, шубы, украшения, текстиль, одежду, ковры, керамику, вазы, полотенца, восточные древности и острые приправы. Торговаться принято, а по местному менталитету – обязательно.</p>
 <img src="tild6365-3662-4661-b431-336363373130__flag-turcii-2.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-6xl font-black mb-8 tracking-tight">Правила личной гигиены и безопасности:</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Правила личной гигиены и безопасности:</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Не нарушайте правила безопасности, установленные авиакомпаниями, транспортными организациями, гостиницами, местными органами власти.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Категорически не рекомендуем Вам приобретать экскурсии и дополнительные туристские услуги в неизвестных Вам туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, Вам не будет гарантирована безопасность предоставленных услуг и исправность используемого оборудования, тем самым Вы можете подвергнуть себя серьезной опасности.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед поездкой рекомендуется сделать ксерокопии основных страниц (с фотографией, личными данными, отметкой о регистрации) заграничного и внутреннего российского паспортов и взять их с собой.</p>
@@ -541,7 +559,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">За торговлю наркотиками Турецкое законодательство предусматривает высшую меру наказания.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если Вы оказались на территории иностранного государства без средств к существованию, Вы имеет право на получение помощи от дипломатических представительств и консульств РФ.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-v-sluchae-poteri-pasporta" class="text-6xl font-black mb-8 tracking-tight">В случае потери паспорта</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-v-sluchae-poteri-pasporta" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В случае потери паспорта</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Как только Вы поняли, что загранпаспорт потерялся, или его украли, то незамедлительно обращайтесь в дипломатическое представительство, в консульское учреждение или в представительство МИД России, которое находится в пределах приграничной территории.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Вам необходимо получить свидетельство на въезд в РФ (REENTRY CERTIFICATE TO THE RUSSIAN FEDERATION), которое еще называется временным загранпаспортом. Выдается на срок до 15 дней, для того, чтобы Вы успели купить обратный билет и улететь на родину.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для того, чтобы Вам выдали свидетельство на возвращение в РФ, необходимо представить следующие документы:</p>
@@ -579,18 +597,18 @@
     </div>
 </section>
 
-<section class="pt-12 border-t border-black/5"><h2 id="section-telefon-7-916-649-18-52" class="text-6xl font-black mb-8 tracking-tight">Телефон: +7 (916) 649-18-52</h2></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-socseti-vkontakte-instagram-telegram" class="text-6xl font-black mb-8 tracking-tight">Соцсети: вконтакте | instagram | telegram</h2></section>
-
-                    </div>
-                </div>
-            </div>
-                </div>
+<section class="pt-12 border-t border-black/5"><h2 id="section-telefon-7-916-649-18-52" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Телефон: +7 (916) 649-18-52</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-socseti-vkontakte-instagram-telegram" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Соцсети: вконтакте | instagram | telegram</h2></section>
             </div>
         </div>
+    </div>
 
-        <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
-        <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
+    <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
+            </div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
                 <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
@@ -825,7 +843,30 @@
         });
 
         // Sync Sidebar to Bottom Sheet
-        );
+        function toggleTOC() {
+            const drw = document.getElementById('mobile-drawer');
+            const ovl = document.getElementById('drawer-overlay');
+            if(!drw || !ovl) return;
+            const isOpen = drw.classList.toggle('open');
+            ovl.classList.toggle('visible');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+
+            if (isOpen) {
+                const src = document.getElementById('quick-links');
+                const dst = document.getElementById('mobile-nav-list');
+                if (src && dst) {
+                    dst.innerHTML = '';
+                    src.querySelectorAll('.nav-link').forEach(l => {
+                        const cln = l.cloneNode(true);
+                        cln.className = 'drawer-link';
+                        cln.onclick = (e) => {
+                           toggleTOC();
+                           setTimeout(() => {
+                               const targetId = cln.getAttribute('href');
+                               if(targetId) {
+                                   const target = document.querySelector(targetId);
+                                   if(target) target.scrollIntoView({behavior: 'smooth'});
+                               }
                            }, 300);
                         };
                         dst.appendChild(cln);
@@ -839,7 +880,7 @@
 
 
 <!-- Навигационная плашка -->
-<div id="nav-navigation-container">
+<div id="nav-navigation-container" class="lg:hidden">
     <button id="nav-navigation-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         <span>Навигация</span>
@@ -856,6 +897,7 @@
 </div>
 
 <style>
+@media (max-width: 1023px) {
 /* Кнопка-плашка */
 #nav-navigation-trigger {
     position: fixed;
@@ -965,6 +1007,7 @@
 }
 
 #nav-overlay.visible { opacity: 1; visibility: visible; }
+}
 </style>
 
 <script>

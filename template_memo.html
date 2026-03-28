@@ -75,6 +75,15 @@
     
     
 
+    /* --- Premium Mobile Navigation Pro Max (Mobile Only) --- */
+    @media (max-width: 1023px) {
+        #scroll-progress {
+            position: fixed; top: 0; left: 0; height: 3px;
+            background: #f5e2a1; width: 0%; z-index: 1000;
+            transition: width 0.1s ease-out;
+            box-shadow: 0 0 10px rgba(245, 226, 161, 0.5);
+        }
+
         .header-hidden { transform: translateY(-100%) !important; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important; }
         .header-visible { transform: translateY(0) !important; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important; }
 
@@ -114,6 +123,23 @@
         }
         .drawer-link::after { content: 'arrow_forward'; font-family: 'Material Symbols Outlined'; font-size: 20px; opacity: 0.2; }
     }
+
+ 
+}
+
+/* Hide Mobile Navigation on Desktop */
+@media (min-width: 1024px) { 
+    #nav-navigation-trigger, 
+    #nav-navigation-container, 
+    #nav-overlay, 
+    #nav-bottom-sheet, 
+    #mobile-toc-button,
+    #mobile-drawer,
+    #drawer-overlay,
+    #scroll-progress { 
+        display: none !important; 
+    } 
+}
 </style>
 </head>
 
@@ -139,7 +165,7 @@
 
     <main>
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -156,24 +182,25 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">██Название██</h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-[1.1] md:leading-none pt-4 md:pt-0 mb-8 md:mb-10">██Название██</h1>
                 
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#journey" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-██slug██.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-16" id="memo-content-area">
+                <div class="space-y-8 md:space-y-12" id="memo-content-area">
                      <!-- Контент здесь -->
-                    </div>
-                </div>
-            </div>
-                </div>
             </div>
         </div>
+    </div>
 
-        <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
-        <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
+    <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
+            </div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
                 <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
@@ -408,7 +435,28 @@
         });
 
         // Sync Sidebar to Bottom Sheet
-        );
+        function toggleTOC() {
+            const drw = document.getElementById('mobile-drawer');
+            const ovl = document.getElementById('drawer-overlay');
+            if(!drw || !ovl) return;
+            const isOpen = drw.classList.toggle('open');
+            ovl.classList.toggle('visible');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+
+            if (isOpen) {
+                const src = document.getElementById('quick-links');
+                const dst = document.getElementById('mobile-nav-list');
+                if (src && dst) {
+                    dst.innerHTML = '';
+                    src.querySelectorAll('.nav-link').forEach(l => {
+                        const cln = l.cloneNode(true);
+                        cln.className = 'drawer-link';
+                        cln.onclick = (e) => {
+                           toggleTOC();
+                           // Ждем закрытия анимации и скроллим
+                           setTimeout(() => {
+                               const targetId = cln.getAttribute('href');
+                               document.querySelector(targetId).scrollIntoView({behavior: 'smooth'});
                            }, 300);
                         };
                         dst.appendChild(cln);
@@ -422,7 +470,7 @@
 
 
 <!-- Навигационная плашка -->
-<div id="nav-navigation-container">
+<div id="nav-navigation-container" class="lg:hidden" class="lg:hidden">
     <button id="nav-navigation-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         <span>Навигация</span>
@@ -439,6 +487,8 @@
 </div>
 
 <style>
+@media (max-width: 1023px) {
+@media (max-width: 1023px) {
 /* Кнопка-плашка */
 #nav-navigation-trigger {
     position: fixed;
@@ -548,6 +598,8 @@
 }
 
 #nav-overlay.visible { opacity: 1; visibility: visible; }
+}
+}
 </style>
 
 <script>

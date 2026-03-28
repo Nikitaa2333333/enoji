@@ -114,6 +114,24 @@
         }
         .drawer-link::after { content: 'arrow_forward'; font-family: 'Material Symbols Outlined'; font-size: 20px; opacity: 0.2; }
     }
+
+ 
+}
+
+/* Hide Mobile Navigation on Desktop */
+@media (min-width: 1024px) { 
+    #nav-navigation-trigger, 
+    #nav-navigation-container, 
+    #nav-overlay, 
+    #nav-bottom-sheet, 
+    #mobile-toc-button,
+    #mobile-drawer,
+    #drawer-overlay,
+    @media (max-width: 1023px) {
+        #scroll-progress { 
+        display: none !important; 
+    } 
+}
 </style>
 </head>
 
@@ -145,7 +163,7 @@
         </section>
 
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 relative flex flex-col lg:flex-row gap-12">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -165,15 +183,15 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Мексика</h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-[1.1] md:leading-none pt-4 md:pt-0 mb-8 md:mb-10">Мексика</h1>
                 
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#journey" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-mexico.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-16" id="memo-content-area">
-                     <section class="pt-12 border-t border-black/5"><h2 id="section-о-стране" id="section-о-стране" class="text-6xl font-black mb-8 tracking-tight">О стране</h2><div class="space-y-6">
+                <div class="space-y-8 md:space-y-12" id="memo-content-area">
+                     <section class="pt-4 border-t border-black/5"><h2 id="section-о-стране" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">О стране</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Солнечная Мексика с латиноамериканскими ритмами, текилой и дивными тропиками – прекрасное место для отдыха от русской зимы! Помимо белоснежных пляжей, лазурных берегов Карибского моря, гости страны смогут прикоснуться к одной из древнейших мировых цивилизаций времен майя. Мексика – обладательница сочного колорита, при упоминании о стране абсолютно у каждого всплывают стойкие ассоциации: кактус, текила, маракасы, перец чили, сиеста, майя, ацтеки... Так в чем же ее особенности?</p>
 <img src="tild3132-3365-4461-a464-346563613165__grand-velas-riviera-.webp" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Мексиканские Соединенные Штаты расположились в Северной Америке и граничат с США на севере, с Белизом и Гватемалой на юго-востоке. Западная часть Мексики омывается водами Тихого океана и Калифорнийского залива, а восточная – Карибским морем и Мексиканским заливом. Государство состоит из 31 штата и одного федерального округа – столицы Мехико, отсюда и полное название. В рейтинге самых крупных стран по территориальному признаку Мексика занимает 13-е место. Временная разница с Москвой составляет 9 часов. Родной язык мексиканцев – испанский, многолетняя колонизация страны сильно повлияла на современную Мексику.</p>
@@ -187,10 +205,10 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Мексика – это целый комплекс достопримечательностей, которые непременно стоит увидеть. Страна предлагает намного больше, чем просто роскошные курорты. Это и наследие древних индейских цивилизаций, и объекты более поздней культуры страны, и природные парки с мировым именем.</p>
 <img src="tild3235-3066-4466-b562-383762303962__dennis20jarvis20.webp" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-курорты-мексики" class="text-6xl font-black mb-8 tracking-tight">Курорты мексики</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-курорты-мексики" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Курорты мексики</h2><div class="space-y-6">
 <img src="tild6132-3732-4331-b262-303631396263__sunset.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-канкун" class="text-6xl font-black mb-8 tracking-tight">Канкун</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-канкун" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Канкун</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Курорт южного побережья Мексики Канкун входит в пятерку лучших курортов мира. Он расположился на полуострове Юкатан между Карибским морем и лагуной Ничупте. Развитость туристической инфраструктуры побережья курорта впечатлит огромным выбором отелей, ресторанов, развлекательных и спортивных объектов. Многие любители активного отдыха делают выбор в пользу Канкуна, где созданы все условия для занятий серфингом, яхтингом, дайвингом, виндсерфингом и другими популярными водными видами спорта.</p>
 <img src="tild6362-6337-4039-b963-663332663565__surfer-2212948.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Канкун неспроста считается одним из лучших курортов: бесконечные пляжи с белоснежным песком, лазурная морская вода, потрясающе красивая природа, отличная организация туристических путешествий, а также близкое расположение к археологическим памятникам архитектуры древних цивилизаций. Также немаловажным плюсом курорта является расположение от международного аэропорта Канкун, в 10 км от отельной полосы, который считается вторым по объему перевозок в стране.</p>
@@ -204,7 +222,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Среди наиболее интересных мест стоит выделить заброшенный город Теотиуакан, с прекрасно сохранившимися до наших дней пирамидами Солнца и Луны и храмом Пернатого Змея. Бесценными памятниками древних цивилизаций также являются священный город Чичен-Ица, археологический комплекс Монте-Альбан, древняя столица тольтеков Тула, Тахин, Майяпан и многие другие.</p>
 <img src="tild3731-3739-4263-b066-336262646135__chichn-itz-_banner.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-ривьера-майя" class="text-6xl font-black mb-8 tracking-tight">Ривьера-майя</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-ривьера-майя" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Ривьера-майя</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Вторым по популярности курортом мексиканского направления признан Ривьера-Майя, который расположен южнее Канкуна. Эта курортная зона представляет собой стокилометровую прибрежную полосу Карибского побережья с белоснежным песком и чистейшими водами Карибского моря. Отдыхая на этом курорте, вы можете остановиться на материковой части в городе Плайя-дель-Кармен, самом сердце Ривьеры-Майя, или же на острове Косумель. Стоит отметить, что Косумель – это самый крупный остров Мексики, протянувшийся на 14 км в ширину и 53 км в длину.</p>
 <img src="tild3939-6633-4561-b465-333566623865__rivieramaya_villalag.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Плайя-дель-Кармен расположен в 70 км от аэропорта Канкуна, этот оживленный город пользуется большой популярностью среди молодежи, ведь здесь находится огромное количество шумных развлекательных мест. Остров Косумель расположился в 19 км восточнее от Юкатана. В переводе с языка майя «косумель» означает «Остров Ласточек». Курорт славится своей уникальной природной фауной и вторым в мире по величине коралловым рифом протяженностью более 700 км! Большая часть острова Косумель – это национальный парк, но в тоже время на острове прекрасна развита туристическая инфраструктура.</p>
@@ -221,21 +239,16 @@
 
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">город Москва, Щербинка ул. Юбилейная д.3а</p>
 </div></section>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-                </div>
             </div>
         </div>
+    </div>
 
-        <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
-        <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
+    <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
+            </div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
                 <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
@@ -470,7 +483,30 @@
         });
 
         // Sync Sidebar to Bottom Sheet
-        );
+        function toggleTOC() {
+            const drw = document.getElementById('mobile-drawer');
+            const ovl = document.getElementById('drawer-overlay');
+            if(!drw || !ovl) return;
+            const isOpen = drw.classList.toggle('open');
+            ovl.classList.toggle('visible');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+
+            if (isOpen) {
+                const src = document.getElementById('quick-links');
+                const dst = document.getElementById('mobile-nav-list');
+                if (src && dst) {
+                    dst.innerHTML = '';
+                    src.querySelectorAll('.nav-link').forEach(l => {
+                        const cln = l.cloneNode(true);
+                        cln.className = 'drawer-link';
+                        cln.onclick = (e) => {
+                           toggleTOC();
+                           setTimeout(() => {
+                               const targetId = cln.getAttribute('href');
+                               if(targetId) {
+                                   const target = document.querySelector(targetId);
+                                   if(target) target.scrollIntoView({behavior: 'smooth'});
+                               }
                            }, 300);
                         };
                         dst.appendChild(cln);
@@ -484,7 +520,7 @@
 
 
 <!-- Навигационная плашка -->
-<div id="nav-navigation-container">
+<div id="nav-navigation-container" class="lg:hidden">
     <button id="nav-navigation-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         <span>Навигация</span>
@@ -501,6 +537,7 @@
 </div>
 
 <style>
+@media (max-width: 1023px) {
 /* Кнопка-плашка */
 #nav-navigation-trigger {
     position: fixed;
@@ -610,6 +647,7 @@
 }
 
 #nav-overlay.visible { opacity: 1; visibility: visible; }
+}
 </style>
 
 <script>

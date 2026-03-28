@@ -117,6 +117,24 @@
         }
         .drawer-link::after { content: 'arrow_forward'; font-family: 'Material Symbols Outlined'; font-size: 20px; opacity: 0.2; }
     }
+
+ 
+}
+
+/* Hide Mobile Navigation on Desktop */
+@media (min-width: 1024px) { 
+    #nav-navigation-trigger, 
+    #nav-navigation-container, 
+    #nav-overlay, 
+    #nav-bottom-sheet, 
+    #mobile-toc-button,
+    #mobile-drawer,
+    #drawer-overlay,
+    @media (max-width: 1023px) {
+        #scroll-progress { 
+        display: none !important; 
+    } 
+}
 </style>
 </head>
 
@@ -148,7 +166,7 @@
         </section>
 
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 relative flex flex-col lg:flex-row gap-12">
 
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -174,7 +192,7 @@
 
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-10">
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Мальдивы
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-[1.1] md:leading-none pt-4 md:pt-0 mb-8 md:mb-10">Мальдивы
                 </h1>
 
                 <div class="flex flex-wrap gap-4 mb-10">
@@ -186,13 +204,13 @@
                         туристу</a>
                 </div>
 
-                <div class="space-y-16" id="memo-content-area">
-                    <section class="pt-12 border-t border-black/5">
+                <div class="space-y-8 md:space-y-12" id="memo-content-area">
+                    <section class="pt-4 border-t border-black/5">
                         <h2 id="section-все-о-путешествии-на-райские-мальдивы"
-                            class="text-6xl font-black mb-8 tracking-tight">Все о путешествии на райские Мальдивы</h2>
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Все о путешествии на райские Мальдивы</h2>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-о-стране" id="section-о-стране" class="text-6xl font-black mb-8 tracking-tight">О стране</h2>
+                        <h2 id="section-о-стране" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">О стране</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Общая информация
                             </p>
@@ -214,7 +232,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-атолл-северный-мале" class="text-6xl font-black mb-8 tracking-tight">Атолл
+                        <h2 id="section-атолл-северный-мале" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Атолл
                             Северный Мале</h2>
                         <div class="space-y-6">
                             <img src="tild3739-3336-4131-a166-623838346636__i_1.jpg"
@@ -227,7 +245,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-атолл-южный-мале" class="text-6xl font-black mb-8 tracking-tight">Атолл Южный
+                        <h2 id="section-атолл-южный-мале" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Атолл Южный
                             Мале</h2>
                         <div class="space-y-6">
                             <img src="tild3038-3438-4564-a234-663266653436__8q1a7167.webp"
@@ -241,7 +259,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-атолл-ари" class="text-6xl font-black mb-8 tracking-tight">Атолл Ари</h2>
+                        <h2 id="section-атолл-ари" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Атолл Ари</h2>
                         <div class="space-y-6">
                             <img src="tild6630-6538-4330-b464-393463393134__yv9ruhd5mvt7khn3uw60.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
@@ -252,7 +270,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-атолл-баа" class="text-6xl font-black mb-8 tracking-tight">Атолл Баа</h2>
+                        <h2 id="section-атолл-баа" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Атолл Баа</h2>
                         <div class="space-y-6">
                             <img src="tild6331-3531-4436-a431-353735636630__anantara_kihavah_-_a.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
@@ -264,7 +282,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-атолл-даалу" class="text-6xl font-black mb-8 tracking-tight">Атолл Даалу</h2>
+                        <h2 id="section-атолл-даалу" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Атолл Даалу</h2>
                         <div class="space-y-6">
                             <img src="tild6139-6437-4131-b637-363137333330__photo.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
@@ -278,7 +296,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-атолл-раа" class="text-6xl font-black mb-8 tracking-tight">Атолл Раа</h2>
+                        <h2 id="section-атолл-раа" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Атолл Раа</h2>
                         <div class="space-y-6">
                             <img src="tild6263-3564-4536-b135-396134623436__hbr-maldives-excursi.jpg"
                                 class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
@@ -290,7 +308,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-атолл-лавияни" class="text-6xl font-black mb-8 tracking-tight">Атолл Лавияни
+                        <h2 id="section-атолл-лавияни" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Атолл Лавияни
                         </h2>
                         <div class="space-y-6">
                             <img src="tild6463-6337-4131-a432-626631353861__i_2.jpg"
@@ -309,21 +327,16 @@
 
                         </div>
                     </section>
-                </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+    </div>
 
-        <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
-        <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
+    <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
+            </div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
                 <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
@@ -558,7 +571,30 @@
         });
 
         // Sync Sidebar to Bottom Sheet
-        );
+        function toggleTOC() {
+            const drw = document.getElementById('mobile-drawer');
+            const ovl = document.getElementById('drawer-overlay');
+            if(!drw || !ovl) return;
+            const isOpen = drw.classList.toggle('open');
+            ovl.classList.toggle('visible');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+
+            if (isOpen) {
+                const src = document.getElementById('quick-links');
+                const dst = document.getElementById('mobile-nav-list');
+                if (src && dst) {
+                    dst.innerHTML = '';
+                    src.querySelectorAll('.nav-link').forEach(l => {
+                        const cln = l.cloneNode(true);
+                        cln.className = 'drawer-link';
+                        cln.onclick = (e) => {
+                           toggleTOC();
+                           setTimeout(() => {
+                               const targetId = cln.getAttribute('href');
+                               if(targetId) {
+                                   const target = document.querySelector(targetId);
+                                   if(target) target.scrollIntoView({behavior: 'smooth'});
+                               }
                            }, 300);
                         };
                         dst.appendChild(cln);
@@ -572,7 +608,7 @@
 
 
 <!-- Навигационная плашка -->
-<div id="nav-navigation-container">
+<div id="nav-navigation-container" class="lg:hidden">
     <button id="nav-navigation-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         <span>Навигация</span>
@@ -589,6 +625,7 @@
 </div>
 
 <style>
+@media (max-width: 1023px) {
 /* Кнопка-плашка */
 #nav-navigation-trigger {
     position: fixed;
@@ -698,6 +735,7 @@
 }
 
 #nav-overlay.visible { opacity: 1; visibility: visible; }
+}
 </style>
 
 <script>

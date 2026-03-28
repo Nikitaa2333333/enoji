@@ -114,6 +114,24 @@
         }
         .drawer-link::after { content: 'arrow_forward'; font-family: 'Material Symbols Outlined'; font-size: 20px; opacity: 0.2; }
     }
+
+ 
+}
+
+/* Hide Mobile Navigation on Desktop */
+@media (min-width: 1024px) { 
+    #nav-navigation-trigger, 
+    #nav-navigation-container, 
+    #nav-overlay, 
+    #nav-bottom-sheet, 
+    #mobile-toc-button,
+    #mobile-drawer,
+    #drawer-overlay,
+    @media (max-width: 1023px) {
+        #scroll-progress { 
+        display: none !important; 
+    } 
+}
 </style>
 </head>
 
@@ -145,7 +163,7 @@
         </section>
 
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 relative flex flex-col lg:flex-row gap-12">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -170,16 +188,16 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Китай</h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-[1.1] md:leading-none pt-4 md:pt-0 mb-8 md:mb-10">Китай</h1>
                 
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#journey" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-china.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-16" id="memo-content-area">
-                     <section class="pt-12 border-t border-black/5"><h2 id="section-все-о-путешествии-в-удивительный-китай" class="text-6xl font-black mb-8 tracking-tight">Все о путешествии в удивительный Китай</h2></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-о-стране" id="section-о-стране" class="text-6xl font-black mb-8 tracking-tight">О стране</h2><div class="space-y-6">
+                <div class="space-y-8 md:space-y-12" id="memo-content-area">
+                     <section class="pt-4 border-t border-black/5"><h2 id="section-все-о-путешествии-в-удивительный-китай" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Все о путешествии в удивительный Китай</h2></section>
+<section class="pt-12 border-t border-black/5"><h2 id="section-о-стране" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">О стране</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Китай вызывает особый интерес у путешественников, ведь восточные легенды, таинственные дворцы, Великая Китайская стена и колоритная культура завораживают. Страна изобилует не только историческими и культурными, но и природными достопримечательностями. Знаменитые «парящие горы» и река Ли навсегда влюбляют путешественников в Поднебесную, а огромные мегаполисы с современными небоскребами и тысячами огней поражают воображение.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Общая информация</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Самая большая азиатская страна омывается двумя морями и граничит со множеством среднеазиатских и южноазиатских стран. Одна из самых древних стран с богатейшей историей и привлекательной философией притягивает туристов со всего мира. Из-за протяженности страны климат в ней различается. Большая часть территории Китая покрыта горами, нагорьями и холмами. Невероятная природа, спокойствие величественных гор и шум огромных городов делают эту страну контрастов уникальной.</p>
@@ -190,7 +208,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Пляжный</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Южные курорты Китая славятся своим комфортом и атмосферой спокойствия. Чистые пляжи, свежие морепродукты и множество развлечений на тропическом острове Хайнань запоминаются надолго. Высокий уровень сервиса, развитая инфраструктура на пляжах и множество сочных фруктов украсят ваш отдых в Китае.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-гонконг" class="text-6xl font-black mb-8 tracking-tight">Гонконг</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-гонконг" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Гонконг</h2><div class="space-y-6">
 <img src="tild3939-3536-4134-b337-396437633235__gonkong.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Общая информация</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Отдельный административный округ и крупный экономический центр Китая. Богатый и дорогой мегаполис похож на сказочный мир с яркой подсветкой и домами, уходящими в небо. В Гонконге вы увидите, как живут китайцы в крупных городах, проникнетесь их культурой, посетите буддистские храмы и потрогаете облака на вершинах небоскребов.</p>
@@ -203,7 +221,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Новые территории</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Одна из трёх частей административного округа Гонконг — Новые Территории. Этот район огромного Гонконга поражает тем, что его построили всего за 20 лет. Масштабные территории, некогда дикие и пустынные превратились в престижные районы с новыми домами и набережными. Располагаются Новые Территории не только на материковой части Гонконга, но и на живописных зелёных островах, которые можно осмотреть во время морской прогулки.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-макао" class="text-6xl font-black mb-8 tracking-tight">Макао</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-макао" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Макао</h2><div class="space-y-6">
 <img src="tild3537-3138-4530-a136-326130613238__i_8.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Общая информация</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Специальный административный район и азартная столица Китая. Китайский Лас-Вегас заманивает азартными играми и экзотичностью самого островного города. Здесь можно отправиться на морскую прогулку между островами, поужинать на вершине Macau Tower, осмотреть исторический центр с памятниками колониальных времен, посетить гоночную трассу «Гран-при Макао» и, конечно же, насладиться игрой.</p>
@@ -218,22 +236,22 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Тайпа</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Остров недалеко от материковой части Макао — лучшее место для беззаботного отдыха. Здесь для туристов и местных жителей обустроен популярный одноимённый пляж. Именно на острове Тайпа находятся лучшие отели Макао с казино и торговыми центрами внутри. На острове располагается колоритная деревня Тайпа, в которой можно поближе познакомиться с эпохой португальской колонизации и китайской культурой.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-хайнань" class="text-6xl font-black mb-8 tracking-tight">Хайнань</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-хайнань" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Хайнань</h2><div class="space-y-6">
 <img src="tild3563-6131-4130-b265-613037303835__1649533575_40-vsegda.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Цветущий пляжный уголок большой страны привлекает любителей тропических фруктов и теплого моря. Местные отели поддерживают отличный уровень сервиса, а также предлагают экскурсии по острову, рафтинг и морские прогулки. Хайнань – самая южная провинция Китая, и соответственно здесь самый теплый и влажный климат. Путешественники наслаждаются здесь атмосферой спокойствия, прогулками по тропическим лесам, расслабляющим пляжным отдыхом и экзотической китайской кухней.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-пекин" class="text-6xl font-black mb-8 tracking-tight">Пекин</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-пекин" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Пекин</h2><div class="space-y-6">
 <img src="tild6664-6130-4262-b763-636431363734__beijing-china-skylin.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Столица Поднебесной напоминает небольшую отдельную страну, ведь город настолько большой и густонаселенный, что здесь легко заблудиться. Именно в Пекине расположены легендарные достопримечательности Китая, такие как императорский дворцовый комплекс Запретный город и храм Неба. Огромное количество развлечений, живописных улиц, парков и храмов никого не оставят равнодушным. Здесь вы можете рискнуть заглянуть на пекинский рынок и посмотреть на экзотические китайские блюда.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-шанхай" class="text-6xl font-black mb-8 tracking-tight">Шанхай</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-шанхай" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Шанхай</h2><div class="space-y-6">
 <img src="tild6133-3036-4332-b937-663933366233__b7914f0a1a_1.webp" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Город будущего и состоятельных китайцев. Сюда, в разноцветный огромный Шанхай стремятся путешественники за новыми впечатлениями, шопингом и гастрономическим удовольствием. Здесь можно попробовать кухню разных регионов Китая, погулять по парку Юй-Юань и другим красивым местам города и отправиться в антикварные магазины за редкостями. Считается, что самые богатые люди страны живут в Шанхае, и здесь вы сможете найти множество заведений класса «суперлюкс».</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-гуанчжоу" class="text-6xl font-black mb-8 tracking-tight">Гуанчжоу</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-гуанчжоу" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Гуанчжоу</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Третий по величине город Китая считается также его культурно-историческим центром. Зеленые парки с уютными беседками, огромное количество музеев, цирк, буддистские храмы и Жемчужная река ждут вас с Гуанчжоу. Также здесь обязательно нужно посетить парк развлечений «Chimelong Paradise», а затем отправиться изучать местные бутики и магазины. Для того чтобы достичь гармонии – посетите популярный храм Пяти духов и насладитесь уникальной атмосферой этого места.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-харбин" class="text-6xl font-black mb-8 tracking-tight">Харбин</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-харбин" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Харбин</h2><div class="space-y-6">
 <img src="tild3939-3632-4861-b364-653962646630__i_9.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Город Харбин находится недалеко от границы с Россией на севере. Здесь проходит крупнейший в мире ледовый фестиваль – создается настоящий ледяной город. Однако зимы здесь очень суровые, и к ним следует готовиться. Харбин – отличное место для спокойного городского отдыха в живописных парках и для прогулок по экзотическим районам. Здесь следует посетить христианские и буддистские храмы, а также побывать в Парке тигров, где можно отправиться в сафари и увидеть уникальных амурских тигров вблизи.</p>
 
@@ -243,21 +261,16 @@
 
 
 </div></section>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-                </div>
             </div>
         </div>
+    </div>
 
-        <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
-        <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
+    <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
+            </div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
                 <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
@@ -492,7 +505,30 @@
         });
 
         // Sync Sidebar to Bottom Sheet
-        );
+        function toggleTOC() {
+            const drw = document.getElementById('mobile-drawer');
+            const ovl = document.getElementById('drawer-overlay');
+            if(!drw || !ovl) return;
+            const isOpen = drw.classList.toggle('open');
+            ovl.classList.toggle('visible');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+
+            if (isOpen) {
+                const src = document.getElementById('quick-links');
+                const dst = document.getElementById('mobile-nav-list');
+                if (src && dst) {
+                    dst.innerHTML = '';
+                    src.querySelectorAll('.nav-link').forEach(l => {
+                        const cln = l.cloneNode(true);
+                        cln.className = 'drawer-link';
+                        cln.onclick = (e) => {
+                           toggleTOC();
+                           setTimeout(() => {
+                               const targetId = cln.getAttribute('href');
+                               if(targetId) {
+                                   const target = document.querySelector(targetId);
+                                   if(target) target.scrollIntoView({behavior: 'smooth'});
+                               }
                            }, 300);
                         };
                         dst.appendChild(cln);
@@ -506,7 +542,7 @@
 
 
 <!-- Навигационная плашка -->
-<div id="nav-navigation-container">
+<div id="nav-navigation-container" class="lg:hidden">
     <button id="nav-navigation-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         <span>Навигация</span>
@@ -523,6 +559,7 @@
 </div>
 
 <style>
+@media (max-width: 1023px) {
 /* Кнопка-плашка */
 #nav-navigation-trigger {
     position: fixed;
@@ -632,6 +669,7 @@
 }
 
 #nav-overlay.visible { opacity: 1; visibility: visible; }
+}
 </style>
 
 <script>

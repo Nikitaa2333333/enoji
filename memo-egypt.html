@@ -117,6 +117,24 @@
         }
         .drawer-link::after { content: 'arrow_forward'; font-family: 'Material Symbols Outlined'; font-size: 20px; opacity: 0.2; }
     }
+
+ 
+}
+
+/* Hide Mobile Navigation on Desktop */
+@media (min-width: 1024px) { 
+    #nav-navigation-trigger, 
+    #nav-navigation-container, 
+    #nav-overlay, 
+    #nav-bottom-sheet, 
+    #mobile-toc-button,
+    #mobile-drawer,
+    #drawer-overlay,
+    @media (max-width: 1023px) {
+        #scroll-progress { 
+        display: none !important; 
+    } 
+}
 </style>
 </head>
 
@@ -142,7 +160,7 @@
 
     <main>
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 relative flex flex-col lg:flex-row gap-12 pt-20">
 
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -207,7 +225,7 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Памятка:
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-[1.1] md:leading-none pt-4 md:pt-0 mb-8 md:mb-10">Памятка:
                     <span class="text-primary">Египет</span></h1>
 
                 <div class="flex flex-wrap gap-4 mb-10">
@@ -219,13 +237,13 @@
                         туристу</a>
                 </div>
 
-                <div class="space-y-16" id="memo-content-area">
-                    <section class="pt-12 border-t border-black/5">
+                <div class="space-y-8 md:space-y-12" id="memo-content-area">
+                    <section class="pt-4 border-t border-black/5">
                         <h2 id="section-turistam-vyezzhayuschim-v-egipet"
-                            class="text-6xl font-black mb-8 tracking-tight">Туристам, выезжающим в египет</h2>
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Туристам, выезжающим в египет</h2>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-pered-otezdom" class="text-6xl font-black mb-8 tracking-tight">Перед отъездом
+                        <h2 id="section-pered-otezdom" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Перед отъездом
                         </h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Проверьте
@@ -381,7 +399,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-beremennym-zhenschinam" class="text-6xl font-black mb-8 tracking-tight">
+                        <h2 id="section-beremennym-zhenschinam" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">
                             Беременным женщинам</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом мы
@@ -410,7 +428,7 @@
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <h2 id="section-v-rossijskom-aeroportu-vyleta-prileta"
-                            class="text-6xl font-black mb-8 tracking-tight">В российском аэропорту вылета/прилета</h2>
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В российском аэропорту вылета/прилета</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед выездом в
                                 аэропорт получите дополнительную информацию о возможно произошедших изменениях в
@@ -425,7 +443,7 @@
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <h2 id="section-tamozhennyj-kontrol-do-nachala-puteshestviya"
-                            class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль до начала путешествия
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Таможенный контроль до начала путешествия
                         </h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед полетом
@@ -509,7 +527,7 @@
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <h2 id="section-tamozhennyj-kontrol-po-okonchaniyu-puteshestviya"
-                            class="text-6xl font-black mb-8 tracking-tight">Таможенный контроль по окончанию
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Таможенный контроль по окончанию
                             путешествия</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Если вы не
@@ -544,7 +562,7 @@
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <h2 id="section-registraciya-na-rejs-i-oformlenie-bagazha"
-                            class="text-6xl font-black mb-8 tracking-tight">Регистрация на рейс и оформление багажа
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Регистрация на рейс и оформление багажа
                         </h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">До начала
@@ -572,7 +590,7 @@
                     </section>
 
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-pasportnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Паспортный
+                        <h2 id="section-pasportnyj-kontrol" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Паспортный
                             контроль</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для прохождения
@@ -583,7 +601,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-sanitarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">Санитарный
+                        <h2 id="section-sanitarnyj-kontrol" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Санитарный
                             контроль</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">При совершении
@@ -593,7 +611,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-veterinarnyj-kontrol" class="text-6xl font-black mb-8 tracking-tight">
+                        <h2 id="section-veterinarnyj-kontrol" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">
                             Ветеринарный контроль</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Животные
@@ -668,7 +686,7 @@
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <h2 id="section-v-aeroportu-prileta-vyleta-egipta"
-                            class="text-6xl font-black mb-8 tracking-tight">В аэропорту прилета/вылета египта</h2>
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В аэропорту прилета/вылета египта</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">По прибытии в
                                 аэропорт Египта нужно последовательно:</p>
@@ -790,7 +808,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-tamozhennyj-kontrol-v-egipte" class="text-6xl font-black mb-8 tracking-tight">
+                        <h2 id="section-tamozhennyj-kontrol-v-egipte" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">
                             Таможенный контроль в египте</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Ввоз иностранной
@@ -913,7 +931,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-egipet" class="text-6xl font-black mb-8 tracking-tight">Египет</h2>
+                        <h2 id="section-egipet" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Египет</h2>
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <div class="space-y-6">
@@ -928,14 +946,14 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-vremya" class="text-6xl font-black mb-8 tracking-tight">Время</h2>
+                        <h2 id="section-vremya" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Время</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Разница во
                                 времени с Москвой — минус 1 час.</p>
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-klimat" class="text-6xl font-black mb-8 tracking-tight">Климат</h2>
+                        <h2 id="section-klimat" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Климат</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Климат сухой,
                                 переходный от тропического к субтропическому, континентальному. Дожди бывают очень
@@ -945,7 +963,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-valyuta" class="text-6xl font-black mb-8 tracking-tight">Валюта</h2>
+                        <h2 id="section-valyuta" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Валюта</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Египетский фунт.
                                 Обмен валюты можно произвести в банке, в аэропорту, а также в обменных пунктах отелей.
@@ -956,7 +974,7 @@
                     </section>
 
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-chaevye" class="text-6xl font-black mb-8 tracking-tight">Чаевые</h2>
+                        <h2 id="section-chaevye" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Чаевые</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Принято
                                 оставлять чаевые (бакшиш) носильщикам и официантам. Считается, что заслуживают поощрения
@@ -965,7 +983,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-yazyk" class="text-6xl font-black mb-8 tracking-tight">Язык</h2>
+                        <h2 id="section-yazyk" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Язык</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Арабский
                                 (египетский диалект арабского языка). Языки делового общения — английский и французский.
@@ -973,7 +991,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-naselenie" class="text-6xl font-black mb-8 tracking-tight">Население</h2>
+                        <h2 id="section-naselenie" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Население</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Примерная
                                 численность населения — 101,4 млн человек. Этнический состав однородный: 98 % населения
@@ -981,7 +999,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-religiya" class="text-6xl font-black mb-8 tracking-tight">Религия</h2>
+                        <h2 id="section-religiya" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Религия</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Официальной
                                 религией Египта является ислам. 90 % жителей страны — мусульмане (сунниты), около 8 % —
@@ -990,7 +1008,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-obychai" class="text-6xl font-black mb-8 tracking-tight">Обычаи</h2>
+                        <h2 id="section-obychai" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Обычаи</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Нельзя
                                 фотографировать женщин в черных накидках. Если вы хотите сфотографировать мужчину,
@@ -1025,7 +1043,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-prazdniki-i-nerabochie-dni" class="text-6xl font-black mb-8 tracking-tight">
+                        <h2 id="section-prazdniki-i-nerabochie-dni" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">
                             Праздники и нерабочие дни</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">1 января – Новый
@@ -1056,7 +1074,7 @@
                     </section>
 
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-transport" class="text-6xl font-black mb-8 tracking-tight">Транспорт</h2>
+                        <h2 id="section-transport" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Транспорт</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Общественный
                                 транспорт в Египте не развит. Такси — самый недорогой и удобный для туристов вариант, но
@@ -1067,7 +1085,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-arenda-avtomobilya" class="text-6xl font-black mb-8 tracking-tight">Аренда
+                        <h2 id="section-arenda-avtomobilya" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Аренда
                             автомобиля</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В аэропорту,
@@ -1078,7 +1096,7 @@
                     </section>
 
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-telefon" class="text-6xl font-black mb-8 tracking-tight">Телефон</h2>
+                        <h2 id="section-telefon" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Телефон</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Для телефонных
                                 переговоров необходимо приобрести SIM-карту в офисах продаж мобильных операторов.
@@ -1094,7 +1112,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-ekstrennye-telefony" class="text-6xl font-black mb-8 tracking-tight">Экстренные
+                        <h2 id="section-ekstrennye-telefony" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Экстренные
                             телефоны</h2>
                         <div class="space-y-6">
 
@@ -1147,7 +1165,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-v-otele" class="text-6xl font-black mb-8 tracking-tight">В отеле</h2>
+                        <h2 id="section-v-otele" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В отеле</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">В день приезда
                                 расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная
@@ -1201,7 +1219,7 @@
                     </section>
 
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-napryazhenie-elektroseti" class="text-6xl font-black mb-8 tracking-tight">
+                        <h2 id="section-napryazhenie-elektroseti" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">
                             Напряжение электросети</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Напряжение может
@@ -1209,7 +1227,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-ekskursii" class="text-6xl font-black mb-8 tracking-tight">Экскурсии</h2>
+                        <h2 id="section-ekskursii" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Экскурсии</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Гид компании,
                                 принимающий вас в Египте, во время встречи в отеле сообщит перечень предлагаемых
@@ -1223,7 +1241,7 @@
                     </section>
 
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-kuhnya" class="text-6xl font-black mb-8 tracking-tight">Кухня</h2>
+                        <h2 id="section-kuhnya" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Кухня</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Национальная
                                 история Египта включает в себя периоды оккупации французами, британцами и турками, и
@@ -1234,7 +1252,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-magaziny" class="text-6xl font-black mb-8 tracking-tight">Магазины</h2>
+                        <h2 id="section-magaziny" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Магазины</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Во многих
                                 магазинах нет часового графика работы, в туристический сезон они открыты до глубокой
@@ -1249,7 +1267,7 @@
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <h2 id="section-pravila-lichnoj-gigieny-i-bezopasnosti"
-                            class="text-6xl font-black mb-8 tracking-tight">Правила личной гигиены и безопасности:</h2>
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Правила личной гигиены и безопасности:</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Перед
                                 путешествием мы советуем ознакомиться с «Полезными советами российским гражданам,
@@ -1407,7 +1425,7 @@
                     </section>
                     <section class="pt-12 border-t border-black/5">
                         <h2 id="section-pravila-povedeniya-pri-vstreche-i-napadenii-akuly"
-                            class="text-6xl font-black mb-8 tracking-tight">Правила поведения при встрече и нападении
+                            class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Правила поведения при встрече и нападении
                             акулы</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Меры
@@ -1569,7 +1587,7 @@
                         </div>
                     </section>
                     <section class="pt-12 border-t border-black/5">
-                        <h2 id="section-v-sluchae-poteri-pasporta" class="text-6xl font-black mb-8 tracking-tight">В
+                        <h2 id="section-v-sluchae-poteri-pasporta" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">В
                             случае потери паспорта</h2>
                         <div class="space-y-6">
                             <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Незамедлительно
@@ -1682,16 +1700,16 @@
                             </div>
                         </div>
                     </section>
-
-                </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
+    </div>
 
-        <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
-        <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
+    <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
+            </div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
                 <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
@@ -1926,7 +1944,30 @@
         });
 
         // Sync Sidebar to Bottom Sheet
-        );
+        function toggleTOC() {
+            const drw = document.getElementById('mobile-drawer');
+            const ovl = document.getElementById('drawer-overlay');
+            if(!drw || !ovl) return;
+            const isOpen = drw.classList.toggle('open');
+            ovl.classList.toggle('visible');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+
+            if (isOpen) {
+                const src = document.getElementById('quick-links');
+                const dst = document.getElementById('mobile-nav-list');
+                if (src && dst) {
+                    dst.innerHTML = '';
+                    src.querySelectorAll('.nav-link').forEach(l => {
+                        const cln = l.cloneNode(true);
+                        cln.className = 'drawer-link';
+                        cln.onclick = (e) => {
+                           toggleTOC();
+                           setTimeout(() => {
+                               const targetId = cln.getAttribute('href');
+                               if(targetId) {
+                                   const target = document.querySelector(targetId);
+                                   if(target) target.scrollIntoView({behavior: 'smooth'});
+                               }
                            }, 300);
                         };
                         dst.appendChild(cln);
@@ -1940,7 +1981,7 @@
 
 
 <!-- Навигационная плашка -->
-<div id="nav-navigation-container">
+<div id="nav-navigation-container" class="lg:hidden">
     <button id="nav-navigation-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         <span>Навигация</span>
@@ -1957,6 +1998,7 @@
 </div>
 
 <style>
+@media (max-width: 1023px) {
 /* Кнопка-плашка */
 #nav-navigation-trigger {
     position: fixed;
@@ -2066,6 +2108,7 @@
 }
 
 #nav-overlay.visible { opacity: 1; visibility: visible; }
+}
 </style>
 
 <script>

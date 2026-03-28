@@ -114,6 +114,24 @@
         }
         .drawer-link::after { content: 'arrow_forward'; font-family: 'Material Symbols Outlined'; font-size: 20px; opacity: 0.2; }
     }
+
+ 
+}
+
+/* Hide Mobile Navigation on Desktop */
+@media (min-width: 1024px) { 
+    #nav-navigation-trigger, 
+    #nav-navigation-container, 
+    #nav-overlay, 
+    #nav-bottom-sheet, 
+    #mobile-toc-button,
+    #mobile-drawer,
+    #drawer-overlay,
+    @media (max-width: 1023px) {
+        #scroll-progress { 
+        display: none !important; 
+    } 
+}
 </style>
 </head>
 
@@ -145,7 +163,7 @@
         </section>
 
         <!-- ═══ LAYOUT WITH SIDEBAR ═══ -->
-        <div class="max-w-7xl mx-auto px-8 relative flex flex-col lg:flex-row gap-12">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 relative flex flex-col lg:flex-row gap-12">
             
             <!-- ═══ SIDEBAR NAVIGATION (LEFT, STICKY) ═══ -->
             <aside class="hidden lg:block w-64 pt-20">
@@ -171,22 +189,22 @@
             <!-- ═══ CONTENT AREA ═══ -->
             <div class="flex-1 py-20">
                 <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
-                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8">Испания</h1>
+                <h1 id="page-title" class="text-7xl md:text-9xl font-black tracking-tighter leading-[1.1] md:leading-none pt-4 md:pt-0 mb-8 md:mb-10">Испания</h1>
                 
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="#journey" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу туда</a>
                     <a href="memo-spain.html" class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка туристу</a>
                 </div>
 
-                <div class="space-y-16" id="memo-content-area">
-                     <section class="pt-12 border-t border-black/5"><h2 id="section-о-стране" id="section-о-стране" class="text-6xl font-black mb-8 tracking-tight">О стране</h2><div class="space-y-6">
+                <div class="space-y-8 md:space-y-12" id="memo-content-area">
+                     <section class="pt-4 border-t border-black/5"><h2 id="section-о-стране" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">О стране</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Королевство Испания расположено на юго-западе Европы и является членом Европейского союза. Территориально страна занимает большую часть Пиренейского полуострова, а также Канарские и Балеарские острова. На севере и западе берега Королевства омываются Атлантическим океаном, на юге и востоке – Средиземным морем. Столица страны – город Мадрид.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Испания, несомненно, является одним из главных культурных центров Европы. С каждым годом ее посещает все больше туристов. Кто-то приезжает погулять по старым извилистым улочкам, наслаждаясь архитектурными памятниками и шедеврами искусства великих мастеров, а кто-то понежиться под солнцем на лучших побережьях Средиземного моря и Атлантического океана.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Отличительной чертой этой европейской страны являются праздники, ставшие стилем жизни местного населения. Их проводят в больших городах и крохотных поселках, посвящают святым и небесным покровителям, знаменитым соотечественникам и «звездам» местного масштаба, временам года, спортивным достижениям, музыке и стихам. В каждом регионе есть по три официальных региональных праздника, а также еще по одному обязательному празднику на каждую провинцию и город. Кроме того, в каждом населенном пункте чествуют своего святого-покровителя, по случаю чего устраивается самый большой праздник года.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Отдыхать в Королевстве невероятно приятно и легко, ведь испанцы приветливы, доброжелательны, хлебосольны и всегда готовы развлекаться.</p>
 <img src="tild3833-6335-4234-a232-396464383664__598c6e030ca3f598c6e0.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-барселона" class="text-6xl font-black mb-8 tracking-tight">Барселона</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-барселона" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Барселона</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Барселона – один из красивейших европейских городов, возраст которого составляет более 2000 лет, обладает интересной и длинной историей, пропитанной легендами и тайнами. Столица Каталонии привлекает туристов не только своим архитектурным великолепием, но и особым духом свободы и независимости, который всегда выделял ее среди других городов Испании. Особенно притягательна Барселона в летний сезон, именно в этот период можно совместить культурный отдых с пляжным, а ночные развлечения с удачным шопингом.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Барселона - самый оживленный город Испании, жизнь тут бурлит круглые сутки: прогулки по бульварам, веселая беззаботность в клубах и барах, кружение по паркам и набережным. Сюда едут за вдохновением представители богемы со всего мира, отчасти потому, что в Барселоне творили такие великие мастера как Пабло Пикассо и Антонио Гауди. Кроме того, Барселона – крупнейший промышленный и торговый центр. Неповторимую атмосферу городу придает соседство современных зданий со старинными постройками, церквями и замками.</p>
 <img src="tild6131-3639-4932-b065-663139336531__goroda-barselona--is.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
@@ -205,7 +223,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем отдых в Барселоне туристам, предпочитающим познакомиться с культурой Каталонии, совместив это с отдыхом на роскошных городских пляжах.</p>
 <img src="tild3463-6536-4137-b935-336231613764__hm-barcelona.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-коста-брава" class="text-6xl font-black mb-8 tracking-tight">Коста-брава</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-коста-брава" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Коста-брава</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Туристический бум в Испании начался именно с побережья Коста-Брава – прибрежного района провинции Жироны. Первые европейские туристы приехали сюда в 1960-е гг., после чего туристическая лавина покатилась дальше на юг страны, навсегда изменив вид побережья. Коста-Брава пролегает на северо-востоке страны у подножия Пиренейских гор и простирается от города Бланес до границы с Францией в самой северной ее части. Здесь небольшие живописные бухты окружены скалами и пышной растительностью, а широкая полоса роскошных пляжей протянулась на 220 км.</p>
 <img src="tild3139-6635-4133-b531-393537353130__costa-brava-strand.webp" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Великолепные пляжные курорты объединены с зонами для активного отдыха и туризма. Вдоль берега постоянно курсируют небольшие кораблики, на которых можно отправиться в соседние курортные городки, чтобы пообедать в рыбном ресторанчике или просто прогуляться. Чистейшие морские воды и богатейший подводный мир делают побережье раем для дайверов. Из года в год Коста-Брава привлекает активных туристов широкими возможностями для занятий водными видами спорта: порядка 30 центров подводного плавания и виндсерфинга расположены на пляжах, а любители экстрима могут отправиться на сплав по горным рекам.</p>
@@ -230,7 +248,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Совсем неподалеку от города Ллорет-де-Мар находится Аквапарк «Вотерленд», который считается одним из наиболее популярных водных парков на побережье Коста-Брава. Парк предлагает посетителям достаточно широкий выбор развлечений как для взрослых, так и для детей.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем отдых на курортах Коста-Брава всем категориям туристов, особенно активным гостям, предпочитающим спортивно-развлекательный досуг, и семьям с детьми.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-коста-дорада" class="text-6xl font-black mb-8 tracking-tight">Коста-дорада</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-коста-дорада" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Коста-дорада</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Название курортной зоны с испанского языка переводится как «Золотой Берег» и получило свое название из-за многокилометровых песчаных пляжей, сверкающих в лучах солнца, словно мерцающая россыпь золота. Красивейшее побережье Коста-Дорада простирается на 200 км от Барселоны до провинции Таррагона и является идеальным местом семейного отдыха с детьми благодаря теплым неглубоким прибрежным водам Средиземного моря, мелкому песку и наличию разнообразных центров развлечений.</p>
 <img src="tild3438-6664-4566-b435-343039333036__thinkstockphotoscom_.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Уникальные географические особенности и мягкий средиземноморский климат делают Коста-Дорада – истинным раем для любителей активного спортивного отдыха. Все необходимые условия для занятий водными видами спорта позволяют разнообразить досуг отпускников занятиями серфингом и виндсерфингом. Многокилометровые пляжи ухожены и хорошо обустроены, а развитость инфраструктуры впечатляет: комфортабельные отели разной звездности, многочисленные магазины и сувенирные лавки, парки развлечений и гольф-клубы, кафе и рестораны, дискотеки и ночные клубы не дадут заскучать отдыхающим любых возрастов.</p>
@@ -251,7 +269,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Еще один популярный туристический центр Коста-Дорада – старинный рыбацкий город-порт Камбрильс, который условно можно условно разделить на две части, причудливо контрастирующие между собой. Восходящий к средневековью исторический центр города с его узкими улочками и небольшими тесно стоящими постройками соседствует с портовым районом – современной частью города с главной набережной, где расположены отели, коммерческие центры и различные развлекательные заведения. Камбрильс, расположенный немного южнее города Салоу, славится своим рыбным базаром и замечательными ресторанами, где посетители могут отведать щедрые дары Средиземного моря.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем отдых на побережье Коста-Дорада, прежде всего, для семейного отдыха, море здесь теплое, а вход песочный и очень пологий. Парк развлечений «Порт Авентура» будет интересен и взрослым, и детям.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-коста-де-барселона" class="text-6xl font-black mb-8 tracking-tight">Коста-де-барселона</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-коста-де-барселона" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Коста-де-барселона</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Коста-де-Барселона – часть побережья Средиземного моря к югу от Коста-Брава, считается одним из самых экономичных туристических регионов на испанском побережье. Курортная зона тянется от Тордеры и Мальграт-де-Мар на севере до городка Монтгат в 15 км от Барселоны на юге.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Исторически Коста-де-Барселона была заселена рыбацкими и крестьянскими деревушками, а начиная с середины XX века на берегу стали появляться летние резиденции состоятельных жителей Барселоны, и даже несколько первых отелей. Это стало успешным началом развития сферы туризма в этом регионе, и привело к превращению Коста-дель-Марсме в крупный процветающий туристический центр. Сельское хозяйство, прежде всего выращивание винограда, до сих пор является основным видом промысла в этих местах.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Коста-де-Барселона – красивейшее побережье Испании, утопающее в пышной зелени в окружении величественных Пиренеев с серебристым песком и лазурными волнами моря. Многокилометровые пляжи представляют собой длинную прибрежную полосу, защищенную от северных ветров горной цепью Пиренеев. Этот район известен великолепными условиями для пляжного отдыха, развитой инфраструктурой и мягким средиземноморским климатом.</p>
@@ -269,21 +287,21 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Курортный город Каллела располагает тремя пляжными зонами, все три отмечены «Голубым флагом», что говорит о том, что место является идеальным для пляжного отдыха. Тихим курорт назвать нельзя, поскольку здесь проводится большое количество фольклорных событий и культурных мероприятий: карнавалы, фестивали, выставки и т.д. Центральная часть города привлекает широким выбором всевозможных развлекательных заведений, клубов, ресторанов и сувенирных магазинов.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем отдых на курортах Коста-де-Барселона активным и интересующимся жизнью современной Каталонии туристам.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-коста-дель-соль" class="text-6xl font-black mb-8 tracking-tight">Коста-дель-соль</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-коста-дель-соль" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Коста-дель-соль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Курорты Коста-дель-Соль в переводе с испанского означают «Солнечный берег», потому как здесь примерно 300 дней в году светит яркое солнце. Коста-дель-Соль находится в южной части средиземноморского побережья Испании в провинции Андалусия. Побережье здесь одно из самых живописных, береговая линия иногда прерывается скалистыми хвойными мысами, образуя уютные бухты. Пляжи здесь шикарные и ухоженные, с желтым песком, но, несмотря на большое количество солнечных дней в этом регионе температура воды даже в разгар сезона не поднимается выше +21°C за счет холодного течения с Атлантики.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">На курортах Коста-дель-Соль некогда располагались рыболовные деревни, однако сейчас здесь сосредоточено большое количество фешенебельных вилл, поскольку именно это побережье пользуется популярностью у многих голливудских звезд. Поэтому регион ориентирован преимущественно для состоятельных туристов.</p>
 <img src="tild6466-6438-4064-a663-336635343534__spanje-nerja.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-коста-бланка" class="text-6xl font-black mb-8 tracking-tight">Коста-бланка</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-коста-бланка" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Коста-бланка</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Коста-Бланка – полоса средиземноморского побережья в Испании, провинции Аликанте, один из самых популярных туристических курортов страны. Коста-Бланку часто именуют как «Белый берег» – именно здесь сосредоточенно рекордное в Испании количество многокилометровых песчаных пляжей с мягким светло-золотистым песком, отмеченных Голубыми флагами ЮНЕСКО. Как и на Коста-дель-Соль, так и на побережье Коста-Бланка 305 солнечных дней в году, поэтому вода в море может нагреваться до 28–30 градусов. Курорт расположен весьма удачно – высокие горные цепи защищают это место от холодных воздушных масс с севера, поэтому здесь всегда благоприятный средиземноморский климат, что делает эти места наиболее привлекательными среди остальных курортов.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Кроме морского отдыха, на побережье хорошо развит экологический, культурный и спортивный туризм. Обязательно стоит посетить город богатого исторического и культурного наследия Валенсия, а также парки водных аттракционов и зоопарк морских животных.</p>
 <img src="tild6533-3531-4164-b239-633730363338__960.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-коста-тропикаль" class="text-6xl font-black mb-8 tracking-tight">Коста-тропикаль</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-коста-тропикаль" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Коста-тропикаль</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Коста Тропикаль – в переводе с испанского «Тропический берег», курорт расположен недалеко от Коста-дель-Соль, в провинции Гранада в Андалуссии. Это побережье считается одним из самых теплых в Европе, поскольку горный массив Кольдильер защищает курорт от континентальных воздушных масс, приносящих холодную зимнюю погоду. Здесь количество солнечных дней в году больше, чем в каком-либо другом месте в Европе, а среднегодовая температура составляет 20°С. Протяженность береговой линии этого региона более 100 км - от Ла Рабиты (La Rabita) на востоке до Ла Эррадуры (La Herradura) на западе. Пляжи здесь из мелкой гальки, достаточно пологий вход в море, поэтому регион отлично подойдет для семейного отдыха. Благодаря близости к Африканскому континенту в зеленых долинах Коста Тропикаль произрастают тропические фрукты, которые не растут больше нигде в Европе: чиримоя или драконово яблоко, авокадо, манго, гуаява, маракуя и другие. Однако регион Коста Тропикаль привлекает туристов не только теплым климатом и красивыми пляжами, но и своим культурным наследием. Здесь есть памятники культуры, которые расскажут об истории развития региона, например, финикийские некрополи, римские акведуки и «белые города», которые были возведены в эпоху правления арабов. Добраться до побережья Коста Тропикаль возможно, как из аэропорта Малаги, так и из Аликанте.</p>
 <img src="tild6231-6538-4565-a536-646535353235__agp_almunecar_615637.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-остров-майорка" class="text-6xl font-black mb-8 tracking-tight">Остров майорка</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-остров-майорка" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Остров майорка</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Майорка как будто создана для того, чтобы наслаждаться жизнью и предаваться безмятежному отдыху. Визитная карточка самого крупного острова Балеарского архипелага – мягкий климат, роскошные пляжи и пышная природа. Это прекрасное место для занятий дайвингом и виндсерфингом днем и зажигательных вечеринок ночью является излюбленным для туристов из Германии, Англии, Франции и Швейцарии. Туристам с детьми на Майорке будет интересно посетить аквапарк, аквариум и множество природных парков. Удивительный факт заключается в том, что на острове нет рек, поэтому количество пресной воды из родниковых источников достаточно ограничено. При этом густая зелень многочисленных заповедников Майорки, их разнообразие и богатство фауны острова привлекает посетителей круглый год.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Прилет в международный аэропорт Сон-Сан-Жуан, расположенный в 8 км от центра столицы Пальма-де-Майорка.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Климат на Майорке мягкий средиземноморский. Туристический сезон длится с апреля до октября, максимальный поток туристов приходится на июль-август. Средняя температура воздуха в летний сезон около +27-30 °С, воды – +24 °С.</p>
@@ -305,7 +323,7 @@
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Элитный отдых предлагает туристическая зона Кала-Майор. Здесь находится замок Маривент, где ежегодно в августе отдыхает королевская семья, а также первое на Майорке поле для гольфа «Сон-Вида» и испанская школа парусного спорта.</p>
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Рекомендуем отдых на Майорке как семейным туристам, так и активным путешественникам с высоким уровнем достатка.</p>
 </div></section>
-<section class="pt-12 border-t border-black/5"><h2 id="section-остров-тенерифе" class="text-6xl font-black mb-8 tracking-tight">Остров тенерифе</h2><div class="space-y-6">
+<section class="pt-12 border-t border-black/5"><h2 id="section-остров-тенерифе" class="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] md:leading-none">Остров тенерифе</h2><div class="space-y-6">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Тенерифе – самый большой и самый посещаемый остров Канарского архипелага. В переводе с языка, местных жителей античных времен - гуанчей название острова означает «снежная гора», благодаря вулкану Тейде. Тенерифе является самым населённым испанским островом, который занимает центральное положение в Канарском архипелаге. Столица острова Санта-Круз-де-Тенерифе расположена на северо-восточном побережье в глубине небольшой бухты. Это самый большой город на Тенерифе, но он не особо привлекателен для туристов за исключением месяца карнавалов в феврале, в основном гости приезжают сюда ради покупок. Тенерифе отличается от остальных островов архипелага наибольшим разнообразием растительного мира. В общей сложности, здесь насчитывается порядка 1200 видов растений. Благодаря мягкому климату, здесь приживается все, что только бывает на свете.</p>
 <img src="tild6566-6336-4333-b863-393734386137__la-palma-canary-isla.jpg" class="w-full h-[500px] object-cover rounded-[3rem] shadow-xl mb-4" loading="lazy">
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">Климат на острове «вечной весны» круглый год комфортный и мягкий. В летние месяцы умеренно жарко, зимой приятная температура без неприятностей, таких как тропические ливни или ураганы. По причине сложного рельефа Тенерифе имеет разные климатические особенности на юге и севере. Северная часть характеризуется ветрами, вследствие чего в море образуются волны, и 80% всех осадков. Юг острова считается сухим, «пляжным» Тенерифе, защищенный горными массивами. Погода преимущественно солнечная, а океан спокойный.</p>
@@ -325,21 +343,16 @@
 
 <p class="text-2xl leading-relaxed text-on-surface-variant font-light mb-8">город Москва, Щербинка ул. Юбилейная д.3а</p>
 </div></section>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-            </div>
-                </div>
             </div>
         </div>
+    </div>
 
-        <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
-        <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
+    <!-- ═══ ФОРМА (ШАБЛОН) ═══ -->
+            </div>
+        </div>
+    </div>
+
+    <section id="journey" class="py-24 md:py-32 px-4 md:px-8 bg-surface-container-high relative overflow-hidden">
             <div class="absolute top-0 right-0 w-full md:w-1/3 h-full bg-primary-container/20 -skew-x-12 transform md:translate-x-1/2 -z-0 blur-3xl"></div>
             <div class="max-w-4xl mx-auto relative z-10">
                 <div class="text-center mb-10 md:mb-8 space-y-4 px-2">
@@ -574,7 +587,30 @@
         });
 
         // Sync Sidebar to Bottom Sheet
-        );
+        function toggleTOC() {
+            const drw = document.getElementById('mobile-drawer');
+            const ovl = document.getElementById('drawer-overlay');
+            if(!drw || !ovl) return;
+            const isOpen = drw.classList.toggle('open');
+            ovl.classList.toggle('visible');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+
+            if (isOpen) {
+                const src = document.getElementById('quick-links');
+                const dst = document.getElementById('mobile-nav-list');
+                if (src && dst) {
+                    dst.innerHTML = '';
+                    src.querySelectorAll('.nav-link').forEach(l => {
+                        const cln = l.cloneNode(true);
+                        cln.className = 'drawer-link';
+                        cln.onclick = (e) => {
+                           toggleTOC();
+                           setTimeout(() => {
+                               const targetId = cln.getAttribute('href');
+                               if(targetId) {
+                                   const target = document.querySelector(targetId);
+                                   if(target) target.scrollIntoView({behavior: 'smooth'});
+                               }
                            }, 300);
                         };
                         dst.appendChild(cln);
@@ -588,7 +624,7 @@
 
 
 <!-- Навигационная плашка -->
-<div id="nav-navigation-container">
+<div id="nav-navigation-container" class="lg:hidden">
     <button id="nav-navigation-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
         <span>Навигация</span>
@@ -605,6 +641,7 @@
 </div>
 
 <style>
+@media (max-width: 1023px) {
 /* Кнопка-плашка */
 #nav-navigation-trigger {
     position: fixed;
@@ -714,6 +751,7 @@
 }
 
 #nav-overlay.visible { opacity: 1; visibility: visible; }
+}
 </style>
 
 <script>
