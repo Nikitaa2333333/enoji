@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Tours — Admin Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f5e2a1",
+                        "background": "#fffcf5",
+                        "surface": "#ffffff",
+                        "on-surface": "#000000",
+                        "surface-variant": "#f4eddd",
+                        "on-surface-variant": "#4b4b4b",
+                        "admin-sidebar": "#100e08",
+                        "admin-sidebar-text": "#eae2ce",
+                        "admin-sidebar-active": "#f5e2a1",
+                        "admin-accent": "#000000",
+                    },
+                    fontFamily: {
+                        "sans": ["Manrope", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2.5rem",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f8f6f0;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom Scrollbar for sleek UI */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1cbc1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a39e94;
+        }
+    </style>
+</head>
+
+<body class="text-on-surface h-screen overflow-hidden flex">
+
+    <!-- Sidebar -->
+    <aside class="w-72 bg-admin-sidebar text-admin-sidebar-text flex flex-col transition-all duration-300 relative z-20 shadow-2xl">
+        <!-- Logo -->
+        <div class="h-24 flex items-center px-8 border-b border-white/10">
+            <h1 class="text-2xl font-black text-white tracking-tighter leading-none flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">admin_panel_settings</span>
+                Emoji<br>Admin
+            </h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex-1 overflow-y-auto py-8 px-4 space-y-2" id="sidebar-nav">
+            <button onclick="switchTab('tab-main')" class="nav-btn w-full flex items-center gap-4 px-4 py-3.5 rounded-2xl bg-admin-sidebar-active text-black font-bold transition-all" data-target="tab-main">
+                <span class="material-symbols-outlined">dashboard</span>
+                Главный экран
+            </button>
+            <button onclick="switchTab('tab-countries')" class="nav-btn w-full flex items-center gap-4 px-4 py-3.5 rounded-2xl hover:bg-white/5 text-admin-sidebar-text font-medium transition-all" data-target="tab-countries">
+                <span class="material-symbols-outlined">public</span>
+                Страны
+            </button>
+            <button onclick="switchTab('tab-calendar')" class="nav-btn w-full flex items-center gap-4 px-4 py-3.5 rounded-2xl hover:bg-white/5 text-admin-sidebar-text font-medium transition-all" data-target="tab-calendar">
+                <span class="material-symbols-outlined">calendar_month</span>
+                Календарь
+            </button>
+            <button onclick="switchTab('tab-reviews')" class="nav-btn w-full flex items-center gap-4 px-4 py-3.5 rounded-2xl hover:bg-white/5 text-admin-sidebar-text font-medium transition-all" data-target="tab-reviews">
+                <span class="material-symbols-outlined">reviews</span>
+                Отзывы
+            </button>
+            
+            <div class="pt-8 pb-2 px-4 text-xs font-bold text-white/30 uppercase tracking-widest">Система</div>
+            <button onclick="switchTab('tab-settings')" class="nav-btn w-full flex items-center gap-4 px-4 py-3.5 rounded-2xl hover:bg-white/5 text-admin-sidebar-text font-medium transition-all" data-target="tab-settings">
+                <span class="material-symbols-outlined">settings</span>
+                Настройки
+            </button>
+        </nav>
+
+        <!-- User profile -->
+        <div class="p-6 border-t border-white/10">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-black font-bold">A</div>
+                <div>
+                    <div class="text-sm font-bold text-white">Администратор</div>
+                    <div class="text-xs text-white/50">В сети</div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <a href="index.html" class="flex justify-center items-center gap-2 w-full py-2 rounded-xl border border-white/20 text-white/70 hover:bg-white/10 hover:text-white transition-colors text-sm">
+                    <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                    Открыть сайт
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col relative overflow-hidden bg-[#f8f6f0]">
+        
+        <!-- Top bar -->
+        <header class="h-24 bg-surface/80 backdrop-blur-md border-b border-black/5 flex items-center justify-between px-10 shrink-0 sticky top-0 z-10">
+            <div>
+                <h2 class="text-2xl font-bold tracking-tight" id="page-title">Главный экран</h2>
+                <p class="text-sm text-on-surface-variant">Управление ключевыми элементами сайта</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <button onclick="showToast('Данные успешно сохранены!')" class="bg-black text-white px-6 py-2.5 rounded-xl font-bold hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[20px]">save</span>
+                    Сохранить изменения
+                </button>
+            </div>
+        </header>
+
+        <!-- Dynamic Content Tabs -->
+        <div class="flex-1 overflow-y-auto p-10">
+            <div class="max-w-5xl mx-auto space-y-8">
+                
+                <!-- TAB: MAIN -->
+                <div id="tab-main" class="tab-content active space-y-8">
+                    <div class="bg-surface rounded-3xl p-8 shadow-sm border border-black/5">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl">view_carousel</span>
+                            <h3 class="text-xl font-bold">Первый экран (Hero)</h3>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-on-surface-variant mb-2">Главный заголовок</label>
+                                <textarea class="w-full bg-surface-variant/50 border-0 rounded-2xl p-4 focus:ring-2 focus:ring-black text-lg font-black resize-none" rows="2">Эмоджи
+турс</textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-on-surface-variant mb-2">Подзаголовок (описание)</label>
+                                <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black font-medium" value="Мы создаем туры, полные настоящих эмоций">
+                            </div>
+                            <div class="grid grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface-variant mb-2">Надпись бейджика (вверху)</label>
+                                    <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black font-medium" value="Путешествия с душой">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-on-surface-variant mb-2">Текст кнопки CTA</label>
+                                    <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black font-medium" value="Выбрать направление">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface rounded-3xl p-8 shadow-sm border border-black/5">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl">local_fire_department</span>
+                            <h3 class="text-xl font-bold">Блок эмоций</h3>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-on-surface-variant mb-2">Заголовок</label>
+                                <textarea class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black font-bold resize-none" rows="2">Мы предлагаем не просто путешествия, а туры полные эмоций!</textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-on-surface-variant mb-2">Текст описания</label>
+                                <textarea class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black resize-none" rows="3">Наша задача — чтобы ваше путешествие стало индивидуальной историей, которую вы будете пересказывать годами. Каждая деталь продумана для вашего вдохновения.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB: COUNTRIES -->
+                <div id="tab-countries" class="tab-content space-y-8">
+                    <div class="flex justify-between items-center bg-surface p-6 rounded-3xl shadow-sm border border-black/5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-black">public</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Управление странами</h3>
+                                <p class="text-sm text-on-surface-variant">Всего 12 направлений на сайте</p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('modal-add-country')" class="bg-black text-white px-5 py-2.5 rounded-xl font-bold hover:shadow-lg transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">add</span>
+                            Добавить страну
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Country Card -->
+                        <div class="bg-surface rounded-3xl overflow-hidden shadow-sm border border-black/5 hover:shadow-md transition-shadow relative group">
+                            <div class="h-40 bg-gray-200 relative">
+                                <img src="tild3762-6537-4136-a532-303036666635__photo.jpg" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40"></div>
+                                <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white text-black transition-colors" title="Редактировать">
+                                        <span class="material-symbols-outlined text-[18px]">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-bold text-lg">Египет</h4>
+                                <p class="text-sm text-on-surface-variant mt-1">/egypt.html</p>
+                            </div>
+                        </div>
+
+                        <!-- Country Card -->
+                        <div class="bg-surface rounded-3xl overflow-hidden shadow-sm border border-black/5 hover:shadow-md transition-shadow relative group">
+                            <div class="h-40 bg-gray-200 relative">
+                                <img src="tild3665-3434-4139-b532-643238666163__i.jpg" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40"></div>
+                                <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white text-black transition-colors" title="Редактировать">
+                                        <span class="material-symbols-outlined text-[18px]">edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-bold text-lg">Мальдивы</h4>
+                                <p class="text-sm text-on-surface-variant mt-1">/maldives.html</p>
+                            </div>
+                        </div>
+
+                        <!-- Country Card (Add Placeholder) -->
+                        <div onclick="openModal('modal-add-country')" class="bg-transparent border-2 border-dashed border-black/20 rounded-3xl flex flex-col items-center justify-center gap-3 cursor-pointer hover:border-black/50 hover:bg-black/5 transition-all text-on-surface-variant min-h-[240px]">
+                            <span class="material-symbols-outlined text-4xl">add_circle</span>
+                            <span class="font-bold">Новая страна</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB: CALENDAR -->
+                <div id="tab-calendar" class="tab-content space-y-8">
+                    <div class="flex justify-between items-center bg-surface p-6 rounded-3xl shadow-sm border border-black/5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-black">calendar_month</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Интерактивный календарь</h3>
+                                <p class="text-sm text-on-surface-variant">Настройка сезонов и активностей</p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('modal-calendar')" class="bg-black text-white px-5 py-2.5 rounded-xl font-bold hover:shadow-lg transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">add</span>
+                            Добавить запись
+                        </button>
+                    </div>
+
+                    <div class="bg-surface rounded-3xl shadow-sm border border-black/5 overflow-hidden">
+                        <table class="w-full text-left">
+                            <thead class="bg-surface-variant/50 text-xs uppercase tracking-widest text-on-surface-variant font-bold border-b border-black/5">
+                                <tr>
+                                    <th class="p-5">Страна</th>
+                                    <th class="p-5">Кол-во активных месяцев</th>
+                                    <th class="p-5">Типы отдыха</th>
+                                    <th class="p-5 text-right">Действия</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-black/5">
+                                <tr class="hover:bg-black/[0.02]">
+                                    <td class="p-5 font-bold flex items-center gap-3">
+                                        <img src="https://flagcdn.com/w20/eg.png" class="w-5 rounded-[2px]" alt="eg"> Египет
+                                    </td>
+                                    <td class="p-5">5 месяцев</td>
+                                    <td class="p-5">
+                                        <div class="flex gap-2">
+                                            <span class="px-2.5 py-1 bg-yellow-100 text-yellow-800 rounded-lg text-xs font-bold whitespace-nowrap">Пляжный</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-5 text-right">
+                                        <button class="text-blue-600 hover:underline font-medium text-sm">Редактировать</button>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-black/[0.02]">
+                                    <td class="p-5 font-bold flex items-center gap-3">
+                                        <img src="https://flagcdn.com/w20/tr.png" class="w-5 rounded-[2px]" alt="tr"> Турция
+                                    </td>
+                                    <td class="p-5">12 месяцев</td>
+                                    <td class="p-5">
+                                        <div class="flex gap-2 flex-wrap">
+                                            <span class="px-2.5 py-1 bg-yellow-100 text-yellow-800 rounded-lg text-xs font-bold whitespace-nowrap">Пляжный</span>
+                                            <span class="px-2.5 py-1 bg-gray-100 text-gray-800 rounded-lg text-xs font-bold whitespace-nowrap">Экскурсии</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-5 text-right">
+                                        <button class="text-blue-600 hover:underline font-medium text-sm">Редактировать</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- TAB: REVIEWS -->
+                <div id="tab-reviews" class="tab-content space-y-8">
+                    <div class="flex justify-between items-center bg-surface p-6 rounded-3xl shadow-sm border border-black/5">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-black">forum</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Отзывы клиентов</h3>
+                                <p class="text-sm text-on-surface-variant">Редактирование карточек отзывов</p>
+                            </div>
+                        </div>
+                        <button class="bg-black text-white px-5 py-2.5 rounded-xl font-bold hover:shadow-lg transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">add</span>
+                            Добавить отзыв
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Review Card Admin -->
+                        <div class="bg-surface rounded-3xl p-6 shadow-sm border border-black/5 space-y-4">
+                            <textarea class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black resize-none text-sm" rows="4">«Благодаря Emoji Tours я наконец-то осуществила поездку своей мечты...»</textarea>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-on-surface-variant mb-1">Имя автора</label>
+                                    <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-lg p-2.5 text-sm font-bold focus:ring-2 focus:ring-black" value="Анна К.">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-on-surface-variant mb-1">Подпись</label>
+                                    <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-black" value="Поездка на Мальдивы">
+                                </div>
+                            </div>
+                            <div class="flex justify-end pt-2">
+                                <button class="text-red-500 hover:text-red-700 font-bold text-sm bg-red-50 px-4 py-2 rounded-lg">Удалить</button>
+                            </div>
+                        </div>
+
+                        <!-- Review Card Admin -->
+                        <div class="bg-surface rounded-3xl p-6 shadow-sm border border-black/5 space-y-4">
+                            <textarea class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black resize-none text-sm" rows="4">«Для меня важно знать детали до вылета. На сайте агентства нашел ответы на все вопросы по Вьетнаму...»</textarea>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-on-surface-variant mb-1">Имя автора</label>
+                                    <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-lg p-2.5 text-sm font-bold focus:ring-2 focus:ring-black" value="Дмитрий М.">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-on-surface-variant mb-1">Подпись</label>
+                                    <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-black" value="Тур во Вьетнам">
+                                </div>
+                            </div>
+                            <div class="flex justify-end pt-2">
+                                <button class="text-red-500 hover:text-red-700 font-bold text-sm bg-red-50 px-4 py-2 rounded-lg">Удалить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB: SETTINGS -->
+                <div id="tab-settings" class="tab-content space-y-8">
+                    <div class="bg-surface rounded-3xl p-8 shadow-sm border border-black/5">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl">settings</span>
+                            <h3 class="text-xl font-bold">Настройки сайта</h3>
+                        </div>
+                        <p class="text-on-surface-variant mb-6">Здесь вы можете изменить глобальные ссылки и настройки.</p>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold text-on-surface-variant mb-2">Ссылка на MAX канал (в подвале и баннере)</label>
+                                <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black" value="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-on-surface-variant mb-2">Ссылка на VK</label>
+                                <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black" value="https://vk.com/emoji_tours">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <footer class="mt-20 py-8 text-center text-sm text-on-surface-variant">
+                Emoji Tours Admin Panel v1.0 &mdash; Разработано с <span class="material-symbols-outlined text-red-500 text-[16px] align-middle">favorite</span>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Modal: Add Country -->
+    <div id="modal-add-country" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onclick="closeModal('modal-add-country')"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface w-full max-w-2xl rounded-[3rem] p-10 shadow-2xl scale-95 opacity-0 transition-all duration-300" id="modal-add-country-content">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-3xl font-bold tracking-tight">Добавление страны</h3>
+                <button onclick="closeModal('modal-add-country')" class="w-10 h-10 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center transition-colors">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            
+            <div class="space-y-6 overflow-y-auto max-h-[60vh] px-2 -mx-2">
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Название (рус.)</label>
+                        <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black placeholder-black/30" placeholder="Например: Испания">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Slug (англ., для URL)</label>
+                        <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black placeholder-black/30" placeholder="Например: spain">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">URL главной обложки (Hero Photo)</label>
+                    <input type="text" class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black placeholder-black/30" placeholder="image.jpg">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">Файл с текстом контента (.txt)</label>
+                    <div class="border-2 border-dashed border-black/20 rounded-2xl p-8 text-center hover:bg-black/5 cursor-pointer hover:border-black/50 transition-colors">
+                        <span class="material-symbols-outlined text-4xl text-black/40 mb-2">upload_file</span>
+                        <p class="font-bold text-sm">Нажмите для загрузки файла</p>
+                        <p class="text-xs text-on-surface-variant mt-1">Или перетащите файл сюда</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-black/10 flex justify-end gap-4">
+                <button onclick="closeModal('modal-add-country')" class="px-6 py-3 rounded-xl font-bold bg-black/5 hover:bg-black/10 transition-colors">Отмена</button>
+                <button onclick="saveAndCloseModal('modal-add-country', 'Страна добавлена (имитация)')" class="bg-black text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-transform hover:-translate-y-0.5">Создать страницу</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Calendar Edit -->
+    <div id="modal-calendar" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onclick="closeModal('modal-calendar')"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface w-full max-w-3xl rounded-[3rem] p-10 shadow-2xl scale-95 opacity-0 transition-all duration-300" id="modal-calendar-content">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-3xl font-bold tracking-tight">Редактирование календаря</h3>
+                <button onclick="closeModal('modal-calendar')" class="w-10 h-10 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center transition-colors">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold mb-2">Выберите страну</label>
+                    <select class="w-full bg-surface-variant/50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-black appearance-none font-bold">
+                        <option>Выберите страну...</option>
+                        <option>Египет</option>
+                        <option>Турция</option>
+                        <option>Новая страна</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-4">Активности по месяцам</label>
+                    <div class="grid grid-cols-4 sm:grid-cols-6 gap-3">
+                        <!-- Jan -->
+                        <div class="bg-surface-variant/30 p-3 rounded-xl text-center border-2 border-transparent hover:border-primary cursor-pointer transition-colors group">
+                            <div class="text-xs font-bold mb-2">Янв</div>
+                            <div class="flex flex-col gap-1">
+                                <label class="flex items-center gap-2 text-xs"><input type="checkbox" class="rounded text-black border-black/20 focus:ring-black"> Пляж</label>
+                                <label class="flex items-center gap-2 text-xs"><input type="checkbox" class="rounded text-black border-black/20 focus:ring-black"> Экскурсии</label>
+                                <label class="flex items-center gap-2 text-xs"><input type="checkbox" class="rounded text-black border-black/20 focus:ring-black"> Лыжи</label>
+                            </div>
+                        </div>
+                        <!-- Feb -->
+                        <div class="bg-surface-variant/30 p-3 rounded-xl text-center border-2 border-transparent hover:border-primary cursor-pointer transition-colors group">
+                            <div class="text-xs font-bold mb-2">Фев</div>
+                            <div class="flex flex-col gap-1">
+                                <label class="flex items-center gap-2 text-xs"><input type="checkbox" class="rounded text-black border-black/20 focus:ring-black"> Пляж</label>
+                                <label class="flex items-center gap-2 text-xs"><input type="checkbox" class="rounded text-black border-black/20 focus:ring-black"> Экскурсии</label>
+                                <label class="flex items-center gap-2 text-xs"><input type="checkbox" class="rounded text-black border-black/20 focus:ring-black"> Лыжи</label>
+                            </div>
+                        </div>
+                        <!-- Skipped others for brevity in template, but in real life it would have all 12 -->
+                        <div class="bg-surface-variant/30 p-3 rounded-xl text-center border-2 border-transparent hover:border-primary cursor-pointer transition-colors opacity-50"><div class="text-xs font-bold mb-2">Мар</div><div class="text-[10px] text-black/50">...настроить</div></div>
+                        <div class="bg-surface-variant/30 p-3 rounded-xl text-center border-2 border-transparent hover:border-primary cursor-pointer transition-colors opacity-50"><div class="text-xs font-bold mb-2">Апр</div><div class="text-[10px] text-black/50">...настроить</div></div>
+                        <div class="bg-surface-variant/30 p-3 rounded-xl text-center border-2 border-transparent hover:border-primary cursor-pointer transition-colors opacity-50"><div class="text-xs font-bold mb-2">Май</div><div class="text-[10px] text-black/50">...настроить</div></div>
+                        <div class="bg-surface-variant/30 p-3 rounded-xl text-center border-2 border-transparent hover:border-primary cursor-pointer transition-colors opacity-50"><div class="text-xs font-bold mb-2">Июн</div><div class="text-[10px] text-black/50">...настроить</div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-black/10 flex justify-end gap-4">
+                <button onclick="closeModal('modal-calendar')" class="px-6 py-3 rounded-xl font-bold bg-black/5 hover:bg-black/10 transition-colors">Отмена</button>
+                <button onclick="saveAndCloseModal('modal-calendar', 'Календарь обновлен')" class="bg-black text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-transform hover:-translate-y-0.5">Сохранить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification System -->
+    <div id="toast-container" class="fixed bottom-10 right-10 z-[200] flex flex-col gap-3"></div>
+
+    <script>
+        // Tab Switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-admin-sidebar-active', 'text-black');
+                btn.classList.add('text-admin-sidebar-text', 'hover:bg-white/5');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+            
+            const activeBtn = document.querySelector(`.nav-btn[data-target="${tabId}"]`);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-admin-sidebar-text', 'hover:bg-white/5');
+                activeBtn.classList.add('bg-admin-sidebar-active', 'text-black');
+                
+                // Update title
+                const titleText = activeBtn.textContent.trim();
+                document.getElementById('page-title').textContent = titleText.replace('settings', '').trim();
+            }
+        }
+
+        // Modals
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            const content = document.getElementById(id + '-content');
+            modal.classList.remove('hidden');
+            // Trigger reflow
+            void modal.offsetWidth;
+            content.classList.remove('scale-95', 'opacity-0');
+            content.classList.add('scale-100', 'opacity-100');
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            const content = document.getElementById(id + '-content');
+            content.classList.remove('scale-100', 'opacity-100');
+            content.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        function saveAndCloseModal(id, msg) {
+            closeModal(id);
+            showToast(msg);
+        }
+
+        // Toasts
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'bg-black text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 font-bold translate-y-10 opacity-0 transition-all duration-300';
+            toast.innerHTML = `
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                ${message}
+            `;
+            
+            container.appendChild(toast);
+            
+            // Animate in
+            setTimeout(() => {
+                toast.classList.remove('translate-y-10', 'opacity-0');
+            }, 10);
+            
+            // Animate out
+            setTimeout(() => {
+                toast.classList.add('translate-y-10', 'opacity-0');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
