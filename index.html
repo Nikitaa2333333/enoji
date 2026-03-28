@@ -187,7 +187,7 @@
     <!-- Hero Section -->
     <header class="pt-52 pb-12 flex flex-col items-center justify-center px-8 text-center bg-primary relative">
         <div class="max-w-6xl mx-auto space-y-6">
-            <span class="text-black/40 font-bold tracking-[0.2em] text-xs uppercase block animate-fade-up opacity-0"
+            <span class="text-black/40 font-bold tracking-[0.2em] text-xs block animate-fade-up opacity-0"
                 style="animation-delay: 0.2s;">
                 Путешествия с душой
             </span>
@@ -197,20 +197,20 @@
             </h1>
             <h2 class="text-3xl md:text-5xl font-medium text-on-surface-variant max-w-4xl mx-auto leading-tight pt-2 opacity-0 animate-fade-up"
                 style="animation-delay: 0.6s;">
-                туры, полные эмоций
+                Туры, полные эмоций
             </h2>
             <div class="pt-12 flex flex-wrap justify-center gap-4 animate-fade-up opacity-0"
                 style="animation-delay: 0.8s;">
-                <a href="#modal"
+                <a href="#countries"
                     class="bg-black text-white px-14 py-6 rounded-full text-xl font-bold shadow-2xl hover:scale-105 active:scale-95 transition-all">
-                    Хочу туда
+                    Выбрать направление
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Scrolling Photo Gallery -->
-    <section class="pt-0 pb-32 overflow-hidden bg-primary editorial-asymmetry relative">
+    <section class="pt-0 pb-32 overflow-hidden bg-primary editorial-asymmetry relative -mt-px pt-px">
         <div class="relative flex items-center">
             <!-- First group -->
             <div class="animate-scroll flex gap-10 px-6 items-center">
@@ -299,7 +299,7 @@
             </div>
 
             <div class="relative z-10 flex-shrink-0 w-full md:w-auto">
-                <a href="#"
+                <a href="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys"
                     class="bg-white text-[#5533ee] px-10 py-5 rounded-full text-xl font-bold shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3">
                     Подписаться
                     <span class="material-symbols-outlined">arrow_forward</span>
@@ -354,14 +354,6 @@
 
                     <h2 class="text-5xl font-headline font-extrabold text-on-surface tracking-tighter">Страны —
                         инструкция к применению</h2>
-                </div>
-                <div class="hidden md:block">
-                    <a class="text-on-surface font-bold flex items-center gap-2 hover:gap-4 transition-all group"
-                        href="#">
-                        Смотреть все страны
-                        <span
-                            class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                    </a>
                 </div>
             </div>
             <!-- Bento Grid of Countries -->
@@ -525,6 +517,204 @@
             </div>
         </div>
     </section>
+
+    <!-- Travel Calendar Section -->
+    <section class="py-20 px-4 md:px-8 bg-surface-container-low" id="calendar">
+        <div class="max-w-7xl mx-auto space-y-10">
+            <div class="text-center space-y-4">
+                <span class="text-on-surface-variant/60 font-bold tracking-[0.2em] text-sm uppercase">Туристический календарь</span>
+                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tighter">Когда и куда лететь?</h2>
+                <p class="text-lg text-on-surface-variant font-light max-w-2xl mx-auto">Выберите идеальное время для вашего отпуска. <br> Мы собрали лучшие направления для каждого месяца.</p>
+            </div>
+
+            <!-- Control Panel (Legend) -->
+            <div class="mb-6">
+                <div class="max-w-7xl mx-auto">
+                    <!-- Legend -->
+                    <div class="flex flex-wrap justify-center gap-6 overflow-visible">
+                        <div class="flex items-center gap-3 group cursor-pointer filter-item transition-all p-2 rounded-2xl" data-filter="beach">
+                            <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-yellow-700">beach_access</span>
+                            </div>
+                            <span class="text-sm font-bold text-on-surface uppercase tracking-wider group-hover:text-yellow-700 transition-colors">Пляжный</span>
+                        </div>
+                        <div class="flex items-center gap-3 group cursor-pointer filter-item transition-all p-2 rounded-2xl" data-filter="excursion">
+                            <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-gray-700">explore</span>
+                            </div>
+                            <span class="text-sm font-bold text-on-surface uppercase tracking-wider group-hover:text-gray-700 transition-colors">Экскурсионный</span>
+                        </div>
+                        <div class="flex items-center gap-3 group cursor-pointer filter-item transition-all p-2 rounded-2xl" data-filter="ski">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-blue-600">downhill_skiing</span>
+                            </div>
+                            <span class="text-sm font-bold text-on-surface uppercase tracking-wider group-hover:text-blue-600 transition-colors">Горнолыжный</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative overflow-x-auto rounded-[2rem] bg-white shadow-xl p-4 md:px-6 md:py-4 border border-primary/5 mx-auto max-w-7xl">
+                <table class="w-full text-left border-collapse min-w-[800px]">
+                    <thead>
+                        <tr class="border-b-2 border-primary/10">
+                            <th class="py-3 px-4 font-bold text-on-surface whitespace-nowrap w-48">Страна</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Янв</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Фев</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Мар</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Апр</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Май</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Июн</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Июл</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Авг</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Сен</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Окт</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Ноя</th>
+                            <th class="p-2 text-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Дек</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- JS will inject rows here for 12 countries -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const countries = [
+                { name: "Египет", code: "eg", link: "egypt.html", schedule: [[], [], [], ['beach'], ['beach'], [], [], [], ['beach'], ['beach'], ['beach'], []] },
+                { name: "Мальдивы", code: "mv", link: "maldives.html", schedule: [['beach'], ['beach'], ['beach'], ['beach'], [], [], [], [], [], [], ['beach'], ['beach']] },
+                { name: "Турция", code: "tr", link: "turkey.html", schedule: [['excursion'], ['excursion'], ['excursion'], ['excursion'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['excursion'], ['excursion']] },
+                { name: "Вьетнам", code: "vn", link: "vietnam.html", schedule: [['beach'], ['beach'], ['beach'], ['beach'], [], [], [], [], [], [], [], ['beach']] },
+                { name: "Китай", code: "cn", link: "china.html", schedule: [['beach'], ['beach'], ['beach'], ['beach'], ['excursion'], ['excursion'], ['excursion'], ['excursion'], ['excursion'], ['beach'], ['beach'], ['beach']] },
+                { name: "Маврикий", code: "mu", link: "mauritius.html", schedule: [['beach'], ['beach'], ['beach'], ['beach'], ['beach'], [], [], [], ['beach'], ['beach'], ['beach'], ['beach']] },
+                { name: "Таиланд", code: "th", link: "thailand.html", schedule: [['beach'], ['beach'], ['beach'], ['beach'], [], [], [], [], [], [], ['beach'], ['beach']] },
+                { name: "Сейшелы", code: "sc", link: "seychelles.html", schedule: [['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach']] },
+                { name: "Индонезия", code: "id", link: "indonesia.html", schedule: [[], [], [], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], [], [], []] },
+                { name: "Шри-Ланка", code: "lk", link: "sri-lanka.html", schedule: [['beach'], ['beach'], ['beach'], ['beach'], [], [], [], [], [], [], ['beach'], ['beach']] },
+                { name: "Танзания", code: "tz", link: "tanzania.html", schedule: [['beach'], ['beach'], [], [], [], [], ['beach'], ['beach'], ['beach'], ['beach'], [], ['beach']] },
+                { name: "Тунис", code: "tn", link: "tunisia.html", schedule: [[], [], [], [], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], ['beach'], [], []] }
+            ];
+
+            const icons = {
+                'beach': '<div class="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center"><span class="material-symbols-outlined text-yellow-700 text-[18px]">beach_access</span></div>',
+                'excursion': '<div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center"><span class="material-symbols-outlined text-gray-700 text-[18px]">explore</span></div>',
+                'ski': '<div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><span class="material-symbols-outlined text-blue-600 text-[18px]">downhill_skiing</span></div>'
+            };
+
+            const tbody = document.getElementById('calendar-body');
+            
+            countries.forEach((country, index) => {
+                const tr = document.createElement('tr');
+                tr.className = "border-b border-primary/5 hover:bg-black/[0.03] transition-colors group cursor-pointer";
+                tr.onclick = () => window.location.href = country.link;
+                tr.setAttribute('data-original-index', index);
+                
+                let html = `<td class="py-3 px-4 font-bold text-on-surface whitespace-nowrap">
+                                <div class="flex items-center gap-3 text-sm">
+                                    <img src="https://flagcdn.com/w20/${country.code}.png" alt="Флаг ${country.name}" class="w-5 h-auto rounded-[2px] shadow-[0_1px_3px_rgba(0,0,0,0.1)]">
+                                    ${country.name}
+                                </div>
+                            </td>`;
+                
+                country.schedule.forEach(month => {
+                    html += `<td class="p-1 text-center h-12 align-middle">
+                                <div class="flex flex-wrap justify-center gap-[2px]">`;
+                    month.forEach(activity => {
+                        html += `<div class="activity-icon transition-all duration-300 transform drop-shadow-sm" data-activity="${activity}" title="${activity}">
+                                    ${icons[activity]}
+                                 </div>`;
+                    });
+                    html += `   </div>
+                              </td>`;
+                });
+                
+                tr.innerHTML = html;
+                tbody.appendChild(tr);
+            });
+
+            // Filtering & Sorting logic
+            const filterItems = document.querySelectorAll('.filter-item');
+            let activeFilter = null;
+
+            filterItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const filter = item.getAttribute('data-filter');
+                    
+                    if (activeFilter === filter) {
+                        activeFilter = null;
+                        filterItems.forEach(f => {
+                            f.style.opacity = '1';
+                            f.classList.remove('bg-white', 'shadow-md', 'scale-105');
+                        });
+                        
+                        document.querySelectorAll('.activity-icon').forEach(icon => {
+                            icon.style.opacity = '1';
+                            icon.style.transform = 'scale(1)';
+                            icon.style.filter = 'none';
+                        });
+                        
+                        document.querySelectorAll('#calendar-body tr').forEach(tr => {
+                            tr.style.opacity = '1';
+                        });
+                    } else {
+                        activeFilter = filter;
+                        
+                        filterItems.forEach(f => {
+                            f.classList.remove('bg-white', 'shadow-md', 'scale-105');
+                            if (f === item) {
+                                f.classList.add('bg-white', 'shadow-md', 'scale-105');
+                                f.style.opacity = '1';
+                            } else {
+                                f.style.opacity = '0.5';
+                            }
+                        });
+                        
+                        document.querySelectorAll('#calendar-body tr').forEach(tr => {
+                            let hasActivity = false;
+                            const iconsInRow = tr.querySelectorAll('.activity-icon');
+                            
+                            iconsInRow.forEach(icon => {
+                                if (icon.getAttribute('data-activity') === activeFilter) {
+                                    icon.style.opacity = '1';
+                                    icon.style.transform = 'scale(1.1)';
+                                    icon.style.filter = 'none';
+                                    hasActivity = true;
+                                } else {
+                                    icon.style.opacity = '0.15';
+                                    icon.style.transform = 'scale(0.85)';
+                                    icon.style.filter = 'grayscale(100%)';
+                                }
+                            });
+                            
+                            if (hasActivity) {
+                                tr.style.opacity = '1';
+                            } else {
+                                tr.style.opacity = '0.3';
+                            }
+                        });
+                    }
+                    
+                    // Sort table
+                    const rows = Array.from(tbody.querySelectorAll('tr'));
+                    rows.sort((a, b) => {
+                        if (!activeFilter) {
+                            return parseInt(a.getAttribute('data-original-index')) - parseInt(b.getAttribute('data-original-index'));
+                        }
+                        const aHas = [...a.querySelectorAll('.activity-icon')].some(icon => icon.getAttribute('data-activity') === activeFilter);
+                        const bHas = [...b.querySelectorAll('.activity-icon')].some(icon => icon.getAttribute('data-activity') === activeFilter);
+                        if (aHas && !bHas) return -1;
+                        if (!aHas && bHas) return 1;
+                        return parseInt(a.getAttribute('data-original-index')) - parseInt(b.getAttribute('data-original-index'));
+                    });
+                    rows.forEach(row => tbody.appendChild(row));
+                });
+            });
+        });
+    </script>
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-32 bg-surface overflow-hidden">
         <div class="space-y-16">
@@ -791,12 +981,12 @@
                         вашим проводником в мир ярких эмоций.
                     </p>
                     <div class="flex gap-6">
-                        <a href="#"
+                        <a href="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys" target="_blank"
                             class="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform group">
                             <img src="Логотип_MAX.svg" alt="MAX"
                                 class="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all">
                         </a>
-                        <a href="#"
+                        <a href="https://vk.com/emoji_tours" target="_blank"
                             class="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform group">
                             <img src="VK_Compact_Logo_(2021-present).svg.png" alt="VK"
                                 class="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all">
