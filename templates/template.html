@@ -71,17 +71,15 @@
     .nav-link.active {
       color: #000;
       font-weight: 800;
-      border-left-color: #000;
-      background: #fff;
+      border-left-color: #f5e2a1;
+      background: rgba(245, 226, 161, 0.2);
     }
     
     .nav-category {
       padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-      text-transform: uppercase;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 0.3em;
-      color: rgba(0,0,0,0.2);
+      font-size: 13px;
+      font-weight: 800;
+      color: rgba(0,0,0,0.4);
     }
     
     .nav-group {
@@ -149,7 +147,7 @@
   <div id="mobile-drawer"
     class="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-[#fffcf5] z-[110] transform translate-x-full transition-transform duration-500 ease-out shadow-2xl p-8 flex flex-col">
     <div class="flex justify-between items-center mb-10">
-      <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/40">Содержание</p>
+      <p class="text-[13px] font-black text-black/40">Содержание</p>
       <button onclick="toggleMenu()"
         class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/30 text-on-surface active:scale-90 transition-transform">
         <span class="material-symbols-outlined">close</span>
@@ -176,7 +174,7 @@
       <!-- БОКОВАЯ НАВИГАЦИЯ -->
       <aside class="hidden lg:block w-64 self-start sticky top-24 h-fit pb-10">
         <div>
-          <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/40 mb-6 px-6">Содержание</p>
+          <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
           <nav id="quick-links" class="flex flex-col border-l border-black/5">
             <!-- Ссылки -->
           </nav>
