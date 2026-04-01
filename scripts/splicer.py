@@ -138,6 +138,14 @@ def process_page(country_key, file_path, template_path, output_dir, is_memo=Fals
 
     # Очистка контента от служебных полей для парсинга секций
     clean_content = re.sub(r'^[A-Z_]+:.*$', '', content, flags=re.MULTILINE).strip()
+    
+    # Удаление заблокированного текста (футер и контакты ИП Трохин)
+    footer_pattern = r"(?s)(ЖЕЛАЕМ ВАМ ПРИЯТНОГО ПУТЕШЕСТВИЯ!|По всем вопросам свяжитесь с нами|E-mail: trohin\.zh|Телефон: \+7 \(963\) 649-18-52|Индивидуальный предприниматель Трохин|ИНН 503613656680).*?#rec20584402\d1.*?\}"
+    clean_content = re.sub(footer_pattern, '', clean_content).strip()
+    
+    # Резервное удаление если что-то осталось (например без ID)
+    clean_content = re.sub(r"(?s)(ЖЕЛАЕМ ВАМ ПРИЯТНОГО ПУТЕШЕСТВИЯ!|По всем вопросам свяжитесь с нами|Индивидуальный предприниматель Трохин|ИНН 503613656680).*", "", clean_content).strip()
+
     if 'КОНТЕНТ' in clean_content:
         clean_content = clean_content.split('КОНТЕНТ', 1)[1].strip()
 

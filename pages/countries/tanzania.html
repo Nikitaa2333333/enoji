@@ -54,24 +54,37 @@
     
     .nav-link {
       display: block;
-      padding: 0.6rem 1.5rem;
+      padding: 0.5rem 1.5rem;
       border-left: 2px solid transparent;
       font-size: 0.85rem;
-      line-height: 1.3;
+      font-weight: 600;
+      line-height: 1.4;
       color: #000000;
       transition: all 0.2s ease;
     }
 
     .nav-link:hover {
       color: #000;
-      background: rgba(245, 226, 161, 0.1);
+      background: rgba(0, 0, 0, 0.02);
     }
 
     .nav-link.active {
       color: #000;
-      font-weight: 700;
+      font-weight: 800;
       border-left-color: #f5e2a1;
       background: rgba(245, 226, 161, 0.2);
+    }
+    
+    .nav-category {
+      padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+      font-size: 13px;
+      font-weight: 800;
+      color: rgba(0,0,0,0.4);
+    }
+    
+    .nav-group {
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      padding-bottom: 1rem;
     }
 
     .table-container {
@@ -134,7 +147,7 @@
   <div id="mobile-drawer"
     class="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-[#fffcf5] z-[110] transform translate-x-full transition-transform duration-500 ease-out shadow-2xl p-8 flex flex-col">
     <div class="flex justify-between items-center mb-10">
-      <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/40">Содержание</p>
+      <p class="text-[13px] font-black text-black/40">Содержание</p>
       <button onclick="toggleMenu()"
         class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/30 text-on-surface active:scale-90 transition-transform">
         <span class="material-symbols-outlined">close</span>
@@ -163,7 +176,7 @@
       <!-- БОКОВАЯ НАВИГАЦИЯ -->
       <aside class="hidden lg:block w-64 self-start sticky top-24 h-fit pb-10">
         <div>
-          <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-black/40 mb-6 px-6">Содержание</p>
+          <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
           <nav id="quick-links" class="flex flex-col border-l border-black/5">
             <a href="#tekst-i-foto" class="nav-link">(ТЕКСТ И ФОТО):</a>
 <a href="#o-strane" class="nav-link">О стране</a>
@@ -209,12 +222,6 @@
           <div class="prose prose-lg max-w-none">
             <p class="mb-6 text-lg leading-relaxed">Архипелаг Занзибар — средоточие пляжной жизни Танзании. Лазурные воды Индийского океана, кокосовые пальмы, живописные холмы, местами покрытые первозданным лесом, и белоснежные песчаные пляжи — всё это туристы встречают, оказавшись на сказочных островах Занзибара. Самые лучшие пляжи и большинство отелей высокого класса расположились на юго-востоке архипелага, а активная ночная жизнь с шумными дискотеками и всевозможными развлечениями представлена на севере.</p>
 <p class="mb-6 text-lg leading-relaxed">Главный город Занзибара — Стоун-Таун, внесённый в список Всемирного наследия ЮНЕСКО. Здесь находится старинный форт, мечети, колониальные особняки и дворцы султанов, а также основные дайв-центры Занзибара. Для дайверов местные прибрежные воды — настоящий рай: спокойное прозрачное море, изобилие коралловых рифов, подводные горы и затонувшие корабли, ставшие домом для многих морских обитателей.</p>
-<p class="mb-6 text-lg leading-relaxed">По всем вопросам свяжитесь с нами любым удобным способом:</p>
-<p class="mb-6 text-lg leading-relaxed">E-mail: trohin.zh@yandex.ru</p>
-<p class="mb-6 text-lg leading-relaxed">Телефон: +7 (963) 649-18-52</p>
-<p class="mb-6 text-lg leading-relaxed">Соцсети: Вконтакте | Instagram | Telegram</p>
-<p class="mb-6 text-lg leading-relaxed">Индивидуальный предприниматель Трохин Евгений Альбертович</p>
-<p class="mb-6 text-lg leading-relaxed">ИНН 503613656680 / ОГРН ИП 315507400016056</p>
           </div>
         </section>
         

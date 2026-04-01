@@ -24,6 +24,13 @@ def extract_tilda_structure():
     with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
         html_content = f.read()
 
+    # Удаление заблокированного футера и контактов ИП Трохин
+    footer_pattern = r"(?s)(<div[^>]+id=\"rec20584402(?:51|61)\".*?</div>\s*</div>)"
+    html_content = re.sub(footer_pattern, '', html_content)
+    # Резервный метод для текста
+    footer_text_pattern = r"(?s)(ЖЕЛАЕМ ВАМ ПРИЯТНОГО ПУТЕШЕСТВИЯ!|По всем вопросам свяжитесь с нами|E-mail: trohin\.zh|Телефон: \+7 \(963\) 649-18-52|Индивидуальный предприниматель Трохин|ИНН 503613656680).*?(?:#rec\d+|(?=$)|$)"
+    html_content = re.sub(footer_text_pattern, '', html_content)
+
     soup = BeautifulSoup(html_content, 'html.parser')
     # Используем селектор, который найдет любой блок с этими классами
     records = soup.select('div.r.t-rec')

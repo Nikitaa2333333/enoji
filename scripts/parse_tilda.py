@@ -2,11 +2,18 @@ import re
 import os
 import html
 
-def build_final_memo_ultimate_clean(tilda_file, template_file, output_file):
-    print(f"--- ГЛУБОКАЯ ОЧИСТКА + СОХРАНЕНИЕ ПЕРЕНОСОВ ---")
+def build_final_memo_perfect_spacing(tilda_file, template_file, output_file):
+    print(f"--- ТОЧНАЯ НАСТРОЙКА ОТСТУПОВ ---")
     
     with open(tilda_file, 'r', encoding='utf-8') as f:
         tilda_html = f.read()
+        
+    footer_pattern = r"(?s)(<div[^>]+id=\"rec20584402(?:51|61)\".*?</div>\s*</div>)"
+    tilda_html = re.sub(footer_pattern, '', tilda_html)
+    
+    footer_text_pattern = r"(?s)(ЖЕЛАЕМ ВАМ ПРИЯТНОГО ПУТЕШЕСТВИЯ!|По всем вопросам свяжитесь с нами|E-mail: trohin\.zh|Телефон: \+7 \(963\) 649-18-52|Индивидуальный предприниматель Трохин|ИНН 503613656680).*?(?:#rec\d+|(?=$))"
+    tilda_html = re.sub(footer_text_pattern, '', tilda_html)
+
     with open(template_file, 'r', encoding='utf-8') as f:
         template = f.read()
 
@@ -41,26 +48,20 @@ def build_final_memo_ultimate_clean(tilda_file, template_file, output_file):
         title = id_to_title.get(name, "")
         raw_content = html.unescape(raw_content)
         
-        # 24px -> h3
         def h3_fixer(m):
             txt = re.sub(r'<[^>]*>', '', m.group(2)).strip()
             return f'\n<h3>{txt}</h3>\n'
         raw_content = re.sub(r'<([a-z0-9]+)[^>]*font-size:\s*(?:2[2-9]|[3-9][0-9])px[^>]*>(.*?)</\1>', h3_fixer, raw_content, flags=re.DOTALL | re.IGNORECASE)
         
-        # Таблицы
         def wrap_table(m):
             t = m.group(0)
             return f'<div class="table-container mb-12">{t}</div>'
         raw_content = re.sub(r'<table[^>]*>.*?</table>', wrap_table, raw_content, flags=re.DOTALL)
 
-        # МАРКЕРЫ ПЕРЕНОСОВ
         raw_content = re.sub(r'(?:<br\s*/?>\s*){2,}', '[[PARA]]', raw_content, flags=re.IGNORECASE)
         raw_content = re.sub(r'<br\s*/?>', '[[BR]]', raw_content, flags=re.IGNORECASE)
         
-        # ТОТАЛЬНАЯ ОЧИСТКА ВЛОЖЕННОГО МУСОРА (span, div, font)
         raw_content = re.sub(r'</?(?:span|div|font|article|section)[^>]*>', '', raw_content, flags=re.IGNORECASE)
-        
-        # Очистка всех остальных тегов, кроме белого списка
         clean_text = re.sub(r'<(?!/?(strong|b|i|u|h3|li|table|tr|td|thead|tbody)\b)[^>]+>', '', raw_content, flags=re.DOTALL)
         
         sections = [s.strip() for s in clean_text.split('[[PARA]]') if s.strip()]
@@ -75,9 +76,7 @@ def build_final_memo_ultimate_clean(tilda_file, template_file, output_file):
             list_buffer = []
             
             for line in lines:
-                # Фикс-барьер от кусков "style="
                 line = re.sub(r'^[^<]*style="[^"]*"[^>]*>', '', line).strip()
-                
                 pure_line = re.sub(r'<[^>]*>', '', line).strip('\u200b\ufeff\xa0 ')
                 if not pure_line and not any(tag in line for tag in ['<h3>', '<table>']): continue
                 
@@ -119,6 +118,7 @@ def build_final_memo_ultimate_clean(tilda_file, template_file, output_file):
 
         if final_elements:
             header_fin = f'<h2 class="text-4xl font-black mb-14 tracking-tight leading-none text-black">{title}</h2>' if title else ""
+            # ИСПРАВЛЕНИЕ: МЕНЯЕМ -mt-50 НА mt-12 (ОПТИМАЛЬНЫЙ ОТСТУП)
             content_html += f'''
             <section id="{name}" class="scroll-mt-32 mb-32">
                 {header_fin}
@@ -126,7 +126,7 @@ def build_final_memo_ultimate_clean(tilda_file, template_file, output_file):
                 <div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl">
                     {"".join(final_elements)}
                 </div>
-                <div class="h-px bg-black/[0.05] mt-28"></div>
+                <div class="h-px bg-black/[0.05] mt-12"></div>
             </section>'''
 
     menu_html = ""
@@ -146,7 +146,7 @@ def build_final_memo_ultimate_clean(tilda_file, template_file, output_file):
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(output_res)
-    print(f"--- УСПЕХ: Идеально чистая структура БЕЗ мусора и с ПЕРЕНОСАМИ! ---")
+    print(f"--- УСПЕХ: Полоска на месте, текст свободен! ---")
 
 if __name__ == "__main__":
-    build_final_memo_ultimate_clean('content/тильда.txt', 'templates/template_memo.html', 'labs/egypt_final.html')
+    build_final_memo_perfect_spacing('content/тильда.txt', 'templates/template_memo.html', 'labs/egypt_final.html')
