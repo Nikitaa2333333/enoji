@@ -2,8 +2,8 @@ import re
 import os
 import html
 
-def build_final_memo_fix_split_logic(tilda_file, template_file, output_file):
-    print(f"--- ИСПРАВЛЕНИЕ ЛОГИКИ РАЗДЕЛЕНИЯ (ЗАГОЛОВОК + ТЕКСТ) ---")
+def build_final_memo_fix_br_offsets(tilda_file, template_file, output_file):
+    print(f"--- ОБРАБОТКА ОТСТУПОВ (ДВОЙНЫЕ <BR>) ---")
     
     with open(tilda_file, 'r', encoding='utf-8') as f:
         tilda_html = f.read()
@@ -48,69 +48,57 @@ def build_final_memo_fix_split_logic(tilda_file, template_file, output_file):
             return f'<div class="table-container">{t}</div>'
         raw_content = re.sub(r'<table[^>]*>.*?</table>', wrap_table, raw_content, flags=re.DOTALL)
 
-        # ТЕПЕРЬ ФОРМИРУЕМ h3 С ПЕРЕНОСАМИ СТРОК (\n), чтобы они не слипались с текстом
+        # 24px -> h3
         raw_content = re.sub(r'<([a-z0-9]+)[^>]*font-size:\s*(?:2[2-9]|[3-9][0-9])px[^>]*>(.*?)</\1>', r'\n<h3>\2</h3>\n', raw_content, flags=re.DOTALL | re.IGNORECASE)
         
+        # УМНАЯ ЗАМЕНА BR: Двойные <br><br> превращаем в разрыв блока (\n\n)
+        raw_content = re.sub(r'(?:<br\s*/?>\s*){2,}', '\n\n', raw_content, flags=re.IGNORECASE)
+        # Одинарные просто в \n
         raw_content = re.sub(r'<br\s*/?>', '\n', raw_content, flags=re.IGNORECASE)
         
-        # Очистка (Сохраняем h3 и strong)
         clean_text = re.sub(r'<(?!/?(strong|b|i|u|h3|li|table|tr|td|thead|tbody)\b)[^>]+>', '\n', raw_content, flags=re.DOTALL)
         
-        lines = [l.strip() for l in clean_text.split('\n') if l.strip()]
+        # Теперь мы сохраняем пустые строки как сигнал к разделению параграфов
+        sections = [s.strip() for s in clean_text.split('\n\n') if s.strip()]
         final_elements = []
-        p_buffer = []
-        list_buffer = []
         
-        for line in lines:
-            if 'style=' in line and len(line) < 50: continue
+        for section in sections:
+            lines = [l.strip() for l in section.split('\n') if l.strip()]
+            if not lines: continue
             
-            # БУЛЛИТЫ
-            pure_line = re.sub(r'<[^>]*>', '', line).strip('\u200b\ufeff\xa0 ')
-            is_bullet = bool(re.match(r'^[•●·⁃−\-—∗\*▪]', pure_line))
+            p_buffer = []
+            list_buffer = []
             
-            if is_bullet:
-                if p_buffer:
-                    final_elements.append(f'<p class="mb-8">{" ".join(p_buffer)}</p>')
-                    p_buffer = []
-                clean_item = re.sub(r'^[•●·⁃−\-—∗\*▪]\s*', '', pure_line)
-                list_buffer.append(clean_item)
-            else:
-                if list_buffer:
-                    items_html = "".join([f'<li>{item}</li>' for item in list_buffer])
-                    final_elements.append(f'<ul class="check-list mb-12">{items_html}</ul>')
-                    list_buffer = []
+            for line in lines:
+                pure_line = re.sub(r'<[^>]*>', '', line).strip('\u200b\ufeff\xa0 ')
+                is_bullet = bool(re.match(r'^[•●·⁃−\-—∗\*▪]', pure_line))
                 
-                # РАСПОЗНАВАНИЕ h3
-                if line.startswith('<h3>'):
+                if is_bullet:
                     if p_buffer:
-                        # ТЕПЕРЬ СТРОГО ВЫВОДИМ ПРЕДЫДУЩИЙ ТЕКСТ ПЕРЕД h3
                         final_elements.append(f'<p class="mb-8">{" ".join(p_buffer)}</p>')
                         p_buffer = []
+                    clean_item = re.sub(r'^[•●·⁃−\-—∗\*▪]\s*', '', pure_line)
+                    list_buffer.append(clean_item)
+                else:
+                    if list_buffer:
+                        items_html = "".join([f'<li>{item}</li>' for item in list_buffer])
+                        final_elements.append(f'<ul class="check-list mb-12">{items_html}</ul>')
+                        list_buffer = []
                     
-                    # ПРОВЕРКА: Если в одной строке и h3 и текст (например, "<h3>Title</h3> Text")
-                    # Мы их разъединяем
-                    h3_match = re.match(r'^(<h3>.*?</h3>)(.*)', line, re.DOTALL)
-                    if h3_match:
-                        h_tag, remaining = h3_match.groups()
-                        txt_h = re.sub(r"<[^>]*>", "", h_tag).strip()
-                        final_elements.append(f'<h3 class="text-2xl font-black mb-6 mt-16 text-black">{txt_h}</h3>')
-                        if remaining.strip():
-                            p_buffer.append(remaining.strip())
-                    else:
+                    if line.startswith('<h3>'):
+                        if p_buffer:
+                            final_elements.append(f'<p class="mb-8">{" ".join(p_buffer)}</p>')
+                            p_buffer = []
                         txt_h = re.sub(r"<[^>]*>", "", line).strip()
                         final_elements.append(f'<h3 class="text-2xl font-black mb-6 mt-16 text-black">{txt_h}</h3>')
-                elif '<table' in line:
-                    if p_buffer:
-                        final_elements.append(f'<p class="mb-8">{" ".join(p_buffer)}</p>')
-                        p_buffer = []
-                    final_elements.append(line)
-                else:
-                    p_buffer.append(line)
-        
-        if list_buffer:
-            items_html = "".join([f'<li>{item}</li>' for item in list_buffer])
-            final_elements.append(f'<ul class="check-list mb-12">{items_html}</ul>')
-        if p_buffer: final_elements.append(f'<p class="mb-8">{" ".join(p_buffer)}</p>')
+                    else:
+                        p_buffer.append(line)
+            
+            if list_buffer:
+                items_html = "".join([f'<li>{item}</li>' for item in list_buffer])
+                final_elements.append(f'<ul class="check-list mb-12">{items_html}</ul>')
+            if p_buffer:
+                final_elements.append(f'<p class="mb-8">{" ".join(p_buffer)}</p>')
 
         img_match = re.search(r'data-original="([^"]+)"', raw_content)
         img_tag = f'<img src="{img_match.group(1)}" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14" alt="{title}">' if img_match else ""
@@ -127,7 +115,6 @@ def build_final_memo_fix_split_logic(tilda_file, template_file, output_file):
                 <div class="h-px bg-black/[0.05] mt-28"></div>
             </section>'''
 
-    # МЕНЮ
     menu_html = ""
     for cat_raw in re.findall(r'href="(#(?:submenu:|rec)[^"]+)"[^>]*>(.*?)</a>', tilda_html):
         t_clean = re.sub(r"<[^>]*>", "", cat_raw[1]).strip()
@@ -136,7 +123,7 @@ def build_final_memo_fix_split_logic(tilda_file, template_file, output_file):
         if 'submenu:' in cat_raw[0]:
             sub_m = re.search(fr'data-tooltip-hook="{cat_raw[0]}"(.*?)</ul', tilda_html, re.DOTALL)
             if sub_m:
-                for sid, stitle in re.findall(r'href="(#[^"]+)"[^>]*>(.*?)</a>', sub_m.group(1)):
+                for sid, stitle in re.findall(r'href="(#[^"]+)"[^>]+>(.*?)</a>', sub_m.group(1)):
                     menu_html += f'<a href="{sid}" class="nav-link">{re.sub(r"<[^>]*>", "", stitle).strip()}</a>'
         menu_html += f'</div>'
 
@@ -145,7 +132,7 @@ def build_final_memo_fix_split_logic(tilda_file, template_file, output_file):
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(output_res)
-    print(f"--- УСПЕХ: Логика разделения заголовка и текста исправлена! ---")
+    print(f"--- УСПЕХ: Отступы br br теперь превращаются в нормальные абзацы! ---")
 
 if __name__ == "__main__":
-    build_final_memo_fix_split_logic('content/тильда.txt', 'templates/template_memo.html', 'labs/egypt_final.html')
+    build_final_memo_fix_br_offsets('content/тильда.txt', 'templates/template_memo.html', 'labs/egypt_final.html')
