@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Памятка: Мальдивы — Emoji Tours</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#fffcf5",
+            "surface": "#fffcf5",
+            "on-surface": "#000000",
+            "primary": "#f5e2a1",
+            "on-primary": "#000000",
+            "on-surface-variant": "#000000",
+            "surface-container-low": "#fffcf5",
+            "surface-container-high": "#fffaf0",
+            "primary-container": "#f5e2a1",
+            "on-primary-container": "#000000",
+          },
+          fontFamily: { "headline": ["Manrope"], "body": ["Manrope"] },
+          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      opacity: 1 !important;
+    }
+
+    a {
+      text-decoration: none !important;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 110px;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    /* Навигация */
+    #quick-links {
+      max-height: calc(100vh - 220px);
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    #quick-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 0.5rem 1.5rem;
+      border-left: 2px solid transparent;
+      font-size: 0.85rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #000000;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #000;
+      background: rgba(0, 0, 0, 0.02);
+    }
+
+    .nav-link.active {
+      color: #000;
+      font-weight: 700;
+      border-left-color: #f5e2a1;
+      background: rgba(245, 226, 161, 0.2);
+    }
+
+    .nav-category {
+      padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+      font-size: 13px;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-group {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding-bottom: 1rem;
+    }
+
+    /* Красивые списки с желтыми галочками */
+    .check-list {
+      list-style-type: none !important;
+      padding-left: 0 !important;
+      margin: 1.5rem 0 !important;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 2.2rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .check-list li::before {
+      content: 'check_circle';
+      font-family: 'Material Symbols Outlined';
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
+      color: #f5e2a1;
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 1.4rem;
+    }
+
+    /* Таблицы */
+    .table-container {
+      overflow-x: auto;
+      margin: 2.5rem 0;
+      background: rgba(0, 0, 0, 0.02);
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table-container td {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      font-size: 1rem;
+    }
+
+    .table-container tr:last-child td {
+      border-bottom: none;
+    }
+
+    .table-container td:first-child {
+      font-weight: 800;
+      color: #000;
+      width: 35%;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface">
+
+  <!-- ШАПКА -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
+      <a href="../../index.html"
+        class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent">
+        <span class="material-symbols-outlined text-[18px] md:text-[24px]">arrow_back</span>
+        Все страны
+      </a>
+      <a href="../../index.html" class="flex-shrink-0 mx-auto md:mx-0">
+        <img src="../../images/LogoB_300x.png" alt="Emoji Tours" class="h-8 md:h-10"
+          onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Кнопка навигации мобильная (Floating) -->
+  <button onclick="toggleMenu()"
+    class="md:hidden fixed bottom-10 left-1/2 -translate-x-1/2 z-[90] flex items-center gap-2 bg-black text-white px-6 py-4 rounded-full font-bold shadow-2xl active:scale-95 transition-all">
+    <span class="material-symbols-outlined text-[20px]">menu</span>
+    Содержание
+  </button>
+
+  <!-- Mobile Drawer (Navigation) -->
+  <div id="drawer-overlay" onclick="toggleMenu()"
+    class="fixed inset-0 bg-black/40 z-[100] transition-opacity duration-300 opacity-0 pointer-events-none backdrop-blur-sm">
+  </div>
+  <div id="mobile-drawer"
+    class="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-[#fffcf5] z-[110] transform translate-x-full transition-transform duration-500 ease-out shadow-2xl p-8 flex flex-col">
+    <div class="flex justify-between items-center mb-10">
+      <p class="text-[13px] font-black text-black/40">Содержание</p>
+      <button onclick="toggleMenu()"
+        class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/30 text-on-surface active:scale-90 transition-transform">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <nav id="mobile-quick-links"
+      class="flex flex-col gap-2 font-['Manrope'] font-bold text-lg tracking-tight overflow-y-auto">
+      <div class="nav-category">Отъезд</div>
+<a href="#BEFORELEAVING" class="nav-link">Документы</a>
+<a href="#rec2030556141" class="nav-link">Дети/Беременность</a>
+<a href="#CollectingLuggage" class="nav-link">Багаж</a>
+<div class="nav-category">Аэропорт РФ</div>
+<a href="#atRussianairports" class="nav-link">Прибытие</a>
+<a href="#russianCUSTOMSCONTROLleave" class="nav-link">Таможня вылет</a>
+<a href="#rec2030556241" class="nav-link">Таможня прилет</a>
+<a href="#Checkinbaggage" class="nav-link">Регистрация</a>
+<a href="#russianPASSPORTCONTROL" class="nav-link">Контроль</a>
+<div class="nav-category">Аэропорт Мале</div>
+<a href="#Maldivesairport" class="nav-link">Прилет/вылет</a>
+<a href="#MaldivesPASSPORTCONTROL" class="nav-link">Паспортный контроль</a>
+<a href="#MaldivesCUSTOMCONTROL" class="nav-link">Таможенный контроль</a>
+<a href="#inairport" class="nav-link">Встречающий</a>
+<div class="nav-category">Мальдивы</div>
+<a href="#aboutmaldives" class="nav-link">О стране</a>
+<a href="#time" class="nav-link">Время</a>
+<a href="#climate" class="nav-link">Климат</a>
+<a href="#Currency" class="nav-link">Валюта</a>
+<a href="#tips" class="nav-link">Чаевые</a>
+<a href="#language" class="nav-link">Язык</a>
+<a href="#Population" class="nav-link">Население</a>
+<a href="#religion" class="nav-link">Религия</a>
+<a href="#Customs" class="nav-link">Обычаи</a>
+<a href="#holidays" class="nav-link">Праздники</a>
+<div class="nav-category">Информация</div>
+<a href="#transport" class="nav-link">Транспорт</a>
+<a href="#Transferfeatures" class="nav-link">Трансфер</a>
+<a href="#phone" class="nav-link">Телефон</a>
+<a href="#inhotel" class="nav-link">В отеле</a>
+<a href="#Mainsvoltage" class="nav-link">Электросеть</a>
+<a href="#guesthouse" class="nav-link">Guesthouse</a>
+<a href="#beaches" class="nav-link">Пляжи</a>
+<a href="#excursions" class="nav-link">Экскурсии</a>
+<a href="#kitchen" class="nav-link">Кухня</a>
+<a href="#shops" class="nav-link">Магазины</a>
+<div class="nav-category">Правила/Помощь</div>
+<a href="#THERULESOFPERSONALHYGIENEANDSAFETY" class="nav-link">Безопасность</a>
+<a href="#INCASEOFLOSSOFPASSPORT" class="nav-link">Утеря паспорта</a>
+<a href="#embassy" class="nav-link">Посольство</a>
+<a href="#rec2030556951" class="nav-link">Контакты</a>
+
+    </nav>
+    <div class="mt-auto pt-10 border-t border-black/10">
+      <p class="text-[11px] text-on-surface-variant font-bold uppercase tracking-[0.1em]">© 2026 Emoji Tours.
+        <br>Путешествия с душой.
+      </p>
+    </div>
+  </div>
+
+  <main class="pt-24">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 flex flex-col lg:flex-row gap-12">
+
+      <!-- БОКОВАЯ НАВИГАЦИЯ -->
+      <aside class="hidden lg:block w-64 self-start sticky top-24 h-fit pb-10">
+        <div>
+          <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
+          <nav id="quick-links" class="flex flex-col border-l border-black/5">
+            <div class="nav-category">Отъезд</div>
+<a href="#BEFORELEAVING" class="nav-link">Документы</a>
+<a href="#rec2030556141" class="nav-link">Дети/Беременность</a>
+<a href="#CollectingLuggage" class="nav-link">Багаж</a>
+<div class="nav-category">Аэропорт РФ</div>
+<a href="#atRussianairports" class="nav-link">Прибытие</a>
+<a href="#russianCUSTOMSCONTROLleave" class="nav-link">Таможня вылет</a>
+<a href="#rec2030556241" class="nav-link">Таможня прилет</a>
+<a href="#Checkinbaggage" class="nav-link">Регистрация</a>
+<a href="#russianPASSPORTCONTROL" class="nav-link">Контроль</a>
+<div class="nav-category">Аэропорт Мале</div>
+<a href="#Maldivesairport" class="nav-link">Прилет/вылет</a>
+<a href="#MaldivesPASSPORTCONTROL" class="nav-link">Паспортный контроль</a>
+<a href="#MaldivesCUSTOMCONTROL" class="nav-link">Таможенный контроль</a>
+<a href="#inairport" class="nav-link">Встречающий</a>
+<div class="nav-category">Мальдивы</div>
+<a href="#aboutmaldives" class="nav-link">О стране</a>
+<a href="#time" class="nav-link">Время</a>
+<a href="#climate" class="nav-link">Климат</a>
+<a href="#Currency" class="nav-link">Валюта</a>
+<a href="#tips" class="nav-link">Чаевые</a>
+<a href="#language" class="nav-link">Язык</a>
+<a href="#Population" class="nav-link">Население</a>
+<a href="#religion" class="nav-link">Религия</a>
+<a href="#Customs" class="nav-link">Обычаи</a>
+<a href="#holidays" class="nav-link">Праздники</a>
+<div class="nav-category">Информация</div>
+<a href="#transport" class="nav-link">Транспорт</a>
+<a href="#Transferfeatures" class="nav-link">Трансфер</a>
+<a href="#phone" class="nav-link">Телефон</a>
+<a href="#inhotel" class="nav-link">В отеле</a>
+<a href="#Mainsvoltage" class="nav-link">Электросеть</a>
+<a href="#guesthouse" class="nav-link">Guesthouse</a>
+<a href="#beaches" class="nav-link">Пляжи</a>
+<a href="#excursions" class="nav-link">Экскурсии</a>
+<a href="#kitchen" class="nav-link">Кухня</a>
+<a href="#shops" class="nav-link">Магазины</a>
+<div class="nav-category">Правила/Помощь</div>
+<a href="#THERULESOFPERSONALHYGIENEANDSAFETY" class="nav-link">Безопасность</a>
+<a href="#INCASEOFLOSSOFPASSPORT" class="nav-link">Утеря паспорта</a>
+<a href="#embassy" class="nav-link">Посольство</a>
+<a href="#rec2030556951" class="nav-link">Контакты</a>
+
+          </nav>
+        </div>
+      </aside>
+
+      <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
+      <div class="flex-1 py-10">
+        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Памятка: Мальдивы</h1>
+
+        <div class="flex flex-wrap gap-4 mb-14">
+          <a href="maldives_country_TEST.html"
+            class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">О
+            стране</a>
+          <a href="#section-form"
+            class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
+            туда</a>
+        </div>
+
+        <div class="space-y-16" id="main-content">
+          <section id="BEFORELEAVING" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Документы</h2><img src="images/zagranpasport-novogo.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Перед отъездом</h3> <br><strong>Проверьте наличие необходимых для поездки документов: </strong><ul class="check-list mb-12"><li><strong>заграничный паспорт</strong> (действителен в течение <strong>не менее 1 месяца</strong> после даты окончания поездки, <strong>имеет не менее 2-х свободных страниц для проставления визы</strong>. Продление паспортов недействительно); </li><li><strong>ксерокопия загранпаспорта</strong> (может пригодиться при утрате загранпаспорта и в случае непредвиденных обстоятельств); </li><li><strong>авиабилеты или маршрут/квитанции электронного билета</strong>; </li><li><strong>ваучер</strong>; </li><li><strong>страховой медицинский полис.</strong></li></ul><h3>Правила въезда на Мальдивы</h3> <br><br><strong>Срок действия паспорта должен быть не менее 1 месяца (30 дней) с даты начала тура. </strong><br><br><strong>Общие правила:</strong><ul class="check-list mb-12"><li>Туристам <strong>необходимо заполнить декларацию о состоянии здоровья</strong> с целью получения <strong>QR-кода.</strong> </li><li>Всем туристам, <strong>не ранее чем за 96 часов до прибытия, необходимо заполнить специальную форму на сайте для получения QR-кода</strong>. Особенности заполнения формы: помимо данных о состоянии здоровья, странах, посещаемых последние 14 дней, информации о багаже, <strong>необходимо загрузить свою фотографию</strong>. Полученный QR-код предъявляется при прохождении паспортного контроля. <strong>В пункте анкеты «WHICH ISLAND WILL YOU BE STAYING IN» из списка необходимо выбрать название своего отеля.</strong> В случае отсутствия нужного отеля необходимо выбрать остров, ближайший к курорту. Важно: Для удобства была введена опция «загрузки фото паспорта» перед заполнением анкеты. Таким образом, ФИО, дата рождения, номер паспорта и дата действия паспорта будет считана и загружена автоматически. Но по-прежнему можно внести все эти данные вручную. </li><li>Обращаем ваше внимание на то, что по требованиям некоторых авиакомпаний указанная <strong>форма должна быть заполнена до прибытия в аэропорт вылета</strong>. <strong>Невыполнение этого условия может привести к отказу в посадке на рейс</strong>. С актуальной информацией вы можете ознакомиться на сайте авиаперевозчика.          <imgsrc="https://thb.tildacdn.com/tild3434-6638-4437-a663-626532353762/-/empty/zagranpasport-novogo.jpg"alt="Документы для путешествия на Мальдивы">     <a name="travellingwithchildren"></a</li></ul></p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="rec2030556141" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Дети/Беременность</h2><img src="images/Komfortnyi-otdykh-s-.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"><strong>В случае путешествия с детьми или беременности:</strong><br><br><strong>Несовершеннолетний гражданин РФ</strong>, следующий совместно хотя бы с одним из родителей, <strong>выезжает из РФ по своему загранпаспорту</strong>. Несовершеннолетний российский гражданин, выезжающий из Российской Федерации без сопровождения родителей, должен иметь при себе кроме заграничного паспорта <strong>нотариально оформленное согласие родителей на его выезд за границу с указанием срока выезда и государство, которое он намерен посетить. </strong><br><br>В соответствии с циркуляром, выданным мальдивской иммиграционной службой, <strong>все туристы обязаны иметь свой собственный паспорт, в том числе дети любого возраста. Въезжать на Мальдивы по записи в загранпаспорте родителей детям запрещено </strong>www.immigration.gov.mv/tourist-visa/. <br><br>При следовании несовершеннолетнего российского гражданина через государственную границу РФ совместно с одним из родителей предъявлять письменное согласие второго родителя не нужно, если только от него ранее в пограничные органы не поступало заявление о несогласии на выезд из РФ своих детей. <br><br>Если у несовершеннолетнего ребенка и выезжающего с ним родителя разные фамилии, то <strong>рекомендуем взять с собой нотариально заверенную копию свидетельства о рождении для подтверждения родства</strong>. На практике отсутствие такого подтверждения служило основанием для отказа ребенку в пересечении границы.<br><br><strong>Беременным женщинам</strong> перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость <strong>предоставления письменного согласия врача на полет</strong>, а также иных документов для осуществления авиаперелета. Сотрудники авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.          <imgsrc="https://thb.tildacdn.com/tild6234-6362-4539-b665-323137643933/-/empty/Komfortnyi-otdykh-s-.jpg"alt="Путешествие с детьми на Мальдивы"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="CollectingLuggage" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Багаж</h2><img src="images/thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Собирая багаж:</strong><br><br>Рекомендуем <strong>все ценные вещи, документы и деньги положить в ручную кладь</strong> и взять с собой в самолет. В багаж следует упаковать все металлические острые и режущие предметы (маникюрные ножницы, пилочки для ногтей, перочинный ножик и т. п.), а также любые жидкости, гели и аэрозоли (за исключением детского питания и лекарств, если в них есть необходимость) — проносить подобные предметы в ручной клади запрещено. <br><br>Не забывайте собрать и взять с собой <strong>аптечку первой помощи</strong>, которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.          <imgsrc="https://thb.tildacdn.com/tild3838-6539-4365-b630-323066343866/-/empty/thumb_67866_expert_b.jpg"alt="Сбор багажа при путешествии на Мальдивы"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="atRussianairports" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Прибытие</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>В РОССИЙСКОМ АЭРОПОРТУ ВЫЛЕТА/ПРИЛЕТА</strong><br><br><strong>Перед выездом в аэропорт</strong> получите дополнительную информацию о возможно <strong>произошедших изменениях в условиях вылета</strong>, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы. <br><br><strong>Рекомендуем</strong> заранее, не позднее чем <strong>за три часа до вылета, прибыть к месту регистрации пассажиров</strong> для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="russianCUSTOMSCONTROLleave" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Таможня вылет</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>ТАМОЖЕННЫЙ КОНТРОЛЬ до начала путешествия</strong><br><br><strong>Перед полетом</strong> рекомендуем <strong>проверять действующие правила вывоза</strong> физическими лицами <strong>наличной иностранной валюты из РФ, товаров и иных предметов</strong> на сайте Федеральной Таможенной Службы customs.gov.ru. <br><br>Обращаем внимание на то, что в настоящее время действуют ограничения. Внимание! <strong>Запрещено</strong> перемещение на выезде и въезде: <ul class="check-list mb-12"><li>культурных ценностей, </li><li>объектов фауны и флоры, находящихся под угрозой исчезновения, </li><li>оружия и боеприпасов к нему без разрешения уполномоченных органов. Незаконное перемещение товаров или валюты через таможенную границу РФ или их недекларирование, либо недостоверное декларирование влечет за собой административную или уголовную ответственность. Внимание! </li></ul><strong>Запрещено</strong> на выезде и въезде: <ul class="check-list mb-12"><li>принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.      <a name="russiancustomcontrolarrive"></a</li></ul></p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="rec2030556241" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Таможня прилет</h2><img src="images/ria_6136134hr_a91.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"><strong>ТАМОЖЕННЫЙ КОНТРОЛЬ по окончанию путешествия</strong><br><br>Если вы <strong>не перемещаете</strong> через границу <strong>валюту и предметы</strong>, которые <strong>необходимо декларировать</strong>, то вам следует проходить зону таможенного контроля по «Зелёному коридору».<br><br><strong>Актуальную информацию</strong> о ввозе валюты, товаров и иных предметов для личного пользования, <strong>вы найдете на сайте Федеральной Таможенной Службы</strong> customs.gov.ru. <br><br><strong>Внимание!</strong> <br><strong>Недекларирование</strong> товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой <strong>административную или уголовную ответственность</strong>.           <imgsrc="https://thb.tildacdn.com/tild6364-3637-4261-b761-386566643134/-/empty/ria_6136134hr_a91.jpg"alt="Контроль в аэропорте РФ"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="Checkinbaggage" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Регистрация</h2><img src="images/secret-01.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Регистрация на рейс и оформление багажа </h3><br><br><strong>До начала поездки</strong> настоятельно рекомендуем <strong>уточнить время начала и окончания регистрации на рейс, а также время посадки на борт</strong>. Указанную информацию вы можете посмотреть <strong>на официальном сайте авиакомпании</strong>. Помните, что у разных авиакомпаний могут быть свои правила. <strong>Регистрация пассажиров и оформление багажа</strong> производятся на основании <strong>именного авиабилета или распечатанных на бумажном носителе маршрута и/или квитанции электронного билета</strong>, а также заграничного паспорта пассажира. При регистрации пассажиру выдается <strong>посадочный талон</strong>, который необходимо сохранять до момента возможного предъявления авиакомпании претензий по качеству предоставленных услуг авиаперевозки. <br><br><strong>Перед посадкой на рейс</strong> рекомендуем проверить <strong>номер выхода и время начала посадки на рейс на информационном табло в аэропорту</strong>. Пассажиру, <strong>опоздавшему</strong> ко времени окончания регистрации пассажиров и оформления багажа или посадки в воздушное судно, <strong>может быть отказано в перевозке</strong>. <br><br>Каждый <strong>авиаперевозчик устанавливает свои нормы провоза багажа</strong>, а также габариты и вес ручной клади, провозимой в салоне самолета. У<strong>точняйте данную информацию перед вылетом.</strong> За провоз багажа сверх установленной нормы бесплатного провоза багажа взимается дополнительная плата по тарифу, установленному перевозчиком. <strong>Перевозчик имеет право отказать туристу в перевозе багажа</strong>, вес или объем которого не соответствуют установленным нормам.          <imgsrc="https://thb.tildacdn.com/tild3039-3166-4636-b537-366535646636/-/empty/secret-01.jpg"alt="Контроль в аэропорте Мале"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="russianPASSPORTCONTROL" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Контроль</h2><img src="images/919255ebe5775d87ea2b.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Паспортный контроль</h3><br><br><strong>Для прохождения пограничного контроля необходимо</strong> предъявить <strong>заграничный/внутренний российский паспорт.</strong> Пограничные органы ФСБ РФ при осуществлении пограничного контроля имеют право запрашивать у туристов <strong>дополнительные документы (авиабилет, посадочный талон, ваучер и т. п.)</strong>, а также проводить опрос лиц, следующих через границу. <br><br><h3>Санитарный контроль</h3> <br><br>Туристам <strong>сертификат о прививках не требуется</strong>. Государство находится в зоне природного распространения таких болезней, как <strong>брюшной тиф и желтая лихорадка</strong>. Перед поездкой на Мальдивы желательно сделать прививки против этих болезней. <strong>Прививки от гепатита А и В </strong>также входят в список того, что желательно сделать перед поездкой на курорты Мальдив. <strong>Сырая вода для питья непригодна</strong> и требует очистки через фильтр с последующим кипячением. <br><br><h3>Ветеринарный контроль </h3><br><br><strong>Ввоз домашних животных на Мальдивы ограничен</strong> (требуется специальное разрешение). <strong>Въезд в страну с собаками запрещен.</strong> Если вы вывозите животных из России, то <strong>необходимо иметь комплект документов</strong>, подтверждающих, что они здоровы. <br>Как правило, следует иметь: <ul class="check-list mb-12"><li>ветеринарный паспорт, </li><li>справку о состоянии здоровья (выдается любой государственной ветеринарной клиникой, в справке указываются сведения о прививках по возрасту, последняя прививка от бешенства должна быть сделана не ранее чем за 1 год и не позднее чем за 2 месяца до выезда), </li><li>справку из клуба СКОР или РКФ (в справке указывается, что собака не представляет племенной ценности, справки из других клубов вызывают вопросы на таможне), </li><li>ветеринарное свидетельство с указанием о прививке от бешенства (не нужна для котят и щенков в возрасте до 3-х месяцев). </li></ul><strong>При ввозе в РФ животных и птиц</strong> вам необходимо иметь сопровождающее <strong>ветеринарное свидетельство</strong>, полученное в Государственной ветеринарной службе страны, где приобретено животное. <br><br><strong>Запрещен ввоз</strong> на территорию РФ любых грузов животного происхождения, в том числе в ручной клади и багаже, при отсутствии письменного разрешения Главного государственного ветеринарного инспектора РФ. Без разрешения уполномоченных органов РФ запрещено ввозить и вывозить объекты дикой фауны и флоры, находящиеся под угрозой исчезновения.          <imgsrc="https://thb.tildacdn.com/tild6164-3539-4236-a536-653666633263/-/empty/919255ebe5775d87ea2b.jpg"alt="Паспортный контроль на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="Maldivesairport" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Прилет/вылет</h2><img src="images/i_3.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>В аэропорту прилета/вылета Мальдив</h3><br><br>По прибытии в аэропорт Мальдив <strong>нужно последовательно</strong>: <ul class="check-list mb-12"><li>пройти паспортный контроль, </li><li>получить свой багаж, </li><li>пройти таможенный контроль, </li><li>выйти из зоны прилета аэропорта, </li><li>найти встречающего гида (для гостей, прилетающих на чартерных рейсах) / найти встречающего представителя отеля с табличкой объекта размещения (для гостей, прилетающих на регулярных рейсах), </li><li>предъявить гиду/представителю отеля туристический ваучер. </li></ul><strong>Внимание!</strong> При осуществлении перелета стыковочными рейсами принимающая сторона осуществляет встречу только в конечном пункте прилета. <br><br><strong>Организация трансфера в случае ночевки на Мале Все трансферы осуществляются только через Мале</strong>. <br><br>Если туристы по каким-либо причинам остаются ночевать на Мале и на следующий день они отправляются в свой основной отель, трансфер осуществляется следующим образом: <ul class="check-list mb-12"><li>Необходимо предоставить туроператору информацию об отеле на Мале, в котором будут проживать туристы. </li><li>Далее отель на Мале и отель основного проживания связываются и согласовывают время трансфера. </li><li>Вечером, накануне выезда из отеля, необходимо уточнить на ресепшене время выезда из отеля. </li><li>Прибыть в аэропорт к обозначенному времени и подойти к стойке отеля основного проживания. </li><li>Далее представитель отеля сообщит информацию о времени трансфера и проводит на него. </li></ul><strong>Незапланированная ночевка на Мале</strong> <br><br>Если туристы были вынуждены остаться ночевать на Мале, туроператор оказывает следующую помощь: <ul class="check-list mb-12"><li>Помогает забронировать отель на Мале. </li><li>Помогает с трансфером от аэропорта до отеля на Мале. </li><li>Организация трансфера в случае ночевки на Мале описана выше.           <imgsrc="https://thb.tildacdn.com/tild3265-3762-4764-b834-633762353631/-/empty/i_3.jpg"alt="Аэропорт Мале"</li></ul></p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="MaldivesPASSPORTCONTROL" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Паспортный контроль</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Паспортный контроль на Мальдивах. </h3><br><br>Виза Гражданам России и других государств для посещения Мальдивских островов с целью туризма <strong>на срок до 30 дней виза не требуется</strong>. Туристическая виза проставляется в паспорт в пункте прибытия (аэропорт Мале) бесплатно и действует в течение 30 дней с момента въезда в страну. <br><br>Прибывающим на Мальдивы рекомендуем заранее <strong>проверять срок действия загранпаспортов</strong>, а также иметь при себе: <ul class="check-list mb-12"><li>авиабилет с датами въезда и выезда; </li><li>полис медицинского страхования на оказание услуг за рубежом; </li><li>туристический ваучер (если цель поездки — туризм); </li><li>доказательство платежеспособности (денежные средства из расчета 50-150 долларов США на день пребывания в стране).     </li></ul></p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="MaldivesCUSTOMCONTROL" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Таможенный контроль</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Таможенный контроль на Мальдивах</h3><br><br><strong>Ввоз и вывоз валюты не ограничен.</strong> При въезде на Мальдивы <strong>обязательно декларирование</strong> <strong>всех вещей, стоимость которых превышает 200 долларов США.</strong> В случае если что-то из задекларированных при въезде вещей не вывозится, властями налагается пошлина. <br><br><strong>Турист может ввезти в страну:</strong> <ul class="check-list mb-12"><li>товары личного потребления в пределах разумного (не более одного предмета на человека),</li> <li>безопасные аэрозоли, гели, жидкости до 100 мл на человека (при условии, что они помещены в закрывающийся пластиковый пакет объемом до 1 литра); </li><li>детское питание на необходимое количество приемов еды. Пассажиры освобождаются от уплаты таможенных сборов на провоз 200 сигарет, 125 мл парфюмерных изделий. Турист может вывезти из страны:</li> <li>подарки и сувениры (раковины; акульи челюсти; открытки, плакаты, шорты, майки с местной символикой и т.д.); </li><li>предметы домашнего обихода (тонкоплетеные тростниковые маты; деревянные коробочки; корзинки, сплетенные из пальмовых листьев; кокосовое масло); </li><li>ювелирные изделия. </li></ul><strong>Запрещен ввоз:</strong> <ul class="check-list mb-12"><li>наркотических средств, </li><li>алкоголя и любых продуктов питания, содержащих свинину, </li><li>оружия для подводной охоты, </li><li>порнографической продукции, </li><li>записанных видеокассет, литературы антиисламского содержания, </li><li>животных. </li></ul><strong>Запрещен вывоз:</strong> <ul class="check-list mb-12"><li>оружия, боеприпасов без специального разрешения, </li><li>драгоценностей, </li><li>черных кораллов, раковин жемчужных устриц, изделий из панциря морской черепахи, </li><li>предметов, найденных на дне моря.     </li></ul></p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="inairport" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Встречающий</h2><img src="images/scale_1200.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Встреча в аэропорту и сопровождение гида </strong><br><br>По прилете в международный аэропорт Мале <strong>туристов встречают</strong> русскоговорящие представители туроператора с табличкой и фирменных униформах компании. <br><br>По прилете в международный аэропорт Мале туристов на чартерных рейсах у выхода из зоны прилета <strong>встречают представители туроператора</strong> с табличкой и в фирменных униформах компании. <br><br>Туристов, которые прилетают регулярными рейсами, <strong>представители резортов встречают у выхода из зоны прилета</strong> в фирменных униформах/с табличкой объекта размещения. <br><br><strong>Если отсутствует представитель</strong>, гости могут проследовать к стойке отеля самостоятельно. Обращаем внимание, что сотрудники не следуют с гостями на трансфере. <br>Если трансфер осуществляется на скоростном катере, то на катере присутствует представитель курорта, если трансфер осуществляется на гидросамолете или внутреннем перелете, то представитель курорта встречает туристов на месте прилета. <br><br>Ввиду географической специфики Мальдивских островов <strong>гиды не проводят встречу с клиентами в отеле</strong>, вся коммуникация осуществляется с помощью горячей линии, информационная поддержка гостей на русском языке доступна 24/7.          <imgsrc="https://thb.tildacdn.com/tild3665-6564-4338-b630-623162646634/-/empty/scale_1200.jpg"alt="Аэропорт Мале">     <a name="maldives"></a>                 Мальдивы                    <imgsrc="https://thb.tildacdn.com/tild3265-3231-4130-a530-333637633766/-/empty/a6e6bd_996e168bc30a4.jpg"alt="Путешествие на Мальдивы"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="aboutmaldives" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">О стране</h2><img src="images/na-karte-mira-maldiv.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       Мальдивы — государство в Южной Азии, которое располагается на группе атоллов в Индийском океане, находящихся к югу от Индии, и примерно в 700 км к юго-западу от Шри-Ланки.           <imgsrc="https://thb.tildacdn.com/tild3862-6235-4038-a438-353263316162/-/empty/na-karte-mira-maldiv.jpg"alt="Туры на Мальдивы"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="time" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Время</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Время</strong><br><br>Разница во времени с Москвой — плюс 2 часа (на некоторых островах-курортах может быть установлено свое время).</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="climate" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Климат</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Климат</strong><br><br>На Мальдивах тропический и влажный климат без резких перепадов. Средняя температура воздуха — +28…+30 °С тепла. Температура воды также постоянна — около +24…+27 °С круглый год. Наилучшие погодные условия наблюдаются в период «ируваи» (с ноября-декабря по март-апрель) — сезон северо-восточного муссона, когда море спокойное, а погода солнечная и сухая. С мая по октябрь, в сезон «хулхангу» (с апреля по октябрь) погода менее предсказуема — юго-западный муссон может приносить кратковременные дожди, высокую влажность и неспокойное море (однако в этот период наименее жарко). Штормы и волны наиболее вероятны в июне и декабре.</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="Currency" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Валюта</h2><img src="images/vutlhkn6atfa5qjs5npe.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Валюта</strong><br><br>Мальдивская руфия. К оплате также повсеместно принимается американский доллар. Лучше всего брать на Мальдивы доллары мелкими (до 20) купюрами, ими вам будет удобнее расплачиваться. Внимание! Купюры образца 2006 года и старше не принимаются к оплате на Мальдивах. Главным условием также является следующее: банкноты, напечатанные на белой бумаге, не принимаются банками. Взаиморасчеты возможны купюрами, выпущенными на «голубой бумаге». Может быть отказано в обмене валюты, если купюры повреждены либо находятся в ненадлежащем состоянии. Оплата по PayPass через приложение телефона практически отсутствует! Мальдивские руфии могут вам вообще не понадобиться — многие отели работают по системе «все включено», а все мелкие покупки, сувениры и чаевые можно оплатить американскими деньгами. Если возникла нужда в мальдивских руфиях, то обменять валюту на островах можно в аэропорту, банках, отелях и магазинах. На отдаленных островах курс, как правило, выше, чем в Мале. Банки на Мальдивах работают обычно с субботы по четверг с 09:00 до 14:00. Кредитные карты всех основных систем принимаются в курортных районах повсюду           <imgsrc="https://thb.tildacdn.com/tild3466-3761-4936-b263-353536313537/-/empty/vutlhkn6atfa5qjs5npe.jpg"alt="Валюта Мальдив">         <h3>Информация по валюте на Мальдивских островах</h3> <br><br><strong>Купюры образца 2006 года и старше не принимаются</strong> к оплате на Мальдивах. Главным условием также является следующее: <strong>банкноты, напечатанные на белой бумаге не принимаются</strong> банками. Взаиморасчеты возможны <strong>купюрами, выпущенными на «голубой бумаге»</strong>. Также <strong>может быть отказано в обмене валюты</strong>, в случае если <strong>купюры повреждены</strong> либо находятся в ненадлежащем состоянии. <br><br><strong>На островах можно рассчитываться</strong>: <ul class="check-list mb-12"><li>Кредитными картами (с открытым доступом оплаты за границей и доступным лимитом). </li><li>Валютой. USD, EUR. </li><li>Местными деньгами (в обиходе только на локальных островах). Курс: 1 USD ≈ 15 мальдивских руфий. </li></ul><strong>Важно!</strong> <br>Местная валюта принимается только на некоторых локальных островах. В то время как доллары и евро принимаются во всех отелях-резортах и локальных гест-хаусах. <strong>Оплата по PayPass</strong> через приложение телефона практически <strong>отсутствует</strong>. <br><strong>Берите с собой реальные карты.</strong>          <imgsrc="https://thb.tildacdn.com/tild6236-3964-4439-a437-363131323035/-/empty/scale_1200.png"alt=""</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="tips" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Чаевые</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Чаевые </h3><br><br>Обычно курорты/заведения на локальных островах <strong>добавляют оплату услуг (service charge) в счет (обычно 10 %)</strong>, в этом случае в чаевых нет никакой необходимости. Если обслуживание действительно того заслуживает, принято оставлять небольшую сумму лично обслуживающему работнику (10 долларов в неделю работнику отеля или 5 % — официанту).</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="language" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Язык</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Язык</strong><br><br>Мальдивский (дивехи) — индоарийский язык, близкий к сингальскому, с заимствованиями из арабского и английского языков. Широко употребляется английский.</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="Population" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Население</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Население</strong><br><br>Примерная численность населения — 380 000 человек. Подавляющее большинство населения — индийцы, пакистанцы, арабы и сингалы.</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="religion" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Религия</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Религия</strong><br><br>Ислам</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="Customs" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Обычаи</h2><img src="images/b9046a54724855560950.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Обычаи</strong><br><br>Для прогулки по Мале и обитаемым островам следует одеваться в соответствии с мусульманскими представлениями о нравственности: длинные брюки или юбка, рубашка или блузка. <br><br><strong>Запрещается:</strong> <ul class="check-list mb-12"><li>употреблять алкоголь в общественных местах (вне курортной зоны); </li><li>плавать обнаженными; </li><li>ломать живые и мертвые кораллы как вблизи берега, так и на глубине; </li><li>повреждать раковины и поднимать их на поверхность; </li><li>ловить рыбу вблизи островов. Для ловли рыбы в отелях организуются рыбалки в утренние и вечерние часы, а также на целый день. Кроме того, ловить рыбу можно только по специально выданной лицензии; </li><li>подводная охота. За нарушение законов страны взимаются штрафы, и может грозить тюремное заключение.           <imgsrc="https://thb.tildacdn.com/tild6361-3536-4539-b837-343866303139/-/empty/b9046a54724855560950.jpg"alt="Обычаи Мальдив"</li></ul></p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="holidays" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Праздники</h2><img src="images/images__625677580.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Праздники и нерабочие дни</strong><br><br>1 января — Новый год; <br>8-10 января — Эйд-аль-Фитр — конец поста Рамадан; <br>15-18 марта — Эйд-аль-Кебир — День жертвоприношений; <br>6 апреля — Исламский Новый год; <br>4-5 июня — Национальный праздник; <br>15 июня — Мулуд — День рождения Пророка; <br>26-27 июля — День независимости; <br>11-12 ноября — День Республики; <br>1 сентября — День Хурави; <br>28 октября — День мучеников; <br>3 ноября — День Победы.           <imgsrc="https://thb.tildacdn.com/tild3435-6235-4332-b661-646533363837/-/empty/images__625677580.jpg"alt="Праздники на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="transport" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Транспорт</h2><img src="images/phu-quoc-speedboat-t.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Транспорт</strong> <br><br>В качестве транспортных средств используются <strong>скоростные катера, традиционные лодки дони или паром, внутренние перелеты и гидросамолеты</strong>. Местное население в основном передвигается на <strong>мотоциклах и скутерах</strong>, которых особенно много на Мале. Туристам в некоторых курортах предлагают взять напрокат <strong>велосипед</strong>. На нем удобно передвигаться между некоторыми островами, которые соединены между собой небольшой отмелью. <strong>Передвижения иностранцев между островами и атоллами</strong> могут осуществляться только лицензированными перевозчиками. <br><br><strong>Самостоятельное передвижение</strong> на плавсредствах (надувные лодки, плоты, катера) <strong>запрещено</strong>.           <imgsrc="https://thb.tildacdn.com/tild6632-3336-4165-a361-363537663934/-/empty/phu-quoc-speedboat-t.jpg"alt="Транспорт на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="Transferfeatures" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Трансфер</h2><img src="images/scale_1200_1.png" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Особенности трансферов </h3><br><br><strong>Перелет на гидросамолете</strong> возможен и осуществляется <strong>только в светлое время суток (примерно с 06:00 до 16:00)</strong>. При позднем прибытии на Мальдивы (после 16:00) для отелей, предлагающих трансфер только на гидросамолете, <strong>возможна организация комбинированного трансфера под запрос (самолет + скоростная лодка)</strong>. <br><br><strong>Общественный транспорт</strong> и дороги можно встретить <strong>только в столице на острове Мале</strong>. <br><br><strong>Трансферы на все курорты Мальдив осуществляются на скоростных лодках, гидросамолетах, а также с помощью внутренних авиалиний.</strong> Отдельные курорты предоставляют комбинированный вид трансфера — внутренний авиаперелет + скоростной катер. В стоимость пакетных туров на Мальдивы по умолчанию включен трансфер с минимальной стоимостью. Забронировать другой тип трансфера при условии предоставления его отелем возможно за дополнительную оплату. <br><br>В случае плохих погодных условий и, как следствия, невозможности предоставить забронированный тип трансфера <strong>курорты имеют право заменить трансфер</strong> на более подходящий за дополнительную плату на месте.           <h3>Скоростной катер </h3><br><br>Трансфер на скоростном катере, как правило, <strong>предоставляется курортами, расположенными вблизи/недалеко от международного аэропорта Мале</strong>. <br><br>Скоростные лодки с общей вместимостью до 15 человек. Каждому пассажиру в обязательном порядке предоставляются спасательные жилеты. <strong>Время в пути составляет от 10 до 60 минут</strong>. <br><br><h3>Гидросамолет</h3> <br><br>Время трансфера на гидросамолете занимает <strong>от 25 до 60 минут</strong>. Гидросамолеты курсируют <strong>только в светлое время суток (с 6:00 до 16:00)</strong>. Когда рейс прилетает позже и организовать другой тип трансфера в курорт невозможно, необходимо забронировать дополнительную ночь в ближайшем к аэропорту Мале отеле. В таком случае запланированный трансфер по пакетному туру будет предоставлен гостям на утро следующего дня. <br><br>Во время перелета на гидросамолете <strong>возможны промежуточные посадки</strong> на маршруте для высадки гостей других курортов. Авиакомпания ТМА, обслуживающая рейсы, является государственной, и расписание рейсов утверждается накануне. Поэтому <strong>проинформировать</strong> о времени данного типа трансфера заблаговременно при бронировании пакетного тура <strong>не представляется возможным</strong>. Как правило, <strong>время ожидания трансфера</strong> на гидросамолет <strong>не превышает 2 часов</strong>, но в отдельных случаях <strong>может достигать и 6 часов</strong>. Каждый гость (за исключением инфантов) может провозить с собой <strong>до 20 кг багажа (включительно) и 3 кг ручной клади</strong>. Доплата за дополнительный багаж составляет 5 долларов США за 1 кг (стоимость может меняться). <br><br><strong>Перевозчик не гарантирует транспортировку багажа на том же рейсе</strong>, что и пассажиры, и оставляет за собой право отказать в перевозке крупногабаритных предметов, а также запрещенных предметов и опасных грузов.<br><br><h3>Внутренний перелет</h3> <br><br>Внутренние перелеты <strong>осуществляются на самолетах местных авиалиний</strong> вместимостью до 50 человек. <strong>Примерное время в пути: от 20 до 60 минут</strong>. В местном аэропорту <strong>гостей встречает представитель курорта</strong> и сопровождает на скоростной катер, принадлежащий курорту. Внутренние перелеты осуществляются <strong>как в дневное, так и в ночное время суток</strong>. <strong>Время ожидания трансфера зависит от расписания рейсов</strong>. <br><br>Каждый гость (за исключением инфантов) может провозить с собой <strong>до 20 кг багажа (включительно) и 5 кг ручной клади</strong>. Доплата за дополнительный багаж составляет 2-5 долларов США за 1 кг (стоимость может меняться). <strong>Перевозчик не гарантирует транспортировку багажа на том же рейсе</strong>, что и пассажиры, и оставляет за собой право отказать в перевозке крупногабаритных предметов, а также запрещенных предметов и опасных грузов. <strong>Время ожидания трансфера на маршруте аэропорт — курорт не является фиксированным и может варьироваться</strong> в зависимости от различных факторов (погодные условия, расписание рейсов внутренних авиалиний и пр.). <strong>Ожидание трансфера может составлять более 2 часов</strong> (в зависимости от типа трансфера). <br><br><strong>Ухудшение погодных условий на Мальдивах является форс-мажорным обстоятельством</strong>, в результате которого время осуществления внутреннего трансфера может быть скорректировано как на прилете, так и на обратном вылете гостей. <br><br><strong>Пассажир может опоздать на международный рейс в случае существенной задержки обратного трансфера из-за погодных условий</strong>. Замена рейса/даты вылета по обратному билету происходит в соответствии с условиями тарифа авиакомпании за счет гостей (также и продление проживания на курорте). <br><br>В силу форс-мажорных обстоятельств трансфер аэропорт — отель/отель — аэропорт <strong>может быть перенесен на сутки</strong>. Представители курорта окажут поддержку по поиску размещения и организации трансфера, однако <strong>все расходы оплачиваются гостями самостоятельно</strong>. <strong>Каких-либо возмещений со стороны отеля не предусмотрено</strong>.          <imgsrc="https://thb.tildacdn.com/tild3733-3936-4534-b732-363837376461/-/empty/scale_1200_1.png"alt="Гидросамолет на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="phone" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Телефон</h2><img src="images/phone_old_year_built.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Телефон</h3><br><br><strong>Мобильная связь на Мальдивах хорошо развита</strong>. Можно использовать для звонков своего оператора, если подключить роуминг, но <strong>дешевле приобрести сим-карту местного мобильного оператора</strong>. <br><br><strong>Чтобы позвонить с Мальдивских островов в Россию</strong>, следует набрать: 9 (выход в город) – 00 (международная линия) – 7 (код России) – код вашего города и номер. <br><br><strong>Чтобы позвонить из России на Мальдивские острова</strong>, нужно ввести: 8, затем после гудка – 10, набрать международный телефонный код Мальдив (960) и номер отеля.<br><br><h3>Экстренные телефоны</h3> <ul class="check-list mb-12"><li>Полиция: 119, </li><li>скорая помощь: 102, </li><li>пожарная служба: 118, </li><li>справочная аэропорта Хулуле: 332 211.          <imgsrc="https://thb.tildacdn.com/tild3337-3934-4532-a536-386363633935/-/empty/phone_old_year_built.jpg"alt="Как позвонить из Мальдив в Россию"</li></ul></p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="inhotel" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">В отеле</h2><img src="images/0_1.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>В отеле</strong><br><br>Общий принцип размещения на Мальдивах прост — <strong>на одном острове находится один отель</strong>. <strong>Исключением являются локальные острова</strong>, где расположены гестхаусы. Острова-курорты объединены в атоллы. <strong>На островах нет привычной классификации отелей</strong>, а используется градация Deluxe, Superior, Standard, что приблизительно соответствует европейским 5, 4 и 3 звездам. Такая классификация используется из-за особенностей местных отелей, которые предлагают размещение в бунгало, коттеджах (не выше 2-х этажей) и на виллах. В день приезда расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная с 14:00 по местному времени. Просим ознакомиться на месте с условиями предоставления услуг в отеле и придерживаться установленных отелем правил.<br><br>В день выезда до наступления расчетного часа (как правило, 12:00) необходимо освободить свой номер и оплатить дополнительные услуги: телефонные переговоры, мини-бар, заказ питания и напитков в номер, массаж и др. Свой багаж можно оставить в камере хранения отеля и оставаться на территории отеля до прибытия трансфера. Если вы не сдали номер до 12:00, стоимость комнаты оплачивается полностью за следующие сутки.           <imgsrc="https://thb.tildacdn.com/tild3731-6436-4035-a534-313434343739/-/empty/0_1.jpg"alt="Отели Мальдив"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="Mainsvoltage" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Электросеть</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Напряжение электросети</strong><br><br>Напряжение сети: 220 В (частота 50 Гц). Распространены розетки с квадратными штырьками (необходимые адаптеры можно купить или попросить в отеле)</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="guesthouse" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Guesthouse</h2><img src="images/Dhiguveli_frost_cuto.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Особенности размещения в отелях категории Guesthouse </h3><br><br><strong>Guesthouse</strong> — это один из видов бюджетного размещения на Мальдивских островах для гостей, которые ограничены в бюджете или не хотят переплачивать за роскошь и комфорт, которыми располагают отельные цепочки и прочие курорты Мальдив. <strong>Гестхаусы — это небольшие отели эконом уровня</strong>, которые расположены на близлежащих островах по отношению к аэропорту Мале, в том числе в Мале, Хулумале, Маафуши. Специфика данного размещения — это бюджетность. Гесты располагают муниципальными, а не частными пляжами, отдыхать на которых также может местное население, <strong>существуют определенные ограничения для отдыха в бикини</strong> (на большинстве пляжей женщинам можно загорать и купаться в закрытой одежде, мужчинам — позволительно находиться в плавках). На некоторых островах есть <strong>бикини-пляжи</strong>, где возможно купаться и загорать в открытом женском купальном костюме. <strong>На Мальдивских островах существует сухой закон</strong>, алкоголь возможно купить только на островах-курортах, а на местных островах, где расположены гестхаусы, алкоголь приобрести нельзя.           <imgsrc="https://thb.tildacdn.com/tild6539-3464-4031-a334-613030353366/-/empty/Dhiguveli_frost_cuto.jpg"alt="Guesthouse на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="beaches" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Пляжи</h2><img src="images/maxresdefault.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Пляжи </h3><br><br>Все пляжи, расположенные на многочисленных островах — <strong>песчаные</strong>, большинство из них принадлежат отелям. Из-за географических особенностей пляжи на Мальдивах подвергаются эрозии, размытию, миграции и так далее. Это связано с природными явлениями, ежедневно оказывающими влияние на ту или иную часть острова. Они приводят к неблагоприятным изменениям пляжа. Чтобы защитить берег и сам остров от этих воздействий, отельеры вынуждены прибегать к таким мерам, как мешки с песком, волнорезы, камни и так далее. Представители компании не способны повлиять на природные явления, которые могут случиться в любой момент          <imgsrc="https://thb.tildacdn.com/tild6461-3963-4666-b765-353732643065/-/empty/maxresdefault.jpg"alt="Пляжи на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="excursions" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Экскурсии</h2><img src="images/99.png" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Экскурсии</strong><br><br><strong>Все экскурсии организуются непосредственно курортами</strong> Мальдивских островов, поэтому бронирование экскурсий клиенты осуществляют <strong>через сотрудников отеля</strong>. <br><br><strong>Трансферы организуются также курортами</strong>, поэтому информацию по времени трансфера гостям предоставляют сотрудники отеля накануне вылета (как правило, вечером — за день до вылета). <br><br><strong>На Мальдивах практически нет ни исторических памятников, ни особых достопримечательностей.</strong> Из всех развлечений подобного рода в столице Мальдив можно посетить Национальный музей, Султан-Парк, базар Сингапур, Президентский дворец Мулиаге, а также двадцать мечетей столицы, в числе которых Мале Хукукру Мискиу — пятничная мечеть в центре Мале, Масджид аль-Султан Мухаммад Тукуруфану аль-Аузам — Исламский центр в Мале — главная достопримечательность и крупнейшая мечеть Мальдив. Шестиэтажное здание вмещает библиотеку, конференц-зал, Министерство исламских дел. <br><br><strong>На данный момент пребывание туристов в Мале запрещено</strong> (за исключением транзитных пассажиров). <strong>Экскурсии на локальные острова не организовываются.</strong> Каждый курорт имеет свой перечень экскурсий (чаще всего водного характера): сноркелинг, дайвинг, прогулки на яхтах, водные виды спорта.          <imgsrc="https://thb.tildacdn.com/tild3035-3363-4931-a666-343533663039/-/empty/99.png"alt="Экскурсии на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="kitchen" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Кухня</h2><img src="images/1671576909_7-100foto.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Кухня</strong><br><br>Национальная <strong>кухня Мальдивских островов заимствует традиции индийской и арабской кухни.</strong> Ее нельзя представить без трех основных ингредиентов: кокосового ореха, рыбы и риса. <strong>Самые дорогие блюда в меню — лобстеры и креветки.</strong> Популярным десертом является так называемый бонди, который представляет собой белые кокосовые палочки, а также различные фруктовые салаты. В качестве напитка <strong>жители предпочитают зеленый чай</strong>. <br><br>Рестораны на Мальдивах сконцентрированы главным образом на острове Мале. Многие рестораны на Мальдивах <strong>меню подбирают из европейских, китайских, индийских и тайских блюд</strong>. Перекусить можно и в маленьких закусочных (hotaa), где еда гораздо дешевле. <strong>Средний размер счета</strong> в недорогом мальдивском кафе составляет приблизительно 40-50 руфий (75-95 рублей) на человека. <br><br><strong>Туристам рекомендуется пить воду из бутылок. Водопроводную воду на Мальдивах лучше не пить.</strong>          <imgsrc="https://thb.tildacdn.com/tild6230-6263-4763-b236-383439306134/-/empty/1671576909_7-100foto.jpg"alt="Кухня на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="shops" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Магазины</h2><img src="images/kuredugiftshop2nika-.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>Магазины</strong><br><br>Магазины работают с 07:00 и 08:00 до 21:00-23:00, но в летнее время некоторые магазины начинают работу с 13:00 — 15:00, до 18:00 — 20:00. Во время молитв магазины закрываются на 10-15 минут.          <imgsrc="https://thb.tildacdn.com/tild6362-3130-4163-b034-373736643435/-/empty/kuredugiftshop2nika-.jpg"alt="Магазины на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="THERULESOFPERSONALHYGIENEANDSAFETY" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Безопасность</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>ПРАВИЛА ЛИЧНОЙ ГИГИЕНЫ И БЕЗОПАСНОСТИ:</strong><br><br>Перед путешествием мы советуем ознакомиться с «<strong>Полезными советами российским гражданам, выезжающим за рубеж</strong>», размещенными на сайте МИД РФ: https://www.kdmid.ru/info-for-traveling-abroad/useful-tips-for-russian-citizens-traveling-abroad/, а также с памяткой МИД РФ «Каждому, кто направляется за границу», и памяткой Роспотребнадзора выезжающим за рубеж. <br><br><strong>Не нарушайте правила безопасности</strong>, установленные авиакомпаниями, транспортными организациями, гостиницами, местными органами власти. <strong>Категорически не рекомендуем</strong> приобретать экскурсии и дополнительные туристские услуги в неизвестных туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, вам не будет гарантирована безопасность предоставленных услуг и исправность используемого оборудования, тем самым можно подвергнуть себя серьезной опасности. <br><br><strong>Перед поездкой рекомендуется</strong> взять с собой ксерокопии основных страниц (с фотографией, личными данными, отметкой о регистрации) заграничного и внутреннего паспортов РФ. Паспорт (или ксерокопию паспорта), визитную карточку отеля носите с собой. <br><br>При возникновении транспортных аварий, конфликтов с полицией, другими органами местной власти <strong>необходимо поставить в известность представителя принимающей стороны или сотрудников посольства/консульства РФ</strong>. <br><br>В период путешествия <strong>турист не имеет права на коммерческую деятельность</strong> или иную оплачиваемую работу. <br><br><strong>Не оставляйте детей одних</strong> без присмотра на пляже, у бассейна, на водных горках и аттракционах. <br><br><strong>Мойте руки перед едой. Не пейте сырую воду</strong>, особенно из открытых водоемов. Для питья рекомендуется использовать минеральную воду, которую можно приобрести в магазинах и барах отеля. <br><br>Возьмите в путешествие <strong>индивидуальную аптечку</strong> с необходимым набором лекарств. Помните, что многообразные представители животного и растительного мира могут быть не только красивыми, но и опасными. <strong>При укусах и ранах немедленно обратитесь к врачу</strong>. <br><br><strong>Не рекомендуется </strong>носить с собой большие наличные суммы. <strong>Кражи денег и вещей у туристов случаются довольно часто</strong>, как и махинации с фальшивыми долларами. Не следует вынимать из кошелька на виду у всех большие суммы денег. <br><br>Покидая автобус на остановках и во время экскурсий, <strong>не оставляйте в нем ручную кладь</strong>, особенно ценные вещи и деньги. <strong>Важные документы, наличные деньги и драгоценности лучше хранить в сейфе номера</strong>. Если в номере нет сейфа, его можно взять в аренду за плату у администрации отеля или сдать на хранение портье в сейф на стойке регистрации. <br><br><strong>Рекомендуется сдавать ключ от номера на стойку регистрации отеля</strong>, в случае его утери поставить в известность администрацию. Во многих отелях запрещается выносить из номера полотенца на пляж или к бассейну. <strong>Не приносите на пляж полотенца или инвентарь из номера</strong> без разрешения персонала. <br><br>Если в номере стоит мини-бар, то все напитки и закуски, взятые из него, как правило, <strong>должны быть оплачены. </strong</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="INCASEOFLOSSOFPASSPORT" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Утеря паспорта</h2><img src="images/598c6e030ca3f598c6e0.jpg" class="w-full h-auto rounded-[3.5rem] shadow-xl mb-14"><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <strong>В СЛУЧАЕ ПОТЕРИ ПАСПОРТА</strong><br><br><strong>Незамедлительно обращайтесь в дипломатическое представительство</strong>, в консульское учреждение или в представительство <strong>МИД РФ</strong>, которое находится в пределах приграничной территории. <br><br>Вам <strong>необходимо получить свидетельство на въезд в РФ</strong> (REENTRY CERTIFICATE TO THE RUSSIAN FEDERATION), которое называется временным загранпаспортом. Выдается на срок до 15 дней для того, чтобы турист успел купить обратный билет и улететь на родину. <br><br>Для того чтобы вам выдали свидетельство на возвращение в РФ, <strong>необходимо представить следующие документы</strong>: <ul class="check-list mb-12"><li>основной документ, на основании которого будут предприниматься какие-либо действия, — заявление о выдаче свидетельства (образец заявления), </li><li>две фотографии (цветные или ч/б, размер — 35х45 мм на однотонном фоне с четким изображением лица), </li><li>внутренний паспорт РФ, также возможно предоставление других документов для подтверждения своей личности — водительских прав или служебного удостоверения. </li></ul><strong>Срок выдачи свидетельства на возвращение в РФ составляет 2 рабочих дня со дня регистрации заявления</strong>. Вернувшись в РФ, в трехдневный срок необходимо сдать свидетельство в организацию, выдавшую паспорт (ОВИР, МИД). Все вышеперечисленные документы регламентированы пунктом 20 Приказа МИД РФ от 28.06.2012 года № 10304.           <imgsrc="https://thb.tildacdn.com/tild6461-3537-4165-b365-363961373965/-/empty/598c6e030ca3f598c6e0.jpg"alt="Что делать при потере паспорта на Мальдивах"</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="embassy" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Посольство</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4"></a>       <h3>Посольство России на Мальдивах</h3> <br><br>Адрес: Embassy of the Russian Federation, 62 Sir Ernest de Silva Mawatha, Colombo-7, Sri-Lanka. Телефон: (9411) 2573555, 2574959. Эл.почта: rusemb@itmin.net. Консульский отдел Телефон: (9411) 2697042.<br><br><h3>Посольство Мальдив в Москве </h3><br><br>Адрес: г. Москва, ул. Щепкина, 24. Телефон: (+7 095) 688-16-20, 688-14-63, 688-16-51. Режим работы: понедельник - пятница с 9:00 до 17:00. Эл.почта: moscow@srilankaembassy.org.           <strong>ЖЕЛАЕМ ВАМ ПРИЯТНОГО ПУТЕШЕСТВИЯ!</strong</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+<section id="rec2030556951" class="scroll-mt-32 mb-24"><h2 class="text-4xl font-black mb-14 tracking-tight text-black">Контакты</h2><div class="text-on-surface-variant font-medium text-xl leading-relaxed max-w-4xl"><p class="mb-4">По всем вопросам свяжитесь с нами любым удобным способом:<br><br>E-mail: trohin.zh@yandex.ru<br>Телефон: +7 (963) 649-18-52<br>Соцсети: <a href="https://vk.com/emoji_tours">Вконтакте</a> | <a href="https://tilda.cc/">Instagram</a> | <a href="https://tilda.cc/">Telegram</a>          <imgsrc="https://static.tildacdn.com/tild6130-3762-4637-b537-333566343234/LogoW300x.png"alt=""> Индивидуальный предприниматель Трохин Евгений Альбертович<br>ИНН 503613656680 / ОГРН ИП 315507400016056</p></div><div class="h-px bg-black/[0.05] mt-12"></div></section>
+
+        </div>
+
+        <div class="h-px bg-black/5 my-16"></div>
+
+        <!-- СЕКЦИЯ: ФОРМА -->
+        <section id="section-form" class="scroll-mt-32 py-12">
+          <h2 class="text-3xl md:text-4xl font-black mb-8 tracking-tight">Отправить заявку</h2>
+          <form id="booking-form"
+            class="bg-[#fffcf5] border border-black/5 rounded-[2rem] md:rounded-[3rem] p-6 sm:p-10 md:p-16 shadow-2xl shadow-[#5f531a]/10 space-y-10 md:space-y-12 relative overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 md:gap-y-8 mt-2">
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Имя и Фамилия</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="userName" placeholder="Иван Иванов" type="text" required />
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">E-mail</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="userEmail" placeholder="hello@example.com" type="email" required />
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Телефон</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="userPhone" placeholder="+7 (___) ___-__-__" type="tel" required />
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Направление</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="destination" value="Мальдивы" type="text" />
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-2">
+                  <label class="block text-sm font-bold text-on-surface-variant ml-1">Взрослых</label>
+                  <input
+                    class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                    name="adults" min="1" type="number" value="2" />
+                </div>
+                <div class="space-y-2">
+                  <label class="block text-sm font-bold text-on-surface-variant ml-1">Детей (и возраст)</label>
+                  <input
+                    class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                    name="children" placeholder="1 реб, 5 лет" type="text" />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Бюджет (RUB)</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="budget" placeholder="От 200 000" type="text" />
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Количество ночей</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="nights" min="1" type="number" value="7" />
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Дата начала</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="startDate" type="date" />
+              </div>
+            </div>
+            <div class="space-y-4">
+              <label class="block text-sm font-bold text-on-surface-variant ml-1">Нужны ли экскурсии?</label>
+              <div class="flex flex-wrap gap-8">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input class="w-5 h-5 text-primary border-black/20 rounded-full transition-colors cursor-pointer"
+                    name="excursions" type="radio" value="Да" />
+                  <span class="text-on-surface group-hover:text-primary transition-colors">Да, обязательно</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input class="w-5 h-5 text-primary border-black/20 rounded-full transition-colors cursor-pointer"
+                    name="excursions" type="radio" value="Нет" />
+                  <span class="text-on-surface group-hover:text-primary transition-colors">Нет, только отдых</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input class="w-5 h-5 text-primary border-black/20 rounded-full transition-colors cursor-pointer"
+                    name="excursions" type="radio" value="Пока не знаю" />
+                  <span class="text-on-surface group-hover:text-primary transition-colors">Пока не знаю</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Предпочтения по отелю</label>
+                <textarea
+                  class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="hotelPrefs" placeholder="Напр. первая линия, только 5*, наличие детского клуба..."
+                  rows="3"></textarea>
+              </div>
+              <div class="space-y-2">
+                <label class="block text-sm font-bold text-on-surface-variant ml-1">Аэропорт вылета</label>
+                <input
+                  class="w-full bg-transparent border border-black/15 rounded-xl p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                  name="airport" placeholder="Шереметьево, Пулково..." type="text" />
+              </div>
+            </div>
+            <div class="pt-8 flex justify-center w-full">
+              <button
+                class="w-full sm:w-auto bg-black text-white px-10 md:px-14 py-5 rounded-full text-lg md:text-xl font-bold shadow-xl shadow-black/15 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center"
+                type="submit">Отправить заявку</button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-low w-full border-t border-black/5 pt-16 pb-10 px-4 md:px-8 mt-8">
+    <div class="max-w-7xl mx-auto flex flex-col gap-12 md:gap-16">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+        <div class="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
+          <img src="../../images/LogoB_300x.png" alt="Emoji Tours" class="h-12 md:h-14 mx-auto md:mx-0">
+          <p class="text-on-surface-variant font-medium text-sm leading-relaxed px-4 md:px-0">
+            Мы верим, что путешествия — это лучший способ познать себя и окружающий мир.
+          </p>
+          <div class="flex gap-4 justify-center md:justify-start">
+            <a href="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys" target="_blank"
+              class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group">
+              <img src="../../images/Логотип_MAX.svg" alt="MAX"
+                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all">
+            </a>
+            <a href="https://vk.com/emoji_tours" target="_blank"
+              class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group">
+              <img src="../../images/VK_Compact_Logo_(2021-present).svg.png" alt="VK"
+                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all">
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-16 w-full md:w-auto text-center md:text-left">
+          <div class="space-y-4">
+            <h4 class="font-bold text-on-surface-variant text-sm">Связаться с нами</h4>
+            <div class="space-y-3 text-lg">
+              <a href="tel:+79636491852"
+                class="block font-black text-on-surface hover:text-primary transition-colors">+7 963-649-18-52</a>
+              <a href="mailto:trohin.zh@yandex.ru"
+                class="block text-on-surface-variant hover:text-black transition-colors text-sm font-medium">trohin.zh@yandex.ru</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="pt-8 md:pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div
+          class="text-on-surface-variant font-medium text-[11px] md:text-xs text-center md:text-left w-full md:w-auto">©
+          2026 Emoji Tours. Путешествия с душой.</div>
+        <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-bold text-on-surface-variant">
+          <a href="../../index.html#countries" class="hover:text-black transition-colors">Страны</a>
+          <a href="../../index.html#calendar" class="hover:text-black transition-colors">Календарь</a>
+          <a href="../../index.html#testimonials" class="hover:text-black transition-colors">Отзывы</a>
+          <a href="../../index.html#journey" class="hover:text-black transition-colors">Начать путешествие</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div id="success-modal"
+    class="fixed inset-0 z-[200] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
+    <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+    <div
+      class="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl relative z-10 max-w-sm w-full text-center space-y-6 transform scale-90 transition-transform duration-500"
+      id="success-card">
+      <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+        <span class="material-symbols-outlined text-5xl">check</span>
+      </div>
+      <h3 class="text-3xl font-black tracking-tight">Заявка принята!</h3>
+      <p class="text-on-surface-variant font-medium leading-relaxed">
+        Мы уже получили ваши данные и начали подбор идеального тура. Наш эксперт свяжется с вами в ближайшее время!
+      </p>
+      <button onclick="closeModal()"
+        class="w-full bg-black text-white py-5 rounded-full text-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-black/10 mt-4">
+        Супер!
+      </button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/imask"></script>
+  <script>
+    // ScrollSpy
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const quickLinksContainer = document.getElementById('quick-links');
+
+    let isScrolling = false;
+
+    window.addEventListener('scroll', () => {
+      if (isScrolling) return;
+
+      let current = "";
+      const scrollPos = window.pageYOffset + 160;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollPos >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      if (current) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === "#" + current) {
+            link.classList.add('active');
+
+            // АВТО-СКРОЛЛ БОКОВОГО МЕНЮ
+            // Прокручиваем контейнер меню, чтобы активный пункт был виден
+            link.scrollIntoView({
+              behavior: 'smooth',
+              block: 'nearest',
+              inline: 'start'
+            });
+          }
+        });
+      }
+    });
+
+    // Плавный скролл при клике
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+
+        if (target) {
+          isScrolling = true;
+          // Сначала подсвечиваем кликнутый пункт
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+
+          window.scrollTo({
+            top: target.offsetTop - 120,
+            behavior: 'smooth'
+          });
+
+          // Разблокируем ScrollSpy после завершения анимации
+          setTimeout(() => { isScrolling = false; }, 800);
+        }
+      });
+    });
+
+    // Form logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const phoneInput = document.querySelector('input[name="userPhone"]');
+      if (phoneInput) IMask(phoneInput, { mask: '+7 (000) 000-00-00' });
+
+      const form = document.getElementById('booking-form');
+      const modal = document.getElementById('success-modal');
+      const card = document.getElementById('success-card');
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const btn = form.querySelector('button[type="submit"]');
+          const originalText = btn.innerHTML;
+          btn.disabled = true;
+          btn.innerHTML = '<span class="material-symbols-outlined animate-spin mr-3">progress_activity</span>Отправляем...';
+
+          const formData = new FormData(form);
+          const params = new URLSearchParams();
+          for (const [key, value] of formData.entries()) params.append(key, value);
+
+          const GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbwi0-K7Jqf86nWEyit6OB7DgiBlHEjhQF7SvlDcl0BUEnTl8WGMjrM5nGx5wSUoAk-7/exec';
+
+          fetch(GOOGLE_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: params.toString()
+          })
+            .then(() => {
+              modal.classList.add('opacity-100', 'pointer-events-auto');
+              card.style.transform = 'scale(1)';
+              form.reset();
+            })
+            .finally(() => {
+              btn.disabled = false;
+              btn.innerHTML = originalText;
+            });
+        });
+      }
+    });
+
+    function toggleMenu() {
+      const drw = document.getElementById('mobile-drawer');
+      const ovl = document.getElementById('drawer-overlay');
+      if (!drw || !ovl) return;
+      drw.classList.toggle('translate-x-full');
+      ovl.classList.toggle('opacity-0');
+      ovl.classList.toggle('pointer-events-none');
+      document.body.style.overflow = drw.classList.contains('translate-x-full') ? '' : 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('success-modal');
+      const card = document.getElementById('success-card');
+      modal.classList.remove('opacity-100', 'pointer-events-auto');
+      card.style.transform = 'scale(0.9)';
+    }
+  </script>
+</body>
+
+</html>
