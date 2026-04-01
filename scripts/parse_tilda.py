@@ -149,4 +149,4 @@ def build_final_memo_perfect_spacing(tilda_file, template_file, output_file):
     print(f"--- УСПЕХ: Полоска на месте, текст свободен! ---")
 
 if __name__ == "__main__":
-    build_final_memo_perfect_spacing('content/тильда.txt', 'templates/template_memo.html', 'labs/egypt_final.html')
+    build_final_memo_perfect_spacing('content/тильда.txt', 'templates/template_memo.html', 'pages/memos/egypt.html')
