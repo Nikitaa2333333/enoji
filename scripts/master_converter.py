@@ -3,7 +3,14 @@ import os
 import re
 import json
 from bs4 import BeautifulSoup
-import scripts.embassy_overrides as overrides
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__)))
+try:
+    import embassy_overrides as overrides
+except ImportError:
+    class Dummy: EMBASSY_OVERRIDES = {}
+    overrides = Dummy()
 
 # Настройки путей
 BASE_DIR = r"c:\Users\User\Downloads\tilda dododo"
@@ -65,14 +72,16 @@ def get_obj_top(obj, h): return obj['top'] if 'top' in obj else h - obj['y1']
 def has_underline(page, line_words):
     if not line_words: return False
     h = page.height
-    t_top = min(w['top'] for w in line_words)
     t_bottom = max(w['bottom'] for w in line_words)
     t_x0 = min(w['x0'] for w in line_words)
     t_x1 = max(w['x1'] for w in line_words)
-    search_min_y, search_max_y = t_top + (t_bottom - t_top) / 2, t_bottom + 8
+    # Ищем линию ТОЛЬКО в узком диапазоне под текстом (от -1 до +3 пикселя от низа)
+    search_min_y, search_max_y = t_bottom - 1, t_bottom + 3
     for obj in (page.lines + page.rects + page.curves):
         o_top = get_obj_top(obj, h)
         if o_top and search_min_y <= o_top <= search_max_y:
+            # Проверяем, что это тонкий объект (черта), а не плашка
+            if obj.get('height', 0) > 3: continue
             o_x0, o_x1 = obj.get('x0', 0), obj.get('x1', 0)
             overlap = min(t_x1, o_x1) - max(t_x0, o_x0)
             if overlap > 0 and overlap / (t_x1 - t_x0) > 0.4: return True
@@ -150,7 +159,8 @@ def render_html(lines, country_name, slug):
             main_c += '<div class="space-y-12 my-10">\n'
             for item in overrides.EMBASSY_OVERRIDES[slug]:
                 main_c += f'  <div><h3 class="text-2xl font-black mb-4 text-black">{item["name"]}</h3>'
-                main_c += f'<p class="text-lg text-black/80 font-manrope">{item["body"].replace("\n","<br>")}</p></div>\n'
+                body_html = item["body"].replace("\n","<br>")
+                main_c += f'<p class="text-lg text-black/80 font-manrope">{body_html}</p></div>\n'
             main_c += '</div>\n'; table_buf = []
             return
         c1, c2 = [], []
