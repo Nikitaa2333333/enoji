@@ -19,7 +19,7 @@ def fix_country_files():
             
             # 1. Исправление путей к лого и главной
             content = content.replace('href="index.html"', 'href="../../index.html"')
-            content = content.replace('src="images/LogoB_300x.png"', 'src="../../images/LogoB_300x.png"')
+            content = content.replace('src="images/logo.png"', 'src="../../images/logo.png"')
             
             # 2. Исправление ссылок в футере
             content = re.sub(r'href="index.html#(.*?)"', r'href="../../index.html#\1"', content)
