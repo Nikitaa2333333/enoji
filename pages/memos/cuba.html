@@ -7,7 +7,9 @@
 <title>Памятка: Памятка туриста Куба — Emoji Tours</title>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="../../scripts/pdf-download.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -173,7 +175,15 @@
 </div>
 </nav>
 <!-- Кнопка навигации мобильная (Floating) -->
-<button class="md:hidden fixed bottom-10 left-1/2 -translate-x-1/2 z-[90] flex items-center gap-2 bg-black text-white px-6 py-4 rounded-full font-bold shadow-2xl active:scale-95 transition-all" onclick="toggleMenu()">
+<button class="md:hidden fixed bottom-10 left-1/2 -translate-x-1/2          <a href="#section-form"
+            class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
+            туда</a>
+          <button onclick="PDFDownload.download('Куба')" 
+            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+          </button>
+        </div>
 <span class="material-symbols-outlined text-[20px]">menu</span>
     Содержание
   </button>

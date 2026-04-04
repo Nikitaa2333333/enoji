@@ -9,6 +9,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="../../scripts/pdf-download.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -238,7 +240,6 @@
 
       <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
       <div class="flex-1 py-10">
-        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
         <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Памятка: Тунис</h1>
 
         <div class="flex flex-wrap gap-4 mb-14">
@@ -248,11 +249,15 @@
           <a href="#section-form"
             class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
             туда</a>
+          <button onclick="PDFDownload.download('Тунис')" 
+            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+          </button>
         </div>
 
         <div class="space-y-16" id="main-content">
-          <img src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="туристам, выезжающим в тунис">
-<section id="pered-otezdom" class="scroll-mt-32 mb-20">
+          <section id="pered-otezdom" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Перед отъездом</h2>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Проверьте наличие необходимых для поездки документов:</h3>
   <ul class="check-list mb-8">
@@ -261,8 +266,9 @@
     <li>авиабилеты или маршрут/квитанции электронного билета;</li>
     <li>ваучер;</li>
     <li>страховой медицинский полис.</li>
-<img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="в случае путешествия с детьми">
-</ul>
+  </ul>
+  <img src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="документы">
+  <img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="в случае путешествия с детьми">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В случае путешествия с детьми</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний гражданин РФ, следующий совместно хотя бы с одним из родителей, выезжает из РФ по своему загранпаспорту.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний российский гражданин, выезжающий из Российской Федерации без сопровождения родителей, должен иметь при себе кроме заграничного паспорта нотариально оформленное согласие родителей на его выезд за границу с указанием срока выезда и государство, которое он намерен посетить.</p>
@@ -280,9 +286,9 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Не забывайте собрать и взять с собой аптечку первой помощи , которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.</p>
 <section id="v-rossijskom-aeroportu-vyleta-prileta" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">В российском аэропорту вылета/прилета</h2>
-<img src="../../images/tild6539-3739-4566-b832-653366346630__11.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="телефон">
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
+  <img src="../../images/tild6539-3739-4566-b832-653366346630__11.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="аэропорт">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль до начала путешествия</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед полетом рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы customs.gov.ru. Обращаем внимание на то, что в настоящее время действуют ограничения.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено перемещение на выезде и въезде:</span></p>
@@ -293,14 +299,13 @@
 </ul>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Незаконное перемещение товаров или валюты через таможенную границу РФ или их недекларирование, либо</span> <span class="font-bold text-black">недостоверное декларирование влечет за собой административную или уголовную ответственность.</span></p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено на выезде и въезде:</span></p>
-  <ul class="check-list mb-8">
     <li>принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</li>
-<img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль по окончани">
-</ul>
+  </ul>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль по окончании путешествия</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Внимание! Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
+  <img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль">
 <img src="../../images/tild3963-3831-4665-b737-616239616264__world-map-with-magni.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль в тунисе">
 <section id="tamozhennyj-kontrol-v-tunise" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Таможенный контроль в Тунисе</h2>
@@ -363,7 +368,7 @@
     <li>получить свой багаж,</li>
     <li>пройти таможенный контроль,</li>
     <li>выйти из здания аэропорта,</li>
-    <li>найти встречающего гида с табличкой «ANEX»,</li>
+    <li>найти встречающего гида с табличкой «Emoji Tours»,</li>
     <li>предъявить гиду туристский ваучер.</li>
 </ul>
 <section id="pasportnyj-kontrol-viza" class="scroll-mt-32 mb-20">
@@ -377,10 +382,10 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Разница во времени с Москвой — минус 2 часа.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Климат</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Средиземноморский. Средние температуры января на севере +10 ºС, на юге +21 ºС, июля соответственно +26…+33 ºС, осадков в год около 100 мм на юге, до 1 500 — на севере.</p>
-<img src="../../images/tild3861-3737-4434-a638-646262613234__b362d8e48833fc070bcd.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="валюта">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Валюта</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Тунисский динар. Купюры одинакового номинала могут быть разного образца и отличаться по размеру и цвету.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Ввоз иностранной валюты не ограничен, национальной — запрещен. Разрешен вывоз ввезенной иностранной валюты. Валюту можно обменять в отеле или обменном пункте банка. Иностранную валюту можно обменять в обменных пунктах, банках, а также в специализированных пунктах обмена в портах, аэропортах или в гостиницах. При обмене рекомендуется брать квитанцию, которая является основным документом для обратного обмена на иностранную валюту — обмен производится только в аэропорту и только при наличии квитанции первичного обмена. Дорожные чеки и кредитные карты принимаются без ограничений во многих магазинах, ресторанах и отелях. Банкоматы также можно найти во всех крупных городах и туристических центрах.</p>
+  <img src="../../images/tild3861-3737-4434-a638-646262613234__b362d8e48833fc070bcd.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="валюта">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Язык</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Арабский.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Население</h3>
@@ -392,7 +397,6 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Фотографирование местных жителей требует такта и предусмотрительности. А также невежливо пристально рассматривать женщин в чадре.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">В открытых майках лучше не ходить. В курортных зонах туристы могут одеваться легко и свободно. Не принято также здесь пить воду после жирного обеда, а хлеб обычно отламывается руками. Мелкое воровство возможно, особенно в местах скопления людей, где много карманников.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Во время Рамадана правоверные тунисцы-мусульмане от рассвета до заката не курят и не едят. Поэтому и туристам лучше воздержаться от курения, питья и еды на улицах городов. Пить и курить на территории отеля можно. У мусульман не принято есть стоя или на ходу, а также смотреть в лицо человека, занятого едой. К спиртному здесь относятся лояльнее, чем в странах ортодоксального ислама.</p>
-<img src="../../images/tild3338-3933-4930-b734-653936326238__a31edd8994e719410302.webp" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="праздники и нерабочие дни">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Праздники и нерабочие дни</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">1 января — Новый год,</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">18 января — День революции в Тунисе,</p>
@@ -404,13 +408,14 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">3 сентября — День движения независимости,</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">15 октября — День эвакуации,</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">7 ноября — День новой эры (обновления).</p>
+  <img src="../../images/tild3338-3933-4930-b734-653936326238__a31edd8994e719410302.webp" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="праздники">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В отеле</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Заселение в отель происходит в 13:00-15:00, освободить номер в день отъезда вы должны в 12:00. Свой багаж можете оставить в камере хранения отеля. Вам необходимо произвести оплату за дополнительные услуги до приезда автобуса. Во избежание различных осложнений, просим не опаздывать и подходить к месту встречи в указанное время, поэтому все дополнительные услуги (пользование мини-баром, телефоном и т. д.) лучше оплатить заранее.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Напряжение электросети</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Напряжение сети — 220 В, розетки также привычные для российских жителей. Переходник не нужен.</p>
-<img src="../../images/tild6231-6230-4231-b534-366464663435__tunisia5.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="экскурсии">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Экскурсии</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Гид компании, принимающий вас в Тунисе, во время встречи в отеле сообщит перечень предлагаемых экскурсий, их содержание, график проведения и стоимость. Не рекомендуем приобретать экскурсии или прочие услуги в неизвестных вам туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, а также о качестве транспорта для ее организации. Вам может быть предоставлено для использования не сертифицированное, неисправное или не соответствующее санитарно-гигиеническим нормам оборудование.</p>
+  <img src="../../images/tild6231-6230-4231-b534-366464663435__tunisia5.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="экскурсии">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Магазины</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Лучшие города для шопинга в Тунисе — Тунис (столица), Набуль, Кайруан, Сусс и Сфакс. Магазины в Тунисе открыты с понедельника по пятницу с 07:30 до 13:00 и с 17:00 до 20:00, в субботу — с 08:00 до 12:00, воскресенье – выходной.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">В Медине Хаммамета можно найти традиционную тунисскую керамику, изделия из стекла и металла, ковры. Обязательно торгуйтесь: начните со снижения цены на 25 %, зачастую можно поторговаться до 50 %. Рынок в Набуле открыт каждую пятницу утром. Он похож на любые другие рынки Туниса, но цены на многие товары здесь ниже.</p>
@@ -793,3 +798,4 @@
 </body>
 
 </html>
+

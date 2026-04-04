@@ -9,6 +9,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="../../scripts/pdf-download.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -243,7 +245,6 @@
 
       <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
       <div class="flex-1 py-10">
-        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
         <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Памятка: Мальдивы</h1>
 
         <div class="flex flex-wrap gap-4 mb-14">
@@ -253,11 +254,16 @@
           <a href="#section-form"
             class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
             туда</a>
+          <button onclick="PDFDownload.download('Мальдивы')" 
+            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+          </button>
         </div>
 
         <div class="space-y-16" id="main-content">
           <img src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg"
-            class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="туристам">
+            class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="Документы для путешествия на Мальдивы">
           <section id="pered-otezdom" class="scroll-mt-32 mb-20">
             <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Перед отъездом</h2>
             <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
@@ -287,12 +293,7 @@
                   STAYING IN» из списка необходимо выбрать название своего отеля. В случае отсутствия нужного отеля
                   необходимо выбрать остров, ближайший к курорту.</li>
               </ul>
-              <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
-                Важно: Для удобства была введена опция «загрузки фото паспорта» перед заполнением анкеты. Таким образом,
-              </h3>
-              <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">ФИО, дата рождения, номер паспорта и
-                дата действия паспорта будет считана и загружена автоматически. Но по-прежнему можно внести все эти
-                данные вручную.</p>
+              <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Важно:</span> Для удобства была введена опция «загрузки фото паспорта» перед заполнением анкеты. Таким образом, ФИО, дата рождения, номер паспорта и дата действия паспорта будет считана и загружена автоматически. Но по-прежнему можно внести все эти данные вручную.</p>
               <ul class="check-list mb-8">
                 <li>Инструкция по заполнению декларации о состоянии здоровья (вылет туда).</li>
               </ul>
@@ -300,9 +301,9 @@
                 требованиям некоторых авиакомпаний указанная выше форма должна быть заполнена до прибытия в аэропорт
                 вылета. Невыполнение этого условия может привести к отказу в посадке на рейс. С актуальной информацией
                 вы можете ознакомиться на сайте авиаперевозчика.</p>
-              <img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg"
+              <img src="../../images/tild6234-6362-4539-b665-323137643933__komfortnyi-otdykh-s-.jpg"
                 class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover"
-                alt="в случае путешествия с детьми">
+                alt="Путешествие с детьми на Мальдивы">
               <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В
                 случае путешествия с детьми</h3>
               <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний гражданин РФ,
@@ -332,6 +333,9 @@
                 случае нарушения правил.</p>
               <section id="sobiraya-bagazh" class="scroll-mt-32 mb-20">
                 <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Собирая багаж</h2>
+                <img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg"
+                  class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover"
+                  alt="Багаж и вещи для Мальдив">
                 <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем все ценные вещи,
                   документы и деньги положить в ручную кладь и взять с собой в самолет.</p>
                 <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">В багаж следует упаковать все
@@ -365,18 +369,15 @@
                     <li>объектов фауны и флоры, находящихся под угрозой исчезновения,</li>
                     <li>оружия и боеприпасов к нему без разрешения уполномоченных органов.</li>
                   </ul>
-                  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span
-                      class="font-bold text-black">Незаконное перемещение товаров или валюты через таможенную границу РФ
-                      или их недекларирование, либо</span> <span class="font-bold text-black">недостоверное
-                      декларирование влечет за собой административную или уголовную ответственность.</span></p>
+                  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Незаконное перемещение товаров или валюты через таможенную границу РФ или их недекларирование, либо недостоверное декларирование влечет за собой административную или уголовную ответственность.</span></p>
                   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span
                       class="font-bold text-black">Внимание! Запрещено на выезде и въезде:</span></p>
                   <ul class="check-list mb-8">
                     <li>принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту
                       воздушного судна.</li>
-                    <img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg"
+                    <img src="../../images/tild6364-3637-4261-b761-386566643134__ria_6136134hr_a91.jpg"
                       class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover"
-                      alt="таможенный контроль по окончани">
+                      alt="В российском аэропорту">
                   </ul>
                   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     Таможенный контроль по окончании путешествия</h3>
@@ -386,10 +387,7 @@
                   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Актуальную информацию о ввозе
                     валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной
                     Службы customs.gov.ru.</p>
-                  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span
-                      class="font-bold text-black">Внимание! Недекларирование товаров в случае превышения стоимостных
-                      или весовых норм, а также наличных</span> денежных средств и (или) денежных инструментов влечёт за
-                    собой административную или уголовную ответственность.</p>
+                  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</span></p>
                   <section id="tamozhennyj-kontrol-na-maldivakh" class="scroll-mt-32 mb-20">
                     <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Таможенный контроль на
                       Мальдивах</h2>
@@ -452,10 +450,7 @@
                         <li>Местными деньгами (в обиходе только на локальных островах). Курс: 1 USD ≈ 15 мальдивских
                           руфий.</li>
                       </ul>
-                      <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span
-                          class="font-bold text-black">Важно! Местная валюта принимается только на некоторых локальных
-                          островах. В то время как доллары и евро</span> принимаются во всех отелях-резортах и локальных
-                        гест-хаусах.</p>
+                      <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Важно! Местная валюта принимается только на некоторых локальных островах. В то время как доллары и евро принимаются во всех отелях-резортах и локальных гест-хаусах.</span></p>
                       <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Оплата по PayPass через
                         приложение телефона практически отсутствует.</p>
                       <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Берите с собой реальные карты.
@@ -470,10 +465,7 @@
                         <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Регистрация пассажиров и
                           оформление багажа производятся на основании именного авиабилета или распечатанных на бумажном
                           носителе маршрута и/или квитанции электронного билета, а также заграничного паспорта
-                          пассажира.</p>
-                        <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">При регистрации пассажиру
-                          выдается посадочный талон, который необходимо сохранять до момента возможного предъявления
-                          авиакомпании претензий по качеству предоставленных услуг авиаперевозки.</p>
+                          пассажира. При регистрации пассажиру выдается посадочный талон, который необходимо сохранять до момента возможного предъявления авиакомпании претензий по качеству предоставленных услуг авиаперевозки.</p>
                         <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед посадкой на рейс
                           рекомендуем проверить номер выхода и время начала посадки на рейс на информационном табло в
                           аэропорту.</p>
@@ -489,9 +481,9 @@
                         <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перевозчик имеет право
                           отказать туристу в перевозе багажа, вес или объем которого не соответствуют установленным
                           нормам.</p>
-                        <img src="../../images/tild3265-3762-4764-b834-633762353631__i_3.jpg"
+                        <img src="../../images/tild6164-3539-4236-a536-653666633263__919255ebe5775d87ea2b.jpg"
                           class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover"
-                          alt="паспортный контроль">
+                          alt="Паспортный контроль в Мале">
                         <section id="pasportnyj-kontrol" class="scroll-mt-32 mb-20">
                           <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Паспортный
                             контроль</h2>
@@ -509,10 +501,9 @@
                               зоне природного распространения таких болезней, как брюшной тиф и желтая лихорадка. Перед
                               поездкой на Мальдивы желательно сделать прививки против этих болезней. Прививки от
                               гепатита А и В также входят в список того, что желательно сделать перед поездкой на
-                              курорты Мальдив. Сырая вода для питья непригодна и требует очистки через фильтр с
-                              последующим кипячением.</p>
-                            <section id="veterinarnyj-kontrol" class="scroll-mt-32 mb-20">
-                              <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Ветеринарный
+                              курорты Мальдив. Сырая вода для                                     <img src="../../images/tild3435-6235-4332-b661-646533363837__images__625677580.jpg"
+                                       class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover"
+                                       alt="Обычаи и культура Мальдив">        <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Ветеринарный
                                 контроль</h2>
                               <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Ввоз домашних животных
                                 на Мальдивы ограничен (требуется специальное разрешение). Въезд в страну с собаками
@@ -551,7 +542,7 @@
                                   <li>получить свой багаж,</li>
                                   <li>пройти таможенный контроль,</li>
                                   <li>выйти из зоны прилета аэропорта,</li>
-                                  <li>найти встречающего гида с табличкой «ANEX» (для гостей, прилетающих на чартерных
+                                  <li>найти встречающего гида с табличкой «Emoji Tours» (для гостей, прилетающих на чартерных
                                     рейсах) / найти встречающего представителя отеля с табличкой объекта размещения (для
                                     гостей, прилетающих на регулярных рейсах),</li>
                                   <li>предъявить гиду/представителю отеля туристический ваучер.</li>
@@ -569,7 +560,7 @@
                                   каким-либо причинам остаются ночевать на Мале и на следующий день они отправляются в
                                   свой основной отель, трансфер осуществляется следующим образом:</p>
                                 <ul class="check-list mb-8">
-                                  <li>Необходимо предоставить в Anex информацию об отеле на Мале, в котором будут
+                                  <li>Необходимо предоставить в Emoji Tours информацию об отеле на Мале, в котором будут
                                     проживать туристы.</li>
                                   <li>Далее отель на Мале и отель основного проживания связываются и согласовывают время
                                     трансфера.</li>
@@ -583,7 +574,7 @@
                                 <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span
                                     class="font-bold text-black">Незапланированная ночевка на Мале</span></p>
                                 <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Если туристы были
-                                  вынуждены остаться ночевать на Мале, Anex оказывает следующую помощь:</p>
+                                  вынуждены остаться ночевать на Мале, Emoji Tours оказывает следующую помощь:</p>
                                 <ul class="check-list mb-8">
                                   <li>Помогает забронировать отель на Мале.</li>
                                   <li>Помогает с трансфером от аэропорта до отеля на Мале.</li>
@@ -610,10 +601,10 @@
                                   <section id="maldivy" class="scroll-mt-32 mb-20">
                                     <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Мальдивы
                                     </h2>
-                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span
-                                        class="font-bold text-black">Мальдивы — государство в Южной Азии, которое
-                                        располагается на группе атоллов в Индийском океане,</span> находящихся к югу от
-                                      Индии, и примерно в 700 км к юго-западу от Шри-Ланки.</p>
+                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Мальдивы — государство в Южной Азии, которое располагается на группе атоллов в Индийском океане, находящихся к югу от Индии, и примерно в 700 км к юго-западу от Шри-Ланки.</span></p>
+                                    <img src="../../images/tild3862-6235-4038-a438-353263316162__na-karte-mira-maldiv.jpg"
+                                      class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover"
+                                      alt="Мальдивы на карте мира">
                                     <h3
                                       class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                                       Язык</h3>
@@ -642,11 +633,7 @@
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Лучше всего брать
                                       на Мальдивы доллары мелкими (до 20) купюрами, ими вам будет удобнее
                                       расплачиваться.</p>
-                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span
-                                        class="font-bold text-black">Внимание! Купюры образца 2006 года и старше не
-                                        принимаются к оплате на Мальдивах. Главным условием также</span> является
-                                      следующее: банкноты, напечатанные на белой бумаге, не принимаются банками.
-                                      Взаиморасчеты возможны купюрами, выпущенными на «голубой бумаге».</p>
+                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Купюры образца 2006 года и старше не принимаются к оплате на Мальдивах. Главным условием также является следующее: банкноты, напечатанные на белой бумаге, не принимаются банками. Взаиморасчеты возможны купюрами, выпущенными на «голубой бумаге».</span></p>
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Может быть
                                       отказано в обмене валюты, если купюры повреждены либо находятся в ненадлежащем
                                       состоянии.</p>
@@ -791,8 +778,7 @@
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Чтобы защитить
                                       берег и сам остров от этих воздействий, отельеры вынуждены прибегать к таким
                                       мерам, как мешки с песком, волнорезы, камни и так далее. Представители компании не
-                                      способны повлиять на природные явления, которые могут случиться в любой момент.
-                                    </p>
+                                      способны повлиять на природные явления, которые могут случиться в любой момент.</p>
                                     <img
                                       src="../../images/tild3265-3231-4130-a530-333637633766__a6e6bd_996e168bc30a4.jpg"
                                       class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover"
@@ -802,10 +788,10 @@
                                       Встреча в аэропорту и сопровождение гида</h3>
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">По прилете в
                                       международный аэропорт Мале туристов встречают русскоговорящие представители
-                                      компании ANEX с табличкой и фирменных униформах компании.</p>
+                                      компании Emoji Tours с табличкой и фирменных униформах компании.</p>
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">По прилете в
                                       международный аэропорт Мале туристов на чартерных рейсах у выхода из зоны прилета
-                                      встречают представители компании ANEX с табличкой и в фирменных униформах
+                                      встречают представители компании Emoji Tours с табличкой и в фирменных униформах
                                       компании.</p>
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Туристов, которые
                                       прилетают регулярными рейсами , представители резортов встречают у выхода из зоны
@@ -913,7 +899,7 @@
                                       все курорты Мальдив осуществляются на скоростных лодках, гидросамолетах, а также с
                                       помощью внутренних авиалиний. Отдельные курорты предоставляют комбинированный вид
                                       трансфера — внутренний авиаперелет + скоростной катер. В стоимость пакетных туров
-                                      компании ANEX на Мальдивы по умолчанию включен трансфер с минимальной стоимостью.
+                                      компании Emoji Tours на Мальдивы по умолчанию включен трансфер с минимальной стоимостью.
                                       Забронировать другой тип трансфера при условии предоставления его отелем возможно
                                       за дополнительную оплату. В случае плохих погодных условий и, как следствия,
                                       невозможности предоставить забронированный тип трансфера курорты имеют право
@@ -938,7 +924,7 @@
                                       гостей других курортов. Авиакомпания ТМА, обслуживающая рейсы, является
                                       государственной, и расписание рейсов утверждается накануне. Поэтому
                                       проинформировать о времени данного типа трансфера заблаговременно при бронировании
-                                      пакетного тура компании ANEX не представляется возможным.</p>
+                                      пакетного тура компании Emoji Tours не представляется возможным.</p>
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Как правило,
                                       время ожидания трансфера на гидросамолет не превышает 2 часов, но в отдельных
                                       случаях может достигать и 6 часов. Каждый гость (за исключением инфантов) может
@@ -952,7 +938,7 @@
                                     <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Внутренние
                                       перелеты осуществляются на самолетах местных авиалиний вместимостью до 50 человек.
                                       Примерное время в пути: от 20 до 60 минут. В местном аэропорту гостей компании
-                                      ANEX встречает представитель курорта и сопровождает на скоростной катер,
+                                      Emoji Tours встречает представитель курорта и сопровождает на скоростной катер,
                                       принадлежащий курорту. Внутренние перелеты осуществляются как в дневное, так и в
                                       ночное время суток. Время ожидания трансфера зависит от расписания рейсов. Каждый
                                       гость (за исключением инфантов) может провозить с собой до 20 кг багажа
@@ -990,18 +976,14 @@
                                       на Мальдивах хорошо развита. Можно использовать для звонков своего оператора, если
                                       подключить роуминг, но дешевле приобрести сим-карту местного мобильного оператора.
                                     </p>
-                                    <h3
-                                      class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
-                                      Чтобы позвонить с Мальдивских островов в Россию, следует набрать: 9 (выход в
-                                      город) – 00 (международная</h3>
-                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">линия) – 7 (код
-                                      России) – код вашего города и номер.</p>
-                                    <h3
-                                      class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
-                                      Чтобы позвонить из России на Мальдивские острова, нужно ввести: 8, затем после
-                                      гудка – 10, набрать</h3>
-                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">международный
-                                      телефонный код Мальдив (960) и номер отеля.</p>
+                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">
+                                      <span class="font-bold text-black border-b-2 border-primary">Чтобы позвонить с Мальдивских островов в Россию, следует набрать:</span><br>
+                                      9 (выход в город) – 00 (международная линия) – 7 (код России) – код вашего города и номер.
+                                    </p>
+                                    <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">
+                                      <span class="font-bold text-black border-b-2 border-primary">Чтобы позвонить из России на Мальдивские острова, нужно ввести:</span><br>
+                                      8, затем после гудка – 10, набрать международный телефонный код Мальдив (960) и номер отеля.
+                                    </p>
                                     <h3
                                       class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                                       Экстренные телефоны</h3>
@@ -1125,7 +1107,12 @@
                                                   class="font-bold text-black">России</span> <span
                                                   class="font-bold text-black">на</span> <span
                                                   class="font-bold text-black">Мальдивах</span></h3>
-                                              <p class="text-lg text-black/80 leading-relaxed font-manrope"></p>
+                                              <p class="text-lg text-black/80 leading-relaxed font-manrope">
+                                                Адрес: Embassy of the Russian Federation, 62 Sir Ernest de Silva Mawatha, Colombo-7, Sri-Lanka.<br>
+                                                Телефон: (9411) 2573555, 2574959.<br>
+                                                Эл. почта: rusemb@itmin.net.<br>
+                                                Консульский отдел, телефон: (9411) 2697042.
+                                              </p>
                                             </div>
                                             <div>
                                               <h3 class="text-2xl font-black mb-4 text-black"><span
@@ -1133,7 +1120,12 @@
                                                   class="font-bold text-black">Мальдив</span> <span
                                                   class="font-bold text-black">в</span> <span
                                                   class="font-bold text-black">Москве</span></h3>
-                                              <p class="text-lg text-black/80 leading-relaxed font-manrope"></p>
+                                              <p class="text-lg text-black/80 leading-relaxed font-manrope">
+                                                Адрес: г. Москва, ул. Щепкина, 24. <br>
+                                                Телефон: (+7 495) 688-16-20, 688-14-63, 688-16-51. <br>
+                                                Режим работы: понедельник - пятница с 9:00 до 17:00. <br>
+                                                Эл. почта: admin@maldivesembassy.ru
+                                              </p>
                                             </div>
                                           </div>
 

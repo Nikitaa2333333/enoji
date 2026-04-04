@@ -10,22 +10,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  
-  
-
-  
-
-  
 
 
-  
-
-  
 
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
 
 
   <script id="tailwind-config">
@@ -57,16 +57,25 @@
       font-family: 'Manrope', sans-serif;
       opacity: 1 !important;
     }
-    a { text-decoration: none !important; }
+
+    a {
+      text-decoration: none !important;
+    }
+
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 110px;
     }
-    p { line-height: 1.8; }
+
+    p {
+      line-height: 1.8;
+    }
+
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
       vertical-align: middle;
     }
+
     /* Навигация (Quick Links) - Оставляем как есть в шаблоне */
     #quick-links {
       max-height: calc(100vh - 220px);
@@ -74,7 +83,11 @@
       scrollbar-width: none;
       -ms-overflow-style: none;
     }
-    #quick-links::-webkit-scrollbar { display: none; }
+
+    #quick-links::-webkit-scrollbar {
+      display: none;
+    }
+
     .nav-link {
       display: block;
       padding: 0.5rem 1.5rem;
@@ -85,24 +98,32 @@
       color: #000000;
       transition: all 0.2s ease;
     }
-    .nav-link:hover { color: #000; background: rgba(0, 0, 0, 0.02); }
+
+    .nav-link:hover {
+      color: #000;
+      background: rgba(0, 0, 0, 0.02);
+    }
+
     .nav-link.active {
       color: #000;
       font-weight: 800;
       border-left-color: #f5e2a1;
       background: rgba(245, 226, 161, 0.2);
     }
+
     .check-list {
       list-style-type: none !important;
       padding-left: 0 !important;
       margin: 1.5rem 0 !important;
     }
+
     .check-list li {
       position: relative;
       padding-left: 2.2rem;
       margin-bottom: 1rem;
       line-height: 1.6;
     }
+
     .check-list li::before {
       content: 'check_circle';
       font-family: 'Material Symbols Outlined';
@@ -156,14 +177,15 @@
     </div>
     <nav id="mobile-quick-links"
       class="flex flex-col gap-2 font-['Manrope'] font-bold text-lg tracking-tight overflow-y-auto">
+      <a href="#aboutindonesia" class="nav-link">О стране</a>
       <a href="#Bali" class="nav-link">Бали</a>
-<a href="#denpasar" class="nav-link">Денпасар</a>
-<a href="#kuta" class="nav-link">Кута</a>
-<a href="#tuban" class="nav-link">Тубан</a>
-<a href="#legianandseminiak" class="nav-link">Легиан и Семиняк</a>
-<a href="#djimbaran" class="nav-link">Джимбаран</a>
-<a href="#nusadua" class="nav-link">Нуса Дуа</a>
-<a href="#Ubud" class="nav-link">Убуд</a>
+      <a href="#denpasar" class="nav-link">Денпасар</a>
+      <a href="#kuta" class="nav-link">Кута</a>
+      <a href="#tuban" class="nav-link">Тубан</a>
+      <a href="#legianandseminiak" class="nav-link">Легиан и Семиняк</a>
+      <a href="#djimbaran" class="nav-link">Джимбаран</a>
+      <a href="#nusadua" class="nav-link">Нуса Дуа</a>
+      <a href="#Ubud" class="nav-link">Убуд</a>
 
     </nav>
     <div class="mt-auto pt-10 border-t border-black/10">
@@ -176,7 +198,8 @@
   <main class="pt-0">
     <!-- ═══ HERO PHOTO ═══ -->
     <section class="relative h-[60vh] w-full overflow-hidden mb-12 md:mb-16">
-      <img src="../../tilda_raw/emojitours.ru/images/tild6138-3637-4333-a565-646530333233__bali-4.jpg" class="w-full h-full object-cover object-center" id="hero-image">
+      <img src="../../tilda_raw/emojitours.ru/images/tild6138-3637-4333-a565-646530333233__bali-4.jpg"
+        class="w-full h-full object-cover object-center" id="hero-image">
       <div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
     </section>
 
@@ -187,14 +210,15 @@
         <div>
           <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
           <nav id="quick-links" class="flex flex-col border-l border-black/5">
+            <a href="#aboutindonesia" class="nav-link">О стране</a>
             <a href="#Bali" class="nav-link">Бали</a>
-<a href="#denpasar" class="nav-link">Денпасар</a>
-<a href="#kuta" class="nav-link">Кута</a>
-<a href="#tuban" class="nav-link">Тубан</a>
-<a href="#legianandseminiak" class="nav-link">Легиан и Семиняк</a>
-<a href="#djimbaran" class="nav-link">Джимбаран</a>
-<a href="#nusadua" class="nav-link">Нуса Дуа</a>
-<a href="#Ubud" class="nav-link">Убуд</a>
+            <a href="#denpasar" class="nav-link">Денпасар</a>
+            <a href="#kuta" class="nav-link">Кута</a>
+            <a href="#tuban" class="nav-link">Тубан</a>
+            <a href="#legianandseminiak" class="nav-link">Легиан и Семиняк</a>
+            <a href="#djimbaran" class="nav-link">Джимбаран</a>
+            <a href="#nusadua" class="nav-link">Нуса Дуа</a>
+            <a href="#Ubud" class="nav-link">Убуд</a>
 
           </nav>
         </div>
@@ -202,7 +226,6 @@
 
       <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
       <div class="flex-1 py-10">
-        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
         <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Индонезия</h1>
 
         <div class="flex flex-wrap gap-4 mb-14">
@@ -214,82 +237,149 @@
         </div>
 
         <div class="space-y-16" id="main-content">
-          
-                <section id="aboutindonesia" class="scroll-mt-32 mb-24">
-                  
-                  <img src="../../tilda_raw/emojitours.ru/images/tild6139-3661-4031-b337-636536303836__raja-ampat-indonesia.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>         О стране<br> Индонезия – государство в Юго-Восточной Азии, расположенное между Индийским и Тихим океанами. Среди 18 тысяч островов Бали является самым популярным и одним из красивейших островов. Роскошные пляжи в окружении буйной тропической зелени превратили остров в синоним райского наслаждения, на котором круглый год стремятся восстановить силы респектабельные туристы со всего света. Кроме того, Бали – настоящая Мекка для всех желающих покорить волну – от матерых профессионалов до робких новичков. Разнообразные серф-школы с опытными инструкторами представлены здесь в завидном количестве, а идеальные погодные условия позволяют заниматься серфингом круглым год. Любителей не покорять, а созерцать на остров влечет дайвинг. В тропических водах Индийского океана есть на что посмотреть: подводные ландшафты и разнообразная морская фауна признаны одними из самых впечатляющих в мире. Проверить утверждение можно как в рамках однодневного дайв-трипа, так и многодневного дайвинг-сафари.<br>            <imgsrc="../../tilda_raw/emojitours.ru/images/tild6139-3661-4031-b337-636536303836__-__empty__raja-ampat-indonesia.jpg"alt="Купить путевки в Индонезию в Подольске"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="Bali" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Бали</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild3335-3930-4137-a439-313461373330__greats-resorts-bali-.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 Бали                    Бали делится на 9 провинций, бывших ранее королевствами. Самые популярные районы для отдыха — побережья Санур, Кута и Нуса-Дуа, в основном отличающиеся друг от друга удаленностью от тех или иных достопримечательностей острова Бали, а также разветвленностью инфраструктуры: одни курорты располагают к более размеренному отдыху, другие предлагают развлекательные мероприятия.<br><br>Пляжный отдых в Индонезии можно разнообразить с помощью организованных экскурсионных программ: погулять по местным храмам и познакомиться с магическими ритуалами, увидеть природные и культурные достопримечательности или отправится в сафари на джипах.<br>В рамках организованных экскурсий можно увидеть склоны вулкана Батур, главную святыню у горы Агунг - храм Бали, пещеру слона, лес обезьян, водопад Гит-Гит, полностью окруженный водой храм Танах Лот, спокойствие которого охраняют коралловые змеи.<br><br>Детально продуманные экскурсионные туры позволяют в течение нескольких дней погрузиться в культуру страны и познакомиться с главными достопримечательностями Индонезии. По программе туристы смогут увидеть ключевые и неповторимые буддийские храмы, познакомиться с вулканами на островах страны или покормить животных в их естественной среде обитания.          <imgsrc="../../tilda_raw/emojitours.ru/images/tild3335-3930-4137-a439-313461373330__-__empty__greats-resorts-bali-.jpg"alt="Купить путевки в Индонезию в Щербинке"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="denpasar" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Денпасар</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild6533-6363-4433-a365-663539623033__indonesia-snapshot.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 Денпасар                    Денпасар – столица Бали, а заодно и главный тусовочный центр всего острова. Любителям круглосуточного веселья сюда лежит прямая дорога из бессчетного количества клубов, модных баров и ресторанов. Для тех, у кого энергия бьет через край и не ограничивается барными стойками, на курорте ждут по-настоящему активные развлечения в виде серфинга. Поймать волну помогут опытные инструкторы в любой из многочисленных серф-школ.          <imgsrc="../../tilda_raw/emojitours.ru/images/tild6533-6363-4433-a365-663539623033__-__empty__indonesia-snapshot.jpg"alt="Купить тур в Индонезию в Москве"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="kuta" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Кута</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild3164-6335-4538-b864-313133393330__dnetb7qwaaavikw.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 Кута                    Кута – курортный город на юго-западе Бали, который придется по душе активной молодежи, ищущей развлечений. Соскучиться не получиться: всевозможные бары, в том числе легендарный Hard Rock Cafe с живой музыкой, рестораны, отличный шоппинг, а в эпицентре событий – аквапарк Waterboom Park c водными горками, аттракционами и подводными туннелями и специальные парки для любителей «банжи-джампинга» (Adrenalin Park, Bali Bangy). <br>          <imgsrc="../../tilda_raw/emojitours.ru/images/tild3164-6335-4538-b864-313133393330__-__empty__dnetb7qwaaavikw.jpg"alt="Турагентство в Подольске"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="tuban" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Тубан</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild3361-3561-4465-a332-643365643738__okean-plyazh-pesok-b.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 Тубан                    Тубан – умеренно спокойный курорт, на северо-западе полуострова. Здесь не так шумно, как в Куте, до которой тем не менее легко добраться в случае острого желания повеселиться в клубе. От сильных волн курорт надежно защищает коралловый риф: волны эффектно разбиваются о скалы вдалеке и практически не доходят до пляжа. <br>          <imgsrc="../../tilda_raw/emojitours.ru/images/tild3361-3561-4465-a332-643365643738__-__empty__okean-plyazh-pesok-b.jpg"alt="Турагентство в Москве"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="legianandseminiak" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Легиан и Семиняк</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild3764-6139-4863-a136-356466396439__66f1d021bf9a4.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 Легиан и Семиняк                    Пляжи Легиан и Семиняк располагаются в 15 минутах ходьбы на север от Куты. Курорты идеально сочетают в себе преимущества Куты с ее развитой туристической инфраструктурой, в то же время выгодно отличаются от нее более спокойным пляжным отдыхом: серфингистов здесь меньше, вода спокойнее и прозрачнее. <br><br> Легиан и Семиняк – прекрасное место для шоппинга. Здесь сосредоточено множество торговых лавок и магазинов. <br>          <imgsrc="../../tilda_raw/emojitours.ru/images/tild3764-6139-4863-a136-356466396439__-__empty__66f1d021bf9a4.jpg"alt="купить путешествие в Индонезию в Подольске"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="djimbaran" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Джимбаран</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild6634-6166-4266-a236-633438636465__862be4a1-hood-218417.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 Джимбаран                    <strong>Джимбаран</strong> – еще один курорт на южном побережье Бали, который оценят любители размеренного отдыха и семейные туристы. <br><br>Эта бухта — идеальное место для купания, из-за формы дна океана воды здесь не так сильно подвержены приливам и отливам, что дает возможность купаться в течение целого дня. Этот курорт известен ресторанами и кафе, предлагающими блюда из свежих морепродуктов, приготовленных на гриле прямо на берегу океана под открытым небом.<br><br>Очарования придают флотилии рыбацких лодок с разноцветными парусами – в прошлом местечко было рыбацкой деревушкой, да и сейчас можно встретить местных жителей, направляющихся на утренний или вечерний лов. При желании можно с легкостью договориться об аренде небольшой лодки и насладиться видами курорта с воды. Выбор рыбных блюд в местных ресторана поистине уникальный – именно сюда стекаются гурманы со всего острова. Несмотря на такую популярность Джимбаран – очень спокойный курорт, пляжи обширны, а природа выглядит нетронутой.          <imgsrc="../../tilda_raw/emojitours.ru/images/tild6634-6166-4266-a236-633438636465__-__empty__862be4a1-hood-218417.jpg"alt="купить путешествие в Индонезию в Подольске"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="nusadua" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Нуса Дуа</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild3637-3637-4031-b266-373234346665__scale_1200_2.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 Нуса Дуа                    <strong>Нуса Дуа</strong> – сравнительно молодой, но набирающий популярность у искушенных туристов курорт. Туристический комплекс располагает собственной охраняемой территорией и придется по вкусу любителям элитного отдыха. На полуострове расположен элитный курорт с фешенебельными отелями, охраняемой территорией, мангровыми рощами и тропическими садами, подступающими к песчаным пляжам. <br><br>От высоких волн побережье защищают коралловые рифы. Из развлечений предлагаются круизы на парусных катамаранах, дайвинг, уроки балийского танца и спа-процедуры. Большая часть отелей – это пятизвездочные комплексы со своей обширной территорией, собственными пляжами, бассейнами, теннисными кортами, широким выбором ресторанов и баров.          <imgsrc="../../tilda_raw/emojitours.ru/images/tild3637-3637-4031-b266-373234346665__-__empty__scale_1200_2.jpg"alt="купить путешествие в Индонезию в Подольске"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
-                <section id="Ubud" class="scroll-mt-32 mb-24">
-                  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Убуд</h2>
-                  <img src="../../tilda_raw/emojitours.ru/images/tild6430-3936-4732-a336-613837343634__main_bg_304.jpg" class="w-full h-auto rounded-3xl shadow-xl mb-14">
-                  <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
-                    <p class="mb-4"></a>                 <strong>Убуд</strong>                    Убуд находится в самом центре острова и разительно отличается от других курортов. До ближайшего океанского побережья более часа езды, тем не менее такие курорты, в окружении девственных джунглей, холмов, рек и рисовых полей все больше и больше входят в моду.          <imgsrc="../../tilda_raw/emojitours.ru/images/tild6430-3936-4732-a336-613837343634__-__empty__main_bg_304.jpg"alt="купить путешествие в Индонезию в Подольске"></p>
-                  </div>
-                  <div class="h-px bg-black/[0.05] mt-12"></div>
-                </section>
+
+          <section id="aboutindonesia" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">О стране</h2>
+            <img
+              src="../../tilda_raw/emojitours.ru/images/tild6139-3661-4031-b337-636536303836__raja-ampat-indonesia.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Индонезия – государство в Юго-Восточной Азии, расположенное между Индийским и Тихим
+                океанами. Среди 18 тысяч островов Бали является самым популярным и одним из красивейших островов.
+                Роскошные пляжи в окружении буйной тропической зелени превратили остров в синоним райского наслаждения,
+                на котором круглый год стремятся восстановить силы респектабельные туристы со всего света. Кроме того,
+                Бали – настоящая Мекка для всех желающих покорить волну – от матерых профессионалов до робких новичков.
+                Разнообразные серф-школы с опытными инструкторами представлены здесь в завидном количестве, а идеальные
+                погодные условия позволяют заниматься серфингом круглым год. Любителей не покорять, а созерцать на
+                остров влечет дайвинг. В тропических водах Индийского океана есть на что посмотреть: подводные ландшафты
+                и разнообразная морская фауна признаны одними из самых впечатляющих в мире. Проверить утверждение можно
+                как в рамках однодневного дайв-трипа, так и многодневного дайвинг-сафари.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="Bali" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Бали</h2>
+            <img
+              src="../../tilda_raw/emojitours.ru/images/tild3335-3930-4137-a439-313461373330__greats-resorts-bali-.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Бали делится на 9 провинций, бывших ранее королевствами. Самые популярные районы для
+                отдыха — побережья Санур, Кута и Нуса-Дуа, в основном отличающиеся друг от друга удаленностью от тех или
+                иных достопримечательностей острова Бали, а также разветвленностью инфраструктуры: одни курорты
+                располагают к более размеренному отдыху, другие предлагают развлекательные мероприятия.<br><br>Пляжный
+                отдых в Индонезии можно разнообразить с помощью организованных экскурсионных программ: погулять по
+                местным храмам и познакомиться с магическими ритуалами, увидеть природные и культурные
+                достопримечательности или отправится в сафари на джипах.<br>В рамках организованных экскурсий можно
+                увидеть склоны вулкана Батур, главную святыню у горы Агунг - храм Бали, пещеру слона, лес обезьян,
+                водопад Гит-Гит, полностью окруженный водой храм Танах Лот, спокойствие которого охраняют коралловые
+                змеи.<br><br>Детально продуманные экскурсионные туры позволяют в течение нескольких дней погрузиться в
+                культуру страны и познакомиться с главными достопримечательностями Индонезии. По программе туристы
+                смогут увидеть ключевые и неповторимые буддийские храмы, познакомиться с вулканами на островах страны
+                или покормить животных в их естественной среде обитания.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="denpasar" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Денпасар</h2>
+            <img src="../../tilda_raw/emojitours.ru/images/tild6533-6363-4433-a365-663539623033__indonesia-snapshot.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Денпасар – столица Бали, а заодно и главный тусовочный центр всего острова. Любителям
+                круглосуточного веселья сюда лежит прямая дорога из бессчетного количества клубов, модных баров и
+                ресторанов. Для тех, у кого энергия бьет через край и не ограничивается барными стойками, на курорте
+                ждут по-настоящему активные развлечения в виде серфинга. Поймать волну помогут опытные инструкторы в
+                любой из многочисленных серф-школ.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="kuta" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Кута</h2>
+            <img src="../../tilda_raw/emojitours.ru/images/tild3164-6335-4538-b864-313133393330__dnetb7qwaaavikw.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Кута – курортный город на юго-западе Бали, который придется по душе активной молодежи,
+                ищущей развлечений. Соскучиться не получиться: всевозможные бары, в том числе легендарный Hard Rock Cafe
+                с живой музыкой, рестораны, отличный шоппинг, а в эпицентре событий – аквапарк Waterboom Park c водными
+                горками, аттракционами и подводными туннелями и специальные парки для любителей «банжи-джампинга»
+                (Adrenalin Park, Bali Bangy).</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="tuban" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Тубан</h2>
+            <img
+              src="../../tilda_raw/emojitours.ru/images/tild3361-3561-4465-a332-643365643738__okean-plyazh-pesok-b.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Тубан – умеренно спокойный курорт, на северо-западе полуострова. Здесь не так шумно, как в
+                Куте, до которой тем не менее легко добраться в случае острого желания повеселиться в клубе. От сильных
+                волн курорт надежно защищает коралловый риф: волны эффектно разбиваются о скалы вдалеке и практически не
+                доходят до пляжа.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="legianandseminiak" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Легиан и Семиняк</h2>
+            <img src="../../tilda_raw/emojitours.ru/images/tild3764-6139-4863-a136-356466396439__66f1d021bf9a4.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Пляжи Легиан и Семиняк располагаются в 15 минутах ходьбы на север от Куты. Курорты
+                идеально сочетают в себе преимущества Куты с ее развитой туристической инфраструктурой, в то же время
+                выгодно отличаются от нее более спокойным пляжным отдыхом: серфингистов здесь меньше, вода спокойнее и
+                прозрачнее. <br><br> Легиан и Семиняк – прекрасное место для шоппинга. Здесь сосредоточено множество
+                торговых лавок и магазинов.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="djimbaran" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Джимбаран</h2>
+            <img
+              src="../../tilda_raw/emojitours.ru/images/tild6634-6166-4266-a236-633438636465__862be4a1-hood-218417.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Джимбаран – еще один курорт на южном побережье Бали, который оценят любители размеренного
+                отдыха и семейные туристы. <br><br>Эта бухта — идеальное место для купания, из-за формы дна океана воды
+                здесь не так сильно подвержены приливам и отливам, что дает возможность купаться в течение целого дня.
+                Этот курорт известен ресторанами и кафе, предлагающими блюда из свежих морепродуктов, приготовленных на
+                гриле прямо на берегу океана под открытым небом.<br><br>Очарования придают флотилии рыбацких лодок с
+                разноцветными парусами – в прошлом местечко было рыбацкой деревушкой, да и сейчас можно встретить
+                местных жителей, направляющихся на утренний или вечерний лов. При желании можно с легкостью договориться
+                об аренде небольшой лодки и насладиться видами курорта с воды. Выбор рыбных блюд в местных ресторана
+                поистине уникальный – именно сюда стекаются гурманы со всего острова. Несмотря на такую популярность
+                Джимбаран – очень спокойный курорт, пляжи обширны, а природа выглядит нетронутой.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="nusadua" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Нуса Дуа</h2>
+            <img src="../../tilda_raw/emojitours.ru/images/tild3637-3637-4031-b266-373234346665__scale_1200_2.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Нуса Дуа – сравнительно молодой, но набирающий популярность у искушенных туристов курорт.
+                Туристический комплекс располагает собственной охраняемой территорией и придется по вкусу любителям
+                элитного отдыха. На полуострове расположен элитный курорт с фешенебельными отелями, охраняемой
+                территорией, мангровыми рощами и тропическими садами, подступающими к песчаным пляжам. <br><br>От
+                высоких волн побережье защищают коралловые рифы. Из развлечений предлагаются круизы на парусных
+                катамаранах, дайвинг, уроки балийского танца и спа-процедуры. Большая часть отелей – это пятизвездочные
+                комплексы со своей обширной территорией, собственными пляжами, бассейнами, теннисными кортами, широким
+                выбором ресторанов и баров.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
+          <section id="Ubud" class="scroll-mt-32 mb-24">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Убуд</h2>
+            <img src="../../tilda_raw/emojitours.ru/images/tild6430-3936-4732-a336-613837343634__main_bg_304.jpg"
+              class="w-full h-auto rounded-3xl shadow-xl mb-14">
+            <div class="text-black/80  text-xl leading-relaxed max-w-4xl">
+              <p class="mb-4">Убуд находится в самом центре острова и разительно отличается от других курортов. До
+                ближайшего океанского побережья более часа езды, тем не менее такие курорты, в окружении девственных
+                джунглей, холмов, рек и рисовых полей все больше и больше входят в моду.</p>
+            </div>
+            <div class="h-px bg-black/[0.05] mt-12"></div>
+          </section>
         </div>
 
-        
+
 
         <!-- СЕКЦИЯ: ФОРМА -->
         <section id="section-form" class="scroll-mt-32 py-12">
@@ -437,8 +527,7 @@
         </div>
       </div>
       <div class="pt-8 md:pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div
-          class="text-black/80  text-[11px] md:text-xs text-center md:text-left w-full md:w-auto">©
+        <div class="text-black/80  text-[11px] md:text-xs text-center md:text-left w-full md:w-auto">©
           2026 Emoji Tours. Путешествия с душой.</div>
         <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-bold text-black/80">
           <a href="../../index.html#countries" class="hover:text-black transition-colors">Страны</a>
@@ -506,7 +595,7 @@
       // 1. Популяция мобильного меню из десктопного
       const mobileQuickLinks = document.getElementById('mobile-quick-links');
       const desktopLinksSource = document.querySelectorAll('#quick-links .nav-link');
-      
+
       if (mobileQuickLinks && desktopLinksSource.length > 0) {
         mobileQuickLinks.innerHTML = '';
         desktopLinksSource.forEach(link => {
@@ -581,3 +670,5 @@
 </body>
 
 </html>
+
+

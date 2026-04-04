@@ -9,6 +9,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="../../scripts/pdf-download.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -285,7 +287,6 @@
 
       <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
       <div class="flex-1 py-10">
-        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
         <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Памятка: Памятка туриста Мексика</h1>
 
         <div class="flex flex-wrap gap-4 mb-14">
@@ -295,6 +296,11 @@
           <a href="#section-form"
             class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
             туда</a>
+          <button onclick="PDFDownload.download('Мексика')" 
+            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+          </button>
         </div>
 
         <div class="space-y-16" id="main-content">
@@ -868,3 +874,4 @@
 </body>
 
 </html>
+

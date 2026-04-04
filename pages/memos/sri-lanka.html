@@ -9,6 +9,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="../../scripts/pdf-download.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -218,21 +220,17 @@
         <div>
           <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
           <nav id="quick-links" class="flex flex-col border-l border-black/5">
-            <a href="#shri-lanka" class="nav-link">Шри-Ланка</a>
+            
 <a href="#pered-otezdom" class="nav-link">Перед отъездом</a>
 <a href="#sobiraya-bagazh" class="nav-link">Собирая багаж</a>
-<a href="#v-rossijskom-aeroportu-vyleta-prilyota" class="nav-link">В российском аэропорту вылета/прилёта</a>
-<a href="#tamozhennyj-kontrol-v-shri-lanke" class="nav-link">Таможенный контроль в Шри-Ланке</a>
-<a href="#registratsiya-na-rejs-i-oformlenie-bagazha" class="nav-link">Регистрация на рейс и оформление багажа</a>
-<a href="#pasportnyj-kontrol" class="nav-link">Паспортный контроль</a>
-<a href="#veterinarnyj-kontrol" class="nav-link">Ветеринарный контроль</a>
-<a href="#v-aeroportu-prileta-vyleta-respubliki-shri-lanka" class="nav-link">В аэропорту прилета/вылета Республики Шри-Ланка</a>
-<a href="#mesto-vstrechi-v-aeroportakh" class="nav-link">Место встречи в аэропортах</a>
-<a href="#pasportnyj-kontrol-viza" class="nav-link">Паспортный контроль. Виза</a>
-<a href="#demokraticheskaya-sotsialisticheskaya-respublika-shri-lanka" class="nav-link">Демократическая Социалистическая Республика Шри-Ланка</a>
-<a href="#pravila-lichnoj-gigieny-i-bezopasnosti" class="nav-link">Правила личной гигиены и безопасности</a>
-<a href="#v-sluchae-poteri-pasporta" class="nav-link">В случае потери паспорта</a>
-<a href="#poleznaya-informatsiya" class="nav-link">Полезная информация</a>
+<a href="#v-rossijskom-aeroportu" class="nav-link">В российском аэропорту</a>
+<a href="#tamozhennyj-kontrol-sri-lanka" class="nav-link">Таможенный контроль в Шри-Ланке</a>
+<a href="#v-aeroportu-sri-lanka" class="nav-link">В аэропорту Шри-Ланки</a>
+<a href="#pasportnyj-kontrol-viza" class="nav-link">Паспортный контроль. Виза</a>
+<a href="#about-sri-lanka" class="nav-link">О Шри-Ланке</a>
+<a href="#pravila-gigieny" class="nav-link">Правила гигиены и безопасности</a>
+<a href="#poterya-pasporta" class="nav-link">В случае потери паспорта</a>
+<a href="#poleznaya-info" class="nav-link">Полезная информация</a>
 
           </nav>
         </div>
@@ -240,7 +238,6 @@
 
       <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
       <div class="flex-1 py-10">
-        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
         <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Памятка: Шри-Ланка</h1>
 
         <div class="flex flex-wrap gap-4 mb-14">
@@ -250,33 +247,44 @@
           <a href="#section-form"
             class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
             туда</a>
+          <button onclick="PDFDownload.download('Шри-Ланка')" 
+            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+          </button>
         </div>
 
         <div class="space-y-16" id="main-content">
-          <img src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="туристам">
-<section id="shri-lanka" class="scroll-mt-32 mb-20">
-  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Шри-Ланка</h2>
-<section id="pered-otezdom" class="scroll-mt-32 mb-20">
-  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Перед отъездом</h2>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Проверьте наличие необходимых для поездки документов:</h3>
-  <ul class="check-list mb-8">
-    <li>заграничный паспорт (действителен в течение не менее шести месяцев с даты окончания поездки);</li>
-    <li>ксерокопия загранпаспорта (может пригодиться при утрате загранпаспорта и в случае непредвиденных обстоятельств);</li>
-    <li>авиабилеты или маршрут/квитанции электронного билета;</li>
-    <li>ваучер;</li>
-    <li>страховой медицинский полис.</li>
-<img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="в случае путешествия с детьми">
-</ul>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В случае путешествия с детьми</h3>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний гражданин РФ, следующий совместно хотя бы с одним из родителей, выезжает из РФ по своему загранпаспорту.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний российский гражданин, выезжающий из Российской Федерации без сопровождения родителей, должен иметь при себе кроме заграничного паспорта нотариально оформленное согласие родителей на его выезд за границу с указанием срока выезда и государство, которое он намерен посетить.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Без необходимости оформления для ребенка отдельного заграничного паспорта несовершеннолетний гражданин РФ до 14 лет может выехать совместно хотя бы с одним из родителей, если он вписан в заграничный паспорт родителя, оформленный по старому образцу (к паспорту старого образца относится паспорт не биометрический, оформленный в соответствии с постановлением Правительства Российской Федерации от 14 марта 1997 г. № 298). В паспорт родителя в этом случае обязательно должна быть вклеена фотография ребенка, независимо от его возраста, на которой должна стоять печать паспортно-визовой службы. Отсутствие фотографии или печати является основанием для отказа ребенку в пересечении границы. Выезд из РФ несовершеннолетних детей, сведения о которых внесены в паспорта сопровождающих их родителей, оформленные по старому образцу, осуществляется по срокам действия паспортов.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">На заграничные паспорта, оформленные по новому образцу (биометрический), распространяются нормы Постановления Правительства РФ №13 от 19 января 2010 года о том, что внесение сведений о детях в паспорт, удостоверяющий личность родителя, не дает права ребенку на выезд за пределы территории РФ без документа, удостоверяющего личность гражданина РФ за пределами территории РФ.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">При следовании несовершеннолетнего российского гражданина через государственную границу РФ совместно с одним из родителей предъявлять письменное согласие второго родителя не нужно, если только от него ранее в пограничные органы не поступало заявление о несогласии на выезд из РФ своих детей.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Если у несовершеннолетнего ребенка и выезжающего с ним родителя разные фамилии, то рекомендуем взять с собой нотариально заверенную копию свидетельства о рождении для подтверждения родства. На практике отсутствие такого подтверждения служило основанием для отказа ребенку в пересечении границы.</p>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Беременным женщинам</h3>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления письменного согласия врача на полет, а также иных документов для осуществления авиаперелета. Сотрудники</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.</p>
+          <section id="pered-otezdom" class="scroll-mt-32 mb-20">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Перед отъездом</h2>
+            <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Проверьте наличие необходимых для поездки документов:</h3>
+            <ul class="check-list mb-8">
+              <li>заграничный паспорт (действителен в течение не менее шести месяцев с даты окончания поездки);</li>
+              <li>ксерокопия загранпаспорта (может пригодиться при утрате загранпаспорта и в случае непредвиденных обстоятельств);</li>
+              <li>авиабилеты или маршрут/квитанции электронного билета;</li>
+              <li>ваучер;</li>
+              <li>страховой медицинский полис.</li>
+            </ul>
+            <img src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="Документы для путешествия">
+            
+            <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В случае путешествия с детьми</h3>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний гражданин РФ, следующий совместно хотя бы с одним из родителей, выезжает из РФ по своему загранпаспорту.</p>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний российский гражданин, выезжающий из Российской Федерации без сопровождения родителей, должен иметь при себе кроме заграничного паспорта нотариально оформленное согласие родителей на его выезд за границу с указанием срока выезда и государство, которое он намерен посетить.</p>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Без необходимости оформления для ребенка отдельного заграничного паспорта несовершеннолетний гражданин РФ до 14 лет может выехать совместно хотя бы с одним из родителей, если он вписан в заграничный паспорт родителя, оформленный по старому образцу. В паспорт родителя в этом случае обязательно должна быть вклеена фотография ребенка, независимо от его возраста, на которой должна стоять печать паспортно-визовой службы.</p>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">На заграничные паспорта, оформленные по новому образцу (биометрический), распространяются нормы Постановления Правительства РФ №13 от 19 января 2010 года о том, что внесение сведений о детях в паспорт, удостоверяющий личность родителя, не дает права ребенку на выезд за пределы территории РФ без собственного паспорта.</p>
+            <img src="../../images/tild6234-6362-4539-b665-323137643933__komfortnyi-otdykh-s-.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="Отдых с детьми на Шри-Ланке">
+
+            <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Беременным женщинам</h3>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления письменного согласия врача на полет. Сотрудники авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.</p>
+          </section>
+
+          <section id="sobiraya-bagazh" class="scroll-mt-32 mb-20">
+            <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Собирая багаж</h2>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем все ценные вещи, документы и деньги положить в ручную кладь и взять с собой в самолет.</p>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">В багаж следует упаковать все металлические острые и режущие предметы (маникюрные ножницы, пилочки для ногтей, перочинный ножик и т. п.), а также любые жидкости, гели и аэрозоли — проносить подобные предметы в ручной клади запрещено.</p>
+            <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Не забывайте собрать и взять с собой аптечку первой помощи, которая поможет при легких недомоганиях и сэкономит время на поиски лекарственных средств.</p>
+            <img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="Багаж туриста">
+          </section>
 <section id="sobiraya-bagazh" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Собирая багаж</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем все ценные вещи, документы и деньги положить в ручную кладь и взять с собой в самолет.</p>
@@ -284,7 +292,6 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Не забывайте собрать и взять с собой аптечку первой помощи , которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.</p>
 <section id="v-rossijskom-aeroportu-vyleta-prilyota" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">В российском аэропорту вылета/прилёта</h2>
-<img src="../../images/tild6237-3139-4934-a133-373564353463__the-palms-hotel.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="телефон">
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль до начала путешествия</h3>
@@ -296,17 +303,15 @@
     <li>оружия и боеприпасов к нему без разрешения уполномоченных органов.</li>
 </ul>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Незаконное перемещение товаров или валюты через таможенную границу РФ или их недекларирование, либо</span> <span class="font-bold text-black">недостоверное декларирование влечет за собой административную или уголовную ответственность.</span></p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено на выезде и въезде:</span></p>
-  <ul class="check-list mb-8">
     <li>принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</li>
-<img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль по окончани">
-</ul>
+  </ul>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль по окончании путешествия</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных</span></p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
-<img src="../../images/tild6366-6164-4130-b238-626236663539__abstract-blue-world-.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль в шри-ланке">
+  <img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль">
+
 <section id="tamozhennyj-kontrol-v-shri-lanke" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Таможенный контроль в Шри-Ланке</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Ввоз и вывоз иностранной валюты не ограничен, но обязательна декларация сумм свыше 10 000 долларов. Запрещен транзит индийской и пакистанской валюты.</p>
@@ -339,6 +344,8 @@
 </ul>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Обращаем внимание на перевозку дронов на Шри-Ланку</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Для дрона необходимо заранее получить разрешение. Разрешение заполняется на сайте гражданской авиации https://portal.caa.lk/drone/apply-now/report.php. Процесс может занять до 10 дней. Провоз дрона осуществляется в багаже.</p>
+  <img src="../../images/tild6366-6164-4130-b238-626236663539__abstract-blue-world-.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="правила ввоза">
+
 <section id="registratsiya-na-rejs-i-oformlenie-bagazha" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Регистрация на рейс и оформление багажа</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">До начала поездки настоятельно рекомендуем уточнить время начала и окончания регистрации на рейс, а также время посадки на борт. Указанную информацию вы можете посмотреть на официальном сайте авиакомпании. Помните, что у разных авиакомпаний могут быть свои правила.</p>
@@ -349,10 +356,8 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Каждый авиаперевозчик устанавливает свои нормы провоза багажа, а также габариты и вес ручной клади, провозимой в салоне самолета. Уточняйте данную информацию перед вылетом.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">За провоз багажа сверх установленной нормы бесплатного провоза багажа взимается дополнительная плата по тарифу, установленному перевозчиком.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перевозчик имеет право отказать туристу в перевозе багажа, вес или объем которого не соответствуют установленным нормам.</p>
-<img src="../../images/tild3332-6238-4166-b734-386662626630__223617_a33.webp" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="паспортный контроль">
-<section id="pasportnyj-kontrol" class="scroll-mt-32 mb-20">
-  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Паспортный контроль</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Для прохождения пограничного контроля необходимо предъявить заграничный/внутренний российский паспорт. Пограничные органы ФСБ РФ при осуществлении пограничного контроля имеют право запрашивать у туристов дополнительные документы (авиабилет, посадочный талон, ваучер и т. п.), а также проводить опрос лиц, следующих через границу.</p>
+  <img src="../../images/tild3332-6238-4166-b734-386662626630__223617_a33.webp" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="паспортный контроль">
 <section id="veterinarnyj-kontrol" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Ветеринарный контроль</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Животные подвергаются ветеринарному осмотру.</p>
@@ -375,22 +380,22 @@
     <li>получить свой багаж,</li>
     <li>пройти таможенный контроль,</li>
     <li>выйти из здания аэропорта,</li>
-    <li>найти встречающего гида с табличкой «Anex»,</li>
+    <li>найти представителя компании с табличкой «Emoji Tours»,</li>
     <li>предъявить гиду туристский ваучер.</li>
 </ul>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! При осуществлении перелета стыковочными рейсами принимающая сторона осуществляет встречу</span> только в конечном пункте прилета.</p>
 <section id="mesto-vstrechi-v-aeroportakh" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Место встречи в аэропортах</h2>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Сотрудники Anex встретят вас в аэропорту и проводят до трансфера. Чтобы не потеряться, предлагаем ознакомиться с местами встречи в разных городах и странах.</p>
+  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Сотрудники Emoji Tours встретят вас в аэропорту и проводят до трансфера. Чтобы не потеряться, предлагаем ознакомиться с местами встречи в разных городах и странах.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Туры без точки</span></p>
   <ul class="check-list mb-8">
     <li>Аэропорт Коломбо</li>
 </ul>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Туристов будут встречать в зале ожидания в аэропорту с табличкой Anex в униформе Anex. После встречи туристов провожают на трансфер. Стойки Anex в аэропорту нет. Время ожидания группового трансфера с момента посадки самолета 1 час 30 минут. Время ожидания индивидуального трансфера с момента посадки самолета 2 часа.</p>
+  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Туристов будут встречать в зале ожидания в аэропорту с табличкой Emoji Tours в униформе Emoji Tours. После встречи туристов провожают на трансфер. Стойки Emoji Tours в аэропорту нет. Время ожидания группового трансфера с момента посадки самолета 1 час 30 минут. Время ожидания индивидуального трансфера с момента посадки самолета 2 часа.</p>
   <ul class="check-list mb-8">
     <li>Аэропорт Маттала</li>
 </ul>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Туристов будут встречать в зале ожидания в аэропорту с табличкой Anex, в униформе Anex. Стойка Anex находится в зале ожидания аэропорта. Время ожидания группового трансфера с момента посадки самолета 1 час 30 минут. Время ожидания индивидуального трансфера с момента посадки самолета 2 часа.</p>
+  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Туристов будут встречать в зале ожидания в аэропорту с табличкой Emoji Tours, в униформе Emoji Tours. Стойка Emoji Tours находится в зале ожидания аэропорта. Время ожидания группового трансфера с момента посадки самолета 1 час 30 минут. Время ожидания индивидуального трансфера с момента посадки самолета 2 часа.</p>
 <section id="pasportnyj-kontrol-viza" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Паспортный контроль. Виза</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Граждане РФ, которые хотят посетить Шри-Ланку с краткосрочным визитом, могут получить Электронное туристическое разрешение (ЕТА) до своего прибытия в Шри-Ланку (ЕТА выдается онлайн), а также могут въезжать на территорию Шри-Ланки на срок до 30 дней с получением визы по прибытии в порту прилета.</p>
@@ -407,9 +412,7 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Разница во времени с Москвой — плюс 2,5 часа.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Климат</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Субэкваториальный: северо-восточный муссон длится с октября по март, юго-западный — с июня по октябрь.</p>
-<img src="../../images/tild3435-6232-4461-b863-613263333465__1796_80c57a92e42d403.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="валюта">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Валюта</h3>
-<img src="../../images/tild6461-3537-4165-b365-363961373965__598c6e030ca3f598c6e0.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="магазины">
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Ланкийская рупия (Rs или LKR). Кредитные карточки Master Card, Visa, American Express к оплате принимают многие отели, некоторые большие торговые центры и магазины. Вне пределов курортных зон и крупных городов расплатиться безналичными средствами расчета практически невозможно.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Язык</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Сингальский и тамильский. Английский имеет официальный статус языка межэтнического общения.</p>
@@ -423,7 +426,7 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Туристам рекомендуется носить легкую непрозрачную одежду из натуральных тканей — брюки (но не шорты и мини-юбки) и рубашки с длинным рукавом, особенно при посещении религиозных объектов. Во всех остальных случаях рубашки с коротким рукавом и одежда свободного фасона вполне допустимы.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Нудизм запрещен, а также нельзя загорать топлес во всех отелях.</span></p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">На Шри-Ланке в дни полнолуния (Poya Day) запрещено употребление спиртных напитков в общественных местах. В связи с этим в ресторанах острова и отелях, в том числе работающих по системе все включено спиртные напитки не подаются. Продажа спиртного в магазинах также закрыта.</p>
-<img src="../../images/tild3865-6266-4465-b165-393831626164__3250116.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="праздники и нерабочие дни">
+  <img src="../../images/tild3435-6232-4461-b863-613263333465__1796_80c57a92e42d403.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="население и обычаи">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Праздники и нерабочие дни</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">На Шри-Ланке принято отмечание большого количества праздников (около 170). Кроме общегосударственных праздников на острове нерабочими днями являются религиозные праздники всех конфессий страны. Выходными днями, кроме субботы и воскресенья, являются дни полнолуния «Пойя».</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Общегосударственные праздники:</p>
@@ -431,9 +434,11 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">13 апреля — канун Нового года;</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">14 апреля — Сингальский и Тамильский Новый год;</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">1 мая — День Труда.</p>
+  <img src="../../images/tild3865-6266-4465-b165-393831626164__3250116.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="праздники">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В отеле</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">В день приезда расселение осуществляется в соответствии с правилами, принятыми в отеле. Обычно начиная с 14:00 по местному времени. Просим ознакомиться на месте с условиями предоставления услуг в отеле и придерживаться установленных отелем правил.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">В день выезда до наступления расчетного часа (как правило, 12:00) необходимо освободить свой номер и оплатить дополнительные услуги: телефонные переговоры, мини-бар, заказ питания и напитков в номер, массаж и др. Свой багаж можно оставить в камере хранения отеля и оставаться на территории отеля до прибытия трансфера. Если вы не сдали номер до 12:00, стоимость комнаты оплачивается полностью за следующие сутки.</p>
+  <img src="../../images/tild6237-3139-4934-a133-373564353463__the-palms-hotel.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="отель">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Питание в отелях Шри-Ланки</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Формат питания зависит от количества гостей в отеле. Если заполненность 50% и более – организовывается шведский стол. Если меньше – питание предоставляется по меню.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Напряжение электросети</h3>
@@ -487,6 +492,7 @@
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">В случае потери паспорта</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Незамедлительно обращайтесь в дипломатическое представительство, в консульское учреждение или в представительство МИД РФ, которое находится в пределах приграничной территории.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Вам необходимо получить свидетельство на въезд в РФ (REENTRY CERTIFICATE TO THE RUSSIAN FEDERATION), которое называется временным загранпаспортом. Выдается на срок до 15 дней для того, чтобы турист успел купить обратный билет и улететь на родину.</p>
+  <img src="../../images/tild6461-3537-4165-b365-363961373965__598c6e030ca3f598c6e0.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="утеря паспорта">
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Для того чтобы вам выдали свидетельство на возвращение в РФ, необходимо представить следующие документы:</p>
   <ul class="check-list mb-8">
     <li>основной документ, на основании которого будут предприниматься какие-либо действия, — заявление о выдаче свидетельства ( образец заявления ),</li>
@@ -852,3 +858,4 @@ www.srilankaembassy.org понедельник: 08:00 - 14:30, 16:00 - 19:00; в
 </body>
 
 </html>
+

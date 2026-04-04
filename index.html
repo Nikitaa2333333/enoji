@@ -240,9 +240,9 @@
       </div>
 
       <!-- Main Headline -->
-      <h1 class="text-[5.5rem] sm:text-7xl md:text-9xl lg:text-[11.5rem] font-black tracking-tighter leading-[0.85] text-on-surface animate-fade-up opacity-0 px-6"
+      <h1 class="text-6xl sm:text-7xl md:text-9xl lg:text-[11.5rem] font-black tracking-tighter leading-[0.85] text-on-surface animate-fade-up opacity-0 px-6 whitespace-nowrap"
         style="animation-delay: 0.3s;">
-        Эмоджи<br class="md:hidden">турс
+        Эмоджи турс
       </h1>
 
       <!-- Subheadline -->
@@ -853,15 +853,21 @@
         <div
           class="min-w-[85vw] md:min-w-[500px] p-10 bg-primary rounded-[3rem] shadow-sm snap-center flex flex-col">
           <div class="space-y-6">
-            <div class="text-xl leading-relaxed font-medium space-y-4">
+            <div id="michail-text" class="text-lg md:text-xl leading-snug md:leading-relaxed font-medium space-y-4 max-h-[320px] md:max-h-none overflow-hidden relative transition-all duration-500">
               <p>«Мы с моей невестой, а теперь уже официальной супругой обратились к Евгению из компании Эмоджи турс для выбора для нас свадебного путешествия. И не пожалели ни разу!</p>
               <p>Это был май 2023 года, и мы не знали какое выбрать направление, зато Евгений нас успокоил и помог с выбором, который выпал на Шри-Ланку, тот самый чайный остров Цейлон) У нас был замечательный и уютный камерный отель в джунглях на берегу Бенгальского залива Индийского океана. Это был незабываемый медовый месяц!</p>
               <p>Мы очень благодарны Евгению за такой выбор отдыха для нас. За всё время путешествия не возникло никаких проблем и вопросов, всё прошло гладко и комфортно! Это была далеко не первая и не последняя наша поездка от агентства Эмоджи турс. Всегда доверяем и очень благодарны Евгению!»</p>
+              <!-- Gradient Overlay for Mobile -->
+              <div id="michail-gradient" class="md:hidden absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-primary to-transparent pointer-events-none"></div>
             </div>
+            <button id="michail-btn" onclick="toggleTestimonial('michail')" class="md:hidden flex items-center gap-1.5 text-sm font-bold opacity-70 hover:opacity-100 transition-opacity">
+              <span>Читать полностью</span>
+              <span class="material-symbols-outlined text-[20px]">expand_more</span>
+            </button>
           </div>
-          <div class="pt-10 flex items-center gap-4">
+          <div class="pt-8 flex items-center gap-4">
             <div
-              class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center font-bold text-lg">
+              class="w-12 h-12 bg-white/40 border border-black/5 rounded-full flex items-center justify-center font-bold text-lg text-black/80">
               М</div>
             <div>
               <p class="font-bold">Михаил</p>
@@ -878,7 +884,7 @@
           </div>
           <div class="pt-8 flex items-center gap-4">
             <div
-              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-lg">
+              class="w-12 h-12 bg-white/40 border border-black/5 rounded-full flex items-center justify-center font-bold text-lg text-black/80">
               ГН</div>
             <div>
               <p class="font-bold">Галина и Наталья К.</p>
@@ -895,7 +901,7 @@
           </div>
           <div class="pt-10 flex items-center gap-4">
             <div
-              class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center font-bold text-lg">
+              class="w-12 h-12 bg-white/40 border border-black/5 rounded-full flex items-center justify-center font-bold text-lg text-black/80">
               ИП</div>
             <div>
               <p class="font-bold">Игорь П.</p>
@@ -912,7 +918,7 @@
           </div>
           <div class="pt-10 flex items-center gap-4">
             <div
-              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-lg">
+              class="w-12 h-12 bg-white/40 border border-black/5 rounded-full flex items-center justify-center font-bold text-lg text-black/80">
               ЮК</div>
             <div>
               <p class="font-bold">Юлия К.</p>
@@ -1265,6 +1271,24 @@
             const card = document.getElementById('success-card');
             modal.classList.remove('opacity-100', 'pointer-events-auto');
             card.style.transform = 'scale(0.9)';
+        }
+
+        function toggleTestimonial(id) {
+            const text = document.getElementById(id + '-text');
+            const btn = document.getElementById(id + '-btn');
+            const grad = document.getElementById(id + '-gradient');
+
+            if (text.style.maxHeight === 'none') {
+                text.style.maxHeight = '320px';
+                btn.querySelector('span:first-child').innerText = 'Читать полностью';
+                btn.querySelector('span:last-child').innerText = 'expand_more';
+                grad.classList.remove('opacity-0');
+            } else {
+                text.style.maxHeight = 'none';
+                btn.querySelector('span:first-child').innerText = 'Свернуть';
+                btn.querySelector('span:last-child').innerText = 'expand_less';
+                grad.classList.add('opacity-0');
+            }
         }
     </script>
 </body>

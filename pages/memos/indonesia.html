@@ -9,6 +9,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="../../scripts/pdf-download.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -218,6 +220,7 @@
         <div>
           <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
           <nav id="quick-links" class="flex flex-col border-l border-black/5">
+            <a href="#pered-otezdom" class="nav-link">Перед отъездом</a>
             <a href="#sobiraya-bagazh" class="nav-link">Собирая багаж</a>
 <a href="#v-rossijskom-aeroportu-vyleta-prileta" class="nav-link">В российском аэропорту вылета/прилета</a>
 <a href="#tamozhennyj-kontrol-v-indonezii" class="nav-link">Таможенный контроль в Индонезии</a>
@@ -238,7 +241,6 @@
 
       <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
       <div class="flex-1 py-10">
-        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
         <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Памятка: Индонезия</h1>
 
         <div class="flex flex-wrap gap-4 mb-14">
@@ -248,59 +250,83 @@
           <a href="#section-form"
             class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
             туда</a>
+          <button onclick="PDFDownload.download('Индонезия')" 
+            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+          </button>
         </div>
 
-        <div class="space-y-16" id="main-content">
-          <img src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="туристам">
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Туристам, выезжающим в Республику Индонезия, о. Бали</span></p>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Проверьте наличие необходимых для поездки документов:</h3>
-  <ul class="check-list mb-8">
-    <li>заграничный паспорт (действителен не меньше 6 месяцев на момент вылета из Индонезии);</li>
-    <li>ксерокопия загранпаспорта (может пригодиться при утрате загранпаспорта и в случае непредвиденных обстоятельств);</li>
-    <li>авиабилеты или маршрут/квитанции электронного билета;</li>
-    <li>ваучер ;</li>
-    <li>страховой медицинский полис;</li>
-</ul>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Правила въезда в Индонезию</span></p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">https://allindonesia.imigrasi.go.id/. Доступ к занесению данных открывается за 3 дня до въезда в Индонезию. После заполнения анкеты система сгенерирует QR-код, который нужно будет сохранить и предъявить по прибытии.</p>
-<img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="в случае путешествия с детьми">
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В случае путешествия с детьми</h3>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний гражданин РФ, следующий совместно хотя бы с одним из родителей, выезжает из РФ по своему загранпаспорту.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний российский гражданин, выезжающий из Российской Федерации без сопровождения родителей, должен иметь при себе кроме заграничного паспорта нотариально оформленное согласие родителей на его выезд за границу с указанием срока выезда и государство, которое он намерен посетить.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">При следовании несовершеннолетнего российского гражданина через государственную границу РФ совместно с одним из родителей предъявлять письменное согласие второго родителя не нужно, если только от него ранее в пограничные органы не поступало заявление о несогласии на выезд из РФ своих детей.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Если у несовершеннолетнего ребенка и выезжающего с ним родителя разные фамилии, то рекомендуем взять с собой нотариально заверенную копию свидетельства о рождении для подтверждения родства. На практике отсутствие такого подтверждения служило основанием для отказа ребенку в пересечении границы.</p>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Беременным женщинам</h3>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления письменного согласия врача на полет, а также иных документов для осуществления авиаперелета. Сотрудники авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.</p>
-<section id="sobiraya-bagazh" class="scroll-mt-32 mb-20">
+        <div class="space-y-4" id="main-content">
+          <section id="before-travel" class="scroll-mt-32 mb-20">
+            <img src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl mb-12 object-cover" alt="туристам">
+            <div class="space-y-6">
+              <h1 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Перед отъездом</h1>
+              <h3 class="text-2xl font-bold mt-10 mb-6 underline decoration-primary underline-offset-8 text-black">Проверьте наличие необходимых для поездки документов:</h3>
+              <ul class="check-list">
+                <li>заграничный паспорт (действителен не меньше 6 месяцев на момент вылета из Индонезии);</li>
+                <li>ксерокопия загранпаспорта (может пригодиться при утрате загранпаспорта и в случае непредвиденных обстоятельств);</li>
+                <li>авиабилеты или маршрут/квитанции электронного билета;</li>
+                <li>ваучер ;</li>
+                <li>страховой медицинский полис;</li>
+              </ul>
+              <div class="space-y-4">
+                <p class="text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Правила въезда в Индонезию</span></p>
+                <p class="text-xl text-black/80 leading-relaxed font-manrope">С 18 августа 2025 года для всех прибывающих станет обязательным заполнение формы ALL Indonesia: <a href="https://allindonesia.imigrasi.go.id/" class="text-black font-bold underline decoration-primary decoration-2 underline-offset-4 hover:opacity-70 transition-opacity">https://allindonesia.imigrasi.go.id/</a>. Доступ к занесению данных открывается за 3 дня до въезда в Индонезию. После заполнения анкеты система сгенерирует QR-код, который нужно будет сохранить и предъявить по прибытии.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="with-children" class="scroll-mt-32">
+            <img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl mb-12 object-cover" alt="в случае путешествия с детьми">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-bold mb-6 underline decoration-primary underline-offset-8 text-black">В случае путешествия с детьми</h3>
+              <p class="text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний гражданин РФ, следующий совместно хотя бы с одним из родителей, выезжает из РФ по своему загранпаспорту.</p>
+              <p class="text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний российский гражданин, выезжающий из Российской Федерации без сопровождения родителей, должен иметь при себе кроме заграничного паспорта нотариально оформленное согласие родителей на его выезд за границу с указанием срока выезда и государство, которое он намерен посетить.</p>
+              <p class="text-xl text-black/80 leading-relaxed font-manrope">При следовании несовершеннолетнего российского гражданина через государственную границу РФ совместно с одним из родителей предъявлять письменное согласие второго родителя не нужно, если только от него ранее в пограничные органы не поступало заявление о несогласии на выезд из РФ своих детей.</p>
+              <p class="text-xl text-black/80 leading-relaxed font-manrope">Если у несовершеннолетнего ребенка и выезжающего с ним родителя разные фамилии, то рекомендуем взять с собой нотариально заверенную копию свидетельства о рождении для подтверждения родства. На практике отсутствие такого подтверждения служило основанием для отказа ребенку в пересечении границы.</p>
+              <h3 class="text-2xl font-bold mt-10 mb-6 underline decoration-primary underline-offset-8 text-black">Беременным женщинам</h3>
+              <p class="text-xl text-black/80 leading-relaxed font-manrope">Перед полетом мы рекомендуем ознакомиться с правилами авиакомпании на необходимость предоставления письменного согласия врача на полет, а также иных документов для осуществления авиаперелета. Сотрудники авиакомпании имеют полное право отказать в авиаперевозке или потребовать медицинское освидетельствование в аэропорту вылета в случае нарушения правил.</p>
+            </div>
+          </section>
+<section id="sobiraya-bagazh" class="scroll-mt-32">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Собирая багаж</h2>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем все ценные вещи, документы и деньги положить в ручную кладь и взять с собой в самолет.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">В багаж следует упаковать все металлические острые и режущие предметы (маникюрные ножницы, пилочки для ногтей, перочинный ножик и т. п.), а также любые жидкости, гели и аэрозоли (за исключением детского питания и лекарств, если в них есть необходимость) — проносить подобные предметы в ручной клади запрещено .</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Не забывайте собрать и взять с собой аптечку первой помощи , которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.</p>
-<section id="v-rossijskom-aeroportu-vyleta-prileta" class="scroll-mt-32 mb-20">
+  <div class="space-y-6">
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем все ценные вещи, документы и деньги положить в ручную кладь и взять с собой в самолет.</p>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">В багаж следует упаковать все металлические острые и режущие предметы (маникюрные ножницы, пилочки для ногтей, перочинный ножик и т. п.), а также любые жидкости, гели и аэрозоли (за исключением детского питания и лекарств, если в них есть необходимость) — проносить подобные предметы в ручной клади запрещено .</p>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Не забывайте собрать и взять с собой аптечку первой помощи , которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.</p>
+  </div>
+</section>
+
+<section id="v-rossijskom-aeroportu-vyleta-prileta" class="scroll-mt-32">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">В российском аэропорту вылета/прилета</h2>
-<img src="../../images/tild3130-3435-4563-b166-363064656431__d64a384148bc-8415216.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="телефон">
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль до начала путешествия</h3>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед полетом рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы customs.gov.ru. Обращаем внимание на то, что в настоящее время действуют ограничения.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено перемещение на выезде и въезде:</span></p>
-  <ul class="check-list mb-8">
-    <li>культурных ценностей,</li>
-    <li>объектов фауны и флоры, находящихся под угрозой исчезновения,</li>
-    <li>оружия и боеприпасов к нему без разрешения уполномоченных органов.</li>
-</ul>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Незаконное перемещение товаров или валюты через таможенную границу РФ или их недекларирование, либо</span> <span class="font-bold text-black">недостоверное декларирование влечет за собой административную или уголовную ответственность.</span></p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено на выезде и въезде:</span></p>
-  <ul class="check-list mb-8">
-    <li>принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</li>
-<img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль по окончани">
-</ul>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль по окончании путешествия</h3>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Внимание! Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
-<img src="../../images/tild3465-3235-4435-a230-633839306234__world-map-with-magni.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль в индонезии">
+  <img src="../../images/tild3130-3435-4563-b166-363064656431__d64a384148bc-8415216.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl mb-12 object-cover" alt="телефон">
+  <div class="space-y-6">
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа, и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
+    <h3 class="text-2xl font-bold mt-10 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль до начала путешествия</h3>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Перед полетом рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы customs.gov.ru. Обращаем внимание на то, что в настоящее время действуют ограничения.</p>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено перемещение на выезде и въезде:</span></p>
+    <ul class="check-list">
+      <li>культурных ценностей,</li>
+      <li>объектов фауны и флоры, находящихся под угрозой исчезновения,</li>
+      <li>оружия и боеприпасов к нему без разрешения уполномоченных органов.</li>
+    </ul>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Незаконное перемещение товаров или валюты через таможенную границу РФ или их недекларирование, либо</span> <span class="font-bold text-black">недостоверное декларирование влечет за собой административную или уголовную ответственность.</span></p>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено на выезде и въезде:</span></p>
+    <ul class="check-list">
+      <li>принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</li>
+    </ul>
+    <img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-8 object-cover" alt="таможенный контроль по окончании">
+    <h3 class="text-2xl font-bold mt-10 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль по окончании путешествия</h3>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
+    <p class="text-xl text-black/80 leading-relaxed font-manrope">Внимание! Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
+  </div>
+</section>
+
 <section id="tamozhennyj-kontrol-v-indonezii" class="scroll-mt-32 mb-20">
+  <img src="../../images/tild3465-3235-4435-a230-633839306234__world-map-with-magni.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl mb-12 object-cover" alt="таможенный контроль в индонезии">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Таможенный контроль в Индонезии</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Ввоз и вывоз наличной иностранной валюты в Индонезию не ограничен. Обязательному декларированию подлежат суммы, эквивалентные 100 млн индонезийских рупий.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Пассажир имеет право беспошлинно ввезти с собой:</p>
@@ -331,7 +357,9 @@
     <li>редких животных и птиц,</li>
     <li>резьбы по дереву с острова Бали,</li>
     <li>предметов и вещей, представляющих историческую и художественную ценность и не имеющих специального разрешения.</li>
-</ul>
+  </ul>
+</section>
+
 <section id="registratsiya-na-rejs-i-oformlenie-bagazha" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Регистрация на рейс и оформление багажа</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">До начала поездки настоятельно рекомендуем уточнить время начала и окончания регистрации на рейс, а также время посадки на борт. Указанную информацию вы можете посмотреть на официальном сайте авиакомпании. Помните, что у разных авиакомпаний могут быть свои правила.</p>
@@ -342,16 +370,24 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Каждый авиаперевозчик устанавливает свои нормы провоза багажа, а также габариты и вес ручной клади, провозимой в салоне самолета. Уточняйте данную информацию перед вылетом.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">За провоз багажа сверх установленной нормы бесплатного провоза багажа взимается дополнительная плата по тарифу, установленному перевозчиком.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перевозчик имеет право отказать туристу в перевозе багажа, вес или объем которого не соответствуют установленным нормам.</p>
-<img src="../../images/tild3966-3038-4964-b930-366537376134__26514612382-fb3b84a1.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="паспортный контроль">
+</section>
+
 <section id="pasportnyj-kontrol" class="scroll-mt-32 mb-20">
+  <img src="../../images/tild3966-3038-4964-b930-366537376134__26514612382-fb3b84a1.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl mb-12 object-cover" alt="паспортный контроль">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Паспортный контроль</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Для прохождения пограничного контроля необходимо предъявить заграничный/внутренний российский паспорт. Пограничные органы ФСБ РФ при осуществлении пограничного контроля имеют право запрашивать у туристов дополнительные документы (авиабилет, посадочный талон, ваучер и т. п.), а также проводить опрос лиц, следующих через границу.</p>
+</section>
+
 <section id="sanitarnyj-kontrol" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Санитарный контроль</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Туристам сертификат о прививках не требуется. Рекомендуется сделать прививки против брюшного тифа и паратифа, а также против гепатита А и Б.</p>
+</section>
+
 <section id="veterinarnyj-kontrol" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Ветеринарный контроль</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Выезд на Бали с домашними животными запрещён на официальном уровне.</p>
+</section>
+
 <section id="v-aeroportu-prileta-vyleta-indonezii" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">В аэропорту прилета/вылета Индонезии</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">По прибытии в аэропорт Бали нужно последовательно:</p>
@@ -360,13 +396,15 @@
     <li>получить свой багаж,</li>
     <li>пройти таможенный контроль,</li>
     <li>выйти из здания аэропорта,</li>
-    <li>найти встречающего гида с табличкой «Anex»,</li>
+    <li>найти встречающего гида с табличкой «Emoji Tours»,</li>
     <li>предъявить гиду туристский ваучер.</li>
-</ul>
+  </ul>
+</section>
+
 <section id="pasportnyj-kontrol-viza" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Паспортный контроль. Виза</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Граждане РФ могут оформить визу заранее или получить по прилёте (VOA — visa on arrival). Рекомендуем иметь при себе мелкие купюры USD для оплаты. Срок действия визы 30 дней с возможностью однократного платного продления на 30 дней.</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Ознакомиться с более подробной информацией о необходимых документах на получение визы для въезда на Бали можно на сайте www.anextour.com в разделе «Визы».</p>
+  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Ознакомиться с более подробной информацией о необходимых документах на получение визы для въезда на Бали можно на официальных ресурсах индонезийской визовой службы.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание ! Для граждан, не имеющих гражданства РФ, могут быть установлены иные правила въезда на</span> территорию Индонезии.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Обращаем ваше внимание на то, что для въезда в страну вам необходимо показать обратный билет (на английском языке).</p>
 <section id="bali" class="scroll-mt-32 mb-20">
@@ -814,3 +852,4 @@ II, Block Merpati No. 10, Ungasan -</p>
 </body>
 
 </html>
+

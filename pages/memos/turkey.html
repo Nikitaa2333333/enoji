@@ -9,6 +9,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="../../scripts/pdf-download.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
@@ -238,7 +240,6 @@
 
       <!-- КОНТЕНТНАЯ ОБЛАСТЬ -->
       <div class="flex-1 py-10">
-        <p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Направление</p>
         <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-10">Памятка: Турция</h1>
 
         <div class="flex flex-wrap gap-4 mb-14">
@@ -248,6 +249,11 @@
           <a href="#section-form"
             class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
             туда</a>
+          <button onclick="PDFDownload.download('Турция')" 
+            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+          </button>
         </div>
 
         <div class="space-y-16" id="main-content">
@@ -263,7 +269,7 @@
     <li>страховой медицинский полис.</li>
 </ul>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Так как в правила въезда в страну временного пребывания часто вносятся изменения, рекомендуем</span> заблаговременно уточнять данную информацию на официальном сайте посольства Турции в Москве.</p>
-<img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="в случае путешествия с детьми">
+<img src="../../images/tild6234-6362-4539-b665-323137643933__komfortnyi-otdykh-s-.jpg" class="w-full h-auto rounded-2xl md:rounded-3xl shadow-lg my-8 object-cover" alt="Путешествие с детьми в Турцию">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">В случае путешествия с детьми</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний гражданин РФ, следующий совместно хотя бы с одним из родителей, выезжает из РФ по своему загранпаспорту.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Несовершеннолетний российский гражданин, выезжающий из Российской Федерации без сопровождения родителей, должен иметь при себе кроме заграничного паспорта нотариально оформленное согласие родителей на его выезд за границу с указанием срока выезда и государство, которое он намерен посетить.</p>
@@ -281,7 +287,7 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Не забывайте собрать и взять с собой аптечку первой помощи , которая поможет при легких недомоганиях, сэкономит время на поиски лекарственных средств и избавит от нежелательного общения на иностранном языке.</p>
 <section id="v-rossijskom-aeroportu-vyleta-prileta" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">В российском аэропорту вылета/прилета</h2>
-<img src="../../images/tild6232-3963-4164-b163-393864643830__phone_old_year_built.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="телефон">
+<img src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg" class="w-full h-auto rounded-2xl md:rounded-3xl shadow-lg my-8 object-cover" alt="Багаж и подготовка к вылету">
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Перед выездом в аэропорт получите дополнительную информацию о возможно произошедших изменениях в условиях вылета, используя сайт авиакомпании, выполняющей рейс, или по телефону ее справочной службы.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Рекомендуем заранее, не позднее чем за три часа до вылета, прибыть к месту регистрации пассажиров для прохождения установленных процедур регистрации, оформления багажа и выполнения требований, связанных с пограничным, таможенным, санитарно-карантинным, ветеринарным и другими видами контроля, установленными законодательством РФ.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль до начала путешествия</h3>
@@ -293,15 +299,8 @@
     <li>оружия и боеприпасов к нему без разрешения уполномоченных органов.</li>
 </ul>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Незаконное перемещение товаров или валюты через таможенную границу РФ или их недекларирование, либо</span> <span class="font-bold text-black">недостоверное декларирование влечет за собой административную или уголовную ответственность.</span></p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Запрещено на выезде и въезде:</span></p>
-  <ul class="check-list mb-8">
-    <li>принимать от посторонних лиц чемоданы, посылки и другие предметы для перевозки на борту воздушного судна.</li>
-<img src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="таможенный контроль по окончани">
-</ul>
-  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Таможенный контроль по окончании путешествия</h3>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Если вы не перемещаете через границу валюту и предметы, которые необходимо декларировать, то вам следует проходить зону таможенного контроля по «Зелёному коридору».</p>
-  <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Актуальную информацию о ввозе валюты, товаров и иных предметов для личного пользования, вы найдете на сайте Федеральной Таможенной Службы customs.gov.ru.</p>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание! Недекларирование товаров в случае превышения стоимостных или весовых норм, а также наличных</span> денежных средств и (или) денежных инструментов влечёт за собой административную или уголовную ответственность.</p>
+<img src="../../images/tild6263-3236-4164-b132-313762653661__34944474314_b12b5af4.jpg" class="w-full h-auto rounded-2xl md:rounded-3xl shadow-lg my-8 object-cover" alt="Аэропорт и пограничный контроль">
 <section id="tamozhennyj-kontrol-v-turtsii" class="scroll-mt-32 mb-20">
   <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Таможенный контроль в Турции</h2>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Ввоз любой валюты в Турцию свободный. Суммы валюты более 5 000 долларов США необходимо указывать в</span> таможенной декларации.</p>
@@ -362,7 +361,7 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Разницы во времени с Москвой нет.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Климат</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Субтропический средиземноморский климат. На побережье Эгейского, Средиземного и Мраморного морей лето очень жаркое и сухое, а зима дождливая. Купальный сезон здесь длится с апреля по октябрь. Черноморское побережье тоже отличается мягкой зимой и теплым летом, но уровень влажности гораздо выше и осадков выпадает больше. В юго-восточной Анатолии (европейская часть Турции) весной дуют сирокко, несущие пыль из Сирийской пустыни.</p>
-<img src="../../images/tild6638-6538-4466-a635-636461313362__valuta_turciya.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="валюта">
+<img src="../../images/tild6638-6538-4466-a635-636461313362__valuta_turciya.jpg" class="w-full h-auto rounded-2xl md:rounded-3xl shadow-lg my-8 object-cover" alt="Валюта и деньги в Турции">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Валюта</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Турецкая лира. Обмен валюты можно произвести в банке, в аэропорту, на почте, в обменных пунктах отелей. Практически свободное хождение имеют доллары США, фунты стерлингов и евро, однако в провинции расплатиться ими бывает затруднительно.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Язык</h3>
@@ -393,7 +392,7 @@
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope"><span class="font-bold text-black">Внимание ! В каждом турецком отеле концепция all inclusive («все включено») имеет свою особенность. Всю</span> необходимую информацию можно получить у отельного гида. Для посещения ресторанов системы a la carte требуется предварительное резервирование мест и дополнительная оплата (включая многие отели с системой питания «все включено»).</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Напряжение электросети</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Напряжение может быть 220 В и 110 В. Частота тока — 50 Гц. В Турции используются европейские двухштырьковые круглые вилки.</p>
-<img src="../../images/tild6464-6439-4430-a435-616564343234__antalya-old-city-gor.jpg" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" alt="экскурсии">
+<img src="../../images/tild6365-3662-4661-b431-336363373130__flag-turcii-2.jpg" class="w-full h-auto rounded-2xl md:rounded-3xl shadow-lg my-8 object-cover" alt="Флаг Турции и атмосфера">
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Экскурсии</h3>
   <p class="mb-6 text-xl text-black/80 leading-relaxed font-manrope">Гид компании, принимающий вас в Турции, во время встречи в отеле сообщит перечень предлагаемых экскурсий, их содержание, график проведения и стоимость. Не рекомендуем приобретать экскурсии или прочие услуги в неизвестных вам туристских и экскурсионных агентствах. Вам может быть дана заведомо ложная информация о самой экскурсии, а также о качестве транспорта для ее организации. Вам может быть предоставлено для использования несертифицированное, неисправное или не соответствующее санитарно-гигиеническим нормам оборудование.</p>
   <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">Покупки</h3>
@@ -935,3 +934,4 @@
 </body>
 
 </html>
+
