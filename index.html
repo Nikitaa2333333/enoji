@@ -682,6 +682,21 @@
           </tbody>
         </table>
       </div>
+
+      <!-- Mobile Scroll Hint -->
+      <div class="md:hidden mt-2 flex justify-center">
+        <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white shadow-xl shadow-black/5 border border-primary/30">
+          <div class="flex gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse [animation-delay:0.2s]"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse [animation-delay:0.4s]"></span>
+          </div>
+          <span class="text-sm font-bold text-black">
+            Листайте таблицу вправо
+          </span>
+          <span class="material-symbols-outlined text-[18px] text-black">east</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -833,117 +848,75 @@
 
       <!-- Horizontal Scroll Container -->
       <div
-        class="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-4 md:px-[calc(50vw-600px)] pb-8">
-        <!-- Testimonial 1 -->
+        class="flex items-start gap-4 md:gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-4 md:px-[calc(50vw-600px)] pb-8">
+        <!-- Testimonial 1: Михаил -->
         <div
-          class="min-w-[85vw] md:min-w-[400px] p-10 bg-primary rounded-[3rem] shadow-sm snap-center flex flex-col justify-between">
+          class="min-w-[85vw] md:min-w-[500px] p-10 bg-primary rounded-[3rem] shadow-sm snap-center flex flex-col">
           <div class="space-y-6">
-            <p class="text-xl leading-relaxed font-medium">«Благодаря Emoji Tours я наконец-то осуществила
-              поездку своей мечты. Прочитав всю информацию о странах на сайте, я выбрала именно то, что
-              мне нужно! Мальдивы в реальности превзошли все ожидания».</p>
+            <div class="text-xl leading-relaxed font-medium space-y-4">
+              <p>«Мы с моей невестой, а теперь уже официальной супругой обратились к Евгению из компании Эмоджи турс для выбора для нас свадебного путешествия. И не пожалели ни разу!</p>
+              <p>Это был май 2023 года, и мы не знали какое выбрать направление, зато Евгений нас успокоил и помог с выбором, который выпал на Шри-Ланку, тот самый чайный остров Цейлон) У нас был замечательный и уютный камерный отель в джунглях на берегу Бенгальского залива Индийского океана. Это был незабываемый медовый месяц!</p>
+              <p>Мы очень благодарны Евгению за такой выбор отдыха для нас. За всё время путешествия не возникло никаких проблем и вопросов, всё прошло гладко и комфортно! Это была далеко не первая и не последняя наша поездка от агентства Эмоджи турс. Всегда доверяем и очень благодарны Евгению!»</p>
+            </div>
           </div>
           <div class="pt-10 flex items-center gap-4">
             <div
               class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center font-bold text-lg">
-              АК</div>
+              М</div>
             <div>
-              <p class="font-bold">Анна К.</p>
-              <p class="text-sm opacity-60">Поездка на Мальдивы</p>
+              <p class="font-bold">Михаил</p>
+              <p class="text-sm opacity-60">Свадебное путешествие, Шри-Ланка</p>
             </div>
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
+        <!-- Testimonial 2: Галина и Наталья К. -->
         <div
-          class="min-w-[85vw] md:min-w-[400px] p-10 border border-primary/30 rounded-[3rem] shadow-sm snap-center flex flex-col justify-between">
+          class="min-w-[85vw] md:min-w-[400px] p-10 border border-primary/30 rounded-[3rem] shadow-sm snap-center flex flex-col">
           <div class="space-y-6">
-            <p class="text-xl leading-relaxed font-medium text-on-surface-variant">«Для меня важно знать
-              детали до вылета. На сайте агентства нашел ответы на все вопросы по Вьетнаму. Тур был
-              организован безупречно. Теперь только с вами!»</p>
+            <p class="text-xl leading-relaxed font-medium text-on-surface-variant">«Спасибо Эмоджи Турс за классный тур в Сочи! Оформили буквально за несколько минут, помогли выбрать отель и удобный перелет. Все быстро, понятно и качественно.»</p>
           </div>
-          <div class="pt-10 flex items-center gap-4">
+          <div class="pt-8 flex items-center gap-4">
             <div
               class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-lg">
-              ДМ</div>
+              ГН</div>
             <div>
-              <p class="font-bold">Дмитрий М.</p>
-              <p class="text-sm opacity-60">Тур во Вьетнам</p>
+              <p class="font-bold">Галина и Наталья К.</p>
+              <p class="text-sm opacity-60">Отдых в Сочи</p>
             </div>
           </div>
         </div>
 
-        <!-- Testimonial 3 -->
+        <!-- Testimonial 3: Игорь П. -->
         <div
-          class="min-w-[85vw] md:min-w-[400px] p-10 bg-primary rounded-[3rem] shadow-sm snap-center flex flex-col justify-between">
+          class="min-w-[85vw] md:min-w-[450px] p-10 bg-primary rounded-[3rem] shadow-sm snap-center flex flex-col">
           <div class="space-y-6">
-            <p class="text-xl leading-relaxed font-medium">«Агентство помогло найти идеальный баланс между
-              отдыхом и экскурсиями. Прочитала все памятки на сайте и чувствовала себя как дома даже в
-              новой стране. Это был отпуск, о котором я мечтала годами».</p>
+            <p class="text-xl leading-relaxed font-medium">«Путешествовали с внуками в Турцию. Нам подобрали классный отель, где учтены все нюансы для отдыха с детьми. Мы получили классную детальную консультацию и хороший выбор по вариантам перелётов. Планируем новый экскурсионный тур в Китай, теперь только с Эмоджи Турс!»</p>
           </div>
           <div class="pt-10 flex items-center gap-4">
             <div
               class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center font-bold text-lg">
-              ЕС</div>
+              ИП</div>
             <div>
-              <p class="font-bold">Елена С.</p>
-              <p class="text-sm opacity-60">Отдых в Египте</p>
+              <p class="font-bold">Игорь П.</p>
+              <p class="text-sm opacity-60">Тур в Турцию</p>
             </div>
           </div>
         </div>
 
-        <!-- Testimonial 4 -->
+        <!-- Testimonial 4: Юлия К. -->
         <div
-          class="min-w-[85vw] md:min-w-[400px] p-10 border border-primary/30 rounded-[3rem] shadow-sm snap-center flex flex-col justify-between">
+          class="min-w-[85vw] md:min-w-[450px] p-10 border border-primary/30 rounded-[3rem] shadow-sm snap-center flex flex-col">
           <div class="space-y-6">
-            <p class="text-xl leading-relaxed font-medium text-on-surface-variant">«Это была моя первая
-              поездка через агентство, и я в восторге. Emoji Tours помогли выбрать Танзанию, хотя я
-              целился в другую страну. Сафари — это эмоции на всю жизнь!»</p>
+            <p class="text-xl leading-relaxed font-medium text-on-surface-variant">«С мужем посетили Мальдивы. Это был отдых мечты. Классный отель, невероятный океан и безупречное свадебное путешествие. Если вы думаете, что Мальдивы недоступны, значит вы просто не обращались в Эмоджи турс.»</p>
           </div>
           <div class="pt-10 flex items-center gap-4">
             <div
               class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-lg">
-              МП</div>
+              ЮК</div>
             <div>
-              <p class="font-bold">Максим П.</p>
-              <p class="text-sm opacity-60">Сафари в Танзании</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 5 -->
-        <div
-          class="min-w-[85vw] md:min-w-[400px] p-10 bg-primary rounded-[3rem] shadow-sm snap-center flex flex-col justify-between">
-          <div class="space-y-6">
-            <p class="text-xl leading-relaxed font-medium">«Прочитала блог и памятки на сайте, и все страхи
-              перед полетом на другой конец света исчезли. Спасибо за заботу и профессионализм. Бали — это
-              любовь!»</p>
-          </div>
-          <div class="pt-10 flex items-center gap-4">
-            <div
-              class="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center font-bold text-lg">
-              СР</div>
-            <div>
-              <p class="font-bold">София Р.</p>
-              <p class="text-sm opacity-60">Поездка на Бали</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 6 -->
-        <div
-          class="min-w-[85vw] md:min-w-[400px] p-10 border border-primary/30 rounded-[3rem] shadow-sm snap-center flex flex-col justify-between">
-          <div class="space-y-6">
-            <p class="text-xl leading-relaxed font-medium text-on-surface-variant">«Турция может быть
-              разной, и благодаря вашим советам я увидел её с новой стороны. Идеальный сервис и знание
-              своего дела. Рекомендую!»</p>
-          </div>
-          <div class="pt-10 flex items-center gap-4">
-            <div
-              class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-lg">
-              ИВ</div>
-            <div>
-              <p class="font-bold">Игорь В.</p>
-              <p class="text-sm opacity-60">Каппадокия, Турция</p>
+              <p class="font-bold">Юлия К.</p>
+              <p class="text-sm opacity-60">Мальдивы, свадебный тур</p>
             </div>
           </div>
         </div>
