@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Турция — Туроператора</title>
+  <title>Турция — Emoji Tours</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -101,7 +101,7 @@
 
     .nav-link:hover {
       color: #000;
-      background: rgba(0, 0, 0, 0.02);
+      background: rgb(0, 0, 0);
     }
 
     .nav-link.active {
@@ -138,7 +138,7 @@
 
 </head>
 
-<body class="bg-background text-on-surface">
+<body class="bg-background text-black">
 
   <!-- ШАПКА -->
   <nav class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4">
@@ -149,7 +149,7 @@
         Все страны
       </a>
       <a href="../../index.html" class="flex-shrink-0 mx-auto md:mx-0">
-        <img src="../../images/logo.png" alt="Туроператора" class="h-8 md:h-10"
+        <img src="../../images/logo.png" alt="Emoji Tours" class="h-8 md:h-10"
           onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'">
       </a>
     </div>
@@ -172,12 +172,12 @@
       <img src="../../images/logo.png" alt="Туроператор" class="h-8"
         onerror="this.src='https://via.placeholder.com/150?text=Туроператор'">
       <button onclick="toggleMenu()"
-        class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/30 text-on-surface active:scale-90 transition-transform">
+        class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/30 text-black active:scale-90 transition-transform">
         <span class="material-symbols-outlined">close</span>
       </button>
     </div>
     <nav id="mobile-quick-links"
-      class="flex flex-col font-['Manrope'] font-bold text-base md:text-xl tracking-tight overflow-y-auto">
+      class="flex flex-col font-['Manrope'] font-bold text-base md:text-base md:text-xl tracking-tight overflow-y-auto">
       <a href="#aboutturkey" class="nav-link">О стране</a>
       <a href="#climate" class="nav-link">Климат</a>
       <a href="#allinclusive" class="nav-link">Все включено</a>
@@ -196,7 +196,7 @@
 
     </nav>
     <div class="mt-auto pt-10 border-t border-black/10">
-      <p class="text-[11px] text-black/80 font-bold uppercase tracking-[0.1em]">© 2026 Туроператора.
+      <p class="text-[11px] text-black font-bold uppercase tracking-[0.1em]">© 2026 Emoji Tours.
         <br>Путешествия с душой.
       </p>
     </div>
@@ -215,7 +215,7 @@
       <!-- БОКОВАЯ НАВИГАЦИЯ -->
       <aside class="hidden lg:block w-64 self-start sticky top-24 h-fit pb-10">
         <div>
-          <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
+          <p class="text-[13px] font-black text-black mb-6 px-6">Содержание</p>
           <nav id="quick-links" class="flex flex-col border-l border-black/5">
             <a href="#aboutturkey" class="nav-link">О стране</a>
             <a href="#climate" class="nav-link">Климат</a>
@@ -249,12 +249,12 @@
             class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Памятка</a>
         </div>
 
-        <div class="space-y-10 md:space-y-16" id="main-content">
+        <div class="space-y-10 md:space-y-10 md:space-y-16" id="main-content">
 
-          <section id="aboutturkey" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="aboutturkey" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">О Стране</h2>
 
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4" <br> <strong>Турция</strong> – уникальная страна, где сочетается восточный колорит,
                 многовековая история с неописуемой красоты природой и шикарным сервисом. Это одна из тех стран, которая
                 омывается сразу четырьмя морями: Средиземным, Эгейским, Черным и Мраморным. Турция гордится своим
@@ -279,10 +279,10 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="climate" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="climate" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Климат</h2>
 
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"> <strong>Климат</strong> Ландшафты Турции очень разнообразны: здесь есть и продуваемые
                 ветрами степи, и хвойные леса со своим микроклиматом, но преобладает все же горная местность.
                 <br><br>Температура воздуха на пляжных курортах летом достигает +35 °С, зимой опускается не ниже +11 °С.
@@ -295,12 +295,12 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="allinclusive" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="allinclusive" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Все включено</h2>
             <img
               src="../../tilda_raw/emojitours.ru/images/tild6464-6439-4430-a435-616564343234__antalya-old-city-gor.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"> <strong>«Все включено»</strong> Туры из Москвы в Турцию в 2024 году привлекают высоким
                 уровнем сервиса и разнообразными отелями — от бюджетных до категории «люкс». Большинство гостиниц
                 работают по концепции «все включено», благодаря чему путевки в Турцию освобождают туристов от любых
@@ -318,12 +318,12 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="antalya" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="antalya" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Анталья</h2>
             <img
               src="../../tilda_raw/emojitours.ru/images/tild6235-3733-4331-a337-386165323238__68049d39-city-1669-1.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Анталья – один из самых красивых и быстрорастущих городов на турецком берегу
                 Средиземного моря. Анталью по праву считают второй «столицей» и главным курортом страны. Город
                 возвышается на высоте 30 м над уровнем моря и расположен на склонах гор Торос, покрытых сосновыми
@@ -363,12 +363,12 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="alanya" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="alanya" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Аланья</h2>
             <img
               src="../../tilda_raw/emojitours.ru/images/tild6663-3866-4730-b865-383165363266__1459160445834-long-b.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Аланья – небольшой курортный город, расположенный на самом востоке Анталийского
                 побережья, в 130 км от Антальи. Курорт разделен на две части высокой скалой, на которой находится старый
                 город с большим количеством памятников разных эпох. Стены старого города протянулись более чем на 8 км.
@@ -405,11 +405,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="belek" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="belek" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Белек</h2>
             <img src="../../tilda_raw/emojitours.ru/images/tild6363-3533-4966-b639-653931346662__belek-beach-resort.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Современная гостиничная зона Белек расположена в 25 км от Антальи и является одним из
                 крупнейших в мире туристических проектов, ориентированных исключительно на престижный отдых.
                 Пятизвездочные отельные комплексы построены без ущерба для сосновых лесов, составляющих природное
@@ -448,12 +448,12 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="kemer" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="kemer" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Кемер</h2>
             <img
               src="../../tilda_raw/emojitours.ru/images/tild3663-6639-4932-b636-313239366130__e6dd733b28f32e473648.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Кемер – небольшой современный курорт, расположенный в 42 км от Антальи. Город
                 находится в экологически чистом районе на территории национального природного парка. Вся его
                 инфраструктура сосредоточена на склонах Торосских гор, подступающих к Средиземному морю. С одной стороны
@@ -489,12 +489,12 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="side" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="side" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Сиде</h2>
             <img
               src="../../tilda_raw/emojitours.ru/images/tild6264-6330-4266-b966-623431653534__18111717370924999590.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Сиде – курортный город, расположенный на небольшом полуострове в 75 км от Анталии.
                 Окруженный современными туристическими комплексами и песчаными пляжами, город представляет собой один из
                 наиболее оживленных южных курортов Турции. Название города переводится на русский язык как «гранат», а
@@ -536,12 +536,12 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="marmaris" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="marmaris" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Мармарис</h2>
             <img
               src="../../tilda_raw/emojitours.ru/images/tild6365-3863-4336-b164-656366373134__316b1c6a5e80b22671a6.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Мармарис расположен в юго-западной части Турции, на полуострове между Эгейским и
                 Средиземном морем, в самой большой в мире природной гавани. Особое очарование ему придают зеленые и
                 тихие бухты. Туристов Мармарис встречает золотистыми пляжами, голубым морем, неповторимыми природными
@@ -581,11 +581,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="fethie" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="fethie" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Фетхие</h2>
             <img src="../../tilda_raw/emojitours.ru/images/tild3261-3030-4931-a262-373834353534__booking6466_17.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Фетхие – курорт, расположенный на полуострове в юго-западной части Турции,
                 разместился у подножья гор, покрытых сосновыми и кедровыми лесами. Утопающий в зелени Фетхие является
                 экологически чистым местом с прекрасным воздухом и климатом. Высокие горы, лазурное море, оживленные
@@ -623,11 +623,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="bodrum" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="bodrum" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Бодрум</h2>
             <img src="../../tilda_raw/emojitours.ru/images/tild6536-3335-4166-b837-306131396533__bodrum-5.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Бодрум – самый «тусовочный» курорт Турции, столица ночной жизни страны с большим
                 количеством баров, ночных клубов, ресторанов и дискотек. Город состоит из двух частей. Восточной – с
                 длинным, узким, но удобным пляжем, всевозможными барами, ресторанами и клубами. И западной – жизнь тут
@@ -644,11 +644,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="didim" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="didim" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Дидим</h2>
             <img src="../../tilda_raw/emojitours.ru/images/tild3439-6265-4131-b938-663637336135__13645.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Дидим – курорт на Эгейском побережье, на юго-западе Турции. Отличительной чертой
                 этого места является его великолепное побережье, растянувшееся на многие километры. Пляжи в основном
                 песчаные и с мелкой галькой, благодаря которой море даже на мелководье всегда остается кристально
@@ -666,11 +666,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="izmir" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="izmir" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Измир</h2>
             <img src="../../tilda_raw/emojitours.ru/images/tild3135-3364-4430-b031-653464333030__s1200.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Традиционно Измир считается самым либеральным турецким городом и напоминает
                 средиземноморский европейский курорт. Развлекательное сердце Измира – Алсанджак, располагается в
                 восточной части города Измир. Витрины местных магазинчиков и бутиков пестрят разнообразием
@@ -689,11 +689,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="cheshme" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="cheshme" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Чешме</h2>
             <img src="../../tilda_raw/emojitours.ru/images/tild3563-3565-4131-b630-656336613739__-.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Чешме – это район Измира, который расположился в 70-80 км от его центра. Этот курорт
                 знаменит своими красочными ландшафтами, минеральными источниками на полуострове Эритрея и великолепными
                 условиями для серфинга и дайвинга в деревне Алачаты. Практически на всем Чешминском полуострове
@@ -715,11 +715,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="kushadasy" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="kushadasy" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
             <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">Кушадасы</h2>
             <img src="../../tilda_raw/emojitours.ru/images/tild3762-6337-4266-b465-643334326666__14841051.jpg"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Кушадасы – один из популярных курортов на Эгейском побережье на западе Турции. Здесь
                 расположилась живописная бухта, в которой делают остановку роскошные яхты и круизные корабли. Кушадасы
                 сохранил до наших дней облик старого города, с его колоритным национальным рынком и узкими улочками.
@@ -738,11 +738,11 @@
             </div>
             <div class="h-px bg-black/[0.05] mt-12"></div>
           </section>
-          <section id="stambul" class="scroll-mt-32 mb-12 md:mb-24">
+          <section id="stambul" class="scroll-mt-32 mb-12 md:mb-12 md:mb-24">
 
             <img src="../../tilda_raw/emojitours.ru/images/tild6136-3162-4232-b164-346265663239__untitled.png"
               class="w-full h-auto rounded-3xl shadow-xl mb-14">
-            <div class="text-black/80  text-base md:text-xl leading-relaxed max-w-4xl">
+            <div class="text-black  text-base md:text-base md:text-xl leading-relaxed max-w-4xl">
               <p class="mb-4"></a> Стамбул <imgsrc="..
                   /../tilda_raw/emojitours.ru/images/tild6136-3162-4232-b164-346265663239__-__empty__untitled.png"alt="Купить горящую путевку в Турцию в Подольске">
                   Сегодня Стамбул – это крупнейший город Турции, главный порт страны, ее культурный и промышленный
@@ -773,92 +773,92 @@
             class="bg-[#fffcf5] border border-black/5 rounded-3xl md:rounded-3xl p-6 sm:p-10 md:p-16 shadow-2xl shadow-[#5f531a]/10 space-y-10 md:space-y-12 relative overflow-hidden">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 md:gap-y-8 mt-2">
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Имя и Фамилия</label>
+                <label class="block text-sm font-bold text-black ml-1">Имя и Фамилия</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="userName" placeholder="Иван Иванов" type="text" required />
               </div>
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">E-mail</label>
+                <label class="block text-sm font-bold text-black ml-1">E-mail</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="userEmail" placeholder="hello@example.com" type="email" required />
               </div>
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Телефон</label>
+                <label class="block text-sm font-bold text-black ml-1">Телефон</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="userPhone" placeholder="+7 (___) ___-__-__" type="tel" required />
               </div>
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Направление</label>
+                <label class="block text-sm font-bold text-black ml-1">Направление</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="destination" value="Турция" type="text" />
               </div>
               <div class="grid grid-cols-2 gap-4">
                 <div class="space-y-2">
-                  <label class="block text-sm font-bold text-black/80 ml-1">Взрослых</label>
+                  <label class="block text-sm font-bold text-black ml-1">Взрослых</label>
                   <input
                     class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                     name="adults" min="1" type="number" value="2" />
                 </div>
                 <div class="space-y-2">
-                  <label class="block text-sm font-bold text-black/80 ml-1">Детей (и возраст)</label>
+                  <label class="block text-sm font-bold text-black ml-1">Детей (и возраст)</label>
                   <input
                     class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                     name="children" placeholder="1 реб, 5 лет" type="text" />
                 </div>
               </div>
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Бюджет (RUB)</label>
+                <label class="block text-sm font-bold text-black ml-1">Бюджет (RUB)</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="budget" placeholder="От 200 000" type="text" />
               </div>
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Количество ночей</label>
+                <label class="block text-sm font-bold text-black ml-1">Количество ночей</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="nights" min="1" type="number" value="7" />
               </div>
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Дата начала</label>
+                <label class="block text-sm font-bold text-black ml-1">Дата начала</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="startDate" type="date" />
               </div>
             </div>
             <div class="space-y-4">
-              <label class="block text-sm font-bold text-black/80 ml-1">Нужны ли экскурсии?</label>
+              <label class="block text-sm font-bold text-black ml-1">Нужны ли экскурсии?</label>
               <div class="flex flex-wrap gap-8">
                 <label class="flex items-center gap-3 cursor-pointer group">
                   <input class="w-5 h-5 text-primary border-black/20 rounded-full transition-colors cursor-pointer"
                     name="excursions" type="radio" value="Да" />
-                  <span class="text-on-surface group-hover:text-primary transition-colors">Да, обязательно</span>
+                  <span class="text-black group-hover:text-primary transition-colors">Да, обязательно</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer group">
                   <input class="w-5 h-5 text-primary border-black/20 rounded-full transition-colors cursor-pointer"
                     name="excursions" type="radio" value="Нет" />
-                  <span class="text-on-surface group-hover:text-primary transition-colors">Нет, только отдых</span>
+                  <span class="text-black group-hover:text-primary transition-colors">Нет, только отдых</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer group">
                   <input class="w-5 h-5 text-primary border-black/20 rounded-full transition-colors cursor-pointer"
                     name="excursions" type="radio" value="Пока не знаю" />
-                  <span class="text-on-surface group-hover:text-primary transition-colors">Пока не знаю</span>
+                  <span class="text-black group-hover:text-primary transition-colors">Пока не знаю</span>
                 </label>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Предпочтения по отелю</label>
+                <label class="block text-sm font-bold text-black ml-1">Предпочтения по отелю</label>
                 <textarea
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="hotelPrefs" placeholder="Напр. первая линия, только 5*, наличие детского клуба..."
                   rows="3"></textarea>
               </div>
               <div class="space-y-2">
-                <label class="block text-sm font-bold text-black/80 ml-1">Аэропорт вылета</label>
+                <label class="block text-sm font-bold text-black ml-1">Аэропорт вылета</label>
                 <input
                   class="w-full bg-transparent border border-black/15 rounded-full p-4 hover:border-black/30 outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                   name="airport" placeholder="Шереметьево, Пулково..." type="text" />
@@ -880,8 +880,8 @@
     <div class="max-w-7xl mx-auto flex flex-col gap-12 md:gap-16">
       <div class="flex flex-col md:flex-row justify-between items-start gap-12">
         <div class="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
-          <img src="../../images/logo.png" alt="Туроператора" class="h-12 md:h-14 mx-auto md:mx-0">
-          <p class="text-black/80  text-sm leading-relaxed px-4 md:px-0">
+          <img src="../../images/logo.png" alt="Emoji Tours" class="h-12 md:h-14 mx-auto md:mx-0">
+          <p class="text-black  text-sm leading-relaxed px-4 md:px-0">
             Мы верим, что путешествия — это лучший способ познать себя и окружающий мир.
           </p>
           <div class="flex gap-4 justify-center md:justify-start">
@@ -900,21 +900,21 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-16 w-full md:w-auto text-center md:text-left">
           <div class="space-y-4">
-            <h4 class="font-bold text-black/80 text-sm">Связаться с нами</h4>
+            <h4 class="font-bold text-black text-sm">Связаться с нами</h4>
             <div class="space-y-3 text-lg">
               <a href="tel:+79636491852"
-                class="block font-black text-on-surface hover:text-primary transition-colors">+7 963-649-18-52</a>
+                class="block font-black text-black hover:text-primary transition-colors">+7 963-649-18-52</a>
               <a href="mailto:trohin.zh@yandex.ru"
-                class="block text-black/80 hover:text-black transition-colors text-sm ">trohin.zh@yandex.ru</a>
+                class="block text-black hover:text-black transition-colors text-sm ">trohin.zh@yandex.ru</a>
             </div>
           </div>
 
         </div>
       </div>
       <div class="pt-8 md:pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="text-black/80  text-[11px] md:text-xs text-center md:text-left w-full md:w-auto">©
-          2026 Туроператора. Путешествия с душой.</div>
-        <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-bold text-black/80">
+        <div class="text-black  text-[11px] md:text-xs text-center md:text-left w-full md:w-auto">©
+          2026 Emoji Tours. Путешествия с душой.</div>
+        <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-bold text-black">
           <a href="../../index.html#countries" class="hover:text-black transition-colors">Страны</a>
           <a href="../../index.html#calendar" class="hover:text-black transition-colors">Календарь</a>
           <a href="../../index.html#testimonials" class="hover:text-black transition-colors">Отзывы</a>
@@ -935,11 +935,11 @@
         <span class="material-symbols-outlined text-5xl">check</span>
       </div>
       <h3 class="text-2xl md:text-5xl font-black tracking-tight">Заявка принята!</h3>
-      <p class="text-black/80  leading-relaxed">
+      <p class="text-black  leading-relaxed">
         Мы уже получили ваши данные и начали подбор идеального тура. Наш эксперт свяжется с вами в ближайшее время!
       </p>
       <button onclick="closeModal()"
-        class="w-full bg-black text-white py-5 rounded-full text-base md:text-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-black/10 mt-4">
+        class="w-full bg-black text-white py-5 rounded-full text-base md:text-base md:text-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-black/10 mt-4">
         Супер!
       </button>
     </div>
@@ -985,7 +985,7 @@
         mobileQuickLinks.innerHTML = '';
         desktopLinksSource.forEach(link => {
           const mobileLink = link.cloneNode(true);
-          mobileLink.className = 'text-on-surface hover:text-black transition-colors py-3 border-b border-black/5 flex items-center justify-between group';
+          mobileLink.className = 'text-black hover:text-black transition-colors py-3 border-b border-black/5 flex items-center justify-between group';
           const arrow = document.createElement('span');
           arrow.className = 'material-symbols-outlined opacity-20 group-hover:opacity-100 transition-opacity';
           arrow.textContent = 'arrow_forward';
