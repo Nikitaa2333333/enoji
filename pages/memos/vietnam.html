@@ -162,12 +162,22 @@
       width: 35%;
     }
   </style>
+  <link rel="stylesheet" href="../../css/print_styles.css">
 </head>
 
 <body class="bg-background text-on-surface">
+  <!-- PRINT HEADER (Visible only in PDF) -->
+  <div class="print-only print-header">
+    <img src="../../images/logo.png" alt="Emoji Tours">
+    <div class="print-header-title">
+      <p style="font-size: 10pt; color: #888; margin-bottom: 4px; font-family: 'Manrope';">Памятка путешественника</p>
+      <h1 style="margin: 0; font-size: 24pt; color: #f7941d; font-family: 'Manrope';">Вьетнам</h1>
+    </div>
+  </div>
+
 
   <!-- ШАПКА -->
-  <nav class="fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4">
+  <nav class="no-print fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4">
     <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
       <a href="../../index.html"
         class="flex md:absolute md:left-8 text-xs md:text-sm font-bold items-center gap-1 md:gap-2 hover:opacity-70 transition-opacity whitespace-nowrap bg-black/5 px-3 py-2 rounded-full md:bg-transparent">
@@ -216,7 +226,7 @@
     <div class="max-w-7xl mx-auto px-5 md:px-8 flex flex-col lg:flex-row gap-12">
 
       <!-- БОКОВАЯ НАВИГАЦИЯ -->
-      <aside class="hidden lg:block w-64 self-start sticky top-24 h-fit pb-10">
+      <aside class="no-print hidden lg:block w-64 self-start sticky top-24 h-fit pb-10">
         <div>
           <p class="text-[13px] font-black text-black/40 mb-6 px-6">Содержание</p>
           <nav id="quick-links" class="flex flex-col border-l border-black/5">
@@ -246,16 +256,15 @@
 
         <div class="flex flex-wrap gap-4 mb-14">
           <a href="../countries/vietnam.html"
-            class="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">О
+            class="no-print inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">О
             стране</a>
           <a href="#section-form"
-            class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
+            class="no-print inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
             туда</a>
-          <button onclick="PDFDownload.download('Вьетнам')" 
-            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
+          <a href="../../dist_pdf/Memo_Vietnam.pdf" target="_blank" class="no-print group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
             <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
             <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
-          </button>
+          </a>
         </div>
 
         <div class="space-y-16" id="main-content">
@@ -991,6 +1000,13 @@
       card.style.transform = 'scale(0.9)';
     }
   </script>
+
+  <!-- PRINT FOOTER (Visible only in PDF) -->
+  <div class="print-only print-footer" style="position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; font-family: 'Manrope'; border-top: 1px solid #eee; padding-top: 5px; color: #888; font-size: 9pt;">
+    <span>Emoji Tours — Путешествия с душой</span>
+    <span>emojitours.ru | +7 (963) 649-18-52</span>
+  </div>
+
 </body>
 
 </html>
