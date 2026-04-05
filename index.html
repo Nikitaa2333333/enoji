@@ -702,8 +702,7 @@
         { name: "Индонезия", emoji: "🇮🇩", code: "id", link: "pages/countries/indonesia.html", schedule: [[], [], [], ["beach"], ["beach"], ["beach"], ["beach"], ["beach"], ["beach"], [], [], []] },
         { name: "Шри-Ланка", emoji: "🇱🇰", code: "lk", link: "pages/countries/sri-lanka.html", schedule: [["beach"], ["beach"], ["beach"], ["beach"], [], [], [], [], [], [], ["beach"], ["beach"]] },
         { name: "Танзания", emoji: "🇹🇿", code: "tz", link: "pages/countries/tanzania.html", schedule: [["beach"], ["beach"], [], [], [], [], ["beach"], ["beach"], ["beach"], ["beach"], [], ["beach"]] },
-        { name: "Тунис", emoji: "🇹🇳", code: "tn", link: "pages/countries/tunisia.html", schedule: [[], [], [], [], ["beach"], ["beach"], ["beach"], ["beach"], ["beach"], ["beach"], [], []] },
-        { name: "Италия", emoji: "🇮🇹", code: "it", link: "pages/countries/italy.html", schedule: [[], [], ["beach"], [], [], [], [], ["excursion"], [], [], ["beach"], []] }
+        { name: "Тунис", emoji: "🇹🇳", code: "tn", link: "pages/countries/tunisia.html", schedule: [[], [], [], [], ["beach"], ["beach"], ["beach"], ["beach"], ["beach"], ["beach"], [], []] }
       ];
 
       const icons = {
@@ -722,7 +721,7 @@
 
         let html = `<td class="py-3 px-4 font-bold text-black whitespace-nowrap">
                 <div class="flex items-center gap-3 text-sm">
-                  <img src="https://emojicdn.elk.sh/${country.emoji}" alt="${country.name}" class="w-6 h-6 object-contain" style="filter: drop-shadow(0 1px 2px rgb(0, 0, 0));">
+                  <img src="images/flags/${country.code}.png" alt="${country.name}" class="w-6 h-6 object-contain" style="filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));">
                   ${country.name}
                 </div>
               </td>`;
