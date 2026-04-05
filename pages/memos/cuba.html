@@ -4,12 +4,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Памятка: Памятка туриста Куба — Emoji Tours</title>
+<title>Памятка: Памятка туриста Куба — Туроператора</title>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <script src="../../scripts/pdf-download.js"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="../../scripts/pdf-download.js"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -160,18 +160,17 @@
       width: 35%;
     }
   </style>
-  <link rel="stylesheet" href="../../css/print_styles.css">
+<link href="../../css/print_styles.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-surface">
-  <!-- PRINT HEADER (Visible only in PDF) -->
-  <div class="print-only print-header">
-    <img src="../../images/logo.png" alt="Emoji Tours">
-    <div class="print-header-title">
-      <p style="font-size: 10pt; color: #888; margin-bottom: 4px; font-family: 'Manrope';">Памятка путешественника</p>
-      <h1 style="margin: 0; font-size: 24pt; color: #f7941d; font-family: 'Manrope';">Памятка туриста Куба</h1>
-    </div>
-  </div>
-
+<!-- PRINT HEADER (Visible only in PDF) -->
+<div class="print-only print-header">
+<img alt="Туроператора" src="../../images/logo.png"/>
+<div class="print-header-title">
+<p style="font-size: 10pt; color: #888; margin-bottom: 4px; font-family: 'Manrope';">Памятка путешественника</p>
+<h1 style="margin: 0; font-size: 24pt; color: #f7941d; font-family: 'Manrope';">Памятка туриста Куба</h1>
+</div>
+</div>
 <!-- ШАПКА -->
 <nav class="no-print fixed top-0 w-full z-50 bg-[#fffcf5]/90 backdrop-blur-md border-b border-black/5 py-4">
 <div class="max-w-7xl mx-auto flex justify-between md:justify-center items-center px-4 md:px-8 relative">
@@ -180,20 +179,18 @@
         Все страны
       </a>
 <a class="flex-shrink-0 mx-auto md:mx-0" href="../../index.html">
-<img alt="Emoji Tours" class="h-8 md:h-10" onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'" src="../../images/logo.png"/>
-</a>
+<img alt="Туроператора" class="h-8 md:h-10" onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'" src="../../images/logo.png">
+</img></a>
 </div>
 </nav>
 <!-- Кнопка навигации мобильная (Floating) -->
-<button class="md:hidden fixed bottom-10 left-1/2 -translate-x-1/2          <a href="#section-form"
-            class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
-            туда</a>
-          <button class="no-print" onclick="PDFDownload.download('Куба')" 
-            class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4">
-            <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
-            <span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
-          </button>
-        </div>
+<button #section-form"="" class="inline-block bg-primary text-black px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all">Хочу
+            туда
+<button class="group flex items-center gap-2 text-black hover:opacity-70 transition-all font-medium ml-4" onclick="PDFDownload.download('Куба')">
+<span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+<span class="border-b-2 border-black group-hover:border-black/40 transition-all text-xl">Скачать памятку PDF</span>
+</button>
+
 <span class="material-symbols-outlined text-[20px]">menu</span>
     Содержание
   </button>
@@ -205,58 +202,57 @@
 <!-- БОКОВАЯ НАВИГАЦИЯ -->
 <aside class="no-print hidden lg:block w-64 self-start sticky top-24 h-fit pb-10">
 <div>
-<section id="poleznaya-informatsiya" class="scroll-mt-32 mb-20">
-  <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Полезная информация</h2>
-
-  <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-10">
-    <div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
-      <div class="flex items-start gap-5 mb-8">
-        <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
-          <span class="material-symbols-outlined text-black text-2xl">support_agent</span>
-        </div>
-        <h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
-      </div>
-      <div class="space-y-4">
-        <p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Посольство России на Кубе</p>
-      </div>
-    </div>
-    <div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
-      <div class="flex items-start gap-5 mb-8">
-        <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
-          <span class="material-symbols-outlined text-black text-2xl">support_agent</span>
-        </div>
-        <h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
-      </div>
-      <div class="space-y-4">
-        <p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Адрес: Гавана, Мирамар, 5 авенида № 6402, между улицами 62 и 66Телефоны: (8-10-537) 204-10-85, 204-26-28, 204-26-86, 204-10-80Факс: (8-10-537) 204-10-38E-mail: embrusia@newmail.ru, embrusia2007@mail.ruВремя работы: понедельник – четверг с 08:00 до 12:30 и с 15:00 до 19:00</p>
-      </div>
-    </div>
-    <div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
-      <div class="flex items-start gap-5 mb-8">
-        <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
-          <span class="material-symbols-outlined text-black text-2xl">support_agent</span>
-        </div>
-        <h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
-      </div>
-      <div class="space-y-4">
-        <p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Посольство Республики Куба в Российской Федерации</p>
-      </div>
-    </div>
-    <div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
-      <div class="flex items-start gap-5 mb-8">
-        <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
-          <span class="material-symbols-outlined text-black text-2xl">support_agent</span>
-        </div>
-        <h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
-      </div>
-      <div class="space-y-4">
-        <p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Адрес Посольства Республики Куба: 119017, Москва, Б. Ордынка, д.66Телефоны: (495)933-79-50Факс: 933-79-50E-mail Посольства Республики Куба: prencult[perro]ecurusia.ruE-mail Консульского отдела: consul[perro]ecurusia.cu и consulado[perro]ecurusia.cu</p>
-      </div>
-    </div>
-  </div>
+<section class="scroll-mt-32 mb-20" id="poleznaya-informatsiya">
+<h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tight text-black">Полезная информация</h2>
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-10">
+<div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
+<div class="flex items-start gap-5 mb-8">
+<div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-black text-2xl">support_agent</span>
+</div>
+<h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
+</div>
+<div class="space-y-4">
+<p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Посольство России на Кубе</p>
+</div>
+</div>
+<div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
+<div class="flex items-start gap-5 mb-8">
+<div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-black text-2xl">support_agent</span>
+</div>
+<h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
+</div>
+<div class="space-y-4">
+<p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Адрес: Гавана, Мирамар, 5 авенида № 6402, между улицами 62 и 66Телефоны: (8-10-537) 204-10-85, 204-26-28, 204-26-86, 204-10-80Факс: (8-10-537) 204-10-38E-mail: embrusia@newmail.ru, embrusia2007@mail.ruВремя работы: понедельник – четверг с 08:00 до 12:30 и с 15:00 до 19:00</p>
+</div>
+</div>
+<div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
+<div class="flex items-start gap-5 mb-8">
+<div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-black text-2xl">support_agent</span>
+</div>
+<h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
+</div>
+<div class="space-y-4">
+<p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Посольство Республики Куба в Российской Федерации</p>
+</div>
+</div>
+<div class="bg-black/5 p-8 rounded-[2.5rem] border border-black/5 hover:bg-black/[0.07] transition-all duration-300">
+<div class="flex items-start gap-5 mb-8">
+<div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-black text-2xl">support_agent</span>
+</div>
+<h3 class="text-2xl font-extrabold leading-tight tracking-normal">Полезные контакты</h3>
+</div>
+<div class="space-y-4">
+<p class="mb-2 text-lg text-black/80 font-medium leading-relaxed">Адрес Посольства Республики Куба: 119017, Москва, Б. Ордынка, д.66Телефоны: (495)933-79-50Факс: 933-79-50E-mail Посольства Республики Куба: prencult[perro]ecurusia.ruE-mail Консульского отдела: consul[perro]ecurusia.cu и consulado[perro]ecurusia.cu</p>
+</div>
+</div>
+</div>
 </section>
 <div class="h-px bg-black/[0.05] mt-12"></div>
-</section>
+
 </div>
 <div class="h-px bg-black/5 my-16"></div>
 <!-- СЕКЦИЯ: ФОРМА -->
@@ -335,15 +331,15 @@
 </div>
 </form>
 </section>
-</div>
-</div>
+</aside></div>
+
 </main>
 <!-- Footer -->
 <footer class="bg-surface-container-low w-full border-t border-black/5 pt-16 pb-10 px-4 md:px-8 mt-8">
 <div class="max-w-7xl mx-auto flex flex-col gap-12 md:gap-16">
 <div class="flex flex-col md:flex-row justify-between items-start gap-12">
 <div class="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
-<img alt="Emoji Tours" class="h-12 md:h-14 mx-auto md:mx-0" src="../../images/logo.png"/>
+<img alt="Туроператора" class="h-12 md:h-14 mx-auto md:mx-0" src="../../images/logo.png"/>
 <p class="text-on-surface-variant font-medium text-sm leading-relaxed px-4 md:px-0">
             Мы верим, что путешествия — это лучший способ познать себя и окружающий мир.
           </p>
@@ -368,7 +364,7 @@
 </div>
 <div class="pt-8 md:pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="text-on-surface-variant font-medium text-[11px] md:text-xs text-center md:text-left w-full md:w-auto">©
-          2026 Emoji Tours. Путешествия с душой.</div>
+          2026 Туроператора. Путешествия с душой.</div>
 <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-bold text-on-surface-variant">
 <a class="hover:text-black transition-colors" href="../../index.html#countries">Страны</a>
 <a class="hover:text-black transition-colors" href="../../index.html#calendar">Календарь</a>
@@ -451,7 +447,7 @@
       // 1. Популяция мобильного меню из десктопного
       const mobileQuickLinks = document.getElementById('mobile-quick-links');
       const desktopLinksSource = document.querySelectorAll('#quick-links .nav-link');
-      
+
       if (mobileQuickLinks && desktopLinksSource.length > 0) {
         mobileQuickLinks.innerHTML = '';
         desktopLinksSource.forEach(link => {
@@ -523,12 +519,10 @@
       card.style.transform = 'scale(0.9)';
     }
   </script>
-
-  <!-- PRINT FOOTER (Visible only in PDF) -->
-  <div class="print-only print-footer" style="position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; font-family: 'Manrope'; border-top: 1px solid #eee; padding-top: 5px; color: #888; font-size: 9pt;">
-    <span>Emoji Tours — Путешествия с душой</span>
-    <span>emojitours.ru | +7 (963) 649-18-52</span>
-  </div>
-
+<!-- PRINT FOOTER (Visible only in PDF) -->
+<div class="print-only print-footer" style="position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; font-family: 'Manrope'; border-top: 1px solid #eee; padding-top: 5px; color: #888; font-size: 9pt;">
+<span>Туроператора — Путешествия с душой</span>
+<span>emojitours.ru | +7 (963) 649-18-52</span>
+</div>
 </body>
 </html>

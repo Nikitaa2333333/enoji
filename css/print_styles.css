@@ -1,50 +1,71 @@
-/* Professional PDF Print Styles for Emoji Tours Memos */
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
-
-:root {
-    --primary-color: #f7941d; /* Emoji Tours Orange */
-    --text-color: #333;
-    --bg-color: #fff;
-}
-
-@page {
-    size: A4;
-    margin: 15mm 15mm 20mm 15mm;
-}
+/* Professional PDF Print Styles - ULTRA CLEAN VERSION */
 
 @media print {
-    body {
-        font-family: 'Manrope', sans-serif;
-        color: var(--text-color);
-        background: var(--bg-color);
-        line-height: 1.5;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+    /* Hide ALL images, icons, and videos except the logo in print header */
+    img:not(.print-header img), 
+    svg, 
+    picture, 
+    video, 
+    canvas,
+    [class*="hero-image"],
+    [class*="t-img"] {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        visibility: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Hide ALL background images */
+    * {
+        background-image: none !important;
+    }
+
+    /* Hide ALL forms and related sections */
+    #section-form,
+    #booking-form,
+    form,
+    [id*="form"],
+    [class*="form"],
+    .t-form,
+    [class*="submit"],
+    section:has(form),
+    section:has(input),
+    .t-records > div[id^="rec"]:has(a[href*="form"]) {
+        display: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
     }
 
     /* Hide web-only elements */
     .no-print, 
     nav, 
+    aside,
     header:not(.print-header), 
     footer:not(.print-footer),
-    .t-records > div[id^="rec"]:has(a[href*="form"]), /* Tilda specific form hiding */
     .t-menu__container,
     .t-footer,
     iframe,
     button,
-    .t-btn {
+    .t-btn,
+    #quick-links,
+    [id*="modal"],
+    [class*="modal"] {
         display: none !important;
     }
 
-    /* Hide all images except the logo in print header */
-    img:not(.print-header img) {
-        display: none !important;
-    }
-
-    /* Hide background images */
-    * {
-        background-image: none !important;
+    /* Text optimizations */
+    body {
+        font-family: 'Manrope', sans-serif !important;
+        color: #333 !important;
+        background: #fff !important;
+        font-size: 11pt !important;
+        line-height: 1.5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     /* Show print-only elements */
@@ -52,17 +73,9 @@
         display: block !important;
     }
 
-    /* Layout optimizations */
-    .print-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
     /* Typography */
     h1, h2, h3 {
-        color: var(--primary-color);
+        color: #f7941d !important; /* Туроператора Orange */
         page-break-after: avoid;
         break-after: avoid;
     }
@@ -73,42 +86,34 @@
     }
 
     /* Content grouping and page breaks */
+    section,
     .memo-section, 
     .check-list, 
     .info-card,
     tr, 
-    img,
     ul,
     ol {
         page-break-inside: avoid;
         break-inside: avoid;
+        margin-bottom: 20px !important;
     }
 
-    /* Professional Header */
+    /* Professional Header/Footer (if present) */
     .print-header {
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 2px solid var(--primary-color);
+        border-bottom: 2px solid #f7941d;
         padding-bottom: 10px;
         margin-bottom: 30px;
     }
 
     .print-header img {
-        height: 60px;
+        height: 40pt !important;
+        width: auto !important;
+        max-width: 120pt !important;
     }
 
-    .print-header-title {
-        text-align: right;
-    }
-
-    .print-header-title h1 {
-        margin: 0;
-        font-size: 24pt;
-        text-transform: uppercase;
-    }
-
-    /* Professional Footer */
     .print-footer {
         position: fixed;
         bottom: 0;
@@ -116,28 +121,22 @@
         right: 0;
         font-size: 9pt;
         color: #888;
-        border-top: 1px solid #eee;
-        padding-top: 5px;
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
+        padding-top: 6pt;
+        border-top: 1px solid #e5e5e5;
+        background: #fff;
     }
 
-    /* Links handling */
+
     a {
-        text-decoration: none;
-        color: var(--text-color);
-    }
-
-    /* Images */
-    .hero-image {
-        width: 100%;
-        height: auto;
-        border-radius: 12px;
-        margin-bottom: 20px;
+        text-decoration: none !important;
+        color: inherit !important;
     }
 }
 
-/* Fallback for non-print view to see what will be printed if needed */
+/* Fallback for non-print view */
 .print-only {
     display: none;
 }
+

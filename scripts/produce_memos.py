@@ -150,7 +150,7 @@ def generate_page():
             page_data = t.read()
 
         # Имена и Slug (Умное определение)
-        title = raw_title.replace('Памятка:', '').replace('— Emoji Tours', '').replace('Emoji Tours', '').strip()
+        title = raw_title.replace('Памятка:', '').replace('— Туроператора', '').replace('Туроператора', '').strip()
         if not title: title = filename.split('.')[0]
         
         slug = page_alias.replace('memo', '').strip('-')

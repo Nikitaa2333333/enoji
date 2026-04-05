@@ -2,7 +2,7 @@ import os
 import re
 
 # Automation script to prepare all Travel Memos for PDF generation
-# Emoji Tours - Professional Layout Standard
+# Туроператора - Professional Layout Standard
 # UPDATED: Replaces dynamic download button with direct link to generated PDF
 # LIMITED: Only for the 12 main countries on the homepage
 
@@ -42,7 +42,7 @@ def process_file(filename):
         content = content.replace('</head>', f'  <link rel="stylesheet" href="{CSS_PATH}">\n</head>')
 
     # 2. Extract Country Name from <title>
-    title_match = re.search(r'<title>Памятка: (.*?) — Emoji Tours</title>', content)
+    title_match = re.search(r'<title>Памятка: (.*?) — Туроператора</title>', content)
     country_name = title_match.group(1) if title_match else filename.replace('.html', '').capitalize()
 
     # 3. Inject Print Header (if not present)
@@ -50,7 +50,7 @@ def process_file(filename):
         print_header = f"""
   <!-- PRINT HEADER (Visible only in PDF) -->
   <div class="print-only print-header">
-    <img src="{LOGO_PATH}" alt="Emoji Tours">
+    <img src="{LOGO_PATH}" alt="Туроператора">
     <div class="print-header-title">
       <p style="font-size: 10pt; color: #888; margin-bottom: 4px; font-family: 'Manrope';">Памятка путешественника</p>
       <h1 style="margin: 0; font-size: 24pt; color: #f7941d; font-family: 'Manrope';">{country_name}</h1>
@@ -62,8 +62,8 @@ def process_file(filename):
     # 4. Inject or Update Print Footer
     new_footer = f"""
   <!-- PRINT FOOTER (Visible only in PDF) -->
-  <div class="print-only print-footer" style="position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; font-family: 'Manrope'; border-top: 1px solid #eee; padding-top: 5px; color: #888; font-size: 9pt;">
-    <span>Emoji Tours — Путешествия с душой</span>
+  <div class="print-only print-footer" style="position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; font-family: 'Manrope'; padding-top: 0; color: #888; font-size: 9pt;">
+    <span>Туроператора — Путешествия с душой</span>
     <span>emojitours.ru | {PHONE} | {EMAIL}</span>
   </div>
 """
@@ -108,6 +108,22 @@ def process_file(filename):
     
     # "Хочу туда", "О стране" buttons - add no-print if missing
     content = re.sub(r'(<a\s+[^>]*class=")(?!.*no-print\b)([^"]*inline-block[^"]*")', r'\1no-print \2', content)
+
+    # NEW: Aggressively hide images in HTML for print
+    # We add no-print to all img tags EXCEPT those inside print-header
+    # First, protect print-header images by temporarily renaming them (hacky but safe for regex)
+    content = content.replace('class="print-only print-header"', 'class="PROT-HEADER"')
+    
+    def img_no_print(match):
+        img_tag = match.group(0)
+        if 'no-print' in img_tag: return img_tag
+        if 'class="' in img_tag:
+            return img_tag.replace('class="', 'class="no-print ')
+        else:
+            return img_tag.replace('<img ', '<img class="no-print" ')
+            
+    content = re.sub(r'<img [^>]*>', img_no_print, content)
+    content = content.replace('class="PROT-HEADER"', 'class="print-only print-header"')
 
     # Final cleanup: Remove double "no-print no-print" if any
     content = content.replace('no-print no-print', 'no-print')

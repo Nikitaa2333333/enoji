@@ -1,7 +1,7 @@
-# Design System Strategy: Emoji Tours
+# Design System Strategy: Туроператора
 
 ## 1. Overview & Creative North Star
-The design system for "Emoji Tours" is anchored by a Creative North Star we call **"The Sunlit Editorial."** 
+The design system for "Туроператора" is anchored by a Creative North Star we call **"The Sunlit Editorial."** 
 
 Unlike traditional travel portals that feel cluttered and transactional, this system treats the digital interface as a high-end travel magazine brought to life. It prioritizes emotional resonance over information density. We achieve this through "The Breathing Layout"—intentional asymmetry where text and high-resolution photography dance across the screen, utilizing expansive white space (up to `24` on our spacing scale) to allow the user's mind to wander. 
 
