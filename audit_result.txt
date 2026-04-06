@@ -1,0 +1,419 @@
+АУДИТ КАРТИНОК В ПАМЯТКАХ (dry-run)
+
+
+==================================================
+  Китай
+==================================================
+  ✅ Правильных: 1  |  ❌ Проблемных: 10
+
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    tamozhennyj-kontrol-v-kitae
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'ca8da9d4318f084b7513.jpg'
+     Стоит в:    kitaj
+     Должна быть в: *tamozhennyj* (из Tilda 'ChinaCUSTOMCONTROL')
+  ❌  '5_turizm.jpg'
+     Стоит в:    kitaj
+     Должна быть в: *naselenie* (из Tilda 'Population')
+  ❌  'i_11.jpg'
+     Стоит в:    kitaj
+     Должна быть в: *naselenie* (из Tilda 'Population')
+  ❌  '0x0.jpg'
+     Стоит в:    kitaj
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    kitaj
+     Должна быть в: *naselenie* (из Tilda 'Population')
+  ❌  'i_12.jpg'
+     Стоит в:    kitaj
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+
+==================================================
+  Египет
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 13
+
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ⚠️  '0x0_1.jpg'
+     Секция: egipet
+     Из Tilda-якоря 'Egypt' (нет маппинга, возможно лишняя)
+  ⚠️  '4dc3e9228407cf4a3bd3.jpg'
+     Секция: egipet
+     Из Tilda-якоря 'Egypt' (нет маппинга, возможно лишняя)
+  ❌  'i_13.jpg'
+     Стоит в:    egipet
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+  ❌  'v-kakoi-chasti-mater.jpg'
+     Стоит в:    egipet
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  '6639.jpg'
+     Стоит в:    egipet
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'orig.jpg'
+     Стоит в:    egipet
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'caption.jpg'
+     Стоит в:    egipet
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'fafef4185f212ccca306.jpg'
+     Стоит в:    egipet
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'hurghada_at_night_7.jpg'
+     Стоит в:    egipet
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'i_14.jpg'
+     Стоит в:    egipet
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    egipet
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Индонезия
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 9
+
+  ❌  'd64a384148bc-8415216.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ⚠️  'world-map-with-magni.jpg'
+     Секция: tamozhennyj-kontrol-v-indonezii
+     Из Tilda-якоря 'Indonesia' (нет маппинга, возможно лишняя)
+  ❌  '26514612382-fb3b84a1.jpg'
+     Стоит в:    pasportnyj-kontrol
+     Должна быть в: *aeroportu* (из Tilda 'Seyshellesairport')
+  ❌  'indonesian_rupiah_id.jpg'
+     Стоит в:    bali
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+  ❌  '22712.jpg'
+     Стоит в:    bali
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  '3512750.jpg'
+     Стоит в:    bali
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    bali
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Мальдивы
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 10
+
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prilyota
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prilyota
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'a6e6bd_996e168bc30a4.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *tamozhennyj* (из Tilda 'MaldivesCUSTOMCONTROL')
+  ❌  'na-karte-mira-maldiv.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *tamozhennyj* (из Tilda 'MaldivesCUSTOMCONTROL')
+  ❌  'vutlhkn6atfa5qjs5npe.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+  ❌  'b9046a54724855560950.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'dhiguveli_frost_cuto.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'maxresdefault.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'scale_1200.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *tamozhennyj* (из Tilda 'MaldivesCUSTOMCONTROL')
+  ❌  'phu-quoc-speedboat-t.jpg'
+     Стоит в:    maldivy
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Маврикий
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 10
+
+  ❌  '375337379.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    turisticheskij-nalog
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ⚠️  '1600x1600.jpg'
+     Секция: mavrikij
+     Из Tilda-якоря 'Mauritius' (нет маппинга, возможно лишняя)
+  ❌  'shutterstock-3041477.jpg'
+     Стоит в:    mavrikij
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  '0xo4anzqla6874cde13b.jpg'
+     Стоит в:    mavrikij
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ⚠️  'visiter-le-marche-de.jpg'
+     Секция: mavrikij
+     Из Tilda-якоря 'Beaches' (нет маппинга, возможно лишняя)
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    mavrikij
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Сейшелы
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 11
+
+  ❌  'i_5.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'djsvfhdhs.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *tamozhennyj* (из Tilda 'SeyshellesCUSTOMCONTROL')
+  ❌  'secret-01.jpg'
+     Стоит в:    tamozhennyj-kontrol-na-sejshelakh
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'visit-seychelles-cul.jpg'
+     Стоит в:    respublika-sejshelskie-ostrova
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'seychelles-island-re.jpg'
+     Стоит в:    respublika-sejshelskie-ostrova
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  '756582394772544.jpg'
+     Стоит в:    respublika-sejshelskie-ostrova
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  '746278e6-b0a7-4425-8.jpg'
+     Стоит в:    respublika-sejshelskie-ostrova
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    respublika-sejshelskie-ostrova
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Шри-Ланка
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 12
+
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ⚠️  'abstract-blue-world-.jpg'
+     Секция: tamozhennyj-kontrol-sri-lanka
+     Из Tilda-якоря 'SriLanka' (нет маппинга, возможно лишняя)
+  ❌  'secret-01.jpg'
+     Стоит в:    tamozhennyj-kontrol-sri-lanka
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '88p_ldn22.jpg'
+     Стоит в:    about-sri-lanka
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+  ❌  '1796_80c57a92e42d403.jpg'
+     Стоит в:    about-sri-lanka
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'pera2.jpg'
+     Стоит в:    about-sri-lanka
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  '3250116.jpg'
+     Стоит в:    about-sri-lanka
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'i_19.jpg'
+     Стоит в:    about-sri-lanka
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'image.jpg'
+     Стоит в:    about-sri-lanka
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    about-sri-lanka
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Танзания
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 8
+
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ⚠️  'dzhambo-zanzibar-den.jpg'
+     Секция: v-rossijskom-aeroportu-vyleta-prileta
+     Из Tilda-якоря 'Tanzania' (нет маппинга, возможно лишняя)
+  ❌  'secret-01.jpg'
+     Стоит в:    tamozhennyj-kontrol-v-tanzanii
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '1683325577_1zoom-clu.jpg'
+     Стоит в:    tanzaniya
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'daladala.jpg'
+     Стоит в:    tanzaniya
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    tanzaniya
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Таиланд
+==================================================
+  ✅ Правильных: 1  |  ❌ Проблемных: 7
+
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    pravila-vvoza-dronov-v-tailand
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '2535264_big.jpg'
+     Стоит в:    veterinarnyj-kontrol
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+  ❌  '36f526d9b83c320058d0.jpg'
+     Стоит в:    korolevstvo-tailand
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ⚠️  '788gon_71920x.jpg'
+     Секция: korolevstvo-tailand
+     Из Tilda-якоря 'Beaches' (нет маппинга, возможно лишняя)
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    korolevstvo-tailand
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Тунис
+==================================================
+  ✅ Правильных: 2  |  ❌ Проблемных: 11
+
+  ❌  '11.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    tamozhennyj-kontrol-v-tunise
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ⚠️  'gbp3tkmbkcnnz8crymex.jpg'
+     Секция: tunis
+     Из Tilda-якоря 'Tunisia' (нет маппинга, возможно лишняя)
+  ❌  '0893e0e5-cd7a-4e86-b.jpg'
+     Стоит в:    tunis
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+  ❌  'b362d8e48833fc070bcd.jpg'
+     Стоит в:    tunis
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'i_20.jpg'
+     Стоит в:    tunis
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'paysage_tembaibe.jpg'
+     Стоит в:    tunis
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'tunisia5.jpg'
+     Стоит в:    tunis
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    tunis
+     Должна быть в: *obychai* (из Tilda 'Customs')
+
+==================================================
+  Турция
+==================================================
+  ✅ Правильных: 5  |  ❌ Проблемных: 3
+
+  ❌  'turkish_airlines_air.jpg'
+     Стоит в:    tamozhennyj-kontrol-v-turtsii
+     Должна быть в: *aeroportu* (из Tilda 'INTHETURKISHAIRPORT')
+  ❌  'flag-turcii-2.jpg'
+     Стоит в:    turtsiya
+     Должна быть в: *magaziny* (из Tilda 'Purchases')
+  ❌  'valuta_turciya.jpg'
+     Стоит в:    turtsiya
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+
+==================================================
+  Вьетнам
+==================================================
+  ✅ Правильных: 3  |  ❌ Проблемных: 11
+
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'ria_6136134hr_a91.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *sobiraya-bagazh* (из Tilda 'CollectingLuggage')
+  ❌  'secret-01.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ❌  '919255ebe5775d87ea2b.jpg'
+     Стоит в:    v-rossijskom-aeroportu-vyleta-prileta
+     Должна быть в: *registratsiya* (из Tilda 'Checkinbaggage')
+  ⚠️  'back-view-girl-weari.jpg'
+     Секция: tamozhennyj-kontrol-v-aeroportu-vetnama
+     Из Tilda-якоря 'Vietnam' (нет маппинга, возможно лишняя)
+  ❌  '54358a3c3b497bda83b8.jpg'
+     Стоит в:    vetnam
+     Должна быть в: *aeroportu* (из Tilda 'Vietnamairport')
+  ❌  'money_in_vietnam.jpg'
+     Стоит в:    vetnam
+     Должна быть в: *valyuta* (из Tilda 'Currency')
+  ❌  'mobile-fruiterers-ha.jpg'
+     Стоит в:    vetnam
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'i_16.jpg'
+     Стоит в:    vetnam
+     Должна быть в: *napryazhenie* (из Tilda 'Mainsvoltage')
+  ❌  'i_15.jpg'
+     Стоит в:    vetnam
+     Должна быть в: *obychai* (из Tilda 'Customs')
+  ❌  'phone_old_year_built.jpg'
+     Стоит в:    vetnam
+     Должна быть в: *obychai* (из Tilda 'Customs')
