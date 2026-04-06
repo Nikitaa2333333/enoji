@@ -410,7 +410,14 @@ style="display:none;" data-nosnippet
 tabindex="-1"
 aria-label="Ошибки при заполнении формы"> <ul
 role="list"
-class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> <div class="t-form__submit"> <button
+class="t-form__errorbox-text t-text t-text_md"> <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li> <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li> </ul> </div> <!--/noindex--> </div> <div class="t-form__submit"> 
+        <div class="flex items-center gap-3 px-1 mb-6">
+          <input type="checkbox" id="privacy-consent" name="privacy-consent" required class="w-5 h-5 text-black border-black/20 rounded transition-colors cursor-pointer" />
+          <label for="privacy-consent" class="text-sm font-medium text-black cursor-pointer">
+            Согласен на <a href="http://127.0.0.1:5500/privacy.html" target="_blank" class="!text-black !underline underline-offset-4 decoration-black/40 hover:decoration-black transition-all">обработку персональных данных</a>
+          </label>
+        </div>
+<button
 class="t-submit t-btnflex t-btnflex_type_submit t-btnflex_md"
 type="submit"><span class="t-btnflex__text">Отправить</span> <style>#rec73986604 .t-btnflex.t-btnflex_type_submit {color:#000000;background-color:#ffffff;border-style:solid !important;border-color:#000000 !important;--border-width:2px;border-radius:30px;box-shadow:none !important;font-family:Georgia;font-weight:600;transition-duration:0s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}@media (hover:hover) {#rec73986604 .t-btnflex.t-btnflex_type_submit:not(.t-animate_no-hover):hover {color:#ffffff !important;background-color:#000000 !important;}#rec73986604 .t-btnflex.t-btnflex_type_submit:not(.t-animate_no-hover):focus-visible {color:#ffffff !important;background-color:#000000 !important;}}</style></button> </div> </div> <div class="t-form__errorbox-bottom"> <!--noindex--> <div
 class="js-errorbox-all t-form__errorbox-wrapper"
