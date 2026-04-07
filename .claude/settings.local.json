@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(pip install:*)",
-      "Bash(/c/Users/User/AppData/Local/Programs/Python/Python311/python.exe -c ':*)"
+      "Bash(/c/Users/User/AppData/Local/Programs/Python/Python311/python.exe -c ':*)",
+      "WebFetch(domain:sprinthost.ru)"
     ]
   }
 }
