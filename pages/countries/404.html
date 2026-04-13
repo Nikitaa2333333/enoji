@@ -2,55 +2,19 @@
 <html class="light" lang="ru">
 
 <head>
+  <!-- Speed Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="/images/tild3762-6537-4136-a532-303036666635__photo.webp" fetchpriority="high">
+
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Tilda — Emoji Tours</title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-    rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  
-  
-
-  
-
-  
-
-
-  
-
-  
-
-
-  
-
-  
-
-
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "background": "#fffcf5",
-            "surface": "#fffcf5",
-            "on-surface": "#000000",
-            "primary": "#f5e2a1",
-            "on-primary": "#000000",
-            "on-surface-variant": "#000000",
-            "surface-container-low": "#fffcf5",
-            "surface-container-high": "#fffaf0",
-            "primary-container": "#f5e2a1",
-            "on-primary-container": "#000000",
-          },
-          fontFamily: { "headline": ["Manrope"], "body": ["Manrope"] },
-          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "3xl": "3rem", "full": "9999px" },
-        },
-      },
-    }
-  </script>
+  <!-- Compiled Tailwind CSS (replaces ~350KB CDN runtime) -->
+  <link rel="stylesheet" href="/css/tailwind.min.css">
+  <!-- Fonts: combined single request, non-blocking async load -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"></noscript>
 
   <style>
     body {
@@ -128,8 +92,8 @@
         Все страны
       </a>
       <a href="../../index.html" class="flex-shrink-0">
-        <img src="../../images/logo.png" alt="Emoji Tours" class="h-8 md:h-10"
-          onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'">
+        <img src="../../images/logo.webp" alt="Emoji Tours" class="h-8 md:h-10"
+          onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'" loading="lazy">
       </a>
     </div>
   </nav>
@@ -148,8 +112,8 @@
   <div id="mobile-drawer"
     class="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-[#fffcf5] z-[110] transform translate-x-full transition-transform duration-500 ease-out shadow-2xl p-8 flex flex-col">
     <div class="flex justify-between items-center mb-12">
-      <img src="../../images/logo.png" alt="Туроператор" class="h-8"
-        onerror="this.src='https://via.placeholder.com/150?text=Туроператор'">
+      <img src="../../images/logo.webp" alt="Туроператор" class="h-8"
+        onerror="this.src='https://via.placeholder.com/150?text=Туроператор'" loading="lazy">
       <button onclick="toggleMenu()"
         class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/30 text-black active:scale-90 transition-transform">
         <span class="material-symbols-outlined">close</span>
@@ -169,7 +133,7 @@
   <main class="pt-0">
     <!-- ═══ HERO PHOTO ═══ -->
     <section class="relative h-[60vh] w-full overflow-hidden mb-12 md:mb-16">
-      <img src=" class="w-full h-full object-cover object-center" id="hero-image">
+      <img src=" class="w-full h-full object-cover object-center" id="hero-image" loading="lazy">
       <div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
     </section>
 
@@ -324,7 +288,7 @@
     <div class="max-w-7xl mx-auto flex flex-col gap-12 md:gap-16">
       <div class="flex flex-col md:flex-row justify-between items-start gap-12">
         <div class="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
-          <img src="../../images/logo.png" alt="Emoji Tours" class="h-12 md:h-14 mx-auto md:mx-0">
+          <img src="../../images/logo.webp" alt="Emoji Tours" class="h-12 md:h-14 mx-auto md:mx-0" loading="lazy">
           <p class="text-black  text-sm leading-relaxed px-4 md:px-0">
             Мы верим, что путешествия — это лучший способ познать себя и окружающий мир.
           </p>
@@ -332,12 +296,12 @@
             <a href="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys" target="_blank"
               class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group">
               <img src="../../images/Логотип_MAX.svg" alt="MAX"
-                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all">
+                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" loading="lazy">
             </a>
             <a href="https://vk.com/emoji_tours" target="_blank"
               class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group">
-              <img src="../../images/VK_Compact_Logo_(2021-present).svg.png" alt="VK"
-                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all">
+              <img src="../../images/VK_Compact_Logo_(2021-present).svg.webp" alt="VK"
+                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" loading="lazy">
             </a>
           </div>
         </div>
@@ -390,7 +354,7 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/imask"></script>
+  <script src="https://unpkg.com/imask" defer></script>
   <script>
     // ScrollSpy
     const sections = document.querySelectorAll('section[id]');
@@ -508,8 +472,8 @@
     }
   </script>
 
-  <script src="/js/site-config.js"></script>
-  <script src="/js/footer-init.js"></script>
+  <script src="/js/site-config.js" defer></script>
+  <script src="/js/footer-init.js" defer></script>
 </body>
 
 </html>

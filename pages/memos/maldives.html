@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html class="light" lang="ru">
  <head>
+  <!-- Speed Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="/images/tild3762-6537-4136-a532-303036666635__photo.webp" fetchpriority="high">
+
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
    Памятка: Мальдивы — туроператора
   </title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <!-- Compiled Tailwind CSS (replaces ~350KB CDN runtime) -->
+  <link rel="stylesheet" href="/css/tailwind.min.css">
+  <!-- Fonts: combined single request, non-blocking async load -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"></noscript>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
   </script>
   <script src="../../scripts/pdf-download.js">
   </script>
   <link href="../../css/print_styles.css" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
-  </script>
-  <script id="tailwind-config">
-   tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "background": "#fffcf5",
-            "surface": "#fffcf5",
-            "on-surface": "#000000",
-            "primary": "#f5e2a1",
-            "on-primary": "#000000",
-            "on-surface-variant": "#000000",
-            "surface-container-low": "#fffcf5",
-            "surface-container-high": "#fffaf0",
-            "primary-container": "#f5e2a1",
-            "on-primary-container": "#000000",
-          },
-          fontFamily: { "headline": ["Manrope"], "body": ["Manrope"] },
-          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
-        },
-      },
-    }
-  </script>
   <style>
    body {
       font-family: 'Manrope', sans-serif;
@@ -169,7 +152,7 @@
  <body class="bg-background text-black">
   <!-- PRINT HEADER (Visible only in PDF) -->
   <div class="print-only print-header">
-   <img alt="Emoji Tours" class="no-print" src="../../images/logo.png"/>
+   <img alt="Emoji Tours" class="no-print" src="../../images/logo.webp"/ loading="lazy">
    <div class="print-header-title">
     <p style="font-size: 10pt; color: #000; margin-bottom: 4px; font-family: 'Manrope';">
      Памятка путешественника
@@ -189,7 +172,7 @@
      Все страны
     </a>
     <a class="flex-shrink-0" href="../../index.html">
-     <img alt="Emoji Tours" class="no-print h-8 md:h-10" onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'" src="../../images/logo.png"/>
+     <img alt="Emoji Tours" class="no-print h-8 md:h-10" onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'" src="../../images/logo.webp"/ loading="lazy">
     </a>
    </div>
   </nav>
@@ -309,7 +292,13 @@
         Скачать памятку PDF
        </span>
       </a>
-     </div>
+     
+          <a href="../../dist_pdf/maldives.pdf" target="_blank" 
+            class="no-print inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all border border-black/10">
+            <span class="material-symbols-outlined" style="font-size: 24px;">picture_as_pdf</span>
+            Скачать PDF
+          </a>
+          </div>
      <div class="space-y-10 md:space-y-10 md:space-y-16" id="main-content">
       <section class="scroll-mt-32 mb-20" id="pered-otezdom">
        <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">
@@ -318,7 +307,7 @@
        <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
         Проверьте наличие необходимых для поездки документов:
        </h3>
-<img alt="Перед отъездом" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg"/>
+<img alt="Перед отъездом" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.webp"/>
        <ul class="check-list mb-8">
         <li>
          заграничный паспорт (действителен в течение не менее 1 месяца после даты окончания поездки, имеет не
@@ -427,7 +416,7 @@
          <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">
           Собирая багаж
          </h2>
-         <img alt="Собирая багаж" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg"/>
+         <img alt="Собирая багаж" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.webp"/>
          <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
           Рекомендуем все ценные вещи,
                   документы и деньги положить в ручную кладь и взять с собой в самолет.
@@ -462,7 +451,7 @@
           <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
            Таможенный контроль до начала путешествия
           </h3>
-          <img alt="Таможенный контроль до начала путешествия" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6364-3637-4261-b761-386566643134__ria_6136134hr_a91.jpg"/>
+          <img alt="Таможенный контроль до начала путешествия" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6364-3637-4261-b761-386566643134__ria_6136134hr_a91.webp"/>
           <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
            Перед полетом рекомендуем проверять
                     действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных
@@ -624,7 +613,7 @@
                         на Мальдивских островах
             </h2>
             <img alt="Информация по валюте
-                        на Мальдивских островах" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6236-3964-4439-a437-363131323035__scale_1200.png"/>
+                        на Мальдивских островах" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6236-3964-4439-a437-363131323035__scale_1200.webp"/>
 
             <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
              Купюры образца 2006 года и
@@ -672,7 +661,7 @@
              </h2>
 
              <img alt="Регистрация на рейс
-                          и оформление багажа" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.jpg"/>
+                          и оформление багажа" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3039-3166-4636-b537-366535646636__secret-01.webp"/ loading="lazy">
              <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
               До начала поездки
                           настоятельно рекомендуем уточнить время начала и окончания регистрации на рейс, а также время
@@ -793,7 +782,7 @@
                                   прилета/вылета Мальдив
                  </h2>
                  <img alt="В аэропорту
-                                  прилета/вылета Мальдив" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3265-3762-4764-b834-633762353631__i_3.jpg"/>
+                                  прилета/вылета Мальдив" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3265-3762-4764-b834-633762353631__i_3.webp"/>
 
                  <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                   По прибытии в
@@ -920,7 +909,7 @@
                    <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">
                     Мальдивы
                    </h2>
-                   <img alt="Мальдивы" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3265-3231-4130-a530-333637633766__a6e6bd_996e168bc30a4.jpg"/>
+                   <img alt="Мальдивы" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3265-3231-4130-a530-333637633766__a6e6bd_996e168bc30a4.webp"/>
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     <span class="font-bold text-black">
                      Мальдивы — государство в Южной Азии, которое располагается на группе атоллов в Индийском океане, находящихся к югу от Индии, и примерно в 700 км к юго-западу от Шри-Ланки.
@@ -929,7 +918,7 @@
                    <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     Язык
                    </h3>
-<img alt="Мальдивы на карте мира" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3862-6235-4038-a438-353263316162__na-karte-mira-maldiv.jpg"/>
+<img alt="Мальдивы на карте мира" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3862-6235-4038-a438-353263316162__na-karte-mira-maldiv.webp"/ loading="lazy">
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     Мальдивский
                                       (дивехи) — индоарийский язык, близкий к сингальскому, с заимствованиями из
@@ -952,7 +941,7 @@
                    <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     Валюта
                    </h3>
-                   <img alt="Валюта" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3466-3761-4936-b263-353536313537__vutlhkn6atfa5qjs5npe.jpg"/>
+                   <img alt="Валюта" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3466-3761-4936-b263-353536313537__vutlhkn6atfa5qjs5npe.webp"/>
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     Мальдивская
                                       руфия.
@@ -1021,7 +1010,7 @@
                    <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     Обычаи
                    </h3>
-                   <img alt="Обычаи" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6361-3536-4539-b837-343866303139__b9046a54724855560950.jpg"/>
+                   <img alt="Обычаи" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6361-3536-4539-b837-343866303139__b9046a54724855560950.webp"/>
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     Для прогулки по
                                       Мале и обитаемым островам следует одеваться в соответствии с мусульманскими
@@ -1106,7 +1095,7 @@
                    <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     В отеле
                    </h3>
-<img alt="в отеле" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../IMG_20260406_230449.png"/>
+<img alt="в отеле" class="w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../IMG_20260406_230449.png"/ loading="lazy">
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     Общий принцип
                                       размещения на Мальдивах прост — на одном острове находится один отель. Исключением
@@ -1148,7 +1137,7 @@
                                       ограничены в бюджете или не хотят переплачивать за роскошь и комфорт, которыми
                                       располагают отельные цепочки и прочие курорты Мальдив.
                    </p>
-                   <img alt="пляжи" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3035-3363-4931-a666-343533663039__99.png"/>
+                   <img alt="пляжи" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3035-3363-4931-a666-343533663039__99.webp"/ loading="lazy">
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     Гестхаусы — это
                                       небольшие отели эконом уровня, которые расположены на близлежащих островах по
@@ -1165,7 +1154,7 @@
                    <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     Пляжи
                    </h3>
-                   <img alt="Пляжи" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6461-3963-4666-b765-353732643065__maxresdefault.jpg"/>
+                   <img alt="Пляжи" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6461-3963-4666-b765-353732643065__maxresdefault.webp"/>
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     Все пляжи,
                                       расположенные на многочисленных островах — песчаные, большинство из них
@@ -1187,7 +1176,7 @@
                    <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     Встреча в аэропорту и сопровождение гида
                    </h3>
-                   <img alt="Встреча в аэропорту и сопровождение гида" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3665-6564-4338-b630-623162646634__scale_1200.jpg"/>
+                   <img alt="Встреча в аэропорту и сопровождение гида" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3665-6564-4338-b630-623162646634__scale_1200.webp"/>
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     По прилете в
                                       международный аэропорт Мале туристов встречают русскоговорящие представители
@@ -1304,7 +1293,7 @@
                    <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                     Транспорт
                    </h3>
-                   <img alt="Транспорт" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6632-3336-4165-a361-363537663934__phu-quoc-speedboat-t.jpg"/>
+                   <img alt="Транспорт" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6632-3336-4165-a361-363537663934__phu-quoc-speedboat-t.webp"/>
                    <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                     В качестве
                                       транспортных средств используются скоростные катера, традиционные лодки дони или
@@ -1806,16 +1795,16 @@
    <div class="max-w-7xl mx-auto flex flex-col gap-12 md:gap-16">
     <div class="flex flex-col md:flex-row justify-between items-start gap-12">
      <div class="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
-      <img alt="Emoji Tours" class="no-print h-12 md:h-14 mx-auto md:mx-0" src="../../images/logo.png"/>
+      <img alt="Emoji Tours" class="no-print h-12 md:h-14 mx-auto md:mx-0" src="../../images/logo.webp"/ loading="lazy">
       <p class="text-black font-medium text-sm leading-relaxed px-4 md:px-0">
        Мы верим, что путешествия — это лучший способ познать себя и окружающий мир.
       </p>
       <div class="flex gap-4 justify-center md:justify-start">
        <a class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group" href="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys" target="_blank">
-        <img alt="MAX" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/Логотип_MAX.svg"/>
+        <img alt="MAX" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/Логотип_MAX.svg"/ loading="lazy">
        </a>
        <a class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group" href="https://vk.com/emoji_tours" target="_blank">
-        <img alt="VK" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/VK_Compact_Logo_(2021-present).svg.png"/>
+        <img alt="VK" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/VK_Compact_Logo_(2021-present).svg.webp"/ loading="lazy">
        </a>
       </div>
      </div>
@@ -1878,7 +1867,7 @@
     </button>
    </div>
   </div>
-  <script src="https://unpkg.com/imask">
+  <script src="https://unpkg.com/imask" defer>
   </script>
   <script>
    // ScrollSpy
@@ -2039,5 +2028,8 @@
     emojitours.ru | +7 (963) 649-18-52 | trohin.zh@yandex.ru
    </span>
   </div>
- </body>
+ 
+  <script src="/js/site-config.js" defer></script>
+  <script src="/js/footer-init.js" defer></script>
+</body>
 </html>

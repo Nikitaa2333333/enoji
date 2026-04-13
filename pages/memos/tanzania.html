@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html class="light" lang="ru">
  <head>
+  <!-- Speed Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="/images/tild3762-6537-4136-a532-303036666635__photo.webp" fetchpriority="high">
+
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
    Памятка: Танзания — туроператора
   </title>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <!-- Compiled Tailwind CSS (replaces ~350KB CDN runtime) -->
+  <link rel="stylesheet" href="/css/tailwind.min.css">
+  <!-- Fonts: combined single request, non-blocking async load -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"></noscript>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
   </script>
   <script src="../../scripts/pdf-download.js">
-  </script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
-  </script>
-  <script id="tailwind-config">
-   tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "background": "#fffcf5",
-            "surface": "#fffcf5",
-            "on-surface": "#000000",
-            "primary": "#f5e2a1",
-            "on-primary": "#000000",
-            "on-surface-variant": "#000000",
-            "surface-container-low": "#fffcf5",
-            "surface-container-high": "#fffaf0",
-            "primary-container": "#f5e2a1",
-            "on-primary-container": "#000000",
-          },
-          fontFamily: { "headline": ["Manrope"], "body": ["Manrope"] },
-          borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
-        },
-      },
-    }
   </script>
   <style>
    body {
@@ -169,7 +152,7 @@
  <body class="bg-background text-black">
   <!-- PRINT HEADER (Visible only in PDF) -->
   <div class="print-only print-header">
-   <img alt="Emoji Tours" class="no-print" src="../../images/logo.png"/>
+   <img alt="Emoji Tours" class="no-print" src="../../images/logo.webp"/ loading="lazy">
    <div class="print-header-title">
     <p style="font-size: 10pt; color: #000; margin-bottom: 4px; font-family: 'Manrope';">
      Памятка путешественника
@@ -189,7 +172,7 @@
      Все страны
     </a>
     <a class="flex-shrink-0" href="../../index.html">
-     <img alt="Emoji Tours" class="no-print h-8 md:h-10" onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'" src="../../images/logo.png"/>
+     <img alt="Emoji Tours" class="no-print h-8 md:h-10" onerror="this.src='https://via.placeholder.com/150?text=Emoji+Tours'" src="../../images/logo.webp"/ loading="lazy">
     </a>
    </div>
   </nav>
@@ -301,7 +284,13 @@
         Скачать памятку PDF
        </span>
       </a>
-     </div>
+     
+          <a href="../../dist_pdf/tanzania.pdf" target="_blank" 
+            class="no-print inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:scale-105 active:scale-95 transition-all border border-black/10">
+            <span class="material-symbols-outlined" style="font-size: 24px;">picture_as_pdf</span>
+            Скачать PDF
+          </a>
+          </div>
      <div class="space-y-10 md:space-y-10 md:space-y-16" id="main-content">
       <section class="scroll-mt-32 mb-20" id="pered-otezdom">
        <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">
@@ -310,7 +299,7 @@
        <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
         Проверьте наличие необходимых для поездки документов:
        </h3>
-<img alt="Перед отъездом" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.jpg"/>
+<img alt="Перед отъездом" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3434-6638-4437-a663-626532353762__zagranpasport-novogo.webp"/>
        <ul class="check-list mb-8">
         <li>
          заграничный паспорт (действителен в течение не менее шести месяцев с даты начала тура);
@@ -359,7 +348,7 @@
         <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">
          Собирая багаж
         </h2>
-        <img alt="Собирая багаж" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.jpg"/>
+        <img alt="Собирая багаж" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild3838-6539-4365-b630-323066343866__thumb_67866_expert_b.webp"/>
         <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
          Рекомендуем все ценные вещи, документы и деньги положить в ручную кладь и взять с собой в самолет.
         </p>
@@ -382,7 +371,7 @@
          <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
           Таможенный контроль до начала путешествия
          </h3>
-         <img alt="Таможенный контроль до начала путешествия" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6364-3637-4261-b761-386566643134__ria_6136134hr_a91.jpg"/>
+         <img alt="Таможенный контроль до начала путешествия" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6364-3637-4261-b761-386566643134__ria_6136134hr_a91.webp"/>
          <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
           Перед полетом рекомендуем проверять действующие правила вывоза физическими лицами наличной иностранной валюты из РФ, товаров и иных предметов на сайте Федеральной Таможенной Службы customs.gov.ru. Обращаем внимание на то, что в настоящее время действуют ограничения.
          </p>
@@ -636,7 +625,7 @@
                  <h2 class="text-2xl md:text-5xl font-black mb-10 tracking-tight text-black">
                   Танзания
                  </h2>
-                 <img alt="Танзания" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6563-3039-4566-a335-316130386631_________.jpg"/>
+                 <img alt="Танзания" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" loading="lazy" src="../../images/tild6563-3039-4566-a335-316130386631_________.webp"/>
                  <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                   <span class="font-bold text-black">
                    Республика Танзания является государством в Восточной Африке со столицей Додома. На севере граничит с
@@ -664,7 +653,7 @@
                  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                   Валюта
                  </h3>
-<img alt="Валюта Танзании" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3038-3739-4934-a432-366539333365__995689_big.jpg"/>
+<img alt="Валюта Танзании" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3038-3739-4934-a432-366539333365__995689_big.webp"/ loading="lazy">
                  <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                   Танзанийский шиллинг.
                  </p>
@@ -752,7 +741,7 @@
                  <h3 class="text-2xl font-bold mt-12 mb-6 underline decoration-primary underline-offset-8 text-black">
                   Транспорт
                  </h3>
-<img alt="транспорт" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3837-3830-4739-b261-613732383634__daladala.jpg"/>
+<img alt="транспорт" class="no-print w-full h-auto rounded-[2rem] md:rounded-[3.5rem] shadow-2xl my-16 object-cover" src="../../images/tild3837-3830-4739-b261-613732383634__daladala.webp"/ loading="lazy">
                  <p class="mb-6 text-base md:text-base md:text-xl text-black leading-relaxed font-manrope">
                   Городской транспорт есть в крупных городах, он представлен обычными старыми городскими автобусами и микроавтобусами. В других населенных пунктах городской транспорт представляет собой хаотично передвигающиеся по городу и пригородам пикапы, маршрутные такси и рикши. Также вдали от больших городов ходит транспорт попроще — автобусы на шасси грузового автомобиля — «Дала-Дала». «Дала-Дала» связывают все города страны, они очень дешевы, часто лишены минимального комфорта. Постоянное расписание отправлений и прибытий транспорта отсутствует.
                  </p>
@@ -1022,16 +1011,16 @@
    <div class="max-w-7xl mx-auto flex flex-col gap-12 md:gap-16">
     <div class="flex flex-col md:flex-row justify-between items-start gap-12">
      <div class="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
-      <img alt="Emoji Tours" class="no-print h-12 md:h-14 mx-auto md:mx-0" src="../../images/logo.png"/>
+      <img alt="Emoji Tours" class="no-print h-12 md:h-14 mx-auto md:mx-0" src="../../images/logo.webp"/ loading="lazy">
       <p class="text-black font-medium text-sm leading-relaxed px-4 md:px-0">
        Мы верим, что путешествия — это лучший способ познать себя и окружающий мир.
       </p>
       <div class="flex gap-4 justify-center md:justify-start">
        <a class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group" href="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys" target="_blank">
-        <img alt="MAX" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/Логотип_MAX.svg"/>
+        <img alt="MAX" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/Логотип_MAX.svg"/ loading="lazy">
        </a>
        <a class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group" href="https://vk.com/emoji_tours" target="_blank">
-        <img alt="VK" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/VK_Compact_Logo_(2021-present).svg.png"/>
+        <img alt="VK" class="no-print w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" src="../../images/VK_Compact_Logo_(2021-present).svg.webp"/ loading="lazy">
        </a>
       </div>
      </div>
@@ -1094,7 +1083,7 @@
     </button>
    </div>
   </div>
-  <script src="https://unpkg.com/imask">
+  <script src="https://unpkg.com/imask" defer>
   </script>
   <script>
    // ScrollSpy
@@ -1255,5 +1244,8 @@
     emojitours.ru | +7 (963) 649-18-52 | trohin.zh@yandex.ru
    </span>
   </div>
- </body>
+ 
+  <script src="/js/site-config.js" defer></script>
+  <script src="/js/footer-init.js" defer></script>
+</body>
 </html>
