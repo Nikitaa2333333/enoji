@@ -1,7 +1,7 @@
 window.SITE_CONFIG = {
   "phone": "+7 963-649-18-51",
   "phone_raw": "79636491851",
-  "email": "trohin.zh@yandex.xn--ru-8kcaaaaaaa",
+  "email": "trohin.zh@yandex.ru",
   "social": {
     "max": "https://max.ru/",
     "vk": "https://vk.com/emoji_tours"
