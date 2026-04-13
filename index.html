@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/css/tailwind.min.css">
   <!-- Fonts: combined single request, non-blocking async load -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"></noscript>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media=\'all\'"></noscript>
   <!-- Critical inline CSS: prevents flash of wrong background/font before tailwind.min.css loads -->
   <style>html,body{background:#fffcf5;color:#000;font-family:'Manrope',system-ui,sans-serif;overflow-x:hidden}</style>
   <style>
@@ -145,7 +145,7 @@
   <!-- TopNavBar -->
   <nav class="fixed top-0 w-full z-50 bg-[#fffcf5]/95 backdrop-blur-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto flex justify-between items-center w-full px-4 md:px-8 py-4 relative">
-      <a href="index.html" class="flex-shrink-0"><img src="images/logo.webp" alt="Эмоджи Турс" class="h-8 md:h-10" loading="eager" fetchpriority="high"></a>
+      <a href="index.html" class="flex-shrink-0"><img loading="lazy" fetchpriority="low" decoding="async" src="images/logo.webp" alt="Эмоджи Турс" class="h-8 md:h-10" loading="eager" fetchpriority="high"></a>
       <div
         class="hidden md:flex gap-10 items-center font-['Manrope'] font-bold text-sm tracking-tight absolute left-1/2 -translate-x-1/2">
         <a class="text-black hover:text-black transition-colors" href="#countries">Страны</a>
@@ -221,31 +221,31 @@
         <div
           class="w-[260px] md:w-[340px] h-[380px] md:h-[460px] flex-shrink-0 rotate-2 mt-8 md:mt-16 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild3665-3434-4139-b532-643238666163__i.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <!-- Photo 3 Turkey -->
         <div
           class="w-[260px] md:w-[340px] h-[340px] md:h-[410px] flex-shrink-0 -rotate-2 mt-4 md:mt-8 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6535-3137-4666-b538-306136303863__photo.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <!-- Photo 4 Vietnam -->
         <div
           class="w-[260px] md:w-[340px] h-[400px] md:h-[480px] flex-shrink-0 rotate-3 mt-12 md:mt-24 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6461-3834-4562-b136-356534333432__the_anam_beach_sun_r.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <!-- Photo 5 Indonesia -->
         <div
           class="w-[260px] md:w-[340px] h-[350px] md:h-[430px] flex-shrink-0 -rotate-1 mt-6 md:mt-12 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6138-3637-4333-a565-646530333233__bali-4.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <!-- Photo 6 Sri Lanka -->
         <div
           class="w-[260px] md:w-[340px] h-[390px] md:h-[470px] flex-shrink-0 rotate-2 mt-10 md:mt-20 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6561-3433-4332-b830-333634313563__6.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
 
         <!-- Duplicate for seamless loop -->
@@ -257,27 +257,27 @@
         <div
           class="w-[260px] md:w-[340px] h-[380px] md:h-[460px] flex-shrink-0 rotate-2 mt-8 md:mt-16 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild3665-3434-4139-b532-643238666163__i.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <div
           class="w-[260px] md:w-[340px] h-[340px] md:h-[410px] flex-shrink-0 -rotate-2 mt-4 md:mt-8 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6535-3137-4666-b538-306136303863__photo.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <div
           class="w-[260px] md:w-[340px] h-[400px] md:h-[480px] flex-shrink-0 rotate-3 mt-12 md:mt-24 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6461-3834-4562-b136-356534333432__the_anam_beach_sun_r.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <div
           class="w-[260px] md:w-[340px] h-[350px] md:h-[430px] flex-shrink-0 -rotate-1 mt-6 md:mt-12 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6138-3637-4333-a565-646530333233__bali-4.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
         <div
           class="w-[260px] md:w-[340px] h-[390px] md:h-[470px] flex-shrink-0 rotate-2 mt-10 md:mt-20 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-[#5f531a]/15 hover:rotate-0 transition-transform duration-500">
           <img src="images/tild6561-3433-4332-b830-333634313563__6.webp"
-            class="w-full h-full object-cover object-center" loading="lazy">
+            class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -294,7 +294,7 @@
       <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 relative z-10 text-white w-full">
         <div class="flex-shrink-0">
           <img src="images/Логотип_MAX.svg" alt="MAX"
-            class="w-20 md:w-24 h-20 md:h-24 object-contain brightness-100 drop-shadow-md" loading="lazy">
+            class="w-20 md:w-24 h-20 md:h-24 object-contain brightness-100 drop-shadow-md" loading="lazy" decoding="async">
         </div>
         <div class="text-center md:text-left space-y-3">
           <h3 class="text-2xl md:text-5xl font-black tracking-tight leading-none text-white">Подписывайтесь
@@ -389,7 +389,7 @@
         <a href="pages/countries/maldives.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild3665-3434-4139-b532-643238666163__i.webp" alt="Мальдивы" loading="lazy">
+            src="images/tild3665-3434-4139-b532-643238666163__i.webp" alt="Мальдивы" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -401,7 +401,7 @@
         <a href="pages/countries/turkey.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild6535-3137-4666-b538-306136303863__photo.webp" alt="Турция" loading="lazy">
+            src="images/tild6535-3137-4666-b538-306136303863__photo.webp" alt="Турция" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -413,7 +413,7 @@
         <a href="pages/countries/vietnam.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild6461-3834-4562-b136-356534333432__the_anam_beach_sun_r.webp" alt="Вьетнам" loading="lazy">
+            src="images/tild6461-3834-4562-b136-356534333432__the_anam_beach_sun_r.webp" alt="Вьетнам" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -425,7 +425,7 @@
         <a href="pages/countries/china.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild3038-6262-4536-b139-333363633238__ib16831975734107.webp" alt="Китай" loading="lazy">
+            src="images/tild3038-6262-4536-b139-333363633238__ib16831975734107.webp" alt="Китай" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -437,7 +437,7 @@
         <a href="pages/countries/mauritius.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild6533-3363-4233-b635-353930633965__ff934824-e1b5-4d03-9.webp" alt="Маврикий" loading="lazy">
+            src="images/tild6533-3363-4233-b635-353930633965__ff934824-e1b5-4d03-9.webp" alt="Маврикий" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -449,7 +449,7 @@
         <a href="pages/countries/thailand.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild3037-3831-4439-a333-393831306231__resim_4958688795265.webp" alt="Таиланд" loading="lazy">
+            src="images/tild3037-3831-4439-a333-393831306231__resim_4958688795265.webp" alt="Таиланд" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -461,7 +461,7 @@
         <a href="pages/countries/seychelles.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild3031-6261-4266-a162-356163663139__a6177d29-2ecf-45cd-a.webp" alt="Сейшелы" loading="lazy">
+            src="images/tild3031-6261-4266-a162-356163663139__a6177d29-2ecf-45cd-a.webp" alt="Сейшелы" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -473,7 +473,7 @@
         <a href="pages/countries/indonesia.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild6138-3637-4333-a565-646530333233__bali-4.webp" alt="Индонезия" loading="lazy">
+            src="images/tild6138-3637-4333-a565-646530333233__bali-4.webp" alt="Индонезия" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -485,7 +485,7 @@
         <a href="pages/countries/sri-lanka.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild6561-3433-4332-b830-333634313563__6.webp" alt="Шри-Ланка" loading="lazy">
+            src="images/tild6561-3433-4332-b830-333634313563__6.webp" alt="Шри-Ланка" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -497,7 +497,7 @@
         <a href="pages/countries/tanzania.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild6462-6433-4637-b230-623462323765__nungwi-zanzibar.webp" alt="Танзания" loading="lazy">
+            src="images/tild6462-6433-4637-b230-623462323765__nungwi-zanzibar.webp" alt="Танзания" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -509,7 +509,7 @@
         <a href="pages/countries/tunisia.html"
           class="block relative group h-[400px] overflow-hidden card-asymmetric cursor-pointer shadow-lg">
           <img class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-            src="images/tild3164-3961-4163-b464-636461613433___1.webp" alt="Тунис" loading="lazy">
+            src="images/tild3164-3961-4163-b464-636461613433___1.webp" alt="Тунис" loading="lazy" decoding="async">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60">
           </div>
           <div class="absolute bottom-6 left-6 text-white space-y-1">
@@ -659,7 +659,7 @@
 
         let html = `<td class="py-3 px-4 font-bold text-black whitespace-nowrap">
                 <div class="flex items-center gap-3 text-sm">
-                  <img src="images/flags/${country.code}.webp" alt="${country.name}" class="w-6 h-6 object-contain" style="filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));" loading="lazy">
+                  <img src="images/flags/${country.code}.webp" alt="${country.name}" class="w-6 h-6 object-contain" style="filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));" loading="lazy" decoding="async">
                   ${country.name}
                 </div>
               </td>`;
@@ -1013,7 +1013,7 @@
     <div class="max-w-7xl mx-auto flex flex-col gap-12 md:gap-16">
       <div class="flex flex-col md:flex-row justify-between items-start gap-12">
         <div class="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
-          <img src="images/logo.webp" alt="Emoji Tours" class="h-12 md:h-14 mx-auto md:mx-0" loading="lazy">
+          <img src="images/logo.webp" alt="Emoji Tours" class="h-12 md:h-14 mx-auto md:mx-0" loading="lazy" decoding="async">
           <p class="text-black font-medium text-sm leading-relaxed px-4 md:px-0">
             Мы верим, что путешествия — это лучший способ познать себя и окружающий мир.
           </p>
@@ -1021,12 +1021,12 @@
             <a href="https://max.ru/join/0haRr-rt5CMasX93mYrj_DuaLtUNy7gLfKyjXIdKFys" target="_blank"
               class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group">
               <img src="images/Логотип_MAX.svg" alt="MAX"
-                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" loading="lazy">
+                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" loading="lazy" decoding="async">
             </a>
             <a href="https://vk.com/emoji_tours" target="_blank"
               class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 shadow-sm transition-transform group">
               <img src="images/VK_Compact_Logo_(2021-present).svg.webp" alt="VK"
-                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" loading="lazy">
+                class="w-5 h-5 object-contain grayscale group-hover:grayscale-0 transition-all" loading="lazy" decoding="async">
             </a>
           </div>
         </div>
@@ -1079,7 +1079,7 @@
   <div id="mobile-drawer"
     class="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-[#fffcf5] z-[110] transform translate-x-full transition-transform duration-500 ease-out shadow-2xl p-8 flex flex-col">
     <div class="flex justify-between items-center mb-12">
-      <img src="images/logo.webp" alt="Emoji Tours" class="h-8" loading="lazy">
+      <img src="images/logo.webp" alt="Emoji Tours" class="h-8" loading="lazy" decoding="async">
       <button onclick="toggleMenu()"
         class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-variant/30 text-black active:scale-90 transition-transform">
         <span class="material-symbols-outlined">close</span>
